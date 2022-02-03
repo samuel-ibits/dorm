@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="javascript.js"></script>
+    <title>profile</title>
+    <script>
+function myFunction() {
+  location.replace("https://dorm.com.ng/v2/dm/html/profile.php")
+}
+</script>
+</head>
+<body>
+    <div class="flex_side">
+        <div class="navi_main">
+            <div class="navi_icons_dp">
+                <a href="../html/profile.html" title="check your profile">
+                    <img class="nav_icons_dp" src="../images/image.jpg"  alt="">
+                    <!-- <hr> -->
+                    <!-- <p class="label">study tools</p> -->
+                </a>
+            </div>
+            <div class="navi_icons">
+                <a href="../html/study_tools.html" title="Study tool helps student ---- on how to effectively go about studying">
+                    <img class="nav_icons" src="../images/studytools_white.svg"  alt="">
+                    <p class="label">study tools</p>
+                </a>
+            </div>
+            <div class="navi_icons">
+                <a href="../html/course_review.html" title="course review provides a ------ to help incoming students ------ on course and add more info">
+                    <img class="nav_icons" src="../images/course_review_white.svg" onmouseover= "slide()" alt="">
+                    <p class="label">course review</p>
+                </a>
+            </div>
+            <div class="navi_icons">
+                <a href="../html/texter.html" title="------- ------ more info">
+                    <img class="nav_icons" src="../images/texter_white.svg" onmouseover= "slide()" alt="">
+                </a>
+                <p class="label">texter</p>
+            </div>
+            <div class="navi_icons">
+                <a href="#" title="------- ------ more info">
+                    <img class="nav_icons" src="../images/house.svg" onclick = "slide()" alt="">
+                    <p class="label">accomodia</p>
+                </a>
+            </div>
+        </div>
+     </div>     
+
+<!--second menu-->
+
+ <div class="add_hus">
+        <svg class = "add" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"></path>
+                    </svg>
+        <p>Edit profile</p>
+    </div>
+
+
+    <div id="menu2" class="flex_side-2">
+            <div class="nav_bar">
+                <div class="nav_bar">
+                    <div class="navi_main">
+                        <a href="#" title="------- ------ more info">
+                            <img class="nav_icons" src="../images/cart3.svg" onmouseover= "slide()" alt="">
+                            <p class="label">shopper</p>
+                        </a>
+
+                        <a href="#" title="------- ------ more info">
+                            <img class="nav_icons" src="../images/settings_white.svg" onmouseover= "slide()" alt="">
+                            <p class="label">settings</p>
+                        </a>
+                        
+                    </div>
+                    <div class="nav_icons_footer">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>     
+<!----->
+
+    <div class="flex_wrap">
+        <div class="top_bar2">
+            <div class="topbar_lv1">
+                <img class="dorm_logo" src="../images/dorm_no_bg.png" alt="">
+                
+                <!-- for mobile view only -->
+                <div id="mobile_menu" class="mobile_menu">
+                    <div id="mobileham" class="mobileham" onclick="openNav()">
+                        <div class="mobileham_box"></div>
+                        <div class="mobileham_box"></div>
+                        <div class="mobileham_box"></div>
+                    </div>
+                    <div id="mobileham_cont" class="mobileham_cont">
+                        <span href="" id="closebutt" class="closebutt" onclick="closeNav()">&times;</span>
+                        <a href="#">
+                            <div class="list">
+                                <!-- <img class="mobileham_icn" src="../images/dp_grey.png" alt=""> -->
+                                <p class="ham_textmob">Profile</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="list">
+                                <!-- <img class="mobileham_icn" src="../images/settings_black.png" alt=""> -->
+                                <p class="ham_textmob">Settings</p>
+                            </div> 
+                        </a>
+                        <a href="#">
+                            <div class="list">
+                                <!-- <img class="mobileham_icn" src="../images/help_black.png" alt=""> -->
+                                <p class="ham_textmob">Help</p>
+                            </div> 
+                        </a>
+                        <a href="#">
+                            <div class="list">
+                                <!-- <img class="mobileham_icn" src="../images/about.png" alt=""> -->
+                                <p class="ham_textmob">About</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- mobile view ham ends here --> 
+                
+            </div>
+
+            <div class="rightH">
+                <a class="user_top" href="../html/profile.html">
+                    <p>Pst Shellman</p>
+                    <img class="top_dp" src="../images/image.jpg" alt="">
+                </a>
+                <div class="ham">
+                    <img id="drop_down" class="drop_down" src="../images/down_arrow.svg" alt=""  onclick="myFun()">
+                    <div id="myhambugger" class="hambugger-content">
+                        <div id="close_ham" class="close_box">
+                            <span class="close_ham">&times;</span>
+                        </div>
+                        <a href="../html/setting.html">
+                            <div class="list">
+                                <img class="myhambugger_icon" src="../images/settings_grey.svg" alt="">
+                                <p class="ham_text">Settings</p>
+                            </div> 
+                        </a>
+                        <!-- <a href="#">
+                            <div class="list">
+                                <img class="myhambugger_icn" src="../images/help_black.svg" alt="">
+                                <p class="ham_text">Help</p>
+                            </div>
+                        </a> -->
+                        <a href="../html/about.html">
+                            <div class="list">
+                                <img class="myhambugger_icon" src="../images/dormicon_black.svg" alt="">
+                                <p class="ham_text">About</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="blo"></div>
+    <div class="flex_main">
+           
+        <img class="profile_image" src="../images/image.jpg" alt="">
+
+        <div class="dept">
+
+            <div class="profile_box"> 
+                <span class="profile-label">Name</span>
+                <div class="profile_con">
+                    <!--<svg class="edit" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">-->
+                    <!--    <path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"></path>-->
+                    <!--</svg>-->
+                    <p>pst shellman</p>
+                </div>
+            </div>
+
+
+            <div class="profile_box"> 
+                <span class="profile-label">levels</span>
+                <div class="profile_con">
+                    <!--<svg class="edit" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">-->
+                    <!--    <path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"></path>-->
+                    <!--</svg>-->
+                    <p>300</p>
+                </div>
+            </div>
+
+
+            <div class="profile_box"> 
+                <span class="profile-label">Department</span>
+                <div class="profile_con">
+                    <!--<svg class="edit" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">-->
+                    <!--    <path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"></path>-->
+                    <!--</svg>-->
+                    <p>Computer Science</p>
+                </div>
+            </div>
+
+
+            <!-- <div class="faculty"><span class="profile-label">Time table</span>
+                <p class="timeTable"> </p>
+            </div> -->
+        </div>
+    </div>
+    <div class="all_flex profile">
+        <div class="flex">
+            <h4>PROFILE</h4>
+        </div>
+    
+       
+     <div class="space"></div>
+             <div class="flex_in">
+                <h4>Edit profile</h4>
+            </div>
+    </div>
+
+
+    <script src="../js/top_bar.js"></script>
+    <script>
+        let dropdown_btn= document.getElementById('drop_down')
+        let hamcontent = document.getElementById('myhambugger')
+        let clo = document.getElementById('close_ham')
+
+            function myFun() {
+                if (hamcontent.style.display === "none") {
+                    hamcontent.style.display = "block";
+                } else {
+                    hamcontent.style.display = "none";
+                }
+            }
+
+        clo.onclick = function (){
+            hamcontent.style.display = "none";            
+        }
+    </script>
+</body>
+
+</html>                             

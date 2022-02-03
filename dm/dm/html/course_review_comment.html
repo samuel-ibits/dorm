@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>review_comment</title>
+</head>
+<body>
+   <div class="flex_side">
+        <div class="navi_main">
+            <div class="navi_icons_dp">
+                <a href="../html/profile.html" title="see your profile">
+                    <img class="nav_icons_dp" src="../images/image.jpg"  alt="">
+                    <!-- <hr> -->
+                    <!-- <p class="label">study tools</p> -->
+                </a>
+            </div>
+            <div class="navi_icons">
+                <a href="../html/study_tools.html" title="Access tools that gives you information about your school">
+                    <img class="nav_icons" src="../images/studytools_white.svg"  alt="">
+                    <p class="label">study tools</p>
+                </a>
+            </div>
+            <div class="navi_icons" style="background-color: var(--dormorange);">
+                <a href="../html/course_review.html" title="Get reviews about different courses">
+                    <img class="nav_icons" src="../images/course_review_white.svg" onmouseover= "slide()" alt="">
+                    <p class="label">course review</p>
+                </a>
+            </div>
+            <div class="navi_icons">
+                <a href="../html/texter.html" title="Send text massages using mobile data">
+                    <img class="nav_icons" src="../images/texter_white.svg" onmouseover= "slide()" alt="">
+                </a>
+                <p class="label">texter</p>
+            </div>
+            <div class="navi_icons">
+                <a href="#" title="get accomodation easily">
+                    <img class="nav_icons" src="../images/house.svg" onclick = "slide()" alt="">
+                    <p class="label">accomodia</p>
+                </a>
+            </div>
+        </div>
+    </div>     
+
+    <div class="flex_wrap">
+        <div class="top_bar">
+            <div class="topbar_lv1">
+                <img class="dorm_logo" src="../images/dorm_no_bg.png" alt="">
+                
+                <!-- for mobile view only -->
+                <div id="mobile_menu" class="mobile_menu">
+                    <div id="mobileham" class="mobileham" onclick="openNav()">
+                        <div class="mobileham_box"></div>
+                        <div class="mobileham_box"></div>
+                        <div class="mobileham_box"></div>
+                    </div>
+                    <div id="mobileham_cont" class="mobileham_cont">
+                        <span href="" id="closebutt" class="closebutt" onclick="closeNav()">&times;</span>
+                        <a href="../html/profile.html">
+                            <div class="list">
+                                <!-- <img class="mobileham_icn" src="../images/dp_grey.png" alt=""> -->
+                                <p class="ham_textmob">Profile</p>
+                            </div>
+                        </a>
+                        <a href="../html/setting.html">
+                            <div class="list">
+                                <!-- <img class="mobileham_icn" src="../images/settings_black.png" alt=""> -->
+                                <p class="ham_textmob">Settings</p>
+                            </div> 
+                        </a>
+                        <a href="../html/">
+                            <div class="list">
+                                <!-- <img class="mobileham_icn" src="../images/help_black.png" alt=""> -->
+                                <p class="ham_textmob">Help</p>
+                            </div> 
+                        </a>
+                        <a href="../html/about.html">
+                            <div class="list">
+                                <!-- <img class="mobileham_icn" src="../images/about.png" alt=""> -->
+                                <p class="ham_textmob">About</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- mobile view ham ends here --> 
+                
+            </div>
+
+            <div class="topbar_lv2">
+                <img class="search_icon" src="../images/search.svg" alt="">
+                <div class="search_clk">
+                    <input id="search" placeholder="search" class="searchclk_box" type="search">
+                </div>
+                <div id="myBtn" class="post_bar"> create a review </div>
+            </div>
+            <!-- <input type="text"> -->
+
+             <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div>
+                        <textarea class="write_space" row="4" cols="90"></textarea>
+                        <hr>
+                        <div class="review_items">
+                            <img src="../images/image_blue.svg">
+                            <img class="mic" src="../images/microphone_blue.svg" alt="">
+                            <button class="submit">submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightH">
+                <a class="user_top" href="../html/profile.html">
+                    <p>Pst Shellman</p>
+                    <img class="top_dp" src="../images/image.jpg" alt="">
+                </a>
+                <div class="ham">
+                    <img id="drop_down" class="drop_down" src="../images/down_arrow.svg" alt=""  onclick="myFun()">
+                    <div id="myhambugger" class="hambugger-content">
+                        <div id="close_ham" class="close_box">
+                            <span class="close_ham">&times;</span>
+                        </div>
+                        <a href="../html/setting.html">
+                            <div class="list">
+                                <img class="myhambugger_icon" src="../images/settings_grey.svg" alt="">
+                                <p class="ham_text">Settings</p>
+                            </div> 
+                        </a>
+                        <!-- <a href="#">
+                            <div class="list">
+                                <img class="myhambugger_icn" src="../images/help_black.svg" alt="">
+                                <p class="ham_text">Help</p>
+                            </div>
+                        </a> -->
+                        <a href="../html/about.html">
+                            <div class="list">
+                                <img class="myhambugger_icon" src="../images/dormicon_black.svg" alt="">
+                                <p class="ham_text">About</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blo"></div>
+        <div class="flex_main">
+            <div class="gap"></div>
+            <div class="post_box">
+                <img class="image" src="../images/image.jpg" alt="">
+                <div class="text">
+                    <div class="top_post">
+                        <p class="tag">#school stress</p>
+                        <div id="more" class="more" onclick="more()">
+                           <ul>
+                               <li>
+                                   <a href="#">Repost</a>
+                                </li>
+                               <li>
+                                    <a href="#">Save picture</a> 
+                                </li>
+                           </ul> 
+                        </div>
+                        <p id="more_icn" class="more_icn" onclick="myFunction()">&#8230;</p>
+                    </div>
+                    <p class="post_text">
+                        ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Officiis eveniet fugit quam facere, temporibus tempora est 
+                        dolore nostrum accusamus dolorum adipisci deleniti cumque 
+                        aliquid libero autem sequi earum nihil iusto?
+                        ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Officiis eveniet fugit facere, temporibus tempora est 
+                        dolore nostrum accusamus dolorum adipisci deleniti cumque 
+                        aliquid libero autem sequi earum nihil iusto?
+                        ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Officiis eveniet fugit quam facere, temporibus tempora est 
+                        dolore nostrum accusamus dolorumadipisci deleniti cumque 
+                        aliquid libero autem sequi earum nihil iusto?
+                        ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Officiis eveniet fugitfacere, temporibus tempora est 
+                        dolore nostrum accusamus dolorum adipisci deleniti cumque 
+                        aliquid libero autem sequi earum nihil iusto?
+                    </p>
+                    <div class="post_bottom">
+                        <div class="uname">
+                            <p>Pst Shellman Ibitoye</p>
+                        </div>
+
+                        <div class="valid_icons">
+                            <div id="msg" class="msg">
+                                <img class="valid_img" src="../images/msg_blue.svg" alt="">
+                                <p>15</p>
+                            </div>
+                            <div class="bad">
+                                <img class="valid_img" src="../images/bad.png" alt="">
+                                <p>30</p>
+                            </div>
+                            <div class="good">
+                                <p>55</p>
+                                <img class="valid_img" src="../images/good.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="comment" class="comment" style="display: block;">
+                <!-- <img class="image" src="../images/image.jpg" alt=""> -->
+                <div class="text">
+                    <p class="post_text">
+                        ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Officiis eveniet fugit quam facere, temporibus tempora est 
+                        dolore nostrum accusamus dolorum adipisci deleniti cumque 
+                        aliquid libero autem sequi earum nihil iusto?...
+                    </p>
+                    <div class="post_bottom">
+                        <div class="uname">
+                            <img class="image" src="../images/image.jpg" alt="">
+                            <p>Pst Shellman Ibitoye</p>
+                        </div>
+                        <!-- <div class="block"></div> -->
+                        <div class="valid_icons">
+                            <div class="msg">
+                                <img class="valid_img" src="../images/msg_blue.svg" alt="">
+                                <p>15</p>
+                            </div>
+                            <div class="bad">
+                                <img class="valid_img" src="../images/bad.png" alt="">
+                                <p>30</p>
+                            </div>
+                            <div class="good">
+                                <p>55</p>
+                                <img class="valid_img" src="../images/good.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="comment" class="comment" style="display: block;">
+                <!-- <img class="image" src="../images/image.jpg" alt=""> -->
+                <div class="text">
+                    <p class="post_text">
+                        ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Officiis eveniet fugit quam facere, temporibus tempora est 
+                        dolore nostrum accusamus dolorum adipisci deleniti cumque 
+                        aliquid libero autem sequi earum nihil iusto?...
+                    </p>
+                    <div class="post_bottom">
+                        <div class="uname">
+                            <img class="image" src="../images/image.jpg" alt="">
+                            <p>Pst Shellman Ibitoye</p>
+                        </div>
+                        <!-- <div class="block"></div> -->
+                        <div class="valid_icons">
+                            <div class="msg">
+                                <img class="valid_img" src="../images/msg_blue.svg" alt="">
+                                <p>15</p>
+                            </div>
+                            <div class="bad">
+                                <img class="valid_img" src="../images/bad.png" alt="">
+                                <p>30</p>
+                            </div>
+                            <div class="good">
+                                <p>55</p>
+                                <img class="valid_img" src="../images/good.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="comment" class="comment" style="display: block;">
+                <!-- <img class="image" src="../images/image.jpg" alt=""> -->
+                <div class="text">
+                    <p class="post_text">
+                        ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Officiis eveniet fugit quam facere, temporibus tempora est 
+                        dolore nostrum accusamus dolorum adipisci deleniti cumque 
+                        aliquid libero autem sequi earum nihil iusto?...
+                    </p>
+                    <div class="post_bottom">
+                        <div class="uname">
+                            <img class="image" src="../images/image.jpg" alt="">
+                            <p>Pst Shellman Ibitoye</p>
+                        </div>
+                        <!-- <div class="block"></div> -->
+                        <div class="valid_icons">
+                            <div class="msg">
+                                <img class="valid_img" src="../images/msg_blue.svg" alt="">
+                                <p>15</p>
+                            </div>
+                            <div class="bad">
+                                <img class="valid_img" src="../images/bad.png" alt="">
+                                <p>30</p>
+                            </div>
+                            <div class="good">
+                                <p>55</p>
+                                <img class="valid_img" src="../images/good.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="all_flex">
+            <a href="../html/course_review.html">
+                <div class="flex">
+                    <h4>COURSE REVIEW</h4>
+                </div>  
+            </a>
+        </div>
+    </div>
+    <script src="../js/flex_main.js"></script>
+    <script src="../js/top_bar.js"></script>
+    <script>
+        let dropdown_btn= document.getElementById('drop_down')
+        let hamcontent = document.getElementById('myhambugger')
+        let clo = document.getElementById('close_ham')
+
+            function myFun() {
+                if (hamcontent.style.display === "none") {
+                    hamcontent.style.display = "block";
+                } else {
+                    hamcontent.style.display = "none";
+                }
+            }
+
+        clo.onclick = function (){
+            hamcontent.style.display = "none"; ew           
+        }
+    </script>
+
+    <!-- <script src="../js/script.js"></script> -->
+    <!-- <script src="../js/javascript.js"></script> -->
+</body>
+</html>                             

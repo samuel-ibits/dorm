@@ -1,0 +1,282 @@
+
+:root{
+    --ash: #e9e9e9;
+    --darkcolor: #1a1a1a;
+    --white: #ffffff;
+    --dormash: lightgrey;
+    --dormblue: #0688d3;
+    --dormorange: #f96b03;
+}
+
+*{
+    margin:0px;
+    box-sizing: border-box;
+}
+
+
+.reaction{
+    margin-top: 1vh;
+    margin: 1vh;
+    transition: 1s ease-in;
+    }
+    
+    .react{
+        transition: .1s ease-in;
+        cursor: pointer;
+    }
+    .react:hover{
+        margin-top: 2px;
+    }
+
+.top{
+    width: 70%;
+    position: fixed;
+    border: 1px solid grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 8vh;
+}
+
+
+.bottom{
+        display:inline-block;
+
+    padding: 0px;
+    margin: 0px;
+    width: 70%;
+       bottom:10%;
+    position: fixed;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 10%;
+    box-sizing: border-box;
+}
+.comment-text{
+    background: var(--dormash);
+    margin-left: 5px;
+    padding: 10px;
+    font-size: 16px;
+    position: absolute;
+    display: inline-block;
+    width: 70%;
+    border-radius: 20px;
+}
+
+.comment-box{
+    width: 68%;
+    height: 100%;
+    border-radius: 20px;
+    margin: 0px;
+    border: 1px solid #888;
+    position: relative;
+}
+
+
+
+.user{ 
+    left: 3%;
+    bottom: 5%;
+    width: 3em;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    vertical-align: bottom;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+
+
+.comment1{
+    background: #fff;
+    width: 70%;
+    position: relative;
+    left: 3vw;
+    margin-top: 3vh;
+    color:#000000
+}
+
+.comment2
+{
+    background: #fff;
+    width: 70%;
+    position: relative;
+    left: 1vw;
+    top: 20vh;
+    margin-top: 3vh;
+    color:#000000
+}
+
+
+.bbtn{
+    height: 98%;
+    width: 12%;
+    position: relative;
+    margin: 0px;
+background: var(--dormblue);
+cursor: pointer;
+color: #fff;
+border: none;
+transition: .5s;
+}
+
+.bbtn:hover{
+    background: var(--dormorange);
+}
+
+.comments{
+     top:10%;
+    width: 100%;
+    height: 78%;
+    position: absolute;
+    background: #fff;
+    overflow:scroll;
+}
+
+.options{
+    position: relative;
+    top: 10vh;
+    font-size: 15px;
+    
+    cursor: pointer;
+}
+.commentsec{
+    display:none;
+    border: 1px solid grey;
+    position: fixed;
+    background: #fff;
+    width: 70%;
+    top: 5%;
+    
+    transform: 1s ease;
+    z-index: 999999;
+    height: 83%;
+    border-radius: 10px;
+    
+}
+
+.overlayy{
+     display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.submit{
+	position: absolute;
+	right: 8%;
+	top: 83%;
+	height: 3.5rem;
+	width: 7rem;
+	border: none;
+	display: inline-block; 
+	background-color: #01A3FE;
+	color: white;
+	border-radius: .2rem;
+	/* margin-left: 70%; */
+	}
+
+	.submit:after{
+	border: none;
+	}
+
+	/* The Close Button */
+.close {
+	color: white;
+	float: right;
+	font-size: 15pt;
+	font-weight: bold;
+	background-color: red;
+	height: 2rem;
+	width: 2rem;
+	/* text-align: center */
+	border-radius: .2rem;
+	/* transform: scale(1) */
+	text-align: center;
+	margin-bottom: 1rem;
+	}
+
+	.close:hover, .close:focus {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	cursor: pointer;
+	background-color:#01A3FE;
+	}
+  
+.uname{
+    max-width: 50%;
+    height: 35px;
+    padding: 6px 20px 6px 0px;
+    /* margin-left: 20px; */
+    /* margin-right: 50%; */
+    align-items: center;
+    /* background-color: var(--ash); */
+    /* border-radius: 0px 80px 80px 0px; */
+}
+
+
+
+
+@media(max-width:700px){
+    
+.commentsec{
+    display:none;
+    border: 1px solid grey;
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    top: 5%;
+    transform: 1s ease;
+    z-index: 999999;
+    height: 90%;
+    border-radius: 10px;
+    
+}   
+
+
+.comments{
+    top:10%;
+    width: 100%;
+    height: 78%;
+    position: absolute;
+    background: #fff;
+    overflow:scroll;
+}
+.top{
+    width: 100%;
+    position: fixed;
+    border: 1px solid grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 8vh;
+}
+
+.bottom{
+    display:inline-block;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    bottom:5%;
+    position: fixed;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 10%;
+    box-sizing: border-box;
+}
+.options{
+    position: relative;
+    top: 10vh;
+    font-size: 15px;
+    
+    cursor: pointer;
+}
+
+}
+

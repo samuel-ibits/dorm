@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylet.css">
+    <script type="text/javascript" src="../js/javascript.js"></script>
+    <link rel="stylesheet" href="../css/style2.css">
+    <style>
+        body{
+            background: #fff;
+        }
+    </style>
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+
+    <div class="flex_side">
+        <div class="nav_bar">
+             <div class="nav_bar">
+                <div class="navi_main">
+                    <a href="../html/study_tools.html" title="Study tool helps student ---- on how to effectively go about studying">
+                        <img class="nav_icons" src="../images/studytools_white.svg" onclick = "slide()" alt="">
+                        <p class="label">study tools</p>
+                    </a>
+                    <a href="../html/course_review.html" title="course review provides a ------ to help incoming students ------ on course and add more info">
+                        <img class="nav_icons" src="../images/course_review_white.svg" onmouseover= "slide()" alt="">
+                        <p class="label">course review</p>
+                    </a>
+                    <a href="../html/texter.html" title="------- ------ more info">
+                        <img class="nav_icons" src="../images/texter_white.svg" onmouseover= "slide()" alt="">
+                    </a>
+                    <p class="label">texter</p>
+                    <a href="#" title="------- ------ more info">
+                        <img class="nav_icons" src="../images/house.svg" onclick = "slide()" alt="">
+                        <p class="label">accomodia</p>
+                    </a>
+                </div>
+                <div class="nav_icons_footer">
+                    <hr>
+                    <img class="nav_footer_icon-2 open" onclick="more()" id="morebtn" src="../images/plus-circle-fill.svg" alt="" title="------- ------ more info">
+                </div>
+             </div>
+        </div>
+     </div>     
+
+<!--second menu-->
+
+  <div id="menu2" class="flex_side-2">
+        <div class="nav_bar">
+             <div class="nav_bar">
+                <div class="navi_main">
+                    <a href="#" title="------- ------ more info">
+                        <img class="nav_icons" src="../images/cart3.svg" onmouseover= "slide()" alt="">
+                        <p class="label">shopper</p>
+                    </a>
+
+                     <a href="menu.html" title="------- ------ more info">
+                        <img class="nav_icons" src="../images/pen.svg" onmouseover= "slide()" alt="">
+                        <p class="label">quiz</p>
+                    </a>
+                    
+                    
+                    <a href="#" title="------- ------ more info">
+                        <img class="nav_icons" src="../images/settings_white.svg" onmouseover= "slide()" alt="">
+                        <p class="label">settings</p>
+                    </a>
+                    
+                </div>
+                <div class="nav_icons_footer">
+                    <hr>
+                    <img class="nav_footer_icon-2 close" onclick="closemore()" id="closebtn" src="../images/plus-circle-fill.svg" alt="" title="------- ------ more info">
+                </div>
+             </div>
+        </div>
+     </div>        
+<!---->
+
+<div class="flex_wrap">
+    <div class="top_bar" style="height: 13vh;">
+        <img src="../images/dorm_no_bg.png" alt="">
+        <div class="search">
+            <button>Search</button>
+            
+            <input type="text" class="search_box" valu="Search" name="" id="myBtn">
+        </div>
+<!---->
+    <div class="openmubtn" id="openMbtn" ><button id="smb" onclick="showmenu()">Practice CBT</button></div>
+    <div class="container" id="con" style="top: 200vh; transition: 1.5;">
+
+
+<a href="GST101.html"><div class="courses"><button >GST101</button></div></a>
+        
+    <div class="courses"><button>GST102</button></div>
+    
+    <div class="courses"><button>GST107</button></div>
+    <div class="courses"><button >GST101</button></div>
+        
+    <div class="courses"><button>GST102</button></div>
+    
+    <div class="courses"><button>GST107</button></div>
+    <div class="courses"><button>GST102</button></div>
+    
+    <div class="courses"><button>GST107</button></div>
+    <div class="courses"><button>GST102</button></div>
+    
+    <div class="courses"><button>CSC101</button></div>
+    <div class="courses"><button>GST102</button></div>
+    
+    <div class="courses"><button>GST107</button></div>
+    </div>
+    <script src="../js/custom.js"></script>
+</body>
+</html>

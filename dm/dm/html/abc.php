@@ -44,7 +44,7 @@ echo'
             <div class="navi_icons">
                 <a href="#" title="get accomodation easily">
                     <img class="nav_icons" src="../images/house.svg" onclick = "slide()" alt="">
-                    <p class="label">accomodia</p>
+                    <p class="label">Accomodia</p>
                 </a>
             </div>
         </div>

@@ -24,6 +24,7 @@ echo'
                 </a>
             </div>
             <div class="navi_icons">
+            
                 <a href="../html/study_tools.html" title="Access tools that gives you information about your school">
                     <img class="nav_icons" src="../images/studytools_white.svg"  alt="">
                     <p class="label">study tools</p>

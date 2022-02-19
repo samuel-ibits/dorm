@@ -10,6 +10,7 @@
 </head>
 <body>
     <?php include '../connect.php';
+    include 'texterapi.php';
 error_reporting(0);
 session_start();
 $useri=$_SESSION['dormuserid'];
@@ -291,10 +292,8 @@ if($chart > $n){
     }else{$msgn=$integer;}
     }else{$msgn=1;}
 if($balance >= $msgn){    
-Echo"<fieldset style="."'"."visibility:hidden;padding:0%;margin:0px;height:0px;width:0px;"."'".">"."<embed src ="."'"."https://netbulksms.com/index.php?"."option=com_spc&comm=spc_api&username=dormcomn1&password=dormcomn1&sender=$topic&recipient=$phone&message=$message&
-"."'".">";
-Echo"</fieldset>";
-
+texterapi($topic, $phone, $message);
+    
 $in = "INSERT INTO texter VALUES ('', '$topic', '$message', '$phone', '$date', '$time', '$name', '$userid')";
 }else{$ale2 = "Message Credit Not Sufficient. Please Recharge";
 echo "<script type='text/javascript'>alert('$ale2'); </script>";

@@ -1,4 +1,5 @@
-#please note: Create new braches to solve new problemst and leave merging to me
+#please note: Create new braches to solve new problems  and leave merging to me
+#ask questions
 
 
 install and setup git bash and destiop

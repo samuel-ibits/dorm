@@ -1,3 +1,7 @@
+Clonning this repository means you accept not to pose as a security treat or cause any harm to the system
+Clonning this repository means you accept not to give out or sell product information and technology to any one without permission
+
+
 #please note: Create new braches to solve new problems  and leave merging to me
 #ask questions
 

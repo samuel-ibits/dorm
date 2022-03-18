@@ -3145,13 +3145,19 @@ img {
     }
 
     .house_box{
+
         margin: 12rem 0rem 5rem 0rem;
+
+        margin: 10rem 0rem 5rem 0rem;
     }
     
     .house{
         display: block;
         padding: 0rem;
         width: 100%;
+        /* height: 0rem; */
+        width: 100%;
+        /* text-align: center; */
         justify-content: space-between;
     }
     

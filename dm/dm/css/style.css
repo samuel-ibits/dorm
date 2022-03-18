@@ -417,6 +417,7 @@ a{
 .search_bar{
     width: 85%;
     border: none;
+    padding: 0rem 2rem;
     text-align: center;
     background-color: var(--dormash);
     border-radius: 0rem 3rem 3rem 0rem;
@@ -2353,7 +2354,6 @@ img {
 
 .add_hus{
     display: none;
-   
 }
 
 .add_hus:hover{
@@ -2382,8 +2382,8 @@ img {
     padding: 1rem;
     color: white;
     border-radius: 2rem;
-    justify-content: center;
-    transition: .5s;
+    justify-content: space-between;
+    transition: .3s;
     box-shadow: 1px 1px 5px  #00000038;
     background-color: var(--dormblue);
 }
@@ -3035,8 +3035,8 @@ img {
     } 
 
     .all_cards{
-        margin-top: 10rem;
-        margin-bottom: 5.5rem;
+        margin-top: -5rem;
+        margin-bottom: 6.5rem;
     }
 
     .card{
@@ -3047,7 +3047,7 @@ img {
     }
 
     .card img{
-        width: 40px;
+        width: 30px;
         height: 70px;
         margin-right: 2.5rem;
     }
@@ -3145,11 +3145,16 @@ img {
     }
 
     .house_box{
+
+        margin: 12rem 0rem 5rem 0rem;
+
         margin: 10rem 0rem 5rem 0rem;
     }
     
     .house{
         display: block;
+        padding: 0rem;
+        width: 100%;
         /* height: 0rem; */
         width: 100%;
         /* text-align: center; */

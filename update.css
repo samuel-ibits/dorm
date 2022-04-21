@@ -1,0 +1,207 @@
+:root{
+    --ash: #e9e9e9;
+    --white: #ffffff;
+    --dormblue: #0688d3;
+    --darkcolor: #020202;
+    --dormash: lightgrey;
+    --dormorange: #f96b03;
+}
+
+.bot-head{
+    width: 2.5rem;
+    height: 1.5rem;
+    background: var(--dormorange);
+    margin-left: auto;
+    margin-right: .4rem;
+    border-top-left-radius:2rem;
+    border-top-right-radius:2rem;
+}
+
+.eyes-head{
+    display: flex;
+    position: absolute;
+    gap: .5rem;
+    margin-left: .6rem;
+    margin-top: 0rem;
+}
+
+.right-eye-head{ 
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--white);    
+    animation: blink 3s ease-in-out infinite alternate
+}
+.left-eye-head{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--white);
+    animation: blink 3s ease-in-out infinite alternate
+}
+
+.ears-head{
+    display: flex;
+    gap: 2rem;
+}
+
+.right-ear-head{
+    width: 19px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--dormorange);
+    animation: rightears .5s ease-in-out infinite alternate
+}
+.left-ear-head{
+    width: 19px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--dormorange);
+    animation: lefttears .5s ease-in-out infinite alternate
+}
+
+.mouth-head{
+    width: 1rem;
+    height: .5rem;
+    background: var(--white);
+    border-bottom-left-radius: 1rem; 
+    border-bottom-right-radius: 1rem;
+    margin-left: .7rem;
+    margin-top: .5rem;   
+    animation: mouth 6s ease-in-out infinite alternate;
+}
+
+  
+
+  @keyframes rightears{
+      0%{
+          transform: rotate(10deg);
+      }
+
+      100%{
+        transform: rotate(-10deg);
+    }
+  }
+
+  
+  @keyframes lefttears{
+    0%{
+        transform: rotate(-10deg);
+    }
+
+    100%{
+      transform: rotate(10deg);
+  }
+}
+  
+  
+  @keyframes blink {
+    
+      0%{
+          height: 1px;
+      }
+  
+   
+      10%{
+        height: 7px;
+    } 
+    20%{
+        height: 7px;
+    } 
+    30%{
+        height: 1px;
+    } 
+    40%{
+        height: 7px;
+    } 
+    50%{
+        height: 7px;
+    }
+    60%{
+        height: 7px;
+    } 70%{
+        height: 7px;
+    } 80%{
+        height: 7px;
+    } 
+      100%{
+          height: 7px;
+      }
+  }
+  
+  
+  
+  
+  @keyframes mouth {
+    
+    0%{
+        height: 1px;
+    }
+  
+     
+    10%{
+        height: 10px;
+    }  
+    
+    20%{
+        height: 7px;
+        width: 7px;
+        border-radius: 50%;
+        margin-left: 1rem;
+    }
+  
+     
+    30%{
+        height: 7px;
+    } 
+  
+     40%{
+        height: 7px;
+    }
+  
+     50%{
+        height: 1px;
+    }
+  
+    60%{
+        height: 1px;
+    }
+  
+    70%{
+        height: 7px;
+    }
+  
+    80%{
+        height: 7px;
+    }
+  
+    90%{
+        height:7px;
+    }
+  
+     
+    100%{
+        height: 7px;
+    }
+  
+    }
+  
+
+
+  
+  
+  
+  @media only screen and (min-width: 200px) and (max-width: 286px) {
+  
+      
+        
+  }
+  
+  
+  
+  
+  @media only screen and (min-width: 285px) and (max-width: 500px) {
+  
+
+        
+  }

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorm - Note Book</title>
+    <link rel="stylesheet" href="menu/css/styles.css"> 
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css-2/bot.css">
+    <link rel="stylesheet" href="css-2/style.css">
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="update.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <div class="top-div">
+        <div class="logo">
+            <img src="images/dorm_no_bg.png" alt="">
+        </div>
+
+        <div class="searchbar-for-menu">
+            <i class="bi bi-search"></i> <input type="search" name="" id="" disabled>
+        </div>
+
+        <div class="bot-head">
+            <div class="ears-head">
+                <div class="left-ear-head"></div> 
+                <div class="right-ear-head"></div>
+            </div>
+            <div class="eyes-head">
+                <div class="right-eye-head"></div>
+                <div class="left-eye-head"></div>
+            </div>
+  
+            <div class="mouth-head"></div>            
+    </div>
+        <i class="bi bi-bell-fill"></i>
+</div>
+
+<div class="nav-bar">
+    <ul class="nav-list">
+        <li class="nav-item" title="Study Tools">
+            <a href="studytools.html" class="nav-link">
+                <i class="bi bi-tools"></i>    
+                <p class="icon-title">Study tools</p>
+            </a>  
+         </li>
+        <li class="nav-item" title="Course Review">
+            <a href="coursereview.html" class="nav-link">
+                <i class="bi bi-book-fill"></i>    
+                <p class="icon-title">Course review</p>
+            </a>      
+        </li>
+        <li class="nav-item" title="Title">
+            <a href="texter.html" class="nav-link">
+                <i class="bi bi-chat-left-text-fill"></i>   
+                <p class="icon-title">Texter</p>
+            </a>               
+        </li>
+        <li class="nav-item" title="Accomodia">
+            <a href="accomodia.html" class="nav-link">
+                <i class="bi bi-house"></i>   
+                <p class="icon-title">Accomodia</p>
+            </a>              
+        </li>
+        <li class="nav-item" title="Martket">
+            <a href="market.html" class="nav-link">
+                <i class="bi bi-shop"></i>   
+                <p class="icon-title">Market</p>
+            </a>              
+        </li>
+        <li class="nav-item" title="Setting">
+            <a href="setting.html" class="nav-link">
+                <i class="bi bi-gear-fill"></i>   
+                <p class="icon-title">Setting</p>
+            </a>              
+        </li>
+    </ul>
+</div>
+
+<div class="page-content">
+    <div class="tool-holder">
+        <div class="tools top-index">
+            <i class="bi bi-tools toggletools"></i>
+        </div>
+        <div class="fade-tools">
+            <div class="tools">
+                <a href="/noteweb.html"> <i class="bi bi-journal"></i></a>    
+            </div>
+            <div class="tools active-tool">
+                <a href="/notebook.html"><i class="bi bi-journal-bookmark"></i></a>      
+            </div>
+            <div class="tools">
+                <a href=""><i class="bi bi-calculator"></i></a>
+            </div>
+            <div class="tools">
+                <a href="/library.html"><i class="fa fa-book" aria-hidden="true"></i></a>
+            </div>
+            <div class="tools">
+                <a href=""><i class="bi bi-pc-display"></i></a>
+            </div>
+            <div class="tools">
+                <a href=""> <i class="fa fa-users" aria-hidden="true"></i></a>
+            </div>         
+        </div>
+    </div>
+<div class="hide">
+    <div class="login-form text-div">
+        <form action="#">
+            <div class="input-wrapper">
+                <i class="bi bi-pen-fill"></i> <input type="text" id="password" placeholder="Note Title">
+            </div>
+          
+                <div class="input-wrapper-note-area"> 
+                    <textarea name="" class="note" id=""   rows="4"  placeholder="type in your Note"> </textarea>
+                </div>
+                    <div class="login-btn">
+                        <button  class="login-button">
+                            SEND
+                        </button>
+                    </div>
+                     <div class="login-btn back-to-note-choice">
+                        
+                            BACK
+                    
+                    </div>
+
+                   
+         </form>
+         
+    </div>
+</div>
+
+
+<div class="note-type">
+    <div class="create-note">
+        <p>
+            <i class="bi bi-journals"></i> <span class="create-note-txt">CREATE NEW NOTE</span>
+        </p>
+    </div>
+   
+    
+    <a href="">
+        <div class="my-note">
+            <p>
+          OR
+            </p>
+        </div>
+    </a>
+   
+    <div class="upload-note">
+        <p>
+        <h3>Upload a note from device</h3>
+
+        <input type="file" name="" id="">
+        
+        <button  class="upload-button">
+            Upload
+        </button>
+        </p>
+    </div> 
+</div> 
+
+<a href="/mynotes.html"><i class="bi bi-journal"></i> my notes</a>
+</div>   
+<script>
+    $(".create-note").click(function(){
+  $(".note-type").fadeOut(1000);
+  $(".hide").fadeIn(1000);
+});
+
+$(".back-to-note-choice").click(function(){
+  $(".note-type").fadeIn(1000);
+  $(".hide").fadeOut(1000);
+});
+</script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script>
+              tippy('.bi-bell-fill', {
+    theme: 'tomato',
+    content: '<p class="usermessage">Dorm User Notification</strong>',
+  allowHTML: true,
+  });
+
+  tippy('.bot-head', {
+    theme: 'tomato',
+    content: '<p class="dormbotmessage">Hi, I"m your Dorm assistant, Always, here to help.</strong>',
+  allowHTML: true,
+  });
+
+  tippy('.bi-journal', {
+    theme: 'tomato',
+    content: '<p class="">Note Book</strong>',
+  allowHTML: true,
+  });
+
+  tippy('.bi-journal-bookmark', {
+    theme: 'tomato',
+    content: '<p class="">Note Web.</strong>',
+  allowHTML: true,
+  });
+  tippy('.bi-calculator', {
+    theme: 'tomato',
+    content: '<p class="">CGPA calculator.</strong>',
+  allowHTML: true,
+  });
+  tippy('.fa-book', {
+    theme: 'tomato',
+    content: '<p class="">Library.</strong>',
+  allowHTML: true,
+  });
+  tippy('.bi-pc-display', {
+    theme: 'tomato',
+    content: '<p class="">CBT Test.</strong>',
+  allowHTML: true,
+  });
+  
+  tippy('.fa-users', {
+    theme: 'tomato',
+    content: '<p class="dormbotmessage">Resource Team.</strong>',
+  allowHTML: true,
+  });
+
+  $(".toggletools").click(function(){
+  $(".fade-tools").fadeToggle();
+});
+  
+        </script>
+</body>
+</html>

@@ -1,0 +1,650 @@
+:root{
+    --ash: #e9e9e9;
+    --white: #ffffff;
+    --dormblue: #0688d3;
+    --darkcolor: #020202;
+    --dormash: lightgrey;
+    --dormorange: #f96b03;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.home-info{
+    position: fixed;
+    z-index: 999999;
+    margin-top: 90vh;
+    background: #ffffff;
+    padding: .5rem;
+}
+
+strong{
+    font-weight: bolder;
+}
+
+.contact-agent{
+    color: var(--dormblue);
+}
+
+.chat{
+    background: var(--dormorange);
+    padding: 1rem;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.accomodia{
+    width: 90%;
+    height: 100%;
+    margin-top: 80px;
+    display: grid;
+    gap: 1rem;
+    z-index: 9;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); 
+}
+
+.accomodia-card{
+    width: 400px;
+    height: 230px;
+    box-shadow: -1px 1px 1px #aaa;
+    background: #fff;
+    overflow: hidden;
+}
+
+.top-image{
+    width: 100%;
+    height: 70%;
+}
+
+.top-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-div{
+    width: 100%;
+    padding: .5rem;
+
+}
+
+.centered-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-div-search{
+    margin-top: 5rem;
+    width: 100%;
+    position: absolute;
+
+}
+
+.statues{
+    position: absolute;
+    padding: .5rem;
+    background: var(--dormorange);
+    color: #fff;
+}
+
+
+
+.bi-geo-alt-fill{
+    color: var(--dormblue);
+}
+
+.name-of-house{
+    font-weight: bold;
+}
+
+.location{
+    font-size: 13px;
+}
+
+.bottom-space{
+    height: 30px;
+}
+
+.holder{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.price-of-house{
+    position: absolute;
+    padding: .5rem;
+    background: var(--dormorange);
+    color: #fff; 
+    width: max-content;
+    margin-left: 203px;
+
+}
+
+.inspect-image{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999999;
+    margin-top: 0rem;
+    display: none;
+    
+}
+
+.exit{
+    padding: .5rem;
+    background: var(--dormblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.remove{
+    position: absolute;
+    color: var(--dormorange);
+    border: 3px solid var(--dormblue);
+    border-radius: 50%;
+    z-index: 999999;
+    padding: 0rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    text-shadow: 0px 3px 4px #333;
+ 
+}
+
+.remove i{
+    font-size: 2rem;
+    color: var(--dormorange);
+   
+}
+
+.darkbackground{
+    width: 100%;
+    height: 100%;
+    background: var(--darkcolor);
+    opacity: .5;
+    position: fixed;
+    z-index: 999999;
+    display: none;
+}
+
+.add-house{
+    position: fixed;
+    padding: .5rem;
+    color: #fff;
+    z-index: 99999;
+    background: var(--dormblue);
+    margin-top: 70vh;
+    border-radius: 20px;
+    margin-left: -4vw;
+    box-shadow: 0px 2px 3px #333;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--dormblue);
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+.house-images{
+    width: 100%;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 200px) and (max-width: 300px) {
+
+    .accomodia-card{
+        width: 250px;
+        height: 200px;
+        box-shadow: -1px 1px 1px #aaa;
+        background: #fff;
+        overflow: hidden;
+    }
+
+    .price-of-house{
+        position: absolute;
+        padding: .5rem;
+        background: var(--dormorange);
+        color: #fff; 
+        width: max-content;
+        margin-left: 161px;
+    
+    }
+
+        
+.house-images{
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+}
+
+
+.add-house{
+    position: fixed;
+    padding: .5rem;
+    color: #fff;
+    z-index: 99999;
+    background: var(--dormblue);
+    margin-top: 50vh;
+    border-radius: 20px;
+    margin-left: 1vw;
+    box-shadow: 0px 2px 3px #333;
+}
+
+
+  }
+
+
+  @media screen and (min-width: 301px) and (max-width: 420px) {
+    .accomodia-card{
+        width: 340px;
+        height: 200px;
+        box-shadow: -1px 1px 1px #aaa;
+        background: #fff;
+        overflow: hidden;
+    }
+
+    
+.house-images{
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+}
+
+.house-images img{
+    height: 100%;
+    width: 100%;
+}
+
+   
+.upload-package-container{
+    width: 100%;
+}
+
+
+.add-house{
+    position: fixed;
+    padding: .5rem;
+    color: #fff;
+    z-index: 99999;
+    background: var(--dormblue);
+    margin-top: 50vh;
+    border-radius: 20px;
+    margin-left: 1vw;
+    box-shadow: 0px 2px 3px #333;
+}
+
+
+.price-of-house{
+    position: absolute;
+    padding: .5rem;
+    background: var(--dormorange);
+    color: #fff; 
+    width: max-content;
+    margin-left: 251px;
+
+}
+
+
+  }
+
+  
+  @media screen and (min-width: 421px) and (max-width: 550px) {
+    .accomodia-card{
+        width: 500px;
+        height: 250px;
+        box-shadow: -1px 1px 1px #aaa;
+        background: #fff;
+        overflow: hidden;
+    }
+
+    
+.price-of-house{
+    position: absolute;
+    padding: .5rem;
+    background: var(--dormorange);
+    color: #fff; 
+    width: max-content;
+    margin-left: 429px;
+
+}
+    
+  }
+
+
+  
+  @media screen and (min-width: 600px) and (max-width: 800px) {
+
+            .price-of-house{
+            position: relative;
+            padding: .5rem;
+            background: var(--dormorange);
+            color: #fff; 
+            width: max-content;
+            margin-left: 330px;
+        
+        }
+
+        
+.add-house{
+    position: fixed;
+    padding: .5rem;
+    color: #fff;
+    z-index: 99999;
+    background: var(--dormblue);
+    margin-top: 80vh;
+    border-radius: 20px;
+    margin-left: 1vw;
+    box-shadow: 0px 2px 3px #333;
+}
+    }
+
+
+    @media screen and (min-width: 801px) and (max-width: 1550px) {
+     
+        .price-of-house{
+        position: relative;
+        padding: .5rem;
+        background: var(--dormorange);
+        color: #fff; 
+        width: max-content;
+        margin-left: 210px;
+    
+    }
+    .remove{
+        position: absolute;
+        color: var(--dormblue);
+        z-index: 9999999;
+        margin: 2rem;
+    }
+    
+    .remove i{
+        font-size: 4rem;
+    }
+    
+.accomodia-card{
+    width: 300px;
+    height: 230px;
+    box-shadow: -1px 1px 1px #aaa;
+    background: #fff;
+    overflow: hidden;
+}
+
+
+.upload-wrapper{
+    width: 90%;
+    justify-content: center;
+    min-height: 100vh;
+  
+}
+
+.upper-div{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+    
+}
+
+
+.addhouse-div{
+    width: max-content;
+    height: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    z-index: 999999;
+    display: none;
+    padding: 3rem;
+    
+}
+
+
+.add-btn-div{
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.add-btn-div button{
+    background: var(--dormblue);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    padding: .5rem;
+}
+
+.upload-wrapper{
+    width: 100%;
+    justify-content: center;
+    min-height: 100vh;
+  
+}
+
+.upper-div{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.upload-wrapper span{
+    font-weight: bolder;
+    float: right;
+    margin-left: auto;
+}
+
+.upper-div-img{
+    width: 100px;
+    overflow: hidden;
+    height: 100%; align-items: center;
+    display: flex;
+}
+
+.upper-div-img img{
+    width: 100%;
+}
+
+.uploader{
+    border: 2px solid;
+    margin-top: 1rem;
+}
+
+
+.upload-input{
+    display: flex;
+}
+
+.upload-input input{
+    border: none;
+    outline: none;
+    background: transparent;
+    border: none;
+    padding: .5rem;
+}
+
+
+.file-selected{
+    display: flex;
+    background: var(--dormblue) ;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    overflow: hidden;
+    padding: .5rem;
+}
+.file-selected input[type=file]{
+  transform: scale(4);
+  opacity: 0;
+  z-index: 5;
+  }
+
+  .bi-filetype-pdf{
+      position: absolute;
+      z-index: 2;
+      text-align: center;
+  }
+
+  .bi-camera{
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .cartegory-div{
+      width: 100%;
+      border: 2px solid #aaa;
+      margin: .5rem;
+      margin-left: 0rem;
+
+  }
+
+  .cartegory-div input{
+      border: none;
+      outline: none;
+      outline: none;
+      width: 95%;
+      padding: .3rem;
+  }
+
+  .centered{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--dormorange);
+  }
+
+  .submit{
+      width: 100%;
+      background: var(--dormblue);
+      margin-top: 1rem;
+      padding: .5rem;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      border: none;
+      outline: none;
+      color: #ffffff;
+      margin-bottom: 3rem;
+  }
+
+  .additional-info{
+      display: none;
+  }
+  
+
+  .addbtn{
+      background: var(--dormblue);
+      padding: .3rem;
+      border: none;
+      color: #ffffff;
+      transform: scale(.9);
+      width: max-content;
+      font-size: 10px;
+  }
+
+  .additional-info .uploader  {
+      border: 2px solid #eee;
+  }
+
+  .upload-package-container{
+    width: 100%;
+}
+
+.middler{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+  @media only screen and (min-width: 700px) {
+  
+.upload-package-container{
+    width: 300px;
+}
+
+.middler{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.submit
+{width: 100px;
+background: var(--dormblue);
+margin-top: 1rem;
+padding: .7rem;
+justify-content: center;
+align-items: center;
+display: flex;
+border: none;
+outline: none;
+color: #ffffff;
+margin-bottom: 3rem;
+}
+
+.submit:hover{
+    background: #f96b03;
+    cursor: pointer;
+}
+
+  }
+
+  .upload-body{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  }
+
+   
+.upload-package-container{
+    width: 280px;
+}

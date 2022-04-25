@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
+    <title>Dorm - Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Fredoka:wght@400;500&family=Hubballi&family=Hurricane&family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="menu/css/styles.css"> 
+<link rel="stylesheet" href="css/style2.css">
+<link rel="stylesheet" href="css-2/bot.css">
+<link rel="stylesheet" href="css-2/style.css">
+<script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="update.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<style>
+    .bi{
+        color: #333;
+    }
+
+    .bi-arrow-left{
+        color: #eee;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+    setTimeout(function(){ $(".loadingscreen").hide(); }, 10000);
+    setTimeout(function(){ $(".login-page").show(); });});
+</script>
+
+</head>
+<body>
+
+<div class="loadingscreen">
+    <div class="loadingscreen-elements">
+        <div class="loading-image">
+<img src="images/dorm_no_bg.png" alt="">
+        </div>
+        <p class="loading-text">
+            Dorm every students assistant
+        </p>
+        <div class="ball-animations">
+            <div class="ball ball-1"></div>
+            <div class="ball-2 ball-2"></div>
+            <div class="ball ball-3"></div>
+            <div class="ball-2 ball-4"></div>
+            <div class="ball ball-5"></div>
+            <div class="ball-2 ball-6"></div>
+            <div class="ball ball-7"></div>
+            <div class="ball ball-8"></div>
+            <div class="ball-2 ball-9"></div>
+            <div class="ball ball-10"></div>
+            <div class="ball ball-11"></div>
+            <div class="ball-3 ball-12"></div>
+            <div class="ball-4 ball-13"></div>
+            <div class="ball ball-14"></div>
+            <div class="ball-3 ball-15"></div>
+            <div class="ball ball-16"></div>
+            <div class="ball-5 ball-17"></div>
+            <div class="ball-4 ball-18"></div>
+            <div class="ball ball-19"></div>
+            <div class="ball-3 ball-20"></div>
+            <div class="ball-4 ball-21"></div>
+    
+        </div>
+    </div>
+</div>
+
+
+    <div class="bot-container">
+<div class="need-help-message">
+    <h3><i class="bi bi-x"></i></h3>      
+</div>
+
+        <div class="robots">    
+          <div class="android">
+              <div class="ears">
+                  <div class="left-ear">
+                  </div>
+                  <div class="right-ear">
+                  </div>
+              </div>
+              <div class="head"> 
+                  <div class="eyes"> 
+                      <div class="left_eye"></div> 
+                      <div class="right_eye"></div>
+            <div class="mouth"></div>
+                  </div> 
+              </div> 
+              <div class="upper_body"> 
+                  <div class="left_arm"></div> 
+                  <div class="torso">
+        
+          </div> 
+                  <div class="right_arm"></div> 
+              </div> 
+              <div class="lower_body"> 
+                  <div class="left_leg"></div> 
+                  <div class="right_leg"></div> 
+              </div> 
+          </div>
+      </div>
+ 
+  </div>
+
+    <div class="background-image">
+        <img src="images/dorm_no_bg.png" alt="" srcset="">
+    </div>
+
+    <div class="login-wrapper">
+
+        <div class="box login-div">
+<div class="login-form">
+    <div class="logo-login">
+        <img src="images/dorm_no_bg.png" alt="">
+    </div>
+
+    <form action="" id="login">
+
+        <h2>Sign in</h2>
+
+        <div class="input-wrapper">
+            <i class="bi bi-person-fill"></i> <input type="text" id="useraname" placeholder="User Name or Phone Number">
+        </div>
+
+
+        <div class="input-wrapper">
+            <i class="bi bi-lock-fill"></i> <input type="password" id="password" placeholder="Password">
+        </div>
+
+        <div class="login-btn">
+            <button onclick="confirmlogin()" class="login-button">
+                SIGN IN
+            </button>
+        </div>
+
+        <div class="forgot-password">
+            Forgot Password<i class="bi bi-question"></i>
+        </div>
+
+        <div class="google-sign">
+            <i class="bi bi-google"></i> Sign with google
+        </div>
+    </form>
+
+    <div class="create-new-account">
+        Don't have an account<i class="bi bi-question"></i> <span class="create-new">Create new one</span>
+    </div>
+</div>
+
+        </div>
+<div class="box signup-div">
+
+    <div class="back-btn">
+        <i class="bi bi-arrow-left"></i>
+    </div>
+   <form action="#">
+    <h2 class="up-index">Sign up</h2>
+    <div class="input-wrapper">
+        <i class="bi bi-person-fill"></i> <input type="text" placeholder="First name">
+    </div>
+    <div class="input-wrapper">
+        <i class="bi bi-person-fill"></i> <input type="text" placeholder="Sur name">
+    </div>
+    <div class="input-wrapper">
+        <i class="bi bi-envelope-fill"></i> <input type="email" placeholder="Email">
+    </div>
+    <div class="input-wrapper">
+        <i class="bi bi-telephone-fill"></i> <input type="number" placeholder="Phone Number">
+    </div>
+    <div class="input-wrapper">
+        <i class="bi bi-lock-fill"></i> <input type="password" placeholder="Password">
+    </div>
+    <div class="input-wrapper">
+        <i class="bi bi-lock-fill"></i> <input type="password" placeholder="Re-type password">
+    </div>
+    <div class="input-wrapper">
+        <i class="bi bi-person-fill"></i> <input type="text" placeholder="User Name">
+    </div>
+
+    <div class="login-btn">
+        <button>SIGN UP</button>
+   </div>
+   </form>
+
+</div>
+
+    </div>
+    
+
+    <script>
+
+        $(".create-new").click(function(){
+  $(".signup-div").fadeIn('fast');
+  $(".login-div").css("opacity", ".2");
+$('#useraname').prop('disabled', true);
+$('#password').prop('disabled', true);
+$('.login-button').prop('disabled', true);
+});
+
+
+$(".back-btn").click(function(){
+  $(".signup-div").fadeOut('fast');
+  $(".login-div").css("opacity", ".9");
+$('#useraname').prop('disabled', false);
+$('#password').prop('disabled', false);
+$('.login-button').prop('disabled', false);
+});
+
+
+
+$(".bi-x").click(function(){
+  $(".bot-container").fadeOut('fast');
+});
+
+
+
+function confirmlogin(){
+
+    let useraname = document.getElementById("useraname").value;
+    let password = document.getElementById("password").value;
+    let correctusername = 'jone';
+    let correctpassword = 'jone'
+
+    if(useraname.toLowerCase() != correctusername.toLowerCase() || password.toLowerCase() != correctpassword.toLowerCase()){
+        $(".bot-container").fadeIn('fast');
+        $(".bot-container").css("visibility", "visible");
+        Swal.fire(
+  'Sorry',
+  'Password or username is not valid',
+  'error'
+)
+
+
+    }
+
+    else{
+        Swal.fire(
+            'Welcome',
+        'Wellcome Back',
+        'success'
+                )
+         document.getElementById("login").action = "studytools.html";
+    }
+}
+    </script>
+</body>
+</html>

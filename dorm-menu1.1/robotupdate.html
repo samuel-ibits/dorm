@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update bot</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="update.css">
+    <script src="sweetalert2.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+<script>
+    function message(){
+        Swal.fire(
+  'Success',
+  'an SMS has been sent to you containing the link you the updated version.',
+  'success'
+)
+    }
+</script>
+</head>
+<body>
+    <div class="cancle">
+        <i class="bi bi-x-lg"></i>         
+    </div>
+ 
+    <div class="bot-container">
+          <div class="robots">
+            <div class="new-text-div">
+               
+                  <h2>
+                    <span class="number">
+                20
+                    </span> Updates Available
+                  </h2>  
+              
+            </div> 
+            <div class="android">
+                <div class="button-div">
+                    <button onclick="message()">
+                        Update now
+                    </button>
+                </div> 
+                <div class="ears">
+                    <div class="left-ear">
+                    </div>
+                    <div class="right-ear">
+                    </div>
+                </div>
+                <div class="head"> 
+                    <div class="eyes"> 
+                        <div class="left_eye"></div> 
+                        <div class="right_eye"></div>
+              <div class="mouth"></div>
+                    </div> 
+                </div> 
+                <div class="upper_body"> 
+                    <div class="left_arm"></div> 
+                    <div class="torso">
+          
+            </div> 
+                    <div class="right_arm"></div> 
+                </div> 
+                <div class="lower_body"> 
+                    <div class="left_leg"></div> 
+                    <div class="right_leg"></div> 
+                </div> 
+            </div>
+        </div>
+   
+    </div>
+<script>
+    
+   
+    $(".bi-x-lg").click(function(){
+        $(".bot-container").fadeOut(1000);
+        $(".cancle").fadeOut(1000);
+      });
+</script> 
+<script src="sweetalert2.all.min.js"></script>   
+</body>
+</html>

@@ -28,8 +28,52 @@
 <link rel="stylesheet" href="update.css">
 <link rel="stylesheet" href="style.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<style>
+    .bi{
+        color: #333;
+    }
+
+    .bi-arrow-left{
+        color: #eee;
+    }
+
+    .bi-google{
+        color: inherit;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+    setTimeout(function(){ $(".loadingscreen").hide(); }, 5000);
+    setTimeout(function(){ $(".login-page").show(); });});
+</script>
+
 </head>
 <body>
+
+<div class="loadingscreen">
+    <div class="loadingscreen-elements">
+        <div class="loading-image">
+<img src="images/dorm_no_bg.png" alt="">
+        </div>
+        <p class="loading-text">
+            Dorm every students assistant
+        </p>
+        <div class="ball-animations">
+            <div class="ball ball-1"></div>
+            <div class="ball-2 ball-2"></div>
+            <div class="ball ball-3"></div>
+            <div class="ball-2 ball-4"></div>
+            <div class="ball ball-5"></div>
+            <div class="ball-2 ball-6"></div>
+            <div class="ball ball-7"></div>
+            <div class="ball ball-8"></div>
+            <div class="ball-2 ball-9"></div>
+            <div class="ball ball-10"></div>
+           
+        </div>
+    </div>
+</div>
 
 
     <div class="bot-container">
@@ -80,7 +124,7 @@
         <img src="images/dorm_no_bg.png" alt="">
     </div>
 
-    <form action="#" id="login">
+    <form action="" id="login">
 
         <h2>Sign in</h2>
 
@@ -156,7 +200,7 @@
     <script>
 
         $(".create-new").click(function(){
-  $(".signup-div").fadeIn(1000);
+  $(".signup-div").fadeIn('fast');
   $(".login-div").css("opacity", ".2");
 $('#useraname').prop('disabled', true);
 $('#password').prop('disabled', true);
@@ -165,7 +209,7 @@ $('.login-button').prop('disabled', true);
 
 
 $(".back-btn").click(function(){
-  $(".signup-div").fadeOut(1000);
+  $(".signup-div").fadeOut('fast');
   $(".login-div").css("opacity", ".9");
 $('#useraname').prop('disabled', false);
 $('#password').prop('disabled', false);
@@ -175,7 +219,7 @@ $('.login-button').prop('disabled', false);
 
 
 $(".bi-x").click(function(){
-  $(".bot-container").fadeOut(1000);
+  $(".bot-container").fadeOut('fast');
 });
 
 
@@ -188,7 +232,7 @@ function confirmlogin(){
     let correctpassword = 'jone'
 
     if(useraname.toLowerCase() != correctusername.toLowerCase() || password.toLowerCase() != correctpassword.toLowerCase()){
-        $(".bot-container").fadeIn(1000);
+        $(".bot-container").fadeIn('fast');
         $(".bot-container").css("visibility", "visible");
         Swal.fire(
   'Sorry',
@@ -205,7 +249,7 @@ function confirmlogin(){
         'Wellcome Back',
         'success'
                 )
-           window.open("studytools.html");
+         document.getElementById("login").action = "studytools.html";
     }
 }
     </script>

@@ -7,6 +7,15 @@
     --dormorange: #f96b03;
 }
 
+body{
+    background: rgb(252, 250, 250);
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Hubballi', cursive;
+    font-family: 'Hurricane', cursive;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
 
 .imagebg {
 	background-image: url("../images/dorm_no_bg.png");

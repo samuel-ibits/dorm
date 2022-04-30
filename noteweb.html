@@ -27,7 +27,18 @@
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+    .margintop{
+        color: #0688d3 ;
+    }
+.bi-journals{
+    color: #0688d3 ;
+}
 
+.dark-icon{
+    color: #333;
+}
+</style>
 </head>
 <body>
 
@@ -37,7 +48,7 @@
         </div>
 
         <div class="searchbar-for-menu">
-            <i class="bi bi-search"></i> <input type="search" name="" id="">
+            <i class="bi bi-search"></i> <input type="search" name="" id="" disabled>
         </div>
 
         <div class="bot-head">
@@ -54,11 +65,19 @@
     </div>
         <i class="bi bi-bell-fill"></i>
 </div>
+<div class="full-width">
+    <div class="notification">
+        <ul>
+            <li>Your  <span class="pronounds">Accomodia</span> request has returned results <span class="number">34</span></li>
+            <li>Your  <span class="pronounds">Market</span> request has returned results <span class="number">3</span></li>
+        </ul>
+    </div>
+</div>
 
 <div class="nav-bar">
     <ul class="nav-list">
         <li class="nav-item" title="Study Tools">
-            <a href="studytools.html" class="nav-link">
+            <a href="studytools.html" class="nav-link  active-nav-link">
                 <i class="bi bi-tools"></i>    
                 <p class="icon-title">Study tools</p>
             </a>  
@@ -102,17 +121,17 @@
             <i class="bi bi-tools toggletools"></i>
         </div>
         <div class="fade-tools">
-            <div class="tools active-tool">
-                <a href="/noteweb.html"> <i class="bi bi-journal"></i></a>    
-            </div>
             <div class="tools">
-                <a href="/notebook.html"><i class="bi bi-journal-bookmark"></i></a>      
+                <a href="notebook.html"> <i class="bi bi-journal"></i></a>    
+            </div>
+            <div class="tools active-tool">
+                <a href="noteweb.html"><i class="bi bi-journal-bookmark"></i></a>      
             </div>
             <div class="tools">
                 <a href=""><i class="bi bi-calculator"></i></a>
             </div>
             <div class="tools">
-                <a href="/library.html"><i class="fa fa-book" aria-hidden="true"></i></a>
+                <a href="library.html"><i class="fa fa-book" aria-hidden="true"></i></a>
             </div>
             <div class="tools">
                 <a href=""><i class="bi bi-pc-display"></i></a>
@@ -126,7 +145,7 @@
     <div class="login-form text-div">
         <form action="#">
             <div class="input-wrapper wider">
-                <i class="bi bi-search"></i> <input type="search"  placeholder="Search for a note">
+                <i class="bi bi-search dark-icon"></i> <input type="search"  placeholder="Search for a note">
             </div>
           
                     <div class="login-btn">
@@ -135,7 +154,7 @@
                         </button>
                     </div>
                    
-                    <a href="notebook.html">                       
+                    <a class="note-book-link" href="notebook.html">                       
                             <p class="margintop">
                                 <i class="bi bi-journals"></i> <span class="create-note-txt">PUBLISH A NOTE</span>
                             </p>
@@ -200,6 +219,10 @@
 
   $(".toggletools").click(function(){
   $(".fade-tools").fadeToggle();
+});
+
+$(".bi-bell-fill").click(function(){
+  $(".notification").fadeToggle('fast');
 });
         </script>
 </body>

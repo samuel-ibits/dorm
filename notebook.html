@@ -25,7 +25,23 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+    .bi-link{
+        color: #333;
+    }
 
+
+    .note-text-link{
+        margin: 0px 1rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+    .page-content{
+            height: 72vh;
+        }
+}
+
+</style>
 </head>
 <body>
     <div class="top-div">
@@ -36,7 +52,7 @@
         <div class="searchbar-for-menu">
             <i class="bi bi-search"></i> <input type="search" name="" id="" disabled>
         </div>
-
+       
         <div class="bot-head">
             <div class="ears-head">
                 <div class="left-ear-head"></div> 
@@ -51,11 +67,19 @@
     </div>
         <i class="bi bi-bell-fill"></i>
 </div>
+<div class="full-width">
+    <div class="notification">
+        <ul>
+            <li>Your  <span class="pronounds">Accomodia</span> request has returned results <span class="number">34</span></li>
+            <li>Your  <span class="pronounds">Market</span> request has returned results <span class="number">3</span></li>
+        </ul>
+    </div>
+</div>
 
 <div class="nav-bar">
     <ul class="nav-list">
         <li class="nav-item" title="Study Tools">
-            <a href="studytools.html" class="nav-link">
+            <a href="studytools.html" class="nav-link  active-nav-link">
                 <i class="bi bi-tools"></i>    
                 <p class="icon-title">Study tools</p>
             </a>  
@@ -99,17 +123,17 @@
             <i class="bi bi-tools toggletools"></i>
         </div>
         <div class="fade-tools">
-            <div class="tools">
-                <a href="/noteweb.html"> <i class="bi bi-journal"></i></a>    
-            </div>
             <div class="tools active-tool">
-                <a href="/notebook.html"><i class="bi bi-journal-bookmark"></i></a>      
+                <a href="notebook.html"> <i class="bi bi-journal"></i></a>    
+            </div>
+            <div class="tools">
+                <a href="noteweb.html"><i class="bi bi-journal-bookmark"></i></a>      
             </div>
             <div class="tools">
                 <a href=""><i class="bi bi-calculator"></i></a>
             </div>
             <div class="tools">
-                <a href="/library.html"><i class="fa fa-book" aria-hidden="true"></i></a>
+                <a href="library.html"><i class="fa fa-book" aria-hidden="true"></i></a>
             </div>
             <div class="tools">
                 <a href=""><i class="bi bi-pc-display"></i></a>
@@ -176,17 +200,21 @@
     </div> 
 </div> 
 
-<a href="/mynotes.html"><i class="bi bi-journal"></i> my notes</a>
+<a class="note-text-link" href="mynotes.html"><i class="bi bi-link"></i> my notes</a>
 </div>   
 <script>
     $(".create-note").click(function(){
-  $(".note-type").fadeOut(1000);
-  $(".hide").fadeIn(1000);
+  $(".note-type").fadeOut('fast');
+  $(".hide").fadeIn('fast');
 });
 
 $(".back-to-note-choice").click(function(){
-  $(".note-type").fadeIn(1000);
-  $(".hide").fadeOut(1000);
+  $(".note-type").fadeIn('fast');
+  $(".hide").fadeOut('fast');
+});
+
+$(".bi-bell-fill").click(function(){
+  $(".notification").fadeToggle('fast');
 });
 </script>
         <script src="js/popper.js"></script>
@@ -195,50 +223,47 @@ $(".back-to-note-choice").click(function(){
         <script src="https://unpkg.com/@popperjs/core@2"></script>
         <script src="https://unpkg.com/tippy.js@6"></script>
         <script>
-              tippy('.bi-bell-fill', {
-    theme: 'tomato',
-    content: '<p class="usermessage">Dorm User Notification</strong>',
-  allowHTML: true,
-  });
-
+             
   tippy('.bot-head', {
     theme: 'tomato',
-    content: '<p class="dormbotmessage">Hi, I"m your Dorm assistant, Always, here to help.</strong>',
+    content: '<p class="dormbotmessage">Hi, I"m your Dorm assistant, Always, here to help.</p>',
   allowHTML: true,
   });
 
   tippy('.bi-journal', {
     theme: 'tomato',
-    content: '<p class="">Note Book</strong>',
+    content: '<p class="">Note Book</p>',
   allowHTML: true,
   });
 
   tippy('.bi-journal-bookmark', {
     theme: 'tomato',
-    content: '<p class="">Note Web.</strong>',
+    content: '<p class="">Note Web.</p>',
   allowHTML: true,
   });
   tippy('.bi-calculator', {
     theme: 'tomato',
-    content: '<p class="">CGPA calculator.</strong>',
+    content: '<p class="">CGPA calculator.</p>',
   allowHTML: true,
   });
   tippy('.fa-book', {
     theme: 'tomato',
-    content: '<p class="">Library.</strong>',
+    content: '<p class="">Library.</p>',
   allowHTML: true,
   });
   tippy('.bi-pc-display', {
     theme: 'tomato',
-    content: '<p class="">CBT Test.</strong>',
+    content: '<p class="">CBT Test.</p>',
   allowHTML: true,
   });
   
   tippy('.fa-users', {
     theme: 'tomato',
-    content: '<p class="dormbotmessage">Resource Team.</strong>',
+    content: '<p class="dormbotmessage">Resource Team.</p>',
   allowHTML: true,
   });
+
+
 
   $(".toggletools").click(function(){
   $(".fade-tools").fadeToggle();

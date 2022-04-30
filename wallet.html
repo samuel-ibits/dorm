@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="menu/css/styles.css">
     <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css-2/bot.css">
+    <link rel="stylesheet" href="css/wallet.css">
     <link rel="stylesheet" href="css-2/style.css">
     <script src="sweetalert2.min.js"></script>
     <link rel="stylesheet" href="sweetalert2.min.css">
@@ -23,71 +24,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="update.css">
     <link rel="stylesheet" href="style.css">
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
        <!--=============== BOXICONS ===============-->
        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
        <!--=============== CSS ===============-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
-    function usernameorprofilename(){
-let password = document.getElementById('password').value;
-
-if(password.length != 11){
-    Swal.fire(
-  'Invalid',
-  'please check phone number and try again',
-  'warning'
-)
-}
-
-else{
-
-    const swalWithBootstrapButtons = Swal.mixin({
-  customClass: {
-    confirmButton: 'btn btn-success',
-    cancelButton: 'btn btn-danger'
-  },
-  buttonsStyling: false
-})
-
-swalWithBootstrapButtons.fire({
-  title: 'Prefered Identity',
-  text: "Which ID do you want to send this text message with ?",
-  icon: 'question',
-  showCancelButton: true,
-  confirmButtonText: 'Username',
-  cancelButtonText: 'Profilename',
-  reverseButtons: true
-}).then((result) => {
-  if (result.isConfirmed) {
-    swalWithBootstrapButtons.fire(
-      'Sent!',
-      'Your text has been sent in your user name.',
-      'success',
-       )
-  } else if (
-    result.dismiss === Swal.DismissReason.cancel
-  ) {
-    swalWithBootstrapButtons.fire(
-      'Sent!',
-      'Your text has been sent in your profile name.',
-      'success',   
-     
-    )
-  }
-})
-alert('You have 3/4 text messages left')
-
     
-}
-    }
 </script>
 
 <style>
-  .input-wrapper-text-area{
-    width: 90vw;
-  }
+
+.page-content{
+          padding: 1rem;
+        }
   @media only screen and (max-width: 600px) 
     {
     .page-content{
@@ -95,7 +46,20 @@ alert('You have 3/4 text messages left')
             margin-top:4.5rem;
         }
         }
+.bi-wallet2{
+    color: inherit;
+}
+.bi-cash-stack{
+    color: inherit;   
+}
 
+.bi-lightning-charge-fill{
+    color: inherit; 
+}
+
+.bi-check-lg{
+    color: inherit;
+}
 </style>
 </head>
 <body>
@@ -128,12 +92,12 @@ alert('You have 3/4 text messages left')
   <i class="bi bi-bell-fill"></i>
 </div>
 <div class="full-width">
-  <div class="notification">
-      <ul>
-          <li>Your  <span class="pronounds">Accomodia</span> request has returned results <span class="number">34</span></li>
-          <li>Your  <span class="pronounds">Market</span> request has returned results <span class="number">3</span></li>
-      </ul>
-  </div>
+    <div class="notification">
+        <ul>
+            <li>Your  <span class="pronounds">Accomodia</span> request has returned results <span class="number">34</span></li>
+            <li>Your  <span class="pronounds">Market</span> request has returned results <span class="number">3</span></li>
+        </ul>
+    </div>
 </div>
 
 <div class="nav-bar">
@@ -151,7 +115,7 @@ alert('You have 3/4 text messages left')
       </a>      
   </li>
   <li class="nav-item" title="Title">
-      <a href="texter.html" class="nav-link active-nav-link">
+      <a href="texter.html" class="nav-link">
           <i class="bi bi-chat-left-text-fill"></i>   
           <p class="icon-title">Texter</p>
       </a>               
@@ -169,7 +133,7 @@ alert('You have 3/4 text messages left')
       </a>              
   </li>
   <li class="nav-item" title="Setting">
-      <a href="setting.html" class="nav-link">
+      <a href="setting.html" class="nav-link active-nav-link">
           <i class="bi bi-gear-fill"></i>   
           <p class="icon-title">Setting</p>
       </a>              
@@ -178,32 +142,62 @@ alert('You have 3/4 text messages left')
 </div>
 
 <div class="page-content">
+    <div class="firsttdiv">
+        <p class="greet-user">Hi, <span class="user-name">John Doe</span></p>
+    </div>
 
-  <div class="login-form text-div">
-    <form action="#">
+<div class="secondtdiv">
+<span class="type-of-account"><i class="bi bi-wallet2"></i> Dorm wallet</span>
+<h1 class="money-available"><i class="bi bi-cash-stack"></i>30,000</h1>
+<p class="sub-text">Available Balance</p>
+</div>
 
-        <div class="input-wrapper-text-area"> 
-            <textarea name="" id="" cols="30" rows="8" placeholder="type in your message"> </textarea>
+<div class="thirddiv">
+    <p class="big-text">
+        Subscription plans
+    </p>
+    <div class="third-divcard">
+ 
+<!--start-->
+<div class="third-div-card">
+        <div class="third-div-card-icon">
+            <i class="bi bi-lightning-charge-fill"></i>
         </div>
-
-
-        <div class="input-wrapper">
-            <i class="bi bi-telephone-fill"></i> <input type="number" id="password" placeholder="receiver phone number">
+        <div class="third-div-card-text">
+            <p class="bolt">Bolt Boost</p>
+            <p class="sub-third-div">
+                Bolt Boost increase the priority of your product by showing more 
+                user to increase the probability of you selling it.
+            </p>
         </div>
-        <div class="forgot-password">
-            Select receiver from contact  <span class="create-new">(NEW)</span>
+        <div class="third-div-card-button">
+            <button class="sub bolt-sub-btn">Subscribe</button>
         </div>
+</div>
+    <div class="sub-card bolt-sub">
+        <div class="radio-toolbar">
+            <input type="radio" id="radio1" name="radios" value="all" checked>
+            <label for="radio1">Weekly</label>
+        
+            <input type="radio" id="radio2" name="radios" value="false">
+            <label for="radio2">Mothly</label>
+        
+            <input type="radio" id="radio3" name="radios" value="true">
+            <label for="radio3">Anually</label>
 
-        <div class="login-btn">
-            <button onclick="usernameorprofilename()" class="login-button">
-                SEND
-            </button>
-        </div>
+            <button class="confirm" onclick="confirmorder()"><i class="bi bi-check-lg"></i> Confirm</button>
+        </div>   
+    </div>
 
-     </form>
+    <!--end-->
+</div>
+
+
 
 </div>
 
+
+</div>
 </div>
         
 
@@ -215,22 +209,22 @@ alert('You have 3/4 text messages left')
         <script src="https://unpkg.com/tippy.js@6"></script>
         <script>
      
-$(".bi-x").click(function(){
-  $(".bot-container-2").fadeOut("fast");
-});
+     $(".bolt-sub-btn").click(function(){
+         $(".bolt-sub").fadeToggle("fast");
+         }); 
 
-$(".bi-bell-fill").click(function(){
+         function confirmorder(){
+             
+         Swal.fire(
+  'Success',
+  'Transaction confirmed',
+  'success'
+)
+         }
+
+         $(".bi-bell-fill").click(function(){
   $(".notification").fadeToggle('fast');
 });
-
-
-
-  tippy('.bot-head', {
-    content: 'My tooltip!',
-    theme: 'tomato',
-    content: '<p class="dormbotmessage">Hi, I"m your Dorm assistant, Always, here to help.</strong>',
-  allowHTML: true,
-  });
         </script>
      
 </body>

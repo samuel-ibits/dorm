@@ -10,15 +10,152 @@
 *{
     margin: 0;
     padding: 0;
-    transition: .5s linear;
+    transition: .1s linear;
 }
+body{
+    background: rgb(252, 250, 250);
+    background: rgb(252, 250, 250);
+    font-family: 'Dosis', sans-serif;
+font-family: 'Fredoka', sans-serif;
+font-family: 'Hubballi', cursive;
+font-family: 'Hurricane', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+.bi-question-lg{
+    animation: rot .5s linear infinite alternate;
+
+}
+
+
+@keyframes rot{
+    0%{
+      transform: rotate(-10deg); 
+    }
+
+    100%{
+       transform: rotate(10deg);
+    }
+}
+
+
+
+.open-request{
+    float: right;
+}
+
+.request-div-holder{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #020202;
+    opacity: .9;
+    z-index: 9999;
+}
+
+.request-div-holder{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #020202;
+    opacity: .96;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.request-div-inner-div{
+    margin-top: 4rem;
+    padding: 1rem;
+    width: fit-content;
+    height: auto;
+    background: #eee;
+}
+
+.spec-div{
+    display: flex;
+    margin: .5rem 0px;
+}
+
+.spec-div .number{
+    width: 4rem;
+    margin: 0px 1rem;
+    outline: none;
+    border: none;
+}
+
+.spec-div .name{
+    border: none;
+    padding: .3rem;
+    outline: 2px solid var(--dormblue);
+}
+
+.title-text{
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--dormblue);
+    text-align: center;
+    text-shadow: 0px 1px 1px #aaa;
+}
+
+
+.spec-label{
+    font-weight: 600;
+    font-size: .7rem;
+    color: var(--dormblue);
+    text-shadow: 0px 1px 1px #aaa;
+}
+
+.spec-wrapper textarea{
+    padding: .5rem;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.spec-wrapper button{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: var(--dormblue);
+    color: #eee;
+    padding: .3rem;
+    box-shadow: 0px 2px 3px #333;
+    text-shadow: 0px 2px 3px #333;
+}
+
+
+
+.container {
+    position: relative;
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.full-screen-market-card{
+    width: 100%;
+    height: 77vh;
+    background-size:  cover;
+    scroll-snap-align: start;
+}
+
+
+
 
 .market-tools{
     width: fit-content;
     height: auto;
-    margin-left: 90vw;
-    margin-top: 57vh;
-    position: fixed;
+    margin-left: 87vw;
+    margin-top: 30vh;
+    position: absolute;
     z-index: 99;
 }
 
@@ -27,26 +164,28 @@
 }
 .market-tools ul li {
     margin-top: 1rem;
+    text-shadow: 0px 2px 3px #333;
 }
 
 .market-tools ul li i{
-    color: var(--white);
+    color: var(--dormblue);
     font-size: 1.2rem;
-    transition: .5s linear;
+    transition: .1s linear;
 }
 
 .market-tools ul li i:hover{
     color: var(--dormorange);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .big{
     transform: scale(1.5);
 }
 
+
 .fullscreen-display{
     width: 100%;
-    height: 100vh;
+    height: 75vh;
 }
 
 .fullscreen-display img{
@@ -65,12 +204,12 @@
 }
 
 .price-of-item{
-    font-weight: bold;
+    font-weight: 100;
 }
 
 .item-content button{
     border: none;
-    width: 7rem;
+    width: fit-content;
     padding: .5rem;  
     background: var(--white);
     color: var(--darkcolor);
@@ -84,7 +223,7 @@
 
 .swiper {
     width: 100%;
-    height: 100vh;
+    height: 100%;
   }
 
   .swiper-slide {
@@ -113,3 +252,34 @@
     height: 100%;
     object-fit: cover;
   }
+
+  .buy-btn{
+      padding: .5rem;
+      border: none;
+      outline: none;
+      background: var(--dormblue);
+      color: #eee;
+      text-shadow: 0px 2px 3px #333;
+      margin: .5rem 0px;
+      display: block;
+  }
+
+  .text-about-sold-item{
+      color: #eee;
+      width: 80%;
+      margin-top: -13rem;
+      z-index: 99;
+      position: absolute;
+      padding: .3rem;
+      text-shadow: 0px 2px 3px #333;
+  }
+
+  .price-of{
+      background: var(--dormblue);
+      width: fit-content;
+      padding: .4rem;
+      box-shadow: 0px 2px 3px #333;
+  }
+
+
+  

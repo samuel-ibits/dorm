@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dorm - Course review</title>
-    <link rel="stylesheet" href="menu/css/styles.css"> 
     <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css-2/bot.css">
     <link rel="stylesheet" href="css-2/style.css">
@@ -21,6 +20,7 @@
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Fredoka:wght@400;500&family=Hubballi&family=Hurricane&family=Indie+Flower&family=M+PLUS+Rounded+1c:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
       <!--=============== BOXICONS ===============-->
@@ -33,8 +33,46 @@
    
     <!-- start vanillatop plugin -->
     <link rel="stylesheet" href="dist/vanillatop.min.css">
-    
- 
+    <title>Dorm - Course review</title>
+    <style>
+ .input-wrapper-text-area{
+    width: 90vw;
+    display: flex;
+  }
+
+  .page-content{
+            padding: 0px;
+            margin: 0px;
+        }
+    @media only screen and (max-width: 600px) 
+    {
+    .page-content{
+            height: 70vh;
+            margin-top:4.5rem;
+        }
+        }
+
+        @media only screen and (min-width: 601px) 
+    {
+    .page-content{
+            height: 100%;
+            margin-top:4.5rem;
+            margin-left: 6rem;
+        }
+
+        .input-wrapper-text-area{
+    width: 80vw;
+    display: flex;
+  }
+        }
+
+        @media only screen and (min-width: 600px)  {
+.search-wrapper{
+    display: none;
+}
+}
+
+        </style>
 </head>
 <body>
     <!--=============== HEADER ===============-->
@@ -46,7 +84,7 @@
         </div>
 
         <div class="searchbar-for-menu">
-            <i class="bi bi-search"></i> <input type="search" placeholder="Search e.g previous review, user name etc" name="" id="">
+            <i class="bi bi-search"></i> <input type="search" placeholder="Search e.g previous review, user name etc" name="" id=""  oninput = "Search((this.value).toLowerCase())">
         </div>
 
   
@@ -64,6 +102,14 @@
     </div>
 
         <i class="bi bi-bell-fill"></i>
+</div>
+<div class="full-width">
+    <div class="notification">
+        <ul>
+            <li>Your  <span class="pronounds">Accomodia</span> request has returned results <span class="number">34</span></li>
+            <li>Your  <span class="pronounds">Market</span> request has returned results <span class="number">3</span></li>
+        </ul>
+    </div>
 </div>
 
 <div class="nav-bar">
@@ -110,9 +156,8 @@
 <div class="page-content">
     <div class="white">
         <div class="post">
-            <div class="cancel">
-             <i class="bi bi-x"></i>
-            </div> 
+            <i class="bi bi-x-lg" style="color: #f96b03; margin-left: 1rem;"></i>
+            
                       
              <div class="login-form widt text-div">
                  <form action="#">
@@ -121,8 +166,8 @@
                      </div>
                     
                      <div class="input-wrapper-text-area"> 
-                         <textarea name="" id="" cols="30" rows="8" placeholder="Your post"> </textarea>
-                     </div>
+                        <textarea name="" id="" cols="30" rows="8" placeholder="Comment...."> </textarea>
+                    </div>
                      <div class="review-items">
                          <ul>
                              <li><i class="bi bi-mic-fill"></i></li>
@@ -144,10 +189,12 @@
     <div class="whiteback"></div>
     <div class="comment-white">
         <div class="comments">
+
+            <i class="bi bi-x-lg remove-comment" style="color: #f96b03;position: relative;"></i>
             <!--comment card start-->
             <div class="card comment-card">
                 <div class="profile-review-image">
-                    <img src="./images/avtr4.png" alt="">
+                    <img src="images/avtr4.png" alt="">
                 </div>
                 <p class="username-review">Jane Doe</p>
                 
@@ -158,8 +205,8 @@
                 
                 <div class="reactions">
                     <ul>
-                        <li><i class="fa fa-thumbs-up" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-thumbs-down" aria-hidden="true"></i></li>
+                        <li><i class="bi bi-emoji-smile-fill"></i></li>
+                        <li><i class="bi bi-emoji-frown-fill"></i></li>
                        </ul>
                 </div>
                     </div>
@@ -167,7 +214,7 @@
             <!--comment card start-->
             <div class="card comment-card">
                 <div class="profile-review-image">
-                    <img src="./images/avtr4.png" alt="">
+                    <img src="images/avtr4.png" alt="">
                 </div>
                 <p class="username-review">Jane Doe</p>
                 
@@ -178,15 +225,15 @@
                 
                 <div class="reactions">
                     <ul>
-                        <li><i class="fa fa-thumbs-up" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-thumbs-down" aria-hidden="true"></i></li>
+                        <li><i class="bi bi-emoji-smile-fill"></i></li>
+                        <li><i class="bi bi-emoji-frown-fill"></i></li>
                        </ul>
                 </div>
                     </div>
             <!--comment card end--><!--comment card start-->
             <div class="card comment-card">
                 <div class="profile-review-image">
-                    <img src="./images/avtr4.png" alt="">
+                    <img src="images/avtr4.png" alt="">
                 </div>
                 <p class="username-review">Jane Doe</p>
                 
@@ -197,15 +244,15 @@
                 
                 <div class="reactions">
                     <ul>
-                        <li><i class="fa fa-thumbs-up" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-thumbs-down" aria-hidden="true"></i></li>
+                        <li><i class="bi bi-emoji-smile-fill"></i></li>
+                        <li><i class="bi bi-emoji-frown-fill"></i></li>
                        </ul>
                 </div>
                     </div>
             <!--comment card end--><!--comment card start-->
             <div class="card comment-card">
                 <div class="profile-review-image">
-                    <img src="./images/avtr4.png" alt="">
+                    <img src="images/avtr4.png" alt="">
                 </div>
                 <p class="username-review">Jane Doe</p>
                 
@@ -216,31 +263,35 @@
                 
                 <div class="reactions">
                     <ul>
-                        <li><i class="fa fa-thumbs-up" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-thumbs-down" aria-hidden="true"></i></li>
+                        <li><i class="bi bi-emoji-smile-fill"></i></li>
+                        <li><i class="bi bi-emoji-frown-fill"></i></li>
                        </ul>
                 </div>
                     </div>
             <!--comment card end--><!--comment card start-->
             <div class="card comment-card">
                 <div class="profile-review-image">
-                    <img src="./images/avtr4.png" alt="">
+                    <img src="images/avtr4.png" alt="">
                 </div>
                 <p class="username-review">Jane Doe</p>
                 
                 <p class="comment-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odio eum error earum illum quaerat,
-                     vel at repudiandae eos obcaecati fuga mollitia debitis a vitae modi unde suscipit quisquam nemo.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
                 
                 <div class="reactions">
                     <ul>
-                        <li><i class="fa fa-thumbs-up" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-thumbs-down" aria-hidden="true"></i></li>
+                        <li><i class="bi bi-emoji-smile-fill"></i></li>
+                        <li><i class="bi bi-emoji-frown-fill"></i></li>
                        </ul>
                 </div>
                     </div>
             <!--comment card end-->
+
+            <div class="input-comment">
+                <input type="text" name="" id="" placeholder="comment.....">
+                <button><i class="bi bi-send-fill"></i> Send</button>
+            </div>
                 </div>
     </div>
  
@@ -264,19 +315,21 @@
 </div>
 <div class="search-wrapper">
     <i class="bi bi-search"></i>
-    <input type="search" class="search-input" placeholder="search e.g previous review, user name etc" name="" id="">
+    <input type="search" class="search-input" placeholder="search e.g previous review, user name etc" name="" id=""  oninput = "Search((this.value).toLowerCase())">
  </div>
 
-
+<div class="create-review-btn-holder">
+    
  <button class="create-review-btn">
     <i class="bi bi-plus"></i> Create Review
  </button>
+</div>
 
 <div class="review-div">
  <!--course review card start-->
     <div class="card">
 <div class="profile-review-image">
-    <img src="./images/avtr4.png" alt="">
+    <img src="images/avtr4.png" alt="">
 </div>
 <p class="username-review">Jane Doe</p>
 <p class="tag">#ALL_LIVES_MATTER</p>
@@ -287,13 +340,13 @@
     cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
 </p>
 <div class="post-image">
-    <img src="/images/house 3.jpg" alt="">
+    <img src="images/house 4.jpg" alt="">
 </div>
 
 <div class="reactions">
     <ul>
-        <li><i class="fa fa-thumbs-up" aria-hidden="true"></i></li>
-        <li><i class="fa fa-thumbs-down" aria-hidden="true"></i></li>
+        <li><i class="bi bi-emoji-smile-fill"></i></li>
+        <li><i class="bi bi-emoji-frown-fill"></i></li>
         <li><i class="fa fa-comment" aria-hidden="true"></i></li>
     </ul>
 </div>
@@ -302,12 +355,18 @@
 <!--course review card start-->
 <div class="card">
     <div class="profile-review-image">
-        <img src="./images/avtr4.png" alt="">
+        <img src="images/avtr4.png" alt="">
     </div>
     <p class="username-review">Jane Doe</p>
     <p class="tag">#ALL_LIVES_MATTER</p>
     <p class="review-body">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
+        voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
+        cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.orem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
+        voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
+        cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.orem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
         voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
         cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
@@ -316,8 +375,8 @@
     
     <div class="reactions">
         <ul>
-            <li><i class="fa fa-thumbs-up" aria-hidden="true"></i></li>
-            <li><i class="fa fa-thumbs-down" aria-hidden="true"></i></li>
+            <li><i class="bi bi-emoji-smile-fill"></i></li>
+            <li><i class="bi bi-emoji-frown-fill"></i></li>
             <li><i class="fa fa-comment" aria-hidden="true"></i></li>
         </ul>
     </div>
@@ -326,9 +385,9 @@
 <!--course review card start-->
 <div class="card">
     <div class="profile-review-image">
-        <img src="./images/avtr4.png" alt="">
+        <img src="images/avtr4.png" alt="">
     </div>
-    <p class="username-review">Jane Doe</p>
+    <p class="username-review">James Doe</p>
     <p class="tag">#ALL_LIVES_MATTER</p>
     <p class="review-body">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
@@ -337,13 +396,13 @@
         cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
     </p>
     <div class="post-image">
-        <img src="/images/house 3.jpg" alt="">
+        <img src="images/house 3.jpg" alt="">
     </div>
     
     <div class="reactions">
         <ul>
-            <li><i class="fa fa-thumbs-up" aria-hidden="true"></i></li>
-            <li><i class="fa fa-thumbs-down" aria-hidden="true"></i></li>
+            <li><i class="bi bi-emoji-smile-fill"></i></li>
+            <li><i class="bi bi-emoji-frown-fill"></i></li>
             <li><i class="fa fa-comment" aria-hidden="true"></i></li>
         </ul>
     </div>
@@ -352,9 +411,9 @@
 <!--course review card start-->
 <div class="card">
     <div class="profile-review-image">
-        <img src="./images/avtr2.png" alt="">
+        <img src="images/avtr2.png" alt="">
     </div>
-    <p class="username-review">Jane Doe</p>
+    <p class="username-review">John Doe</p>
     <p class="tag">#ALL_LIVES_MATTER</p>
     <p class="review-body">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
@@ -363,13 +422,13 @@
         cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
     </p>
     <div class="post-image">
-        <img src="/images/house 4.jpg" alt="">
+        <img src="images/house 4.jpg" alt="">
     </div>
     
     <div class="reactions">
         <ul>
-            <li><i class="fa fa-thumbs-up" aria-hidden="true"></i></li>
-            <li><i class="fa fa-thumbs-down" aria-hidden="true"></i></li>
+            <li><i class="bi bi-emoji-smile-fill"></i></li>
+            <li><i class="bi bi-emoji-frown-fill"></i></li>
             <li><i class="fa fa-comment" aria-hidden="true"></i></li>
         </ul>
     </div>
@@ -420,22 +479,54 @@ $(".search-wrapper").click(function(){
 $(".most-searched-divv").fadeToggle();
 });
 
+$(".page-content").click(function(){
+$(".most-searched-divv").fadeOut("fast");
+});
+
 
 $(".create-review-btn").click(function(){
 $(".white").fadeIn();
+$(".review-div").fadeOut('fast');
 });
-      
 
-$(".cancel").click(function(){
+
+$(".bi-x-lg").click(function(){
 $(".white").fadeOut();
+$(".comment-div").fadeOut();
+$(".review-div").fadeIn('fast');
 });
 
 
 $(".fa-comment").click(function(){
-$(".review-div").fadeIn();
-$(".search-wrapper").fadeIn();
-$(".create-review-btn").fadeIn();
+$(".comments").fadeIn('fast');
+$(".review-div").fadeOut('fast');
+$(".search-wrapper").fadeOut('fast');
+$(".create-review-btn").fadeOut('fast');
 });
+
+
+
+$(".remove-comment").click(function(){
+$(".comments").fadeOut('fast');
+$(".review-div").fadeIn('fast');
+$(".search-wrapper").fadeIn('fast');
+$(".create-review-btn").fadeIn('fast');
+});
+
+$(".bi-bell-fill").click(function(){
+  $(".notification").fadeToggle('fast');
+});
+
+function Search(item){
+            var collection = document.getElementsByClassName("card");
+            for (i = 0;i < collection.length; i++){
+                if (((collection[i].innerHTML).toLowerCase()).indexOf(item) > -1) {
+                    collection[i].style.display = "block";
+                    } else {
+                        collection[i].style.display = "none";
+                        }
+            }
+    }
 
 
             </script>

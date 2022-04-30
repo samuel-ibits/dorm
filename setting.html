@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="menu/css/styles.css">
         
     <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css-2/style.css">
     <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
@@ -26,6 +27,14 @@
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <style>
+          @media only screen and (max-width: 600px) {
+    .page-content{
+            height: 72vh;
+        }
+}
+
+    </style>
 </head>
 <body>
 
@@ -35,7 +44,7 @@
         </div>
 
         <div class="searchbar-for-menu">
-            <i class="bi bi-search"></i> <input type="search" name="" id="">
+            <i class="bi bi-search"></i> <input type="search" name="" id="" disabled>
         </div>
 
         <div class="bot-head">
@@ -51,6 +60,14 @@
             <div class="mouth-head"></div>            
     </div>
         <i class="bi bi-bell-fill"></i>
+</div>
+<div class="full-width">
+    <div class="notification">
+        <ul>
+            <li>Your  <span class="pronounds">Accomodia</span> request has returned results <span class="number">34</span></li>
+            <li>Your  <span class="pronounds">Market</span> request has returned results <span class="number">3</span></li>
+        </ul>
+    </div>
 </div>
 
 <div class="nav-bar">
@@ -108,6 +125,42 @@
     </div>
 </a>
 
+<a href="wallet.html"  class="studytool-card-link" rel="noopener noreferrer">
+    <div class="studytool-cards">
+        <div class="card-icon">
+            <i class="bi bi-wallet"></i>
+        </div>
+
+        <div class="about-studytool-text">
+            <h2>WALLET</h2>
+        </div>
+    </div>
+</a>
+
+
+<a href="agent.html"  class="studytool-card-link" rel="noopener noreferrer">
+    <div class="studytool-cards">
+        <div class="card-icon">
+            <i class="bi bi-graph-up-arrow"></i>
+        </div>
+
+        <div class="about-studytool-text">
+            <h2>MANAGE PRODUCTS</h2>
+        </div>
+    </div>
+</a>
+
+<a href="resourceteam.html"  class="studytool-card-link" rel="noopener noreferrer">
+    <div class="studytool-cards">
+        <div class="card-icon">
+            <i class="fa fa-users" aria-hidden="true"></i>
+        </div>
+
+        <div class="about-studytool-text">
+            <h2>RESOURCE TEAM</h2>
+        </div>
+    </div>
+</a>
 
 <a href="formpage.html"  class="studytool-card-link" rel="noopener noreferrer">
     <div class="studytool-cards">
@@ -170,6 +223,10 @@
           },
         });
 
+        $(".bi-bell-fill").click(function(){
+  $(".notification").fadeToggle('fast');
+});
+
         tippy('#addhouse', {
   
             theme: 'translucent',
@@ -206,12 +263,6 @@ $(".bi-box-arrow-left").click(function(){
   $(".house-wrapper").fadeIn();
 });
 
-tippy('.bi-bell-fill', {
-    content: 'My tooltip!',
-    theme: 'tomato',
-    content: '<p class="usermessage">Dorm User Notification</strong>',
-  allowHTML: true,
-  });
 
   tippy('.bot-head', {
     content: 'My tooltip!',

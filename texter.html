@@ -87,7 +87,26 @@ alert('You have 3/4 text messages left')
 <style>
   .input-wrapper-text-area{
     width: 90vw;
+<<<<<<< HEAD
   }
+=======
+ 
+  }
+  @media only screen and (max-width: 600px) 
+    {
+    .page-content{
+            height: 70vh;
+            margin-top:2rem;
+        }
+
+        .input-wrapper-text-area{
+          margin-top: 1rem;
+    width: 90vw;
+ height: 15rem;
+  }
+        }
+
+>>>>>>> main
 </style>
 </head>
 <body>
@@ -119,6 +138,17 @@ alert('You have 3/4 text messages left')
 
   <i class="bi bi-bell-fill"></i>
 </div>
+<<<<<<< HEAD
+=======
+<div class="full-width">
+  <div class="notification">
+      <ul>
+          <li>Your  <span class="pronounds">Accomodia</span> request has returned results <span class="number">34</span></li>
+          <li>Your  <span class="pronounds">Market</span> request has returned results <span class="number">3</span></li>
+      </ul>
+  </div>
+</div>
+>>>>>>> main
 
 <div class="nav-bar">
 <ul class="nav-list">
@@ -134,7 +164,11 @@ alert('You have 3/4 text messages left')
           <p class="icon-title">Course review</p>
       </a>      
   </li>
+<<<<<<< HEAD
   <li class="nav-item active-nav-link" title="Title">
+=======
+  <li class="nav-item" title="Title">
+>>>>>>> main
       <a href="texter.html" class="nav-link active-nav-link">
           <i class="bi bi-chat-left-text-fill"></i>   
           <p class="icon-title">Texter</p>
@@ -200,6 +234,7 @@ alert('You have 3/4 text messages left')
         <script>
      
 $(".bi-x").click(function(){
+<<<<<<< HEAD
   $(".bot-container-2").fadeOut(1000);
 });
 
@@ -210,6 +245,16 @@ tippy('.bi-bell-fill', {
     content: '<p class="usermessage">Dorm User Notification</strong>',
   allowHTML: true,
   });
+=======
+  $(".bot-container-2").fadeOut("fast");
+});
+
+$(".bi-bell-fill").click(function(){
+  $(".notification").fadeToggle('fast');
+});
+
+
+>>>>>>> main
 
   tippy('.bot-head', {
     content: 'My tooltip!',

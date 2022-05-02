@@ -2,11 +2,11 @@ Clonning this repository means you accept not to pose as a security treat or cau
 Clonning this repository means you accept not to give out or sell product information and technology to any one without permission
 
 
-#please note: Create new braches to solve new problems  and leave merging to me
+#please note: Create new branches to solve new problems  and leave merging to me
 #ask questions
 
 
-install and setup git bash and destiop
+install and setup git bash and destop
 
 clone the repository to your system
 https://github.com/samuel-ibits/dorm.git

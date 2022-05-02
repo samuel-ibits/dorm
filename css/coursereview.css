@@ -24,8 +24,25 @@ body{
     background: rgb(252, 250, 250);
 }
 
+<<<<<<< HEAD
 .most-searched-divv{
     width: 100%;
+=======
+.number-of-ups{
+    margin-right: .3rem;
+}
+
+.number-of-downs{
+    margin-right: .3rem;
+}
+
+.number-of-comments{
+    margin-right: .3rem;
+}
+
+.most-searched-divv{
+    width: 100%;  
+>>>>>>> main
     height: auto;
     background: var(--white);
     padding: .5rem;
@@ -35,12 +52,20 @@ body{
     position: absolute;
     display: none;
     z-index: 999;
+<<<<<<< HEAD
+=======
+    margin-top: 2.3rem;
+>>>>>>> main
 }
 
 .comment-div
 {
     width: 100vw;
+<<<<<<< HEAD
     height: 100vh;
+=======
+    height: 90vh;
+>>>>>>> main
     position: fixed;
     z-index: 999999;
     display: none;
@@ -75,22 +100,38 @@ body{
 }
 
 
+<<<<<<< HEAD
 .create-review-btn{
     margin-top: 13vh;
     border: none;
     padding: .3rem;
+=======
+
+.create-review-btn{
+    margin-top: 13vh;
+    border: none;
+    padding: .6rem;
+>>>>>>> main
     background: var(--dormorange);
     color: var(--white);
     border-radius: 1rem;
     z-index: 99;
 }
 
+<<<<<<< HEAD
 .page-content{
     padding: .5rem;
 }
 
 .card{
     width: 100%;
+=======
+
+
+
+.card{
+    width: 95%;
+>>>>>>> main
     height: fit-content;
     border-radius: .5rem;
     border: 1px solid var(--dormblue);
@@ -173,14 +214,48 @@ body{
 .comments{
     width: 80%;
     height: auto;
+<<<<<<< HEAD
     background: var(--white);
+=======
+>>>>>>> main
     z-index: 99999;
    opacity: .95;
    margin-left: 2rem;
    overflow-y: scroll;
    display: none;
+<<<<<<< HEAD
 }
 
+=======
+  
+}
+
+.input-comment{
+    height: auto;
+    width: 100%;
+    margin: 1rem 0px;
+    background: transparent;
+}
+
+.input-comment input{
+    border: 2px solid var(--dormblue);
+    width: 100%;
+    padding: .5rem;
+    background: transparent;
+    outline: none;
+}
+
+.input-comment button{
+    padding: .5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #eee;
+    background: var(--dormblue);
+}
+
+
+>>>>>>> main
 
 /*.comment-white{
     width: 110%;
@@ -191,7 +266,10 @@ body{
     background: var(--white);
     z-index: 9999999;
    opacity: .95;
+<<<<<<< HEAD
 */
+=======
+>>>>>>> main
 
 /*
 .whiteback{
@@ -211,6 +289,7 @@ body{
 }
 
 .white{
+<<<<<<< HEAD
     width: 104%;
     height: 100%;
     margin-left: -1rem;
@@ -224,6 +303,24 @@ body{
 
 .post{
     width: 90%;
+=======
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    padding: 1rem;
+    background: var(--white);
+    z-index: 99999;
+   opacity: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   display: none; 
+   margin-top: 4rem;
+}
+
+.post{
+    width: 100%;
+>>>>>>> main
     height: 100%;
     
 }
@@ -291,6 +388,16 @@ body{
     outline: none;
 }
 
+<<<<<<< HEAD
+=======
+.create-review-btn-holder{
+width: 100%;
+height: fit-content;
+display: flex;
+justify-content: center;
+}
+
+>>>>>>> main
 @media only screen and (min-width: 200px) and (max-width: 286px) {
     .most-searched-divv{
         width: 100%;
@@ -386,10 +493,38 @@ body{
 }
 
 
+<<<<<<< HEAD
 @media only screen and (min-width: 951px) and (max-width: 1500px) {
  .search-wrapper{
      display: none;
  }
+=======
+@media only screen and (min-width: 951px) {
+ .search-wrapper{
+     display: none;
+ }
+
+ .card{
+    width: 95%;
+    height: fit-content;
+    border-radius: .5rem;
+    border: 1px solid var(--dormblue);
+    padding: .4rem;
+    margin-top: .5rem;
+}
+
+.review-div{
+    margin-top: 1vh;
+    display: grid;
+    gap: 1rem;
+    overflow-x: hidden;
+    grid-template-columns: repeat(auto-fill,minmax(35%,1fr)); 
+}
+
+
+
+
+>>>>>>> main
  
  .most-searched-holder-div{
     margin-top: 1vh;

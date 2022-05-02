@@ -52,7 +52,11 @@
         <div class="searchbar-for-menu">
             <i class="bi bi-search"></i> <input type="search" name="" id="" disabled>
         </div>
+<<<<<<< HEAD
 
+=======
+       
+>>>>>>> main
         <div class="bot-head">
             <div class="ears-head">
                 <div class="left-ear-head"></div> 
@@ -67,6 +71,17 @@
     </div>
         <i class="bi bi-bell-fill"></i>
 </div>
+<<<<<<< HEAD
+=======
+<div class="full-width">
+    <div class="notification">
+        <ul>
+            <li>Your  <span class="pronounds">Accomodia</span> request has returned results <span class="number">34</span></li>
+            <li>Your  <span class="pronounds">Market</span> request has returned results <span class="number">3</span></li>
+        </ul>
+    </div>
+</div>
+>>>>>>> main
 
 <div class="nav-bar">
     <ul class="nav-list">
@@ -112,7 +127,11 @@
 <div class="page-content">
     <div class="tool-holder">
         <div class="tools top-index">
+<<<<<<< HEAD
             <i class="bi bi-tools toggletools"></i>
+=======
+            <i class="bi bi-x toggletools"></i>
+>>>>>>> main
         </div>
         <div class="fade-tools">
             <div class="tools active-tool">
@@ -130,9 +149,13 @@
             <div class="tools">
                 <a href=""><i class="bi bi-pc-display"></i></a>
             </div>
+<<<<<<< HEAD
             <div class="tools">
                 <a href=""> <i class="fa fa-users" aria-hidden="true"></i></a>
             </div>         
+=======
+               
+>>>>>>> main
         </div>
     </div>
 <div class="hide">
@@ -196,6 +219,7 @@
 </div>   
 <script>
     $(".create-note").click(function(){
+<<<<<<< HEAD
   $(".note-type").fadeOut(1000);
   $(".hide").fadeIn(1000);
 });
@@ -203,6 +227,19 @@
 $(".back-to-note-choice").click(function(){
   $(".note-type").fadeIn(1000);
   $(".hide").fadeOut(1000);
+=======
+  $(".note-type").fadeOut('fast');
+  $(".hide").fadeIn('fast');
+});
+
+$(".back-to-note-choice").click(function(){
+  $(".note-type").fadeIn('fast');
+  $(".hide").fadeOut('fast');
+});
+
+$(".bi-bell-fill").click(function(){
+  $(".notification").fadeToggle('fast');
+>>>>>>> main
 });
 </script>
         <script src="js/popper.js"></script>
@@ -211,6 +248,7 @@ $(".back-to-note-choice").click(function(){
         <script src="https://unpkg.com/@popperjs/core@2"></script>
         <script src="https://unpkg.com/tippy.js@6"></script>
         <script>
+<<<<<<< HEAD
               tippy('.bi-bell-fill', {
     theme: 'tomato',
     content: '<p class="usermessage">Dorm User Notification</strong>',
@@ -220,42 +258,77 @@ $(".back-to-note-choice").click(function(){
   tippy('.bot-head', {
     theme: 'tomato',
     content: '<p class="dormbotmessage">Hi, I"m your Dorm assistant, Always, here to help.</strong>',
+=======
+             
+  tippy('.bot-head', {
+    theme: 'tomato',
+    content: '<p class="dormbotmessage">Hi, I"m your Dorm assistant, Always, here to help.</p>',
+>>>>>>> main
   allowHTML: true,
   });
 
   tippy('.bi-journal', {
     theme: 'tomato',
+<<<<<<< HEAD
     content: '<p class="">Note Book</strong>',
+=======
+    content: '<p class="">Note Book</p>',
+>>>>>>> main
   allowHTML: true,
   });
 
   tippy('.bi-journal-bookmark', {
     theme: 'tomato',
+<<<<<<< HEAD
     content: '<p class="">Note Web.</strong>',
+=======
+    content: '<p class="">Note Web.</p>',
+>>>>>>> main
   allowHTML: true,
   });
   tippy('.bi-calculator', {
     theme: 'tomato',
+<<<<<<< HEAD
     content: '<p class="">CGPA calculator.</strong>',
+=======
+    content: '<p class="">CGPA calculator.</p>',
+>>>>>>> main
   allowHTML: true,
   });
   tippy('.fa-book', {
     theme: 'tomato',
+<<<<<<< HEAD
     content: '<p class="">Library.</strong>',
+=======
+    content: '<p class="">Library.</p>',
+>>>>>>> main
   allowHTML: true,
   });
   tippy('.bi-pc-display', {
     theme: 'tomato',
+<<<<<<< HEAD
     content: '<p class="">CBT Test.</strong>',
+=======
+    content: '<p class="">CBT Test.</p>',
+>>>>>>> main
   allowHTML: true,
   });
   
   tippy('.fa-users', {
     theme: 'tomato',
+<<<<<<< HEAD
     content: '<p class="dormbotmessage">Resource Team.</strong>',
   allowHTML: true,
   });
 
+=======
+    content: '<p class="dormbotmessage">Resource Team.</p>',
+  allowHTML: true,
+  });
+
+
+
+>>>>>>> main
   $(".toggletools").click(function(){
   $(".fade-tools").fadeToggle();
 });

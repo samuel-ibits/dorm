@@ -31,7 +31,11 @@
     <!-- start vanillatop plugin -->
     <link rel="stylesheet" href="dist/vanillatop.min.css">
  <style>
+<<<<<<< HEAD
      
+=======
+    
+>>>>>>> main
     @media only screen and (max-width: 600px) {
     .page-content{
             height: 72vh;
@@ -40,7 +44,11 @@
 
  </style>
 </head>
+<<<<<<< HEAD
 <body>  <div class="top-div">
+=======
+<body onload="subname()">  <div class="top-div">
+>>>>>>> main
   <div class="logo">
       <img src="images/dorm_no_bg.png" alt="">
   </div>
@@ -63,6 +71,17 @@
 </div>
   <i class="bi bi-bell-fill"></i>
 </div>
+<<<<<<< HEAD
+=======
+<div class="full-width">
+    <div class="notification">
+        <ul>
+            <li>Your  <span class="pronounds">Accomodia</span> request has returned results <span class="number">34</span></li>
+            <li>Your  <span class="pronounds">Market</span> request has returned results <span class="number">3</span></li>
+        </ul>
+    </div>
+</div>
+>>>>>>> main
 
 <div class="nav-bar">
 <ul class="nav-list">
@@ -126,14 +145,21 @@
 
                 <h3>JOHN DOE</h3>
 
+<<<<<<< HEAD
                 <button onclick="editname()">EDIT PROFILE</button>
+=======
+                <button onclick="editname()" class="submit"><i class="bi bi-pencil-square"></i> Edit</button>
+>>>>>>> main
             </div>
         </div>
     </div>
 
     <div class="profile-body">
+<<<<<<< HEAD
         
             <h3>ABOUT</h3>
+=======
+>>>>>>> main
            
 <div class="profile-input-holders">
         <div class="input-wrapper-profile"> 
@@ -151,11 +177,15 @@
                    <input type="text" id="Phone-input" placeholder="Phone number"> <span id="Phone-text" class="changevalue"></span>
                      </div> 
          </div>
+<<<<<<< HEAD
          <div class="input-wrapper-profile">    
              <div class="changer">
                    <input disabled type="text" id="Message-input" placeholder="Message Points = 3"> <span id="Message-text" class="changevalue"></span>
                      </div> 
          </div>
+=======
+        
+>>>>>>> main
          <div class="input-wrapper-profile">    
              <div class="changer">
                    <input type="text" id="Course-input" placeholder="Course"> <span id="Course-text" class="changevalue"></span>
@@ -232,8 +262,13 @@
 </div>
           
            
+<<<<<<< HEAD
 <div class="login-btn">
     <button onclick="subname()">SAVE CHANGES</button>
+=======
+<div>
+    <button class="submit" onclick="subname()"><i class="bi bi-download"></i> Save changes</button>
+>>>>>>> main
 </div>
            </form>
         
@@ -258,5 +293,13 @@
         <script src="js/main.js"></script>
         <script src="https://unpkg.com/@popperjs/core@2"></script>
         <script src="https://unpkg.com/tippy.js@6"></script>
+<<<<<<< HEAD
+=======
+        <script>
+                $(".bi-bell-fill").click(function(){
+  $(".notification").fadeToggle('fast');
+});
+        </script>
+>>>>>>> main
 </body>
 </html>

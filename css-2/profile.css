@@ -15,6 +15,10 @@ body{
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
+
+
+
+
 .upload-wrapper{
     display: flex;
     justify-content: center;
@@ -80,19 +84,12 @@ body{
 
 .profile-image-holder button{
     margin-top: 2rem;
-    width: fit-content;
-    height: fit-content;
-    padding: 1rem;
-    border-radius: 2rem;
-    border: none;
-    background: var(--dormblue);
     color: #ffffff;
     transition: .5s linear;
 }
 
 .profile-body h3{
     font-weight: bold;
-    margin-top: 3rem;
 }
 
 .profile-image-holder button:hover{
@@ -116,6 +113,7 @@ body{
  padding: .5rem;
  position: absolute;
  outline: none;
+ display: none;
 }
 
 .lable{
@@ -127,8 +125,8 @@ body{
     position: absolute;
     padding: .5rem;
     color: #020202;
-    display: none;
-    width: 230px;
+    width: fit-content;
+    font-size: .9rem;
 }
 
 .profile-input-holders{
@@ -191,4 +189,21 @@ body{
     transform: scale(3);
     opacity: 0;
     z-index: 999;
+}
+
+.submit{
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: var(--dormblue);
+    color: #eee;
+    width: fit-content;
+    padding: .3rem;
+    box-shadow: 0px 2px 3px #333;
+    text-shadow: 0px 2px 3px #333;
+    transition: .5s linear;
+}
+
+.submit:hover{
+    background: var(--dormorange);
 }

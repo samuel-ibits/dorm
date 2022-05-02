@@ -274,3 +274,127 @@ function editname(){
             love.style.display = 'none';
 }
 
+<<<<<<< HEAD
+=======
+function editBilling(){
+let locationInput = document.getElementById("location-input");
+let location = document.getElementById("location") ;
+
+let accountNumberInput = document.getElementById("accountNumber-input");
+let accountNumber = document.getElementById("accountNumber") ;
+
+let bankNameInput = document.getElementById("bankName-input");
+let bankName = document.getElementById("bankName") ;
+
+let editBtn = document.getElementById("editBtn");
+
+let submitBtn = document.getElementById("submitBtn");
+
+let toplabel = document.getElementById("top-label");
+
+let label1 = document.getElementById("label-text-id-1");
+
+let label2 = document.getElementById("label-text-id-2");
+
+let label3 = document.getElementById("label-text-id-3");
+
+
+let toplabel1 = document.getElementById("top-label-1");
+let toplabel2 = document.getElementById("top-label-2");
+let toplabel3 = document.getElementById("top-label-3");
+
+
+submitBtn.style.display = "inline-block";
+
+editBtn.style.display = "none";
+
+    label1.style.display = "none";
+    label2.style.display = "none";
+    label3.style.display = "none";
+
+
+    toplabel1.style.display = "inline-block";
+    toplabel2.style.display = "inline-block";
+    toplabel3.style.display = "inline-block";
+
+    location.innerHTML =  locationInput.value;
+    locationInput.style.display = "inline-block";
+    location.style.display = "none";
+    
+
+
+    accountNumber.innerHTML =  accountNumberInput.value;
+    accountNumberInput.style.display = "inline-block";
+    accountNumber.style.display = "none";
+
+    
+
+
+    bankName.innerHTML =  bankNameInput.value;
+    bankNameInput.style.display = "inline-block";
+    bankName.style.display = "none";
+
+
+}
+
+
+function submitBilling(){
+    let locationInput = document.getElementById("location-input");
+    let location = document.getElementById("location") ;
+    
+    let accountNumberInput = document.getElementById("accountNumber-input");
+    let accountNumber = document.getElementById("accountNumber") ;
+    
+    let bankNameInput = document.getElementById("bankName-input");
+    let bankName = document.getElementById("bankName") ;
+    
+    let editBtn = document.getElementById("editBtn");
+    
+    let submitBtn = document.getElementById("submitBtn");
+    
+let label1 = document.getElementById("label-text-id-1");
+
+let label2 = document.getElementById("label-text-id-2");
+
+let label3 = document.getElementById("label-text-id-3");
+
+
+    
+let toplabel1 = document.getElementById("top-label-1");
+let toplabel2 = document.getElementById("top-label-2");
+let toplabel3 = document.getElementById("top-label-3");
+
+
+submitBtn.style.display = "none";
+
+editBtn.style.display = "inline-block";
+
+toplabel1.style.display = "none";
+toplabel2.style.display = "none";
+toplabel3.style.display = "none";
+
+    label1.style.display = "inline-block";
+    label2.style.display = "inline-block";
+    label3.style.display = "inline-block";
+
+    
+        location.innerHTML =  locationInput.value;
+        locationInput.style.display = "none";
+        location.style.display = "inline-block";
+   
+
+
+
+        
+        accountNumber.innerHTML =  accountNumberInput.value;
+        accountNumberInput.style.display = "none";
+        accountNumber.style.display = "inline-block";
+
+    
+
+        bankName.innerHTML =  bankNameInput.value;
+        bankNameInput.style.display = "none";
+        bankName.style.display = "inline-block";
+
+}
+>>>>>>> main

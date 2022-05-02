@@ -7,12 +7,71 @@
     --dormorange: #f96b03;
 }
 
+<<<<<<< HEAD
+=======
+
+.number{
+    background: var(--dormorange);
+    border-radius: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: .4rem;
+    box-shadow: 0px 2px 3px #333;
+    text-shadow: 0px 2px 3px #333;
+}
+
+.notification{
+    background: var(--dormblue);
+    box-shadow: 0px 2px 3px #333;
+    color: #eee;
+    position:relative;
+    margin-left: auto;
+    width: fit-content;
+    padding: .2rem;
+    height: auto;
+    font-size: .8rem;
+    display: none;
+}
+
+.notification ul li{
+    display: flex;
+    width: max-content;
+}
+
+.full-width{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    margin-top: 4rem;
+    z-index: 99999;
+}
+
+.pronounds{
+    color: var(--dormorange);
+    font-weight: 600;
+    text-shadow: 0px 2px 3px #333;
+    margin: 0px .4rem;
+}
+
+
+>>>>>>> main
 .about-studytool-text h2{
     color: #333;
     font-weight: lighter;
     font-size: .8rem;
 }
 
+<<<<<<< HEAD
+=======
+.notification-message a{
+font-size: .7rem;
+font-weight: 300;
+}
+
+>>>>>>> main
 
 .overlaywhite{
     width: 100%;
@@ -759,6 +818,11 @@ strong{
             color: #000;
         }
         
+<<<<<<< HEAD
+=======
+
+        
+>>>>>>> main
         
         .house-card-image {
             width: 100%;
@@ -782,6 +846,10 @@ strong{
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 @media only screen and (min-width: 951px) and (max-width: 1500px) {
   
  

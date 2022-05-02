@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dorm - Course review</title>
-    <link rel="stylesheet" href="menu/css/styles.css"> 
     <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css-2/bot.css">
     <link rel="stylesheet" href="css-2/style.css">
@@ -36,13 +35,43 @@
     <link rel="stylesheet" href="dist/vanillatop.min.css">
     <title>Dorm - Course review</title>
     <style>
-    
-        
-    @media only screen and (max-width: 600px) {
-    .page-content{
-            height: 72vh;
+ .input-wrapper-text-area{
+    width: 90vw;
+    display: flex;
+  }
+
+  .page-content{
+            padding: 0px;
+            margin: 0px;
         }
+    @media only screen and (max-width: 600px) 
+    {
+    .page-content{
+            height: 76vh;
+            margin-top:2rem;
+        }
+        }
+
+        @media only screen and (min-width: 601px) 
+    {
+    .page-content{
+            height: 100%;
+            margin-top:1rem;
+            margin-left: 6rem;
+        }
+
+        .input-wrapper-text-area{
+    width: 80vw;
+    display: flex;
+  }
+        }
+
+        @media only screen and (min-width: 600px)  {
+.search-wrapper{
+    display: none;
 }
+}
+
         </style>
 </head>
 <body>
@@ -73,6 +102,14 @@
     </div>
 
         <i class="bi bi-bell-fill"></i>
+</div>
+<div class="full-width">
+    <div class="notification">
+        <ul>
+            <li>Your  <span class="pronounds">Accomodia</span> request has returned results <span class="number">34</span></li>
+            <li>Your  <span class="pronounds">Market</span> request has returned results <span class="number">3</span></li>
+        </ul>
+    </div>
 </div>
 
 <div class="nav-bar">
@@ -119,7 +156,7 @@
 <div class="page-content">
     <div class="white">
         <div class="post">
-            <i class="bi bi-x-lg" style="color: #f96b03; margin-left: 3rem;"></i>
+            <i class="bi bi-x-lg" style="color: #f96b03; margin-left: 1rem;"></i>
             
                       
              <div class="login-form widt text-div">
@@ -128,9 +165,9 @@
                          <i class="bi bi-hash"></i> <input type="text" id="" placeholder="Post Title">
                      </div>
                     
-                     <div class="input-wrapper-text-area-course-review"> 
-                         <textarea name="" id="" cols="30" rows="8" placeholder="Your post"> </textarea>
-                     </div>
+                     <div class="input-wrapper-text-area"> 
+                        <textarea name="" id="" cols="30" rows="8" placeholder="Comment...."> </textarea>
+                    </div>
                      <div class="review-items">
                          <ul>
                              <li><i class="bi bi-mic-fill"></i></li>
@@ -152,6 +189,8 @@
     <div class="whiteback"></div>
     <div class="comment-white">
         <div class="comments">
+
+            <i class="bi bi-x-lg remove-comment" style="color: #f96b03;position: relative;"></i>
             <!--comment card start-->
             <div class="card comment-card">
                 <div class="profile-review-image">
@@ -166,8 +205,8 @@
                 
                 <div class="reactions">
                     <ul>
-                        <li><i class="fa fa-thumbs-up" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-thumbs-down" aria-hidden="true"></i></li>
+                        <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
+                        <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
                        </ul>
                 </div>
                     </div>
@@ -186,8 +225,8 @@
                 
                 <div class="reactions">
                     <ul>
-                        <li><i class="fa fa-thumbs-up" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-thumbs-down" aria-hidden="true"></i></li>
+                        <li>  <span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
+                        <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
                        </ul>
                 </div>
                     </div>
@@ -205,8 +244,8 @@
                 
                 <div class="reactions">
                     <ul>
-                        <li><i class="fa fa-thumbs-up" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-thumbs-down" aria-hidden="true"></i></li>
+                        <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
+                        <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
                        </ul>
                 </div>
                     </div>
@@ -224,8 +263,8 @@
                 
                 <div class="reactions">
                     <ul>
-                        <li><i class="fa fa-thumbs-up" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-thumbs-down" aria-hidden="true"></i></li>
+                        <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
+                        <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
                        </ul>
                 </div>
                     </div>
@@ -237,18 +276,22 @@
                 <p class="username-review">Jane Doe</p>
                 
                 <p class="comment-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odio eum error earum illum quaerat,
-                     vel at repudiandae eos obcaecati fuga mollitia debitis a vitae modi unde suscipit quisquam nemo.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
                 
                 <div class="reactions">
                     <ul>
-                        <li><i class="fa fa-thumbs-up" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-thumbs-down" aria-hidden="true"></i></li>
+                        <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
+                        <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
                        </ul>
                 </div>
                     </div>
             <!--comment card end-->
+
+            <div class="input-comment">
+                <input type="text" name="" id="" placeholder="comment.....">
+                <button><i class="bi bi-send-fill"></i> Send</button>
+            </div>
                 </div>
     </div>
  
@@ -275,10 +318,12 @@
     <input type="search" class="search-input" placeholder="search e.g previous review, user name etc" name="" id=""  oninput = "Search((this.value).toLowerCase())">
  </div>
 
-
+<div class="create-review-btn-holder">
+    
  <button class="create-review-btn">
     <i class="bi bi-plus"></i> Create Review
  </button>
+</div>
 
 <div class="review-div">
  <!--course review card start-->
@@ -300,9 +345,9 @@
 
 <div class="reactions">
     <ul>
-        <li><i class="fa fa-thumbs-up" aria-hidden="true"></i></li>
-        <li><i class="fa fa-thumbs-down" aria-hidden="true"></i></li>
-        <li><i class="fa fa-comment" aria-hidden="true"></i></li>
+        <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
+        <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
+        <li><span class="number-of-comments">31</span><i class="fa fa-comment" aria-hidden="true"></i></li>
     </ul>
 </div>
     </div>
@@ -318,15 +363,21 @@
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
         voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
+        cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.orem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
+        voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
+        cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.orem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
+        voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
         cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
     </p>
    
     
     <div class="reactions">
         <ul>
-            <li><i class="fa fa-thumbs-up" aria-hidden="true"></i></li>
-            <li><i class="fa fa-thumbs-down" aria-hidden="true"></i></li>
-            <li><i class="fa fa-comment" aria-hidden="true"></i></li>
+            <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
+            <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
+            <li><span class="number-of-comments">31</span><i class="fa fa-comment" aria-hidden="true"></i></li>
         </ul>
     </div>
         </div>
@@ -350,9 +401,9 @@
     
     <div class="reactions">
         <ul>
-            <li><i class="fa fa-thumbs-up" aria-hidden="true"></i></li>
-            <li><i class="fa fa-thumbs-down" aria-hidden="true"></i></li>
-            <li><i class="fa fa-comment" aria-hidden="true"></i></li>
+            <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
+            <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
+            <li><span class="number-of-comments">31</span><i class="fa fa-comment" aria-hidden="true"></i></li>
         </ul>
     </div>
         </div>
@@ -376,9 +427,9 @@
     
     <div class="reactions">
         <ul>
-            <li><i class="fa fa-thumbs-up" aria-hidden="true"></i></li>
-            <li><i class="fa fa-thumbs-down" aria-hidden="true"></i></li>
-            <li><i class="fa fa-comment" aria-hidden="true"></i></li>
+            <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
+            <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
+            <li><span class="number-of-comments">31</span><i class="fa fa-comment" aria-hidden="true"></i></li>
         </ul>
     </div>
         </div>
@@ -388,11 +439,6 @@
 
 </div>
 
-<div class="comment-div">
-    <i class="bi bi-x-lg" style="color: #f96b03;position: absolute;padding: 1rem;"></i>
-    <object type="text/html" class="emb-comment" data="commentsection.html">
-    </object>
-</div>
 
 <a href="#!" class="vanillatop"></a>
 
@@ -440,20 +486,36 @@ $(".most-searched-divv").fadeOut("fast");
 
 $(".create-review-btn").click(function(){
 $(".white").fadeIn();
+$(".review-div").fadeOut('fast');
 });
-      
+
 
 $(".bi-x-lg").click(function(){
 $(".white").fadeOut();
 $(".comment-div").fadeOut();
+$(".review-div").fadeIn('fast');
 });
 
 
 $(".fa-comment").click(function(){
-$(".comment-div").fadeIn();
+$(".comments").fadeIn('fast');
+$(".review-div").fadeOut('fast');
+$(".search-wrapper").fadeOut('fast');
+$(".create-review-btn").fadeOut('fast');
 });
 
 
+
+$(".remove-comment").click(function(){
+$(".comments").fadeOut('fast');
+$(".review-div").fadeIn('fast');
+$(".search-wrapper").fadeIn('fast');
+$(".create-review-btn").fadeIn('fast');
+});
+
+$(".bi-bell-fill").click(function(){
+  $(".notification").fadeToggle('fast');
+});
 
 function Search(item){
             var collection = document.getElementsByClassName("card");

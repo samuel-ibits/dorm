@@ -30,11 +30,55 @@
        <!--=============== CSS ===============-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <style>
+<<<<<<< HEAD
         @media only screen and (max-width: 600px) {
+=======
+
+
+.spec-div input{
+    width: 4rem;
+    margin: 0px 1rem;
+    outline: none;
+    border: none;
+}
+
+
+        @media only screen and (max-width: 600px) {
+            .inspect-market-item{
+    width: 100%;
+    height: 95%;
+    overflow: scroll;
+    margin-top: 2rem;
+    position: relative;
+    background: var(--white);
+    display: none;
+    z-index: 999;
+}
+
+
+>>>>>>> main
     .page-of-grid-view{
             height: 80vh;
             overflow: scroll;
         }
+<<<<<<< HEAD
+=======
+
+        
+    .request-div-holder{
+    position: fixed;
+    width: 100%;
+    height: 80vh;
+    background: #020202;
+    opacity: .96;
+    z-index: 9999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+>>>>>>> main
 }
 
 .inspect-market-item{
@@ -42,9 +86,123 @@
 }
     
 
+<<<<<<< HEAD
 </style>
 </head>
 <body>
+=======
+@media only screen and (min-width: 700px) {
+    .page-of-grid-view{
+            height: auto;
+            overflow: visible;
+            margin-left: auto;
+            width: 90%;
+            overflow: scroll;
+        }
+
+        .inspect-market-item{
+            margin-top: 5rem;
+        width: 100%;
+        height: 100vh;
+        overflow: scroll;
+        position: absolute;
+        background: var(--white);
+        display: none;
+        z-index: 999;
+    }
+
+
+}
+
+
+
+.request{
+    position: fixed;
+    padding: .5rem;
+    color: #fff;
+    z-index: 9999;
+    background: var(--dormblue);
+    margin-top: 6rem;
+    margin-left: -3rem;
+    border-radius: 20px;
+    width: 5rem;
+    text-shadow: 0px 3px 3px #333;
+    box-shadow: 0px 2px 3px #333;
+}
+
+
+
+
+
+@media only screen and (min-width: 601px) {
+  .request{
+    position: fixed;
+    padding: .5rem;
+    color: #fff;
+    z-index: 9999;
+    background: var(--dormblue);
+    margin-top: 5rem;
+    margin-left: 1rem;
+    border-radius: 20px;
+    width: 6rem;
+    text-shadow: 0px 3px 3px #333;
+    box-shadow: 0px 2px 3px #333;
+}
+
+
+.open-request{
+    float: right;
+}
+
+
+
+
+}
+
+
+</style>
+</head>
+<body>
+
+    
+<div class="request">
+    <i class="bi bi-question-lg open-request"></i>
+  </div>
+  
+  
+  <div class="request-div-holder">
+  
+    <div class="request-div-inner-div">
+        <div class="exit-big-screen">
+            <i class="bi bi-x open-request"></i>
+        </div>
+        <p class="title-text">Prefered specs</p>
+  
+  
+        <div class="spec-wrapper">
+            <span class="spec-label">Product name</span> 
+            <div class="spec-div">
+               <input class="name" type="text" placeholder="Rolex wrist watch">
+            </div>
+        </div>
+        <div class="spec-wrapper">
+            <span class="spec-label">Price(naira)</span> 
+            <div class="spec-div">
+               <span class="input-label">From:</span> <input type="number" class="">    <span class="input-label">To:</span><input type="number" class="">
+            </div>
+        </div>
+        <div class="spec-wrapper">
+            <span class="spec-label">Any special specification you may want to add</span> 
+            <div class="spec-div">
+                <textarea name="" placeholder="e.g some  thing shiny " id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="spec-wrapper">
+  <button>Sumbit</button>
+        </div>
+    </div>
+  </div>
+>>>>>>> main
   <div class="top-div">
           <div class="logo">
               <img src="images/dorm_no_bg.png" alt="">
@@ -68,6 +226,17 @@
       </div>
           <i class="bi bi-bell-fill"></i>
   </div>
+<<<<<<< HEAD
+=======
+  <div class="full-width">
+    <div class="notification">
+        <ul>
+            <li>Your  <span class="pronounds">Accomodia</span> request has returned results <span class="number">34</span></li>
+            <li>Your  <span class="pronounds">Market</span> request has returned results <span class="number">3</span></li>
+        </ul>
+    </div>
+</div>
+>>>>>>> main
 
   <div class="nav-bar">
 
@@ -98,7 +267,11 @@
               </a>              
           </li>
           <li class="nav-item" title="Martket">
+<<<<<<< HEAD
               <a href="market.html" class="nav-link active-nav-link">
+=======
+              <a href="marketgrid.html" class="nav-link active-nav-link">
+>>>>>>> main
                   <i class="bi bi-shop"></i>   
                   <p class="icon-title">Market</p>
               </a>              
@@ -136,12 +309,15 @@
 </div>
   
 
+<<<<<<< HEAD
 <div class="search-wrapper">
     <i class="bi bi-search"></i>
     <input type="search" class="search-input" placeholder="search e.g previous review, user name etc" name="" id="">
  </div>
 
 
+=======
+>>>>>>> main
     <div class="inspect-market-item">
         <div class="inspect-market-image">
             <div class="item-price">3,000</div>
@@ -196,7 +372,10 @@
      
         </div>
     </div>
+<<<<<<< HEAD
     
+=======
+>>>>>>> main
   
      <div class="contentgrid">
         
@@ -613,6 +792,7 @@
              var swiper = new Swiper(".mySwiper", {});
         </script>
         <script>   
+<<<<<<< HEAD
             $(".shoping-card").click(function(){
             $(".inspect-market-item").fadeIn();
             $(".shoping-card").fadeOut();
@@ -622,13 +802,61 @@
             $(".inspect-market-item").fadeOut();
             $(".shoping-card").fadeIn();
             $(".most-searched-divv").toggle();});
+=======
+$(".exit-big-screen").click(function(){
+  $(".request-div-holder").fadeOut('fast');
+});
+
+
+
+$(".request").click(function(){
+  $(".request-div-holder").fadeToggle('fast');
+});
+
+
+$(".request").ready(function(){
+  $(".request-div-holder").fadeOut('fast');
+});
+
+
+
+            $(".shoping-card").click(function(){
+            $(".inspect-market-item").fadeIn();
+            $(".shoping-card").fadeOut();});
+
+            $(".back").click(function(){
+            $(".inspect-market-item").fadeOut();
+            $(".shoping-card").fadeIn();});
+>>>>>>> main
 
             $(".searchbar-for-menu").click(function(){
             $(".most-searched-divv").fadeToggle();});
 
 
+<<<<<<< HEAD
                 $(".search-wrapper").click(function(){
                 $(".most-searched-divv").fadeToggle();});
+=======
+            $(".bi-bell-fill").click(function(){
+  $(".notification").fadeToggle('fast');
+});
+
+                $(".search-wrapper").click(function(){
+                $(".most-searched-divv").fadeToggle();});
+
+                function Search(item){
+            var collection = document.getElementsByClassName("shoping-card");
+            for (i = 0;i < collection.length; i++){
+                if (((collection[i].innerHTML).toLowerCase()).indexOf(item) > -1) {
+                    collection[i].style.display = "block";
+                    } else {
+                        collection[i].style.display = "none";
+                        }
+            }
+    }
+
+                
+>>>>>>> main
         </script>
 </body>
 </html>

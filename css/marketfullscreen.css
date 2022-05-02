@@ -24,6 +24,146 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;
 }
 
+<<<<<<< HEAD
+=======
+
+
+
+.bi-question-lg{
+    animation: rot .5s linear infinite alternate;
+
+}
+
+.exit-big-screen{
+    background: var(--dormblue);
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+
+@keyframes rot{
+    0%{
+      transform: rotate(-10deg); 
+    }
+
+    100%{
+       transform: rotate(10deg);
+    }
+}
+
+
+
+.open-request{
+    float: right;
+}
+
+.request-div-holder{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #020202;
+    opacity: .9;
+    z-index: 9999999;
+}
+
+.request-div-holder{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #020202;
+    opacity: .96;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.request-div-inner-div{
+    margin-top: 4rem;
+    padding: 1rem;
+    width: fit-content;
+    height: auto;
+    background: #eee;
+}
+
+.spec-div{
+    display: flex;
+    margin: .5rem 0px;
+}
+
+.spec-div .number{
+    width: 4rem;
+    margin: 0px 1rem;
+    outline: none;
+    border: none;
+}
+
+.spec-div .name{
+    border: none;
+    padding: .3rem;
+    outline: 2px solid var(--dormblue);
+}
+
+.title-text{
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--dormblue);
+    text-align: center;
+    text-shadow: 0px 1px 1px #aaa;
+}
+
+
+.spec-label{
+    font-weight: 600;
+    font-size: .7rem;
+    color: var(--dormblue);
+    text-shadow: 0px 1px 1px #aaa;
+}
+
+.spec-wrapper textarea{
+    padding: .5rem;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.spec-wrapper button{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: var(--dormblue);
+    color: #eee;
+    padding: .3rem;
+    box-shadow: 0px 2px 3px #333;
+    text-shadow: 0px 2px 3px #333;
+}
+
+
+
+.container {
+    position: relative;
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.full-screen-market-card{
+    width: 100%;
+    height: 77vh;
+    background-size:  cover;
+    scroll-snap-align: start;
+}
+
+
+
+
+>>>>>>> main
 .market-tools{
     width: fit-content;
     height: auto;
@@ -128,6 +268,7 @@ font-family: 'Source Sans Pro', sans-serif;
   }
 
   .buy-btn{
+<<<<<<< HEAD
       padding: .5rem;
       border: none;
       outline: none;
@@ -141,6 +282,24 @@ font-family: 'Source Sans Pro', sans-serif;
       color: #eee;
       width: 80%;
       margin-top: -50%;
+=======
+      padding: 1rem;
+      border: none;
+      outline: none;
+      background: var(--dormorange);
+      color: #eee;
+      text-shadow: 0px 2px 3px #333;
+      margin: .8rem 0px;
+      display: block;
+      transition: .5s linear;
+  }
+
+
+  .text-about-sold-item{
+      color: #eee;
+      width: 80%;
+      margin-top: -13rem;
+>>>>>>> main
       z-index: 99;
       position: absolute;
       padding: .3rem;
@@ -154,9 +313,12 @@ font-family: 'Source Sans Pro', sans-serif;
       box-shadow: 0px 2px 3px #333;
   }
 
+<<<<<<< HEAD
   .full-screen-market-card{
       width: 100%;
       height: max-content;
   }
+=======
+>>>>>>> main
 
   

@@ -33,8 +33,10 @@
         
   @media only screen and (max-width: 600px) {
     .page-content{
-            height: 72vh;
+            height: 70vh;
         }
+
+   
 }
 
 @media only screen and (min-width: 601px) {
@@ -152,7 +154,7 @@ strong{
                <p>Location of House for person</p>
                <p>42,000</p>
                <p>Rent</p>
-               <p><a href="accomodia.html">Accomodia</a></p> 
+               <p class="tag-type"><a href="accomodia.html">Accomodia</a></p> 
         </div>
 
         <div class="items">
@@ -238,7 +240,7 @@ strong{
            <p></p>
            <p>42,000</p>
            <p></p>
-           <p><a href="market.html">Market</a></p> 
+           <p class="tag-type"><a href="market.html">Market</a></p> 
     </div>
 
     <div class="items">
@@ -261,10 +263,10 @@ strong{
       <div class="cartegory-div">
         <input type="text" placeholder="Brief description">
     </div>
-      <div class="addbtn add-1">
+      <div class="addbtn add-2">
          Please fill in necessary details , to help user fully <strong>Inspect</strong> your product.<i class="bi bi-plus"></i>
       </div>
-      <div class="additional-info add-1-div">
+      <div class="additional-info add-2-div">
                       
 
                       <div class="uploader">
@@ -313,6 +315,10 @@ strong{
 
 $(".add-1").click(function(){
   $(".add-1-div").slideToggle();
+});
+
+$(".add-2").click(function(){
+  $(".add-2-div").slideToggle();
 });
 
         var swiper = new Swiper(".mySwiper", {

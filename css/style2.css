@@ -812,6 +812,8 @@ strong{
             color: #000;
         }
         
+
+        
         
         .house-card-image {
             width: 100%;
@@ -833,6 +835,7 @@ strong{
             display: none;
         }
 }
+
 
 
 @media only screen and (min-width: 951px) and (max-width: 1500px) {

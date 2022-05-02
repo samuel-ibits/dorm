@@ -41,6 +41,18 @@
 
 
         @media only screen and (max-width: 600px) {
+            .inspect-market-item{
+    width: 100%;
+    height: 95%;
+    overflow: scroll;
+    margin-top: 2rem;
+    position: relative;
+    background: var(--white);
+    display: none;
+    z-index: 999;
+}
+
+
     .page-of-grid-view{
             height: 80vh;
             overflow: scroll;
@@ -53,12 +65,13 @@
     height: 80vh;
     background: #020202;
     opacity: .96;
-    z-index: 999;
+    z-index: 9999999;
     display: flex;
     justify-content: center;
     align-items: center;
    
 }
+
 }
 
 .inspect-market-item{
@@ -97,7 +110,7 @@
     color: #fff;
     z-index: 9999;
     background: var(--dormblue);
-    margin-top: 4rem;
+    margin-top: 6rem;
     margin-left: -3rem;
     border-radius: 20px;
     width: 5rem;
@@ -148,6 +161,9 @@
   <div class="request-div-holder">
   
     <div class="request-div-inner-div">
+        <div class="exit-big-screen">
+            <i class="bi bi-x open-request"></i>
+        </div>
         <p class="title-text">Prefered specs</p>
   
   
@@ -743,6 +759,9 @@
              var swiper = new Swiper(".mySwiper", {});
         </script>
         <script>   
+$(".exit-big-screen").click(function(){
+  $(".request-div-holder").fadeOut('fast');
+});
 
 
 
@@ -754,6 +773,8 @@ $(".request").click(function(){
 $(".request").ready(function(){
   $(".request-div-holder").fadeOut('fast');
 });
+
+
 
             $(".shoping-card").click(function(){
             $(".inspect-market-item").fadeIn();

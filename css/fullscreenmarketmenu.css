@@ -7,6 +7,8 @@
     --dormorange: #f96b03;
 }
 
+.tool-holder
+
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +19,10 @@
 *::-webkit-scrollbar {
     display: none;
   }
+
+ul{
+    list-style: none;
+}
 
   .logo-login{
       width: 5rem;
@@ -246,9 +252,12 @@
     .tool-holder{
         height: auto;
         width: fit-content;
-        margin-left: 85vw;
+        margin-left: 70vw;
         position: fixed;
     }
+
+    
+
 
     .nav-bar{
         position: fixed;

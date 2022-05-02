@@ -31,7 +31,7 @@
     <!-- start vanillatop plugin -->
     <link rel="stylesheet" href="dist/vanillatop.min.css">
  <style>
-     
+    
     @media only screen and (max-width: 600px) {
     .page-content{
             height: 72vh;
@@ -40,7 +40,7 @@
 
  </style>
 </head>
-<body>  <div class="top-div">
+<body onload="subname()">  <div class="top-div">
   <div class="logo">
       <img src="images/dorm_no_bg.png" alt="">
   </div>
@@ -134,14 +134,12 @@
 
                 <h3>JOHN DOE</h3>
 
-                <button onclick="editname()">EDIT PROFILE</button>
+                <button onclick="editname()" class="submit"><i class="bi bi-pencil-square"></i> Edit</button>
             </div>
         </div>
     </div>
 
     <div class="profile-body">
-        
-            <h3>ABOUT</h3>
            
 <div class="profile-input-holders">
         <div class="input-wrapper-profile"> 
@@ -159,11 +157,7 @@
                    <input type="text" id="Phone-input" placeholder="Phone number"> <span id="Phone-text" class="changevalue"></span>
                      </div> 
          </div>
-         <div class="input-wrapper-profile">    
-             <div class="changer">
-                   <input disabled type="text" id="Message-input" placeholder="Message Points = 3"> <span id="Message-text" class="changevalue"></span>
-                     </div> 
-         </div>
+        
          <div class="input-wrapper-profile">    
              <div class="changer">
                    <input type="text" id="Course-input" placeholder="Course"> <span id="Course-text" class="changevalue"></span>
@@ -240,8 +234,8 @@
 </div>
           
            
-<div class="login-btn">
-    <button onclick="subname()">SAVE CHANGES</button>
+<div>
+    <button class="submit" onclick="subname()"><i class="bi bi-download"></i> Save changes</button>
 </div>
            </form>
         

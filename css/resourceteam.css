@@ -7,6 +7,8 @@
     --dormorange: #f96b03;
 }
 
+.tool
+
 .about-RT{
     height: 1.2rem;  
     overflow: hidden;
@@ -61,8 +63,6 @@
        background: var(--white);
        z-index: 99999;
        display: none;
-      
-       
    }
 
    @media only screen and (min-width: 601px) 

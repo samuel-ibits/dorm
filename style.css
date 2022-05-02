@@ -33,10 +33,14 @@
     height: 4rem;
     display: flex;
     align-items: center;
-    box-shadow: 0px 2px 3px  var(--dormash);
     background: var(--white);
+    box-shadow: 0px 2px 2px #aaa;
     position: fixed;
     z-index: 99999;
+}
+
+ul{
+    list-style: none;
 }
 
 .nav-bar{
@@ -263,15 +267,15 @@
 
     .top-div{
         width: 100%;
-        height: 3rem;
+        height: 2rem;
         display: flex;
         align-items: center;
-        box-shadow: 0px 2px 3px  var(--dormash);
+        box-shadow: 0px 2px 2px #aaa;
         position: fixed;
     }
 
     .logo {
-        width: 5rem;
+        width: 4rem;
         overflow: hidden;
         margin-left: 1rem;
     }
@@ -330,7 +334,7 @@
 
         width: 100%;
         margin-left:0;
-        margin-top: 4rem;
+        margin-top: 2rem;
         position: absolute;
         height: calc(100% - 7rem);
         overflow: scroll;
@@ -350,15 +354,15 @@
 
     .top-div{
         width: 100%;
-        height: 4rem;
+        height: 2.3rem;
         display: flex;
         align-items: center;
-        box-shadow: 0px 2px 3px  var(--dormash);
+        box-shadow: 0px 2px 2px #aaa;
         position: fixed;
     }
 
     .logo {
-        width: 5rem;
+        width: 4rem;
         overflow: hidden;
         margin-left: 1rem;
     }
@@ -407,7 +411,7 @@
     .page-content{
         width: 100%;
         margin-left:0;
-        margin-top: 4rem;
+        margin-top: 2.5rem;
         position: absolute;
         height: calc(100% - 8rem);
         overflow: scroll;
@@ -429,15 +433,15 @@
 
     .top-div{
         width: 100%;
-        height: 4rem;
+        height: 2rem;
         display: flex;
         align-items: center;
-        box-shadow: 0px 2px 3px  var(--dormash);
+        box-shadow: 0px 2px 2px #aaa;
         position: fixed;
     }
 
     .logo {
-        width: 5rem;
+        width: 4rem;
         overflow: hidden;
         margin-left: 1rem;
     }
@@ -481,7 +485,7 @@
 
         width: 100%;
         margin-left:0;
-        margin-top: 4rem;
+        margin-top: 3rem;
         position: absolute;
         height: calc(100% - 8rem);
         overflow: scroll;
@@ -499,10 +503,10 @@
 
     .top-div{
         width: 100%;
-        height: 4rem;
+        height: 2.5rem;
         display: flex;
         align-items: center;
-        box-shadow: 0px 2px 3px  var(--dormash);
+        box-shadow: 0px 2px 2px #aaa;
         position: fixed;
     }
 
@@ -573,7 +577,7 @@
         height: 4rem;
         display: flex;
         align-items: center;
-        box-shadow: 0px 2px 3px  var(--dormash);
+        box-shadow: 0px 2px 2px #aaa;
         position: fixed;
     }
 
@@ -626,7 +630,7 @@
         height: 4rem;
         display: flex;
         align-items: center;
-        box-shadow: 0px 2px 3px  var(--dormash);
+        box-shadow: 0px 2px 2px #aaa;
         background: var(--white);
         position: fixed;
         z-index: 99999;

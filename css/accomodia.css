@@ -8,6 +8,9 @@
  
 }
 
+
+
+
 body{
     overflow-x: hidden;
 }
@@ -253,6 +256,7 @@ strong{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 9999999;
    
 }
 
@@ -273,7 +277,7 @@ strong{
 }
 
 .request-div-inner-div{
-    margin-top: 4rem;
+    margin-top: -1rem;
     padding: 1rem;
     width: fit-content;
     height: auto;
@@ -327,6 +331,17 @@ strong{
     text-shadow: 0px 2px 3px #333;
 }
 
+
+.exit-big-screen{
+    background: var(--dormblue);
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
 @media screen and (min-width: 200px) and (max-width: 300px) {
 
     .accomodia-card{

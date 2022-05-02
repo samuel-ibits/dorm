@@ -26,6 +26,7 @@
        <link rel="stylesheet" href="css/marketfullscreen.css">
        <link rel="stylesheet" href="update.css">
        <link rel="stylesheet" href="css/fullscreenmarketmenu.css">
+       <link rel="stylesheet" href="style.css">
        <!--=============== CSS ===============-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -48,7 +49,7 @@
             scroll-behavior: smooth;
             overflow: auto;
             scroll-snap-type: y mandatory;
-            margin-top: 4rem;
+            margin-top: 1.9rem;
         } 
         
 
@@ -67,7 +68,7 @@
     position: fixed;
     padding: .5rem;
     color: #fff;
-    z-index: 9999;
+    z-index:  9999999;
     background: var(--dormblue);
     margin-top: 4rem;
     margin-left: -3rem;
@@ -85,12 +86,13 @@
     height: 80vh;
     background: #020202;
     opacity: .96;
-    z-index: 999;
+    z-index: 9999999;
     display: flex;
     justify-content: center;
     align-items: center;
    
 }
+
 }
 
 
@@ -138,6 +140,9 @@
 <div class="request-div-holder">
 
   <div class="request-div-inner-div">
+    <div class="exit-big-screen">
+      <i class="bi bi-x open-request"></i>
+  </div>
       <p class="title-text">Prefered specs</p>
 
 
@@ -527,6 +532,12 @@
 $(".bi-bell-fill").click(function(){
   $(".notification").fadeToggle('fast');
 });
+
+
+$(".exit-big-screen").click(function(){
+  $(".request-div-holder").fadeOut('fast');
+});
+
 
 $(".request").ready(function(){
   $(".request-div-holder").fadeOut('fast');

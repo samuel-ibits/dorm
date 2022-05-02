@@ -24,6 +24,18 @@ body{
     background: rgb(252, 250, 250);
 }
 
+.number-of-ups{
+    margin-right: .3rem;
+}
+
+.number-of-downs{
+    margin-right: .3rem;
+}
+
+.number-of-comments{
+    margin-right: .3rem;
+}
+
 .most-searched-divv{
     width: 100%;  
     height: auto;
@@ -35,6 +47,7 @@ body{
     position: absolute;
     display: none;
     z-index: 999;
+    margin-top: 2.3rem;
 }
 
 .comment-div
@@ -75,6 +88,7 @@ body{
 }
 
 
+
 .create-review-btn{
     margin-top: 13vh;
     border: none;
@@ -85,12 +99,11 @@ body{
     z-index: 99;
 }
 
-.page-content{
-    padding: .5rem;
-}
+
+
 
 .card{
-    width: 100%;
+    width: 95%;
     height: fit-content;
     border-radius: .5rem;
     border: 1px solid var(--dormblue);
@@ -420,10 +433,31 @@ justify-content: center;
 }
 
 
-@media only screen and (min-width: 951px) and (max-width: 1500px) {
+@media only screen and (min-width: 951px) {
  .search-wrapper{
      display: none;
  }
+
+ .card{
+    width: 95%;
+    height: fit-content;
+    border-radius: .5rem;
+    border: 1px solid var(--dormblue);
+    padding: .4rem;
+    margin-top: .5rem;
+}
+
+.review-div{
+    margin-top: 1vh;
+    display: grid;
+    gap: 1rem;
+    overflow-x: hidden;
+    grid-template-columns: repeat(auto-fill,minmax(35%,1fr)); 
+}
+
+
+
+
  
  .most-searched-holder-div{
     margin-top: 1vh;

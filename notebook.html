@@ -33,13 +33,9 @@
 
     .note-text-link{
         margin: 0px 1rem;
+        text-shadow: none;
     }
 
-    @media only screen and (max-width: 600px) {
-    .page-content{
-            height: 72vh;
-        }
-}
 
 </style>
 </head>
@@ -118,8 +114,10 @@
 </div>
 
 <div class="page-content">
-    <div class="tool-holder">
+    <div class="holder">
+       
         <div class="tools top-index">
+            <i class="bi bi-arrow-down hider"></i>
             <i class="bi bi-x toggletools"></i>
         </div>
         <div class="fade-tools">
@@ -260,12 +258,15 @@ $(".bi-bell-fill").click(function(){
     content: '<p class="dormbotmessage">Resource Team.</p>',
   allowHTML: true,
   });
+  
 
-
-
-  $(".toggletools").click(function(){
+  $(".top-index").click(function(){
+  $(".hider").toggle();
+  $(".bi-x").toggle();
   $(".fade-tools").fadeToggle();
 });
+
+
   
         </script>
 </body>

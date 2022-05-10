@@ -10,22 +10,24 @@
 
 
 
-
+ 
 body{
     overflow-x: hidden;
+    background: rgb(252, 250, 250);
 }
 
 .home-info{
     position: fixed;
     z-index: 999999;
-    margin-top: 80vh;
     background: #ffffff;
     padding: .5rem;
+    bottom: 3rem;
 }
 
 strong{
     font-weight: bolder;
 }
+
 
 .contact-agent{
     color: var(--dormblue);
@@ -40,22 +42,37 @@ strong{
 }
 
 .accomodia{
-    width: 90%;
-    height: 100%;
+    width: 100%;
+    height: auto;
     margin-top: 80px;
     display: grid;
     gap: 1rem;
     z-index: 9;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); 
+    top: 0rem;
+    position: absolute;   
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr)); 
 }
 
+.center-accomodia-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*change hieght of accomodia-card to auto during backend word so i dynamically fit user's data*/
+
 .accomodia-card{
-    width: 400px;
-    height: 230px;
-    box-shadow: -1px 1px 1px #aaa;
+    width: 98vw;
+    height: 220px;
+    box-shadow: 0px 3px 2px #aaa;
     background: #fff;
     overflow: hidden;
+    margin-left: 1vw;
+    padding-bottom: 1rem;
+    border-radius: 2px;
 }
+
+
 
 .top-image{
     width: 100%;
@@ -112,21 +129,21 @@ strong{
     height: 30px;
 }
 
-.holder{
-    position: absolute;
+.accomodia-holder{
+    position: relative;
     display: flex;
     width: 100%;
     height: auto;
+    background: transparent;
 }
 
 .price-of-house{
-    position: absolute;
+    position: relative;
     padding: .5rem;
     background: var(--dormorange);
     color: #fff; 
     width: max-content;
-    margin-left: 203px;
-
+    margin-left: auto;
 }
 
 .inspect-image{
@@ -188,9 +205,10 @@ strong{
     color: #fff;
     z-index: 99999;
     background: var(--dormblue);
-    margin-top: 70vh;
+    bottom:4rem ;
     border-radius: 20px;
-    margin-left: -4vw;
+    left: -.5rem;
+    transform: scale(.7);
     text-shadow: 0px 3px 3px #333;
     box-shadow: 0px 2px 3px #333;
 }
@@ -343,25 +361,10 @@ strong{
     border-radius: 50%;
 }
 @media screen and (min-width: 200px) and (max-width: 300px) {
+  
+   
 
-    .accomodia-card{
-        width: 250px;
-        height: 200px;
-        box-shadow: -1px 1px 1px #aaa;
-        background: #fff;
-        overflow: hidden;
-    }
-
-    .price-of-house{
-        position: absolute;
-        padding: .5rem;
-        background: var(--dormorange);
-        color: #fff; 
-        width: max-content;
-        margin-left: 161px;
-    
-    }
-
+   
         
 .house-images{
     width: 100%;
@@ -370,30 +373,11 @@ strong{
 }
 
 
-.add-house{
-    position: fixed;
-    padding: .5rem;
-    color: #fff;
-    z-index: 99999;
-    background: var(--dormblue);
-    margin-top: 50vh;
-    border-radius: 20px;
-    margin-left: .2vw;
-    box-shadow: 0px 2px 3px #333;
-}
-
 
   }
 
 
   @media screen and (min-width: 301px) and (max-width: 420px) {
-    .accomodia-card{
-        width: 340px;
-        height: 200px;
-        box-shadow: -1px 1px 1px #aaa;
-        background: #fff;
-        overflow: hidden;
-    }
 
     
 .house-images{
@@ -401,7 +385,7 @@ strong{
     height: 100vh;
     object-fit: contain;
 }
-
+ 
 .house-images img{
     height: 100%;
     width: 100%;
@@ -413,106 +397,47 @@ strong{
 }
 
 
-.add-house{
-    position: fixed;
-    padding: .5rem;
-    color: #fff;
-    z-index: 99999;
-    background: var(--dormblue);
-    margin-top: 50vh;
-    border-radius: 20px;
-    box-shadow: 0px 2px 3px #333;
-}
 
 
-.price-of-house{
-    position: absolute;
-    padding: .5rem;
-    background: var(--dormorange);
-    color: #fff; 
-    width: max-content;
-    margin-left: 251px;
-
-}
 
 
   }
 
   
   @media screen and (min-width: 421px) and (max-width: 550px) {
-    .accomodia-card{
-        width: 500px;
-        height: 250px;
-        box-shadow: -1px 1px 1px #aaa;
-        background: #fff;
-        overflow: hidden;
-    }
+ 
 
     
-.price-of-house{
-    position: absolute;
-    padding: .5rem;
-    background: var(--dormorange);
-    color: #fff; 
-    width: max-content;
-    margin-left: 429px;
 
-}
-
-.add-house{
-    position: fixed;
-    padding: .5rem;
-    color: #fff;
-    z-index: 99999;
-    background: var(--dormblue);
-    margin-top: 50vh;
-    border-radius: 20px;
-    box-shadow: 0px 2px 3px #333;
-}
-
-    
+   
   }
 
 
   
   @media screen and (min-width: 600px) and (max-width: 800px) {
 
-            .price-of-house{
-            position: relative;
-            padding: .5rem;
-            background: var(--dormorange);
-            color: #fff; 
-            width: max-content;
-            margin-left: 330px;
         
-        }
+        
 
-        
-.add-house{
-    position: fixed;
-    padding: .5rem;
-    color: #fff;
-    z-index: 99999;
-    background: var(--dormblue);
-    margin-top: 80vh;
-    border-radius: 20px;
-    margin-left: 1vw;
-    box-shadow: 0px 2px 3px #333;
-}
     }
 
 
     @media screen and (min-width: 801px){
+        .add-house{
+            position: fixed;
+            padding: .5rem;
+            color: #fff;
+            z-index: 99999;
+            background: var(--dormblue);
+            bottom: 1rem ;
+            border-radius: 20px;
+            left: 7rem;
+            text-shadow: 0px 3px 3px #333;
+            box-shadow: 0px 2px 3px #333;
+        }
+        
      
-        .price-of-house{
-        position: relative;
-        padding: .5rem;
-        background: var(--dormorange);
-        color: #fff; 
-        width: max-content;
-        margin-left: 205px;
-    
-    }
+      
     .remove{
         position: absolute;
         color: var(--dormblue);
@@ -524,13 +449,7 @@ strong{
         font-size: 4rem;
     }
     
-.accomodia-card{
-    width: 300px;
-    height: 230px;
-    box-shadow: -1px 1px 1px #aaa;
-    background: #fff;
-    overflow: hidden;
-}
+
 
 
 .upload-wrapper{
@@ -582,12 +501,11 @@ strong{
 .upload-wrapper{
     width: 100%;
     justify-content: center;
-    min-height: 100vh;
-  
+    height: auto ;
 }
 
 .upper-div{
-    height: 100px;
+    height: auto;
     width: 100%;
     display: flex;
     align-items: center;
@@ -768,4 +686,44 @@ margin-bottom: 3rem;
    
 .upload-package-container{
     width: 280px;
+}
+
+
+@media only screen and (min-width: 700px) {
+
+    .accomodia-card{
+        width: 450px;
+        height: 250px;
+        box-shadow: 0px 3px 2px #aaa;
+        background: #fff;
+        overflow: hidden;
+        margin-left: 1vw;
+        padding-bottom: 1rem 
+    }
+    
+    .price-of-house{
+        position: relative;
+    padding: .5rem;
+    background: var(--dormorange);
+    color: #fff; 
+    width: max-content;
+    margin-left: auto;
+  
+    }
+
+        .add-house{
+            position: fixed;
+            padding: .5rem;
+            color: #fff;
+            z-index: 99999;
+            background: var(--dormblue);
+            bottom: 1rem ;
+            border-radius: 20px;
+            left: 7rem;
+            text-shadow: 0px 3px 3px #333;
+            box-shadow: 0px 2px 3px #333;
+            z-index: 9999;
+        }
+        
+
 }

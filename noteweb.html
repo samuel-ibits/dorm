@@ -116,8 +116,9 @@
 </div>
 
 <div class="page-content">
-    <div class="tool-holder">
+    <div class="holder">
         <div class="tools top-index">
+            <i class="bi bi-arrow-down hider"></i>
             <i class="bi bi-x toggletools"></i>
         </div>
         <div class="fade-tools">
@@ -139,7 +140,7 @@
         </div>
     </div>
 
-    <div class="login-form text-div">
+    <div class="login-form text-div centered-div">
         <form action="#">
             <div class="input-wrapper wider">
                 <i class="bi bi-search dark-icon"></i> <input type="search"  placeholder="Search for a note">
@@ -214,9 +215,12 @@
   allowHTML: true,
   });
 
-  $(".toggletools").click(function(){
+  $(".top-index").click(function(){
+  $(".hider").toggle();
+  $(".bi-x").toggle();
   $(".fade-tools").fadeToggle();
 });
+
 
 $(".bi-bell-fill").click(function(){
   $(".notification").fadeToggle('fast');

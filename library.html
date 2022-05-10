@@ -26,105 +26,11 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <style>
-    
-    @media only screen and (min-width: 200px) and (max-width: 300px) {
-    .page-content{
-            height: 72vh;
-        }
-
-        .tool-holder{
-        height: auto;
-        width: fit-content;
-        margin-left: 80vw;
-        margin-top: -35rem;
-        position: fixed;
-    }
-}
-
-@media only screen and (min-width: 301px) and (max-width: 360px) {
-    .page-content{
-            height: 72vh;
-        }
-
-        .tool-holder{
-        height: auto;
-        width: fit-content;
-        margin-left: 88vw;
-        margin-top: -40rem;
-        position: fixed;
-    }
-}
-
-@media only screen and (min-width: 361px) and (max-width: 400px) {
-    .page-content{
-            height: 72vh;
-        }
-
-        .tool-holder{
-        height: auto;
-        width: fit-content;
-        margin-left: 85vw;
-        margin-top: -35rem;
-        position: fixed;
-    }
-}
-
-@media only screen and (min-width: 401px) and (max-width: 500px) {
-    .page-content{
-            height: 72vh;
-        }
-
-        .tool-holder{
-        height: auto;
-        width: fit-content;
-        margin-left: 88vw;
-        margin-top: -30rem;
-        position: fixed;
-    }
-}
 
 
 
-    @media only screen and (min-width: 501px) and (max-width: 550px) {
-    .page-content{
-            height: 72vh;
-        }
-
-        .tool-holder{
-        height: auto;
-        width: fit-content;
-        margin-left: 88vw;
-        margin-top: -10rem;
-        position: fixed;
-    }
-}
-
-@media only screen and (min-width: 551px) and (max-width: 600px) {
-    .page-content{
-            height: 72vh;
-        }
-
-        .tool-holder{
-        height: auto;
-        width: fit-content;
-        margin-left: 88vw;
-        margin-top: -10vh;
-        position: fixed;
-    }
-}
 
 
-
-    
-@media only screen and (min-width: 951px) and (max-width: 1500px) {
-    .tool-holder{
-        height: auto;
-        width: fit-content;
-        margin-left: 85vw;
-        margin-top: 0vh;
-        position: fixed;
-    }
-}
 
 
 @media only screen and (min-width: 600px)  {
@@ -263,8 +169,9 @@
     <i class="bi bi-search"></i>
     <input type="search" class="search-input" placeholder="search e.g previous review, user name etc" name="" id=""  oninput = "Search((this.value).toLowerCase())">
  </div>
- <div class="tool-holder">
+ <div class="holder">
     <div class="tools top-index">
+        <i class="bi bi-arrow-down hider"></i>
         <i class="bi bi-x toggletools"></i>
     </div>
     <div class="fade-tools">
@@ -531,9 +438,12 @@
   allowHTML: true,
   });
 
-  $(".toggletools").click(function(){
+  $(".top-index").click(function(){
+  $(".hider").toggle();
+  $(".bi-x").toggle();
   $(".fade-tools").fadeToggle();
 });
+
        
        
 $(".bi-bell-fill").click(function(){

@@ -30,15 +30,6 @@
 
     <!-- start vanillatop plugin -->
     <link rel="stylesheet" href="dist/vanillatop.min.css">
- <style>
-    
-    @media only screen and (max-width: 600px) {
-    .page-content{
-            height: 72vh;
-        }
-}
-
- </style>
 </head>
 <body onload="subname()">  <div class="top-div">
   <div class="logo">
@@ -128,7 +119,7 @@
                 <input type="file" name="" id="" class="avtrfile">
                 <i class="bi bi-camera-fill"></i>
               </div>
-                <div class="profile-image">
+                <div class="profile-image" id="profile-image-div-holder">
                     <img src="images/avtr.png" alt="" srcset="">
                 </div>
 
@@ -263,6 +254,11 @@
         <script>
                 $(".bi-bell-fill").click(function(){
   $(".notification").fadeToggle('fast');
+});
+
+
+$("#profile-image-div-holder").click(function(){
+  $("#profile-image-div-holder").toggleClass("profile-image image-full-screen");
 });
         </script>
 </body>

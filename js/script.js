@@ -1,9 +1,3 @@
-
-   
-
-
-
-
 function subname(){
     let name = document.getElementById('name-text');
     let nameInput = document.getElementById('Name-input');

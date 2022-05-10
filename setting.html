@@ -29,9 +29,29 @@
 
     <style>
           @media only screen and (max-width: 600px) {
-    .page-content{
-            height: 72vh;
-        }
+ 
+}
+
+span{
+    text-shadow: none;
+}
+
+.bi-link-45deg{
+    color: inherit;
+}
+
+.link-of-apk{
+    width: max-content;
+    font-size: .7rem;
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    border-radius: 20px;
+    border: 2px solid #0688d3;
+    text-shadow: none;
+    padding: .5rem;
+    background: #fff;
+    
 }
 
     </style>
@@ -174,7 +194,22 @@
     </div>
 </a>
 
-<a href="#"  class="studytool-card-link " rel="noopener noreferrer">
+<a href="display.html"  class="studytool-card-link" rel="noopener noreferrer">
+    <div class="studytool-cards">
+        <div class="card-icon">
+            <i class="bi bi-display-fill"></i>
+        </div>
+
+        <div class="about-studytool-text">
+            <h2>DISPLAY SETTING</h2>
+        </div>
+
+        
+    </div>
+</a>
+
+
+<a href="#" id="shareDorm"  class="studytool-card-link " rel="noopener noreferrer">
     <div class="studytool-cards">
         <div class="card-icon">
             <i class="fa fa-share-alt" aria-hidden="true"></i>
@@ -183,6 +218,9 @@
         <div class="about-studytool-text">
             <h2>SHARE DORM</h2>
         </div>
+        <span class="link-of-apk" onclick="copyToClipboard('#p1')">
+            <i class="bi bi-link-45deg"></i> <span id="p1"> https://dorm.com.ng.apps/dorm_v2_lite.apk</span>
+        </span>
     </div>
 </a>
 
@@ -227,6 +265,10 @@
   $(".notification").fadeToggle('fast');
 });
 
+
+
+
+
         tippy('#addhouse', {
   
             theme: 'translucent',
@@ -269,6 +311,35 @@ $(".bi-box-arrow-left").click(function(){
     theme: 'tomato',
     content: '<p class="dormbotmessage">Hi, I"m your Dorm assistant, Always, here to help.</strong>',
   allowHTML: true,
+  });
+
+
+
+share = document.getElementById('shareDorm')
+  
+  share.addEventListener('click', event => {
+      if(navigator.share){
+          navigator.share({
+              text:"Dorm: student help apk",
+              url:'https://dorm.com.ng.apps/dorm_v2_lite.apk'
+          }).then(() => {
+              console.log('thanks for sharing!');
+          })
+          .catch((err) =>console.error(err));
+      }
+      else{
+          alert("unsupported by browser please share link manully");
+          
+          function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+
+
+  swal("COPIED!", "Link COPIED!", "success");
+}
+      }
   });
       </script>
         <script src="js/popper.js"></script>

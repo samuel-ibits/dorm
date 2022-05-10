@@ -14,6 +14,7 @@
 }
  
 
+
 *::-webkit-scrollbar {
     display: none;
   }
@@ -27,6 +28,22 @@
   .logo-login img{
       width: 100%;
   }
+
+.hide{
+    display: none;
+}
+
+.hider{
+    display: none;
+}
+
+.centered-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .top-div{
     width: 100%;
@@ -81,7 +98,7 @@ ul{
 .active-nav-link{
     text-shadow: 0px 3px 4px #333;
      font-weight: 900;
-    background: var(--dormorange);
+    background: var(--white);
     color: var(--white);
     border-radius: 50%;
     height: 2rem;
@@ -93,10 +110,11 @@ ul{
 
 .active-nav-link i{
     position: absolute;
+    color: var(--dormorange);
 }
 
 .active-nav-link .icon-title{
-    color: var(--dormorange);
+    color: var(--white);
     font-weight: 700;
     text-shadow: 0px 3px 3px #333;
     font-size: .7rem;
@@ -121,7 +139,6 @@ ul{
 .nav-list{
     list-style: none;
     color: var(--white); 
-    margin-top: -5rem;
 }
 
 .nav-list li {
@@ -201,8 +218,9 @@ ul{
       height: auto;
       width: fit-content;
       z-index: 9999;
-      margin-left: 89vw;
       position: fixed;
+      right: 1rem;
+      bottom: 6rem;
   }
 
   .tool-holder:hover{
@@ -246,19 +264,13 @@ ul{
 
 @media only screen and (min-width: 200px) and (max-width: 286px) {
 
-    .tool-holder{
-        height: auto;
-        width: fit-content;
-        margin-left: 85vw;
-        position: fixed;
-    }
 
     .nav-bar{
         position: fixed;
         width: 100%;
-        height: 4rem;
+        height: 3rem;
         background: var(--dormblue);
-        margin-top: 80vh;
+       bottom: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -267,7 +279,7 @@ ul{
 
     .top-div{
         width: 100%;
-        height: 2rem;
+        height: 3rem;
         display: flex;
         align-items: center;
         box-shadow: 0px 2px 2px #aaa;
@@ -296,9 +308,9 @@ ul{
     .nav-list{
         list-style: none;
         color: var(--white);
-        margin-top: -1rem;
         display: flex;
         gap: 2rem;
+        margin-top: -1rem;
     }
 
     .icon-title{
@@ -309,11 +321,12 @@ ul{
 .page-content{
     width: 100%;
     margin-left:0;
-    margin-top: 3rem;
+    top: 3rem;
     position: absolute;
-    height: calc(100% - 6rem);
+    height: 80%;
+    top: 3rem;
     overflow: scroll;
-    margin-bottom: 9rem;
+    bottom: 6rem;
 }
 
 
@@ -322,31 +335,26 @@ ul{
 
 
 @media only screen and (min-width: 285px) and (max-width: 380px) {
-    .tool-holder{
-        height: auto;
-        width: fit-content;
-        margin-left: 90vw;
-        position: fixed;
-    }
  
 
     .page-content{
 
         width: 100%;
         margin-left:0;
-        margin-top: 2rem;
+        top: 4rem;
         position: absolute;
         height: calc(100% - 7rem);
         overflow: scroll;
-        margin-bottom: 9rem;
+        overflow-x: hidden;
+        bottom: 5rem;
     }
     
     .nav-bar{
         position: fixed;
         width: 100%;
-        height: 6rem;
+        height: 4rem;
         background: var(--dormblue);
-        margin-top: 80vh;
+        bottom: 0;        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -354,7 +362,7 @@ ul{
 
     .top-div{
         width: 100%;
-        height: 2.3rem;
+        height: 3rem;
         display: flex;
         align-items: center;
         box-shadow: 0px 2px 2px #aaa;
@@ -387,9 +395,9 @@ ul{
     .nav-list{
         list-style: none;
         color: var(--white); 
-        margin-top: -3rem;
         display: flex;
-        gap: 1.5rem;
+        gap: 1.7rem;
+        margin-top: -1rem;
     }
 
     .icon-title{
@@ -400,31 +408,27 @@ ul{
 
 
 @media only screen and (min-width: 381px) and (max-width: 414px) {
-    .tool-holder{
-        height: auto;
-        width: fit-content;
-        margin-left: 89vw;
-        position: fixed;
-    }
+
 
 
     .page-content{
         width: 100%;
         margin-left:0;
-        margin-top: 2.5rem;
+        top: 3.5rem;
         position: absolute;
         height: calc(100% - 8rem);
         overflow: scroll;
-        margin-bottom: 9rem;
+        overflow-x: hidden;
+        bottom: 4rem;
     }
     
 
     .nav-bar{
         position: fixed;
         width: 100%;
-        height: 5rem;
+        height: 4rem;
         background: var(--dormblue);
-        margin-top: 80vh;
+        bottom: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -433,7 +437,7 @@ ul{
 
     .top-div{
         width: 100%;
-        height: 2rem;
+        height: 3rem;
         display: flex;
         align-items: center;
         box-shadow: 0px 2px 2px #aaa;
@@ -462,9 +466,9 @@ ul{
     .nav-list{
         list-style: none;
         color: var(--white); 
-        margin-top: -3rem;
         display: flex;
-        gap: 2.1rem;
+        margin-top: -1rem;
+        gap: 1.9rem;
     }
 
     .icon-title{
@@ -474,32 +478,34 @@ ul{
 
 
 @media only screen and (min-width: 415px) and (max-width: 460px){
-    .tool-holder{
-        height: auto;
-        width: fit-content;
-        margin-left: 89vw;
-        position: fixed;
-    }
+
 
     .page-content{
 
         width: 100%;
         margin-left:0;
-        margin-top: 3rem;
+        top: 3rem;
         position: absolute;
         height: calc(100% - 8rem);
         overflow: scroll;
-        margin-bottom: 9rem;
+        overflow-x: hidden;
+        bottom: 4rem;
     }
     
 
+   
     .nav-bar{
         position: fixed;
         width: 100%;
-        height: 5rem;
+        height: 4rem;
         background: var(--dormblue);
-        margin-top: 80vh;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+
 
     .top-div{
         width: 100%;
@@ -545,32 +551,32 @@ ul{
 
  
 @media only screen and (min-width: 461px) and (max-width: 600px){
-    .tool-holder{
-        height: auto;
-        width: fit-content;
-        margin-left: 89vw;
-        position: fixed;
-    }
 
     .page-content{
 
         width: 100%;
         margin-left:0;
-        margin-top: 4rem;
+        top: 4.5rem;
         position: absolute;
         height: calc(100% - 8rem);
         overflow: scroll;
-        margin-bottom: 9rem;
+        bottom: 4rem;
     }
     
 
+   
     .nav-bar{
         position: fixed;
         width: 100%;
-        height: 5rem;
+        height: 4rem;
         background: var(--dormblue);
-        margin-top: 80vh;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+
 
     .top-div{
         width: 100%;
@@ -605,7 +611,7 @@ ul{
         color: var(--white); 
         margin-top: -1rem;
         display: flex;
-        gap: 2.5rem;
+        gap: 3.5rem;
     }
 
     .icon-title{
@@ -615,7 +621,16 @@ ul{
  }
 
 
-@media only screen and (min-width: 601px) and (max-width: 850px) {
+@media only screen and (min-width: 601px)  {
+    .centered-div{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
     .accomodia{
         width: 90%;
         height: 100vh;
@@ -638,24 +653,24 @@ ul{
   
     .page-content{
 
-        width: 100%;
-        margin-left:6rem;
+        width: 80%;
+        left:6.5rem;
         margin-top: 4rem;
         position: absolute;
         height: fit-content;
         padding: .3rem;
         overflow: scroll;
+        overflow-x: hidden;
         margin-bottom: 9rem;
     }
     
 .nav-list{
     list-style: none;
-    color: var(--white); 
-    margin-top: -10rem;
+    color: var(--white);
 }
 
 .nav-list li {
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .nav-link{
@@ -736,7 +751,6 @@ ul{
     .page-content{
 
         width: 100%;
-        margin-left:5.5rem;
         margin-top: 4rem;
         position: absolute;
         height: fit-content;
@@ -802,20 +816,12 @@ ul{
     .page-content{
 
         width: calc(100% - 6rem);
-        margin-left:5.5rem;
         margin-top: 4rem;
         position: absolute;
         height: fit-content;
         padding: .3rem;
         overflow: scroll;
         margin-bottom: 9rem;
-    }
-
-    .tool-holder{
-        height: auto;
-        width: fit-content;
-        margin-left: 86vw;
-        position: fixed;
     }
 
 
@@ -825,3 +831,6 @@ ul{
     }
 
 }    
+
+
+

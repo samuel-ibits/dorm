@@ -216,6 +216,7 @@ margin-left: auto;
     height: auto;
     padding: .5rem;
     display: none;
+    margin-top: -1rem;
 }
 
 .radio-toolbar input[type="radio"] {

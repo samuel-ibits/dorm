@@ -14,7 +14,6 @@
 }
  
 
-
 *::-webkit-scrollbar {
     display: none;
   }
@@ -90,13 +89,13 @@ ul{
 }
 
 .icon-title{
-    text-shadow: 0px 1px 2px #333;
     width: max-content;
     z-index: 999;
+    text-align: center;
 }
 
 .active-nav-link{
-    text-shadow: 0px 3px 4px #333;
+    text-shadow: 0px 1px 3px #333;
      font-weight: 900;
     background: var(--white);
     color: var(--white);
@@ -116,7 +115,7 @@ ul{
 .active-nav-link .icon-title{
     color: var(--white);
     font-weight: 700;
-    text-shadow: 0px 3px 3px #333;
+    text-shadow: 0px 1px 3px #333;
     font-size: .7rem;
     width: max-content;
     z-index: 999;
@@ -326,7 +325,7 @@ ul{
     height: 80%;
     top: 3rem;
     overflow: scroll;
-    bottom: 6rem;
+    bottom: 4rem;
 }
 
 
@@ -419,21 +418,20 @@ ul{
         height: calc(100% - 8rem);
         overflow: scroll;
         overflow-x: hidden;
-        bottom: 4rem;
+        bottom: 5rem;
     }
     
 
     .nav-bar{
         position: fixed;
         width: 100%;
-        height: 4rem;
+        height: 4.5rem;
         background: var(--dormblue);
-        bottom: 0;
+        bottom: 0;        
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
 
     .top-div{
         width: 100%;
@@ -467,7 +465,7 @@ ul{
         list-style: none;
         color: var(--white); 
         display: flex;
-        margin-top: -1rem;
+        margin-top: -2rem;
         gap: 1.9rem;
     }
 

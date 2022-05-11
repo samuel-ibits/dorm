@@ -7,7 +7,7 @@
     --dormorange: #f96b03;
  
 }
-
+ 
 
 
  
@@ -58,6 +58,7 @@ strong{
     display: flex;
     justify-content: center;
 }
+
 
 /*change hieght of accomodia-card to auto during backend word so i dynamically fit user's data*/
 
@@ -205,7 +206,7 @@ strong{
     color: #fff;
     z-index: 99999;
     background: var(--dormblue);
-    bottom:4rem ;
+    bottom:5rem ;
     border-radius: 20px;
     left: -.5rem;
     transform: scale(.7);

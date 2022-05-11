@@ -18,6 +18,13 @@ body{
 }
 
 
+.center-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .remove-market{
     color: #f96b03; 
     right: 1rem; 
@@ -181,7 +188,7 @@ body{
 .shoping-card{
     width: 9rem;
     height: fit-content;
-    box-shadow: 0px 2px 4px #333;
+    box-shadow: 0px 1px 2px #333;
     cursor: pointer;
 
 }
@@ -198,17 +205,17 @@ body{
 
 .inspect-market-item{
     width: 100%;
-    height: 70vh;
+    height: max-content;
     overflow: scroll;
     position: absolute;
-    background: var(--white);
     display: none;
+    background: rgb(252, 250, 250);
     z-index: 999;
 }
 
 .inspect-market-image {
     height: 70%;
-    width: 100%;
+    width: 100%; 
 }
 
 .inspect-market-image img{
@@ -237,6 +244,7 @@ body{
     color: var(--white);
     border-radius: 3rem;
     transition: .5s linear;
+    text-align: center;
 }
 
 .buy-btn:hover{
@@ -382,7 +390,7 @@ transition: .5s;
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   @media screen and (min-width:601px){
@@ -423,7 +431,6 @@ transition: .5s;
         height: 80vh;
         overflow: scroll;
         position: absolute;
-        background: var(--white);
         display: none;
         z-index: 999;
     }
@@ -449,7 +456,6 @@ transition: .5s;
         height: 80vh;
         overflow: scroll;
         position: absolute;
-        background: var(--white);
         display: none;
         z-index: 999;
     }
@@ -471,7 +477,6 @@ transition: .5s;
         height: 80vh;
         overflow: scroll;
         position: absolute;
-        background: var(--white);
         display: none;
         z-index: 999;
     }
@@ -502,7 +507,6 @@ transition: .5s;
         height: 66vh;
         overflow: scroll;
         position: absolute;
-        background: var(--white);
         display: none;
         z-index: 999;
     }

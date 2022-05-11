@@ -103,8 +103,9 @@
 
 <div class="page-content">
 
-    <div class="tool-holder">
+    <div class="holder">
         <div class="tools top-index">
+            <i class="bi bi-arrow-up hider"></i>
             <i class="bi bi-x toggletools"></i>
         </div>
         <div class="fade-tools">
@@ -267,6 +268,14 @@
 $(".bi-bell-fill").click(function(){
   $(".notification").fadeToggle('fast');
 });
+
+
+$(".top-index").click(function(){
+  $(".hider").toggle();
+  $(".bi-x").toggle();
+  $(".fade-tools").fadeToggle();
+});
+
          </script>
 </body>
 </html>

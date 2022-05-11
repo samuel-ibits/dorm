@@ -21,9 +21,10 @@
     padding: 10px 20px;
     border-radius: 3px;
     margin-bottom: 30px;
-   box-shadow: 0px 1px 5px var(--darkcolor);
+    border: 1px solid var(--dormblue);
     justify-content: space-between;
     align-items: center;
+    background: var(--white);
 }
 
 .switch-label {

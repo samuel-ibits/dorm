@@ -1,0 +1,3 @@
+[27-Nov-2021 04:02:55 Africa/Lagos] PHP Fatal error:  Cannot declare class Mail, because the name is already in use in /opt/cpanel/ea-php74/root/usr/share/pear/Mail.php on line 58
+[27-Nov-2021 04:07:05 Africa/Lagos] PHP Fatal error:  Cannot declare class Mail, because the name is already in use in /opt/cpanel/ea-php74/root/usr/share/pear/Mail.php on line 58
+[27-Nov-2021 05:28:32 Africa/Lagos] PHP Parse error:  syntax error, unexpected 'none' (T_STRING) in /home/dormcomn/public_html/landing/forms/contact.php on line 27

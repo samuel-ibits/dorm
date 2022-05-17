@@ -291,7 +291,9 @@ body{
     outline: none;
     background: var(--dormblue);
     color: #eee;
-    width: fit-content;
+    width: max-content;
+    height: auto;
+    cursor: pointer;
     padding: .5rem 1rem;
     transition: .2s linear;
 }

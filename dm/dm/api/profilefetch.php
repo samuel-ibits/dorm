@@ -9,9 +9,7 @@ session_start();
 IF($useri==""){$userid="user1783240023";}else{$userid=$_SESSION['dormuserid'];}
 
 
-if(isset($_GET['check'])) { 
-$proid= $_GET['proid'];
-}
+
   if($proid==""){$useridr=$userid;}else{$useridr=$proid;}
   
  

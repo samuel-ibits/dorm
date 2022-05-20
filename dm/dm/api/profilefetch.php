@@ -1,19 +1,18 @@
 <?php include '../connect.php';
+include '../tokenizer.php';
+
+if(validatetoken($_SESSION['dormtoken'])=="true"){
+  
+
+
 header("Content-Type:application/json");
 
 
-if (isset($_GET['order_id']) && $_GET['order_id']!="") {
-
-session_start();
- $useri=$_SESSION['dormuserid'];
-IF($useri==""){$userid="user1783240023";}else{$userid=$_SESSION['dormuserid'];}
 
 
 
-  if($proid==""){$useridr=$userid;}else{$useridr=$proid;}
-  
  
-$rselr="SELECT * FROM profile WHERE Id='".$useridr."'";
+$rselr="SELECT * FROM profile WHERE Id='".$userid."'";
 $result= $conn6->query($rselr);
   If ($result->num_rows>0){
 While ($row=$result->fetch_assoc()){

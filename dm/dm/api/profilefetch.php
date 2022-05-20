@@ -1,5 +1,5 @@
-<?php include '../connect.php';
-include '../tokenizer.php';
+<?php include 'connect.php';
+include 'tokenizer.php';
 
 if(validatetoken($_SESSION['dormtoken'])=="true"){
   

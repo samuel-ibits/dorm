@@ -1,5 +1,7 @@
 <?php include '../connect.php';
 header("Content-Type:application/json");
+
+
 if (isset($_GET['order_id']) && $_GET['order_id']!="") {
 
 session_start();
@@ -45,7 +47,7 @@ $favfood=$row["favfood"];
 $ihate=$row["ihate"];
 $icherish=$row["icherish"];
 	
-response($name,$username,$phone,$sta,$mcred,$course,$school,$email,$descyour,$year,$pocketid,$howsch,$descou,$dessch,$dob,$bescou,$besstudtm,$rescrush,$irep,$enjdoing,$favfood,$ihate,$icherish,$order_id, $amount, $response_code,$response_desc); 
+response($name,$username,$phone,$sta,$mcred,$course,$school,$email,$descyour,$year,$pocketid,$howsch,$descou,$dessch,$dob,$bescou,$besstudtm,$rescrush,$irep,$enjdoing,$favfood,$ihate,$icherish,$order_id,$amount,$response_code,$response_desc); 
 
 }else{
   close(200,"No Record Found");
@@ -56,17 +58,36 @@ response($name,$username,$phone,$sta,$mcred,$course,$school,$email,$descyour,$ye
   
   
   
-  mysqli_close($con);
+  mysqli_close($conn6);
   
 
 
 
   function response($order_id,$amount,$response_code,$response_desc){
-    $response['order_id'] = $order_id;
-    $response['amount'] = $amount;
-    $response['response_code'] = $response_code;
-    $response['response_desc'] = $response_desc;
-    
+    $response["name"];
+    $response["username"];
+    $response["phone"];
+    $response["sta"];
+    $response["mcred"];
+    $response["course"];
+    $response["school"];
+    $response["email"];
+    $response["descyour"];
+    $response["year"];
+    $response["pockid"];
+    $response["howsch"];
+    $response["descou"];
+    $response["dessch"];
+    $response["dob"];
+    $response["bescou"];
+    $response["besstudtm"];
+    $response["rescrush"];
+    $response["irep"];
+    $response["enjdoing"];
+    $response["favfood"];
+    $response["ihate"];
+    $response["icherish"];
+     
     $json_response = json_encode($response);
     echo $json_response;
   }

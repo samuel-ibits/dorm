@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0688d3">
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dorm - Profile</title>
     <link rel="stylesheet" href="menu/css/styles.css">
@@ -15,290 +18,365 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
     <link rel="stylesheet" href="update.css">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!-- start vanillatop plugin -->
     <link rel="stylesheet" href="dist/vanillatop.min.css">
+    <style>
+        .bi-cash-stack{
+            color: inherit;
+        }
+    </style>
 </head>
-<body onload="subname()">  <div class="top-div">
-  <div class="logo">
-      <img src="images/dorm_no_bg.png" alt="">
-  </div>
 
-  <div class="searchbar-for-menu">
-      <i class="bi bi-search"></i> <input type="search" name="" id="" disabled>
-  </div>
+<body onload="subname()">
+    <div class="top-div">
+        <div class="logo">
+            <img src="images/dorm_no_bg.png" alt="">
+        </div>
 
-  <div class="bot-head">
-      <div class="ears-head">
-          <div class="left-ear-head"></div> 
-          <div class="right-ear-head"></div>
-      </div>
-      <div class="eyes-head">
-          <div class="right-eye-head"></div>
-          <div class="left-eye-head"></div>
-      </div>
+        <div class="searchbar-for-menu">
+            <i class="bi bi-search"></i> <input type="search" name="" id="" disabled>
+        </div>
 
-      <div class="mouth-head"></div>            
-</div>
-  <i class="bi bi-bell-fill"></i>
-</div>
-<div class="full-width">
-    <div class="notification">
-        <ul>
-            <li>Your  <span class="pronounds">Accomodia</span> request has returned results <span class="number">34</span></li>
-            <li>Your  <span class="pronounds">Market</span> request has returned results <span class="number">3</span></li>
-        </ul>
+        <div class="bot-head">
+            <div class="ears-head">
+                <div class="left-ear-head"></div>
+                <div class="right-ear-head"></div>
+            </div>
+            <div class="eyes-head">
+                <div class="right-eye-head"></div>
+                <div class="left-eye-head"></div>
+            </div>
+
+            <div class="mouth-head"></div>
+        </div>
+        <i class="bi bi-bell-fill"></i>
     </div>
-</div>
-
-<div class="nav-bar">
-<ul class="nav-list">
-  <li class="nav-item" title="Study Tools">
-      <a href="studytools.html" class="nav-link">
-          <i class="bi bi-tools"></i>    
-          <p class="icon-title">Study tools</p>
-      </a>  
-   </li>
-  <li class="nav-item" title="Course Review">
-      <a href="coursereview.html" class="nav-link">
-          <i class="bi bi-book-fill"></i>    
-          <p class="icon-title">Course review</p>
-      </a>      
-  </li>
-  <li class="nav-item" title="Title">
-      <a href="texter.html" class="nav-link">
-          <i class="bi bi-chat-left-text-fill"></i>   
-          <p class="icon-title">Texter</p>
-      </a>               
-  </li>
-  <li class="nav-item" title="Accomodia">
-      <a href="accomodia.html" class="nav-link">
-          <i class="bi bi-house"></i>   
-          <p class="icon-title">Accomodia</p>
-      </a>              
-  </li>
-  <li class="nav-item" title="Martket">
-      <a href="market.html" class="nav-link">
-          <i class="bi bi-shop"></i>   
-          <p class="icon-title">Market</p>
-      </a>              
-  </li>
-  <li class="nav-item" title="Setting">
-      <a href="setting.html" class="nav-link active-nav-link">
-          <i class="bi bi-gear-fill"></i>   
-          <p class="icon-title">Setting</p>
-      </a>              
-  </li>
-</ul>
-</div>
-
-<div class="page-content">
-
-
-<div class="profile-wrapper">
-  
-    <div class="profile-top-div">
-       
-        <div class="profile-image-div">
-
-            <div class="profile-image-holder">
-
-              <div class="select-image-profile">
-                <input type="file" name="" id="" class="avtrfile">
-                <i class="bi bi-camera-fill"></i>
-              </div>
-                <div class="profile-image" id="profile-image-div-holder">
-                    <img src="images/avtr.png" alt="" srcset="">
-                </div>
-            </div>
-            <div class="text-element">
-                <p>name of user</p>
-                <p>username</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.adipisicing elit.adipisicing elit. </p>
-            </div>
-            <div class="center-button">
-                <button onclick="editname()" class="submit"><i class="bi bi-pencil-square"></i> Edit</button>
-  
-            </div>
+    <div class="full-width">
+        <div class="notification">
+            <ul>
+                <li>Your <span class="pronounds">Accomodia</span> request has returned results <span
+                        class="number">34</span></li>
+                <li>Your <span class="pronounds">Market</span> request has returned results <span
+                        class="number">3</span></li>
+            </ul>
         </div>
     </div>
 
-   
-    <div class="profile-body">
-        
-   <div class="centerer">
-            <div>
-                <div class="cartegorier" id="cart1">
-                    <p class="cartegory-title">
-                        <i class="bi bi-person-fill"></i> Personal info
-                    </p>
-                    
-                    <p class="cartegory-icon"><i class="bi bi-arrow-right-circle-fill"></i>
-                    </p>
+    <div class="nav-bar">
+        <ul class="nav-list">
+            <li class="nav-item" title="Study Tools">
+                <a href="studytools.html" class="nav-link">
+                    <i class="bi bi-tools"></i>
+                    <p class="icon-title">Study tools</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Course Review">
+                <a href="coursereview.html" class="nav-link">
+                    <i class="bi bi-book-fill"></i>
+                    <p class="icon-title">Course review</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Title">
+                <a href="texter.html" class="nav-link">
+                    <i class="bi bi-chat-left-text-fill"></i>
+                    <p class="icon-title">Texter</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Accomodia">
+                <a href="accomodia.html" class="nav-link">
+                    <i class="bi bi-house"></i>
+                    <p class="icon-title">Accomodia</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Martket">
+                <a href="market.html" class="nav-link">
+                    <i class="bi bi-shop"></i>
+                    <p class="icon-title">Market</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Setting">
+                <a href="setting.html" class="nav-link active-nav-link">
+                    <i class="bi bi-gear-fill"></i>
+                    <p class="icon-title">Setting</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="page-content">
+
+
+        <div class="profile-wrapper">
+
+            <div class="profile-top-div">
+
+                <div class="profile-image-div">
+
+                    <div class="profile-image-holder">
+
+                        <div class="select-image-profile">
+                            <input type="file" name="" id="" class="avtrfile">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                        <div class="profile-image" id="profile-image-div-holder">
+                            <img src="images/avtr.png" alt="" srcset="">
+                        </div>
                     </div>
-                    <div class="profile-elements" id="profile-el-1">
-                        <div class="input-wrapper-profile"> 
-                            <div class="changer">
-                                  <input type="text" id="Name-input" placeholder="Name"> <span id="name-text" class="changevalue"></span>
-                                    </div> 
-                        </div>
-                        <div class="input-wrapper-profile">        
-                            <div class="changer">
-                                  <input type="text" id="Username-input" placeholder="Username"> <span id="Username-text" class="changevalue"></span>
-                                    </div> 
-                        </div>
-                        <div class="input-wrapper-profile">  
-                            <div class="changer">
-                                  <input type="text" id="Phone-input" placeholder="Phone number"> <span id="Phone-text" class="changevalue"></span>
-                                    </div> 
-                        </div>
-                       
-                        <div class="input-wrapper-profile">    
-                            <div class="changer">
-                                  <input type="text" id="Course-input" placeholder="Course"> <span id="Course-text" class="changevalue"></span>
-                                    </div> 
-                        </div>
-                        <div class="input-wrapper-profile">    
-                            <div class="changer">
-                                  <input type="text" id="Year-input" placeholder="Year"> <span id="Year-text" class="changevalue"></span>
-                                    </div> 
-                        </div>
-                        <div class="input-wrapper-profile">    
-                            <div class="changer">
-                                  <input type="text" id="School-input" placeholder="School"> <span id="School-text" class="changevalue"></span>
-                                    </div> 
-                        </div>
-                        <div class="input-wrapper-profile">     
-                            <div class="changer">
-                                  <input type="text" id="Bio-input" placeholder="Bio"> <span id="Bio-text" class="changevalue"></span>
-                                    </div> 
-                        </div>
-                        <div class="input-wrapper-profile">  
-                            <div class="changer">
-                                  <input type="text" id="Date-input" placeholder="Date of birth"> <span id="Date-text" class="changevalue"></span>
-                                    </div> 
-                        </div>
-                    </div>
-                    
-                        
-                    <div class="cartegorier" id="cart2">
-                        <p class="cartegory-title">
-                            <i class="bi bi-person-fill"></i> Favourite
+                    <div class="text-element">
+                        <p>name of user</p>
+                        <p>username</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.adipisicing elit.adipisicing elit.
                         </p>
-                        
-                        <p class="cartegory-icon"><i class="bi bi-arrow-right-circle-fill"></i></p>
+                    </div>
+                    <div class="center-button">
+                        <button onclick="editname()" class="submit"><i class="bi bi-pencil-square"></i> Edit</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="profile-body">
+
+                <div class="centerer">
+                    <div>
+                        <div class="cartegorier" id="cart1">
+                            <p class="cartegory-title">
+                                <i class="bi bi-person-fill"></i> Personal info
+                            </p>
+
+                            <p class="cartegory-icon"><i class="bi bi-arrow-right-circle-fill"></i>
+                            </p>
+                        </div>
+                        <div class="profile-elements" id="profile-el-1">
+                            <div class="input-wrapper-profile">
+                                <div class="changer">
+                                    <input type="text" id="Name-input" placeholder="Name"> <span id="name-text"
+                                        class="changevalue"></span>
+                                </div>
+                            </div>
+                            <div class="input-wrapper-profile">
+                                <div class="changer">
+                                    <input type="text" id="Username-input" placeholder="Username"> <span
+                                        id="Username-text" class="changevalue"></span>
+                                </div>
+                            </div>
+                            <div class="input-wrapper-profile">
+                                <div class="changer">
+                                    <input type="text" id="Phone-input" placeholder="Phone number"> <span
+                                        id="Phone-text" class="changevalue"></span>
+                                </div>
+                            </div>
+
+                            <div class="input-wrapper-profile">
+                                <div class="changer">
+                                    <input type="text" id="Course-input" placeholder="Course"> <span id="Course-text"
+                                        class="changevalue"></span>
+                                </div>
+                            </div>
+                            <div class="input-wrapper-profile">
+                                <div class="changer">
+                                    <input type="text" id="Year-input" placeholder="Year"> <span id="Year-text"
+                                        class="changevalue"></span>
+                                </div>
+                            </div>
+                            <div class="input-wrapper-profile">
+                                <div class="changer">
+                                    <input type="text" id="School-input" placeholder="School"> <span id="School-text"
+                                        class="changevalue"></span>
+                                </div>
+                            </div>
+                            <div class="input-wrapper-profile">
+                                <div class="changer">
+                                    <input type="text" id="Bio-input" placeholder="Bio"> <span id="Bio-text"
+                                        class="changevalue"></span>
+                                </div>
+                            </div>
+                            <div class="input-wrapper-profile">
+                                <div class="changer">
+                                    <input type="text" id="Date-input" placeholder="Date of birth"> <span id="Date-text"
+                                        class="changevalue"></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="cartegorier" id="cart2">
+                            <p class="cartegory-title">
+                                <i class="bi bi-person-fill"></i> Favourites
+                            </p>
+
+                            <p class="cartegory-icon"><i class="bi bi-arrow-right-circle-fill"></i></p>
                         </div>
                         <div class="profile-elements" id="profile-el-2">
                             <div>
-                            <div class="input-wrapper-profile">  
-                                <div class="changer">
-                                      <input type="text" id="How-input" placeholder="How has school been"> <span id="How-text" class="changevalue"></span>
-                                        </div> 
+                                <div class="input-wrapper-profile">
+                                    <div class="changer">
+                                        <input type="text" id="How-input" placeholder="How has school been"> <span
+                                            id="How-text" class="changevalue"></span>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper-profile">
+                                    <div class="changer">
+                                        <input type="text" id="course-input" placeholder="Best course so far"> <span
+                                            id="course-text" class="changevalue"></span>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper-profile">
+                                    <div class="changer">
+                                        <input type="text" id="study-input" placeholder="Best study time"> <span
+                                            id="study-text" class="changevalue"></span>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper-profile">
+                                    <div class="changer">
+                                        <input type="text" id="Recent-input" placeholder="Recent crush"> <span
+                                            id="Recent-text" class="changevalue"></span>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper-profile">
+                                    <div class="changer">
+                                        <input type="text" id="represent-input" placeholder="What i represent"> <span
+                                            id="represent-text" class="changevalue"></span>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper-profile">
+                                    <div class="changer">
+                                        <input type="text" id="enjoy-input" placeholder="What i enjoy doing most"> <span
+                                            id="enjoy-text" class="changevalue"></span>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper-profile">
+                                    <div class="changer">
+                                        <input type="text" id="favorite-input" placeholder="My favorite food"> <span
+                                            id="favorite-text" class="changevalue"></span>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper-profile">
+                                    <div class="changer">
+                                        <input type="text" id="hate-input" placeholder="What i hate most"> <span
+                                            id="hate-text" class="changevalue"></span>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper-profile">
+                                    <div class="changer">
+                                        <input type="text" id="love-input" placeholder="What i love"> <span
+                                            id="love-text" class="changevalue"></span>
+
+                                    </div>
+                                </div>
                             </div>
-                            <div class="input-wrapper-profile"> 
-                                <div class="changer">
-                                      <input type="text" id="course-input" placeholder="Best course so far"> <span id="course-text" class="changevalue"></span>
-                                        </div> 
-                            </div>
-                            <div class="input-wrapper-profile">    
-                                <div class="changer">
-                                      <input type="text" id="study-input" placeholder="Best study time"> <span id="study-text" class="changevalue"></span>
-                                        </div> 
-                            </div>
-                            <div class="input-wrapper-profile">   
-                                <div class="changer">
-                                      <input type="text" id="Recent-input" placeholder="Recent crush"> <span id="Recent-text" class="changevalue"></span>
-                                        </div> 
-                            </div>
-                            <div class="input-wrapper-profile">        
-                                <div class="changer">
-                                      <input type="text" id="represent-input" placeholder="What i represent"> <span id="represent-text" class="changevalue"></span>
-                                        </div> 
-                            </div>
-                            <div class="input-wrapper-profile">   
-                                <div class="changer">
-                                      <input type="text" id="enjoy-input" placeholder="What i enjoy doing most"> <span id="enjoy-text" class="changevalue"></span>
-                                        </div> 
-                            </div>
-                            <div class="input-wrapper-profile">      
-                                <div class="changer">
-                                      <input type="text" id="favorite-input" placeholder="My favorite food"> <span id="favorite-text" class="changevalue"></span>
-                                        </div> 
-                            </div>
-                            <div class="input-wrapper-profile">    
-                                <div class="changer">
-                                      <input type="text" id="hate-input" placeholder="What i hate most"> <span id="hate-text" class="changevalue"></span>
-                                        </div> 
-                            </div>
-                            <div class="input-wrapper-profile"> 
-                                <div class="changer">
-                                      <input type="text" id="love-input" placeholder="What i love"> <span id="love-text" class="changevalue"></span>
-                                      
-                                     </div>           
-                            </div>   
                         </div>
+                        <div class="cartegorier" id="cart3">
+                            <p class="cartegory-title">
+                                <i class="bi bi-person-plus-fill"></i> Referals
+                            </p>
+
+                            <p class="cartegory-icon"><i class="bi bi-arrow-right-circle-fill"></i>
+                            </p>
+                        </div>
+                        <div class="profile-elements" id="profile-el-3">
+                            <div class="input-wrapper-profile">
+                                <div class="changer">
+                                    <span id="" class="changevalue">Successful Referals: <span
+                                            class="number-of-refs">20</span></span>
+    
+                                </div>
+                            </div>
+                            <div class="input-wrapper-profile">
+                                <div class="changer">
+                                    <span id="" class="changevalue">Total Referals: <span
+                                            class="number-of-refs">20</span></span>
+    
+                                </div>
+                            </div>
+                            <div class="input-wrapper-profile">
+                                <div class="changer">
+                                    <span id="" class="changevalue">Minimum withdrawal: <span
+                                            class="number-of-refs"><i class="bi bi-cash-stack"></i> 2000</span></span>
+    
+                                </div>
+                            </div>
+                            <div class="input-wrapper-profile">
+                               <button class="submit"><i class="bi bi-cash-stack"></i> Withdraw</button>
+                            </div>
                         </div>
                         
                     </div>
+                    
+                </div>
             </div>
-   </div>
+        </div>
 
-</div>
-          
-           
-<div class="marginer">
-    <button class="submit" onclick="subname()"><i class="bi bi-download"></i> Save changes</button>
-</div>
-           </form>
-        
-
-          </div>    
     </div>
-    
-</div>  
-</div>
-</div>
-</div>   
+
+
+    <div class="marginer">
+        <button class="submit" onclick="subname()"><i class="bi bi-download"></i> Save changes</button>
+    </div>
+    </form>
+
+
+    </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
 
 
 
-<a href="#!" class="vanillatop"></a>
-
-    
-<script src="dist/vanillatop.min.js"></script>
-
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="https://unpkg.com/@popperjs/core@2"></script>
-        <script src="https://unpkg.com/tippy.js@6"></script>
-        <script>
-    $(".bi-bell-fill").click(function(){
-  $(".notification").fadeToggle('fast');});
+    <a href="#!" class="vanillatop"></a>
 
 
-    $("#cart1").click(function(){
-  $("#profile-el-1").toggle('fast');});
+    <script src="dist/vanillatop.min.js"></script>
 
-    $("#cart2").click(function(){
-  $("#profile-el-2").toggle('fast');});
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        $(".bi-bell-fill").click(function () {
+            $(".notification").fadeToggle('fast');
+        });
 
 
-$("#profile-image-div-holder").click(function(){
-  $("#profile-image-div-holder").toggleClass("profile-image image-full-screen");
-});
-        </script>
+        $("#cart1").click(function () {
+            $("#profile-el-1").toggle('fast');
+        });
+
+        $("#cart2").click(function () {
+            $("#profile-el-2").toggle('fast');
+        });
+
+
+        $("#cart3").click(function () {
+            $("#profile-el-3").toggle('fast');
+        });
+
+
+        $("#profile-image-div-holder").click(function () {
+            $("#profile-image-div-holder").toggleClass("profile-image image-full-screen");
+        });
+    </script>
 </body>
+
 </html>

@@ -4,7 +4,8 @@ Clonning this repository means you accept not to give out or sell product inform
 
 #please note: Create new branches to solve new problems  and leave merging to me
 #ask questions
-
+    end pont url https://samuel-ibits.github.io/dorm/index.html
+    
 
 install and setup git bash and destop
 

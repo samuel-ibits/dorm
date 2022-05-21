@@ -51,6 +51,8 @@ strong{
     top: 0rem;
     position: absolute;   
     grid-template-columns: repeat(auto-fill,minmax(280px,1fr)); 
+    bottom: 3rem;
+    overflow: scroll;
 }
 
 .center-accomodia-card{
@@ -72,6 +74,7 @@ strong{
     padding-bottom: 1rem;
     border-radius: 2px;
 }
+
 
 
 

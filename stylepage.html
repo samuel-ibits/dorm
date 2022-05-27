@@ -6,32 +6,44 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#111">
-  <title>Index</title>
-  <link rel="stylesheet" href="CSS/index.css">
+  <title>Style page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="CSS/stylepage.css">
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Varela+Round&display=swap"
     rel="stylesheet">
-    <script>
-              $(document).ready(function(){
-    setTimeout(function(){ 
-        $(".loading-screen-anim").fadeOut();
-       
-    }, 3300);
-}); 
-
-    </script>
+  <link rel="stylesheet" href="CSS/homepage.css">
 </head>
 
 <body>
-
-  <div class="loading-screen-anim">
-    <svg width="30%" height="100%" id="svgText" viewBox="0 0 472 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <div class="mobile-menu">
+    <p class="exit"><i class="bi bi-x-lg"></i></p>
+    <ul>
+      <li><a href="homepage.html">
+          <ion-icon name="storefront"></ion-icon> Store
+        </a></li>
+      <li><a href="stylepage.html">
+          <ion-icon name="thumbs-up"></ion-icon> Style card
+        </a></li>
+      <li><a href="#!">
+          <ion-icon name="person"></ion-icon> Profile
+        </a></li>
+      <li><a href="cart.html">
+          <ion-icon name="cart"></ion-icon> Cart
+        </a></li>
+      <li><a href="index.html">
+          <ion-icon name="log-out"></ion-icon> Logout
+        </a></li>
+    </ul>
+  </div>
+  <div class="overlay">
+    <svg width="100%" height="100%" id="svgText" viewBox="0 0 472 100" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M34.768 97.36C28.1973 97.36 22.4373 95.952 17.488 93.136C12.5387 90.32 8.69867 86.352 5.968 81.232C3.32267 76.0267 2 70.096 2 63.44C2 56.784 3.32267 50.896 5.968 45.776C8.69867 40.5707 12.5387 36.56 17.488 33.744C22.4373 30.928 28.1973 29.52 34.768 29.52C41.2533 29.52 46.9707 30.928 51.92 33.744C56.8693 36.56 60.7093 40.5707 63.44 45.776C66.1707 50.896 67.536 56.784 67.536 63.44C67.536 70.096 66.1707 76.0267 63.44 81.232C60.7093 86.352 56.8693 90.32 51.92 93.136C46.9707 95.952 41.2533 97.36 34.768 97.36ZM34.768 86.736C38.2667 86.736 41.5947 85.9253 44.752 84.304C47.9947 82.6827 50.64 80.1227 52.688 76.624C54.8213 73.1253 55.888 68.688 55.888 63.312C55.888 58.0213 54.8213 53.6267 52.688 50.128C50.64 46.6293 47.9947 44.112 44.752 42.576C41.5947 40.9547 38.2667 40.144 34.768 40.144C31.184 40.144 27.7707 40.9547 24.528 42.576C21.3707 44.112 18.768 46.6293 16.72 50.128C14.672 53.6267 13.648 58.0213 13.648 63.312C13.648 68.688 14.672 73.1253 16.72 76.624C18.768 80.1227 21.3707 82.6827 24.528 84.304C27.7707 85.9253 31.184 86.736 34.768 86.736Z"
         stroke="#333333" stroke-width="4" mask="url(#path-1-outside-1_2_2)" />
@@ -57,118 +69,158 @@
 
   </div>
 
-  <div class="sign-up-div">
-    <form action="#!">
-      <input type="text" name="" id="" placeholder="Username">
-      <input type="text" placeholder="Password">
-      <input type="text" placeholder="Confirm Password">
-      <div class="btn-holder">
-        <button class="big-black-btn">SIGN UP</button> <button class="big-black-btn create-new-password">
-          <ion-icon name="chevron-back-circle"></ion-icon>
-        </button>
-      </div>
-    </form>
-  </div>
+  <div>
+    <div class="top-div">
+      <a href="#!">
+        <p class="logo">onFleek</p>
+      </a>
 
-  <div class="login-container">
-    <div>
-      <form action="homepage.html">
-        <h1>onFleek</h1>
-        <p>QUALITY, CUSTOMIZEABLE AND AFFORDABLE</p>
-
-        <input type="text" name="" id="" placeholder="Username">
-        <input type="text" placeholder="Password">
-        <button class="big-black-btn">LOGIN</button>
-        <p class="forgot-password create-new-password">CREATE ACCOUNT <ion-icon name="person-add"></ion-icon>
-        </p>
-        <p class="forgot-password">FORGOT PASSWORD?</p>
-      </form>
-    </div>
-
-    <div id="slider">
-      <ul id="slideWrap">
-        <li><img src="IMAGE/cargo-1.webp" alt=""></li>
-        <li><img src="IMAGE/shirt-1.png" alt=""></li>
-        <li><img src="IMAGE/shirt-3.png" alt=""></li>
-        <li><img src="IMAGE/cargo-2.webp" alt=""></li>
-        <li><img src="IMAGE/shirt-2.webp.opdownload" alt=""></li>
-        <li><img src="IMAGE/shirt-4.jpeg" alt=""></li>
-        <li><img src="IMAGE/cargo-3.webp" alt=""></li>
-        <li><img src="IMAGE/shirt-5.jpg" alt=""></li>
-        <li><img src="IMAGE/shirt-6.webp" alt=""></li>
-        <li><img src="IMAGE/shirt-3.png" alt=""></li>
+      <ul class="nav">
+        <li><a href="homepage.html">Store</a></li>
+        <li><a href="stylepage.html" class="active">Style card</a></li>
+        <li><a href="#!">Profile</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="index.html">Logout</a></li>
       </ul>
+      <span class="menu">
+        <ion-icon name="menu"></ion-icon>
+      </span>
+    </div>
+
+
+    <section class="stylecard-page">
+      <!--start card-->
+
+      <div class="stylepage-card">
+        <div class="love-holder-div">
+          <div id="like-1" class="love-holder red">
+            <ion-icon name="heart"></ion-icon>
+          </div>
+          <div id="like-1-active" class="love-holder">
+            <ion-icon name="heart-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="card-img">
+          <img src="IMAGE/flannel-fashion-1.webp" alt="">
+        </div>
+        <div class="style-card-text">
+          <h1>Lorem ipsum dolor.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Recusandae ipsam aperiam deserunt nostrum perferendis dolor, pariatur,
+            temporibus eveniet consequatur, similique nesciunt?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+            sequi sapiente doloremque voluptas sed esse, porro natus tempora et repellat
+            , dolore facilis ad modi necessitatibus accusantium id odio. Repellendus,
+            consequatur!
+        </div>
+      </div>
+
+<!--end card-->
+
+<!--start card-->
+      <div class="stylepage-card">
+        <div class="love-holder-div">
+          <div id="like-2" class="love-holder red">
+            <ion-icon name="heart"></ion-icon>
+          </div>
+          <div id="like-2-active" class="love-holder">
+            <ion-icon name="heart-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="card-img">
+          <img src="IMAGE/fl.jpg" alt="">
+        </div>
+        <div class="style-card-text">
+          <h1>Lorem ipsum dolor.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Recusandae ipsam aperiam deserunt nostrum perferendis dolor, pariatur,
+            temporibus eveniet consequatur, similique nesciunt?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+            sequi sapiente doloremque voluptas sed esse, porro natus tempora et repellat
+            , dolore facilis ad modi necessitatibus accusantium id odio. Repellendus,
+            consequatur!
+        </div>
+      </div>
+<!--end card-->
+<!--start card-->
+<div class="stylepage-card">
+  <div class="love-holder-div">
+    <div id="like-3" class="love-holder red">
+      <ion-icon name="heart"></ion-icon>
+    </div>
+    <div id="like-3-active" class="love-holder">
+      <ion-icon name="heart-outline"></ion-icon>
     </div>
   </div>
-  <div class="slider-navigation">
-    <ion-icon id="prev" name="chevron-back-circle"></ion-icon>
-    <ion-icon id="next" name="chevron-forward-circle"></ion-icon>
+  <div class="card-img">
+    <img src="IMAGE/flannel-fashion-2.jpg" alt="">
+  </div>
+  <div class="style-card-text">
+    <h1>Lorem ipsum dolor.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Recusandae ipsam aperiam deserunt nostrum perferendis dolor, pariatur,
+      temporibus eveniet consequatur, similique nesciunt?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+      sequi sapiente doloremque voluptas sed esse, porro natus tempora et repellat
+      , dolore facilis ad modi necessitatibus accusantium id odio. Repellendus,
+      consequatur!
+  </div>
+</div>
+<!--end card-->
+    </section>
   </div>
 
   <script>
-    $(".create-new-password").click(function () {
-      $(".sign-up-div").toggle('fast');
+    $("#like-1").toggle();
+
+    $("#like-1").click(function () {
+      $("#like-1-active").toggle();
+      $("#like-1").toggle();
     });
-    var responsiveSlider = function () {
 
-      var slider = document.getElementById("slider");
-      var sliderWidth = slider.offsetWidth;
-      var slideList = document.getElementById("slideWrap");
-      var count = 1;
-      var items = slideList.querySelectorAll("li").length;
-      var prev = document.getElementById("prev");
-      var next = document.getElementById("next");
+    $("#like-1-active").click(function () {
+      $("#like-1").toggle();
+      $("#like-1-active").toggle();
+    });
 
-      window.addEventListener('resize', function () {
-        sliderWidth = slider.offsetWidth;
-      });
+    $("#like-2").toggle();
 
-      var prevSlide = function () {
-        if (count > 1) {
-          count = count - 2;
-          slideList.style.left = "-" + count * sliderWidth + "px";
-          count++;
-        } else if (count = 1) {
-          count = items - 1;
-          slideList.style.left = "-" + count * sliderWidth + "px";
-          count++;
-        }
-      };
+$("#like-2").click(function () {
+  $("#like-2-active").toggle();
+  $("#like-2").toggle();
+});
 
-      var nextSlide = function () {
-        if (count < items) {
-          slideList.style.left = "-" + count * sliderWidth + "px";
-          count++;
-        } else if (count = items) {
-          slideList.style.left = "0px";
-          count = 1;
-        }
-      };
-
-      next.addEventListener("click", function () {
-        nextSlide();
-      });
-
-      prev.addEventListener("click", function () {
-        prevSlide();
-      });
-
-      setInterval(function () {
-        nextSlide()
-      }, 2000);
-
-    };
-
-    window.onload = function () {
-      responsiveSlider();
-    }
+$("#like-2-active").click(function () {
+  $("#like-2").toggle();
+  $("#like-2-active").toggle();
+});
 
 
+$("#like-3").toggle();
 
-    const text = document.querySelectorAll('#svgText path');
-for(let i = 0; i<text.length; i++){
-  console.log(`letter ${i} is ${text[i].getTotalLength()}`);
-}
+$("#like-3").click(function () {
+  $("#like-3-active").toggle();
+  $("#like-3").toggle();
+});
+
+$("#like-3-active").click(function () {
+  $("#like-3").toggle();
+  $("#like-3-active").toggle();
+});
+
+
+    $(".menu").click(function () {
+      $(".mobile-menu").fadeIn('fast');
+      $(".overlay").fadeIn('fast');
+    });
+
+    $(".mobile-menu").fadeOut('fast');
+    $(".overlay").fadeOut('fast');
+
+    $(".exit").click(function () {
+      $(".mobile-menu").fadeOut('fast');
+      $(".overlay").fadeOut('fast');
+    });
   </script>
 </body>
 

@@ -434,55 +434,53 @@ section {
   flex-direction: column;
   font-size: 0.9rem;
 }
-.blog-text span{
-
+.blog-text span {
   color: var(--dormorange);
 }
-.blog-text .blog-title{
+.blog-text .blog-title {
   color: #333333;
   font-size: 1.3rem;
   font-weight: 600;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.blog-text .blog-title:hover{
+.blog-text .blog-title:hover {
   color: var(--dormorange);
 }
-.blog-text p{
- color: #444444;
- margin: 20px 0;
- line-height: 24px;
+.blog-text p {
+  color: #444444;
+  margin: 20px 0;
+  line-height: 24px;
 }
-.blog-text a{
+.blog-text a {
   color: #333333;
   font-size: 1rem;
 }
-.blog-text a:hover{
+.blog-text a:hover {
   color: var(--dormorange);
 }
-.blog-text .blog-btn{
+.blog-text .blog-btn {
   position: relative;
 }
-.blog-text .blog-btn::before{
+.blog-text .blog-btn::before {
   position: absolute;
   content: " ";
-
 }
 @media screen and (max-width: 1250px) {
-  .blog-box{
+  .blog-box {
     width: 300px;
   }
 }
 @media screen and (max-width: 1250px) {
-  .blog-box{
+  .blog-box {
     width: 70%;
   }
 }
 @media screen and (max-width: 550px) {
-  .blog-box{
+  .blog-box {
     width: 100%;
     margin: 20px 10px;
   }
-  #blog{
+  #blog {
     padding: 20px;
   }
 }
@@ -946,7 +944,7 @@ section {
 }  */
 }
 @media (max-width: 450px) {
-  .navbar ul{
+  .navbar ul {
     padding: 100px 20px;
   }
 }
@@ -971,14 +969,14 @@ section {
 }
 /* custom menu bar */
 .bar {
-  height: 1px;
-  width: 25px;
+  height: 2px;
+  width: 30px;
   background-color: var(--white);
-  margin-top: 6px;
+  margin-top: 5px;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.4);
 }
 .bar2 {
-  width: 18px;
+  width: 20px;
 }
 .change .bar {
   background-color: var(--darkcolor);
@@ -992,7 +990,6 @@ section {
 .change .bar3 {
   transform: rotate(45deg) translate(-5px, -5px);
 }
-
 
 /* .navbar-mobile ul {
    transform: translateY(0%) !important;
@@ -1094,7 +1091,7 @@ section {
 }
 @media screen and (max-width: 992px) {
   .hero-section .hero-text-image {
-    margin-top: 4rem;
+    margin-top: 6.5rem;
   }
 }
 .hero-section p {

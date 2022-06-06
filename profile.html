@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#0688d3">
-   
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dorm - Profile</title>
     <link rel="stylesheet" href="menu/css/styles.css">
@@ -37,7 +37,7 @@
     <!-- start vanillatop plugin -->
     <link rel="stylesheet" href="dist/vanillatop.min.css">
     <style>
-        .bi-cash-stack{
+        .bi-cash-stack {
             color: inherit;
         }
     </style>
@@ -144,9 +144,9 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.adipisicing elit.adipisicing elit.
                         </p>
                     </div>
-                    <div class="center-button">
+                    <div class="center-button" style="gap: .5rem;">
                         <button onclick="editname()" class="submit"><i class="bi bi-pencil-square"></i> Edit</button>
-
+                        <button class="submit" onclick="subname()"><i class="bi bi-download"></i> Save changes</button>
                     </div>
                 </div>
             </div>
@@ -285,54 +285,35 @@
                         </div>
                         <div class="cartegorier" id="cart3">
                             <p class="cartegory-title">
-                                <i class="bi bi-person-plus-fill"></i> Referals
+                                <i class="bi bi-truck"></i> Shipping details
                             </p>
-
                             <p class="cartegory-icon"><i class="bi bi-arrow-right-circle-fill"></i>
                             </p>
                         </div>
+                        
                         <div class="profile-elements" id="profile-el-3">
                             <div class="input-wrapper-profile">
                                 <div class="changer">
-                                    <span id="" class="changevalue">Successful Referals: <span
-                                            class="number-of-refs">20</span></span>
-    
+                                    <input type="text" id="location-input" placeholder="Location"> <span id="location-text"
+                                        class="changevalue"></span>
                                 </div>
                             </div>
-                            <div class="input-wrapper-profile">
-                                <div class="changer">
-                                    <span id="" class="changevalue">Total Referals: <span
-                                            class="number-of-refs">20</span></span>
-    
-                                </div>
-                            </div>
-                            <div class="input-wrapper-profile">
-                                <div class="changer">
-                                    <span id="" class="changevalue">Minimum withdrawal: <span
-                                            class="number-of-refs"><i class="bi bi-cash-stack"></i> 2000</span></span>
-    
-                                </div>
-                            </div>
-                            <div class="input-wrapper-profile">
-                               <button class="submit"><i class="bi bi-cash-stack"></i> Withdraw</button>
+
+                        <div class="input-wrapper-profile">
+                            <div class="changer">
+                                <input type="text" id="state-input" placeholder="State"> <span id="state-text"
+                                    class="changevalue"></span>
                             </div>
                         </div>
-                        
+
+                   
                     </div>
-                    
                 </div>
             </div>
         </div>
-
     </div>
-
-
-    <div class="marginer">
-        <button class="submit" onclick="subname()"><i class="bi bi-download"></i> Save changes</button>
     </div>
     </form>
-
-
     </div>
     </div>
 

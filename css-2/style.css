@@ -12,7 +12,6 @@
     margin: 0;
     padding: 0;
 }
-.notification
 
 
 body{
@@ -435,11 +434,12 @@ min-height: 100vh;
 .input-wrapper input{
 border: none;
 outline: none;
-background: transparent;
+background: #fff;
 width: 90%;
 height: fit-content;
 padding: .2rem;
 }
+
 
 .input-wrapper-text-area{
     display: flex;
@@ -485,7 +485,7 @@ padding: .2rem;
 
 .login-btn button{
     width: 100%;
-    background: transparent;
+    background: var(--dormblue);
     border: none;
     outline: none;
     color: var(--white);

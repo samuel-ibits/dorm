@@ -10,6 +10,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     transition: .1s linear;
 }
 
@@ -20,14 +21,6 @@
   }
 body{
     background: rgb(252, 250, 250);
-    background: rgb(252, 250, 250);
-    font-family: 'Dosis', sans-serif;
-font-family: 'Fredoka', sans-serif;
-font-family: 'Hubballi', cursive;
-font-family: 'Hurricane', cursive;
-font-family: 'Indie Flower', cursive;
-font-family: 'M PLUS Rounded 1c', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;
 }
 
 
@@ -169,7 +162,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
 .full-screen-market-card{
     width: 100%;
-    height: 87%;
+    height: 100%;
     background-size:  cover;
     scroll-snap-align: start;
 }
@@ -203,7 +196,7 @@ font-family: 'Source Sans Pro', sans-serif;
     width: fit-content;
     height: auto;
     right: .5rem;
-    margin-top: 12rem;
+    margin-top: 10rem;
     position: absolute;
     z-index: 99;
 }
@@ -351,7 +344,7 @@ font-family: 'Source Sans Pro', sans-serif;
         width: fit-content;
         height: auto;
         right: 3rem;
-        margin-top: 18rem;
+        margin-top: 10rem;
         position: absolute;
         z-index: 99;
     }

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="theme-color" content="#0688d3">
-   
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dorm - Texter</title>
@@ -11,211 +12,309 @@
     <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css-2/bot.css">
     <link rel="stylesheet" href="css-2/style.css">
+    <link rel="stylesheet" href="css/texter(meta).css">
     <script src="sweetalert2.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="sweetalert2.min.css">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="update.css">
     <link rel="stylesheet" href="style.css">
 
-       <!--=============== BOXICONS ===============-->
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-       <!--=============== CSS ===============-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    function usernameorprofilename(){
-let password = document.getElementById('password').value;
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--=============== CSS ===============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-if(password.length != 11){
-    Swal.fire(
-  'Invalid',
-  'please check phone number and try again',
-  'warning'
-)
-}
-
-else{
-
-    const swalWithBootstrapButtons = Swal.mixin({
-  customClass: {
-    confirmButton: 'btn btn-success',
-    cancelButton: 'btn btn-danger'
-  },
-  buttonsStyling: false
-})
-
-swalWithBootstrapButtons.fire({
-  title: 'Prefered Identity',
-  text: "Which ID do you want to send this text message with ?",
-  icon: 'question',
-  showCancelButton: true,
-  confirmButtonText: 'Username',
-  cancelButtonText: 'Profilename',
-  reverseButtons: true
-}).then((result) => {
-  if (result.isConfirmed) {
-    swalWithBootstrapButtons.fire(
-      'Sent!',
-      'Your text has been sent in your user name.',
-      'success',
-       )
-  } else if (
-    result.dismiss === Swal.DismissReason.cancel
-  ) {
-    swalWithBootstrapButtons.fire(
-      'Sent!',
-      'Your text has been sent in your profile name.',
-      'success',   
-     
-    )
-  }
-})
-alert('You have 3/4 text messages left')
-
-    
-}
-    }
-</script>
-
-<style>
-  .input-wrapper-text-area{
-    width: 90vw;
-  }
-
-  .bi-telephone-fill{
-    color: inherit;
-  }
-  @media only screen and (max-width: 600px) 
-    {
-   
-
-        .input-wrapper-text-area{
-          margin-top: 1rem;
-    width: 90vw;
- height: 15rem;
- overflow: scroll;
-  }
-        }
-
-</style>
 </head>
+
 <body>
-  
-   
 
 
-<div class="top-div" style="color: white;">
-  <div class="logo">
-      <img src="images/dorm_no_bg.png" alt="">
-  </div>
 
-  <div class="searchbar-for-menu">
-      <i class="bi bi-search"></i> <input type="search" name="" id="" disabled>
-  </div>
 
-  <div class="bot-head">
-          <div class="ears-head">
-              <div class="left-ear-head"></div> 
-              <div class="right-ear-head"></div>
-          </div>
-          <div class="eyes-head">
-              <div class="right-eye-head"></div>
-              <div class="left-eye-head"></div>
-          </div>
-
-          <div class="mouth-head"></div>            
-  </div>
-
-  <i class="bi bi-bell-fill"></i>
-</div>
-<div class="full-width">
-  <div class="notification">
-      <ul>
-          <li>Your  <span class="pronounds">Accomodia</span> request has returned results <span class="number">34</span></li>
-          <li>Your  <span class="pronounds">Market</span> request has returned results <span class="number">3</span></li>
-      </ul>
-  </div>
-</div>
-
-<div class="nav-bar">
-<ul class="nav-list">
-  <li class="nav-item" title="Study Tools">
-      <a href="studytools.html" class="nav-link">
-          <i class="bi bi-tools"></i>    
-          <p class="icon-title">Study tools</p>
-      </a>  
-   </li>
-  <li class="nav-item" title="Course Review">
-      <a href="coursereview.html" class="nav-link">
-          <i class="bi bi-book-fill"></i>    
-          <p class="icon-title">Course review</p>
-      </a>      
-  </li>
-  <li class="nav-item" title="Title">
-      <a href="texter.html" class="nav-link active-nav-link">
-          <i class="bi bi-chat-left-text-fill"></i>   
-          <p class="icon-title">Texter</p>
-      </a>               
-  </li>
-  <li class="nav-item" title="Accomodia">
-      <a href="accomodia.html" class="nav-link">
-          <i class="bi bi-house"></i>   
-          <p class="icon-title">Accomodia</p>
-      </a>              
-  </li>
-  <li class="nav-item" title="Martket">
-      <a href="market.html" class="nav-link">
-          <i class="bi bi-shop"></i>   
-          <p class="icon-title">Market</p>
-      </a>              
-  </li>
-  <li class="nav-item" title="Setting">
-      <a href="setting.html" class="nav-link">
-          <i class="bi bi-gear-fill"></i>   
-          <p class="icon-title">Setting</p>
-      </a>              
-  </li>
-</ul>
-</div>
-
-<div class="page-content">
-
-  <div class="login-form text-div">
-    <form action="#">
-
-        <div class="input-wrapper-text-area"> 
-            <textarea name="" id="" cols="30" rows="8" placeholder="type in your message"> </textarea>
+    <div class="top-div" style="color: white;">
+        <div class="logo">
+            <img src="images/dorm_no_bg.png" alt="">
         </div>
 
-
-        <div class="input-wrapper">
-            <i class="bi bi-telephone-fill"></i> <input type="number" id="password" placeholder="receiver phone number">
-        </div>
-        <div class="forgot-password">
-            Select receiver from contact  <span class="create-new">(NEW)</span>
+        <div class="searchbar-for-menu">
+            <i class="bi bi-search"></i> <input type="search" name="" id="" disabled>
         </div>
 
-        <div class="login-btn">
-            <button onclick="usernameorprofilename()" class="login-button">
-                SEND
-            </button>
+        <div class="bot-head">
+            <div class="ears-head">
+                <div class="left-ear-head"></div>
+                <div class="right-ear-head"></div>
+            </div>
+            <div class="eyes-head">
+                <div class="right-eye-head"></div>
+                <div class="left-eye-head"></div>
+            </div>
+
+            <div class="mouth-head"></div>
         </div>
 
-     </form>
+        <i class="bi bi-bell-fill"></i>
+    </div>
+    <div class="full-width">
+        <div class="notification">
+            <ul>
+                <li>Your <span class="pronounds">Accomodia</span> request has returned results <span
+                        class="number">34</span></li>
+                <li>Your <span class="pronounds">Market</span> request has returned results <span
+                        class="number">3</span></li>
+            </ul>
+        </div>
+    </div>
 
-</div>
+    <div class="nav-bar">
+        <ul class="nav-list">
+            <li class="nav-item" title="Study Tools">
+                <a href="studytools.html" class="nav-link">
+                    <i class="bi bi-tools"></i>
+                    <p class="icon-title">Study tools</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Course Review">
+                <a href="coursereview.html" class="nav-link">
+                    <i class="bi bi-book-fill"></i>
+                    <p class="icon-title">Course review</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Title">
+                <a href="texter.html" class="nav-link active-nav-link">
+                    <i class="bi bi-chat-left-text-fill"></i>
+                    <p class="icon-title">Texter</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Accomodia">
+                <a href="accomodia.html" class="nav-link">
+                    <i class="bi bi-house"></i>
+                    <p class="icon-title">Accomodia</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Martket">
+                <a href="market.html" class="nav-link">
+                    <i class="bi bi-shop"></i>
+                    <p class="icon-title">Market</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Setting">
+                <a href="setting.html" class="nav-link">
+                    <i class="bi bi-gear-fill"></i>
+                    <p class="icon-title">Setting</p>
+                </a>
+            </li>
+        </ul>
+    </div>
 
-</div>
-        
+    <div class="page-content">
+        <div class="texter-ii-page-holders">
+            <div class="texter-ii-page-sub-page-holders">
+                <div class="file-btn-holder">
+                    <input type="file" name="" id="">
+                    <div>
+                        <p>
+                            <ion-icon name="cloud-upload"></ion-icon>
+                        </p>
+                        <p>UPLOAD CONTACTS</p>
+                    </div>
+                </div>
+
+                <div class="search-bar">
+                    <input type="search" placeholder="SEARCH HERE CONTACTS" name="" id="">
+                    <ion-icon name="search"></ion-icon>
+                </div>
+
+                <div class="recievers-card-holder">
+                    <div class="recievers-card">
+                        <div class="reciever-card-image">
+                            <img src="images/dorm_icon.png" alt="">
+                        </div>
+                        <div class="reciever-card-details">
+                            <p>John samuel ibitoye</p>
+                            <p>090923734738</p>
+                        </div>
+                        <div class="statue-of-text chat-icon contacts">
+                            <ion-icon name="chatbox-ellipses"></ion-icon>
+                        </div>
+                        <div class="statue-of-text green">
+                            <ion-icon name="checkmark-done"></ion-icon>
+                            <p>SENT</p>
+                        </div>
+                    </div>
+                    <div class="recievers-card">
+                        <div class="reciever-card-image">
+                            <img src="images/dorm_icon.png" alt="">
+                        </div>
+                        <div class="reciever-card-details">
+                            <p>mark peter ibitoye</p>
+                            <p>090923734738</p>
+                        </div>
+                        <div class="statue-of-text chat-icon contacts">
+                            <ion-icon name="chatbox-ellipses"></ion-icon>
+                        </div>
+                        <div class="statue-of-text green">
+                            <ion-icon name="checkmark-done"></ion-icon>
+                            <p>SENT</p>
+                        </div>
+                    </div>                   
+                    <div class="recievers-card">
+                        <div class="reciever-card-image">
+                            <img src="images/dorm_icon.png" alt="">
+                        </div>
+                        <div class="reciever-card-details">
+                            <p>John samuel ibitoye</p>
+                            <p>090923734738</p>
+                        </div>
+                        <div class="statue-of-text chat-icon contacts">
+                            <ion-icon name="chatbox-ellipses"></ion-icon>
+                        </div>
+                        <div class="statue-of-text green">
+                            <ion-icon name="checkmark-done"></ion-icon>
+                            <p>SENT</p>
+                        </div>
+                    </div>
+                    <div class="recievers-card">
+                        <div class="reciever-card-image">
+                            <img src="images/dorm_icon.png" alt="">
+                        </div>
+                        <div class="reciever-card-details">
+                            <p>mark peter ibitoye</p>
+                            <p>090923734738</p>
+                        </div>
+                        <div class="statue-of-text chat-icon contacts">
+                            <ion-icon name="chatbox-ellipses"></ion-icon>
+                        </div>
+                        <div class="statue-of-text green">
+                            <ion-icon name="checkmark-done"></ion-icon>
+                            <p>SENT</p>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+
+            <div class="texter-ii-page-sub-page-holders messager">
+                <div class="texter-ii-page-sub-page-holders-top">
+                    <div class="recievers-card-ii">
+                        <div class="reciever-card-image">
+                            <img src="images/dorm_icon.png" alt="">
+                        </div>
+                        <div class="reciever-card-details">
+                            <p>John samuel ibitoye</p>
+                            <p>090923734738</p>
+                        </div>
+                    </div>
+
+                    <div class="texter-available">
+                        <p>TEXTER POINTS AVAILABLE: <span>5</span></p>
+                    </div>
+                </div>
+                <div class="message-holder">
+                    <div class="message-card">
+                        <div class="message">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Sint nostrum enim facilis quos nesciunt obcaecati illo inventore laboriosam vero nobis.
+                                Dolorem explicabo ut similique
+                                , officiis ipsa perspiciatis minima Lorem ipsum dolor sit, amet consectetur adipisicing
+                                elit.
+                                Sint nostrum enim facilis quos nesciunt obcaecati illo inventore laboriosam vero nobis.
+                                Dolorem explicabo ut similique
+                                , officiis ipsa perspiciatis minima Lorem ipsum dolor sit, amet consectetur adipisicing
+                                elit.
+                                Sint nostrum enim facilis quos nesciunt obcaecati illo inventore laboriosam vero nobis.
+                                Dolorem explicabo ut similique
+                                , officiis ipsa perspiciatis minima animi ad?
+                            </p>
+                        </div>
+                        <p class="date-of-sent-message">20 november 2022</p>
+                    </div>
+
+                    <div class="message-card">
+                        <div class="message">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Sint nostrum enim facilis quos nesciunt obcaecati illo inventore laboriosam vero nobis.
+                                Dolorem explicabo ut similique
+                            </p>
+                        </div>
+                        <p class="date-of-sent-message">10 january 2022</p>
+                    </div>
+                    <div class="message-card">
+                        <div class="message">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Sint nostrum enimrem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Sint nostrum enim facilis quos nesciunt obcaecati illo inventore laboriosam vero nobis.
+                                Dolorem explicabo ut similique
+                            </p>
+                        </div>
+                        <p class="date-of-sent-message">23 july 2022</p>
+                    </div>
+                    <div class="message-card">
+                        <div class="message">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Sint nostrum enimrem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Sint nostrum enim facilis quos nesciunt obcaecati illo inventore laboriosam vero nobis.
+                                Dolorem explicabo ut similique
+                            </p>
+                        </div>
+                        <p class="date-of-sent-message">20 november 2022</p>
+                    </div>
+                    <div class="message-card">
+                        <div class="message">
+                            <p>
+                                explicabo ut similique
+                            </p>
+                        </div>
+                        <p class="date-of-sent-message">10 december 2022</p>
+                    </div>
+                    <div class="message-card">
+                        <div class="message">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Sint nostrum enimrem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Sint nostrum enim facilis quos nesciunt obcaecati illo inventore laboriosam vero nobis.
+                                Dolorem explicabo ut similique
+                            </p>
+                        </div>
+                        <p class="date-of-sent-message">20 november 2022</p>
+                    </div>
+
+                    <div class="texting-area">
+                        <div class="text-input-box">
+                            <form action="#!">
+                                <input type="text" placeholder="Type a message here" name="" id="">
+                                <button>
+                                    <ion-icon name="send"></ion-icon>
+                                </button>
+                                <button class="btn-hide-bg-screen show-contacts">
+                                    <ion-icon name="people"></ion-icon>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
 
         <script src="assets/js/main.js"></script>
         <script src="js/popper.js"></script>
@@ -224,24 +323,35 @@ alert('You have 3/4 text messages left')
         <script src="https://unpkg.com/@popperjs/core@2"></script>
         <script src="https://unpkg.com/tippy.js@6"></script>
         <script>
-     
-$(".bi-x").click(function(){
-  $(".bot-container-2").fadeOut("fast");
-});
+            $(".bi-x").click(function () {
+                $(".bot-container-2").fadeOut("fast");
+            });
 
-$(".bi-bell-fill").click(function(){
-  $(".notification").fadeToggle('fast');
-});
-
+            $(".bi-bell-fill").click(function () {
+                $(".notification").fadeToggle('fast');
+            });
 
 
-  tippy('.bot-head', {
-    content: 'My tooltip!',
-    theme: 'tomato',
-    content: '<p class="dormbotmessage">Hi, I"m your Dorm assistant, Always, here to help.</strong>',
-  allowHTML: true,
-  });
+
+            tippy('.bot-head', {
+                content: 'My tooltip!',
+                theme: 'tomato',
+                content: '<p class="dormbotmessage">Hi, I"m your Dorm assistant, Always, here to help.</strong>',
+                allowHTML: true,
+            });
+
+
+            $(".show-contacts").click(function () {
+                $(".contacts").fadeIn('fast');
+                $(".messager").fadeOut('fast');
+            });
+
+            $(".recievers-card").click(function () {
+                $(".contacts").fadeOut('fast');
+                $(".messager").fadeIn('fast');
+            });
         </script>
-     
+
 </body>
+
 </html>

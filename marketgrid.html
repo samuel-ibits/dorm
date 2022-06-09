@@ -77,10 +77,7 @@
 
 }
 
-.inspect-market-item{
-    display: none;
-}
-    
+ 
 
 @media only screen and (min-width: 700px) {
     .page-of-grid-view{
@@ -90,17 +87,6 @@
             width: 90%;
             overflow: scroll;
         }
-
-        .inspect-market-item{
-            margin-top: 5rem;
-        width: 100%;
-        height: 100vh;
-        overflow: scroll;
-        position: absolute;
-        background: var(--white);
-        display: none;
-        z-index: 999;
-    }
 
  
 
@@ -152,6 +138,7 @@
     background: #0688d3;
     position: fixed;
     bottom: 5rem;
+    right: 1rem;
     color: #fff;
     border-radius: 5px;
 }
@@ -264,6 +251,7 @@
           <li class="nav-item" title="Martket">
               <a href="marketgrid.html" class="nav-link active-nav-link">
                   <i class="bi bi-shop"></i>   
+                  
                   <p class="icon-title">Market</p>
               </a>              
           </li>
@@ -281,8 +269,7 @@
     <div class="upload-to-market">
         <div class="embeder product-uploader">
           <i class="bi bi-x-lg remove-market" ></i>
-      
-          <object data="marketupload.html" width="100%" height="100%"></object>
+          <object data="marketupload.html" width="100%" height="auto"></object>
       </div>
       </div>
     

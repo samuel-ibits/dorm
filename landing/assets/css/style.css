@@ -94,6 +94,10 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
+#reCaptcha-placeholder {
+  padding: 15px 10px 25px;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/

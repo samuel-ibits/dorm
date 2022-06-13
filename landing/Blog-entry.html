@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/Blog-entry.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <title>Blog Entry</title>
+  </head>
+  <body>
+    <section class="display-row">
+      <div class="side-bar">
+        <header>
+          <div class="logo">
+            <img src="assets/img/dorm_no_bg.png" alt="Logo" />
+          </div>
+        </header>
+        <ul>
+          <li id="PostPage">Post</li>
+          <li id="DeletePostPage">Delete post</li>
+          <li id="EditPostPage">Edit post</li>
+        </ul>
+      </div>
+      <div class="container clearfix">
+        <form action="">
+          <div class="head-text">Add new blog post</div>
+          <div class="input-div">
+            <label for="BlogTitle">Blog title</label>
+            <input type="text" placeholder="Enter the blog title" required />
+          </div>
+          <div class="input-div">
+            <label for="Image">Select image</label>
+            <input type="file" required placeholder="select image" />
+          </div>
+          <div class="input-div">
+            <label for="BlogPost">Blog post</label>
+            <textarea
+              name="Blog"
+              id="Blog-text"
+              cols="20"
+              rows="15"
+              placeholder="Enter blog post"
+              required
+            ></textarea>
+          </div>
+          <button class="btn" type="submit">Post</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

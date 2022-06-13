@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#0688d3">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dorm - Course review</title>
@@ -36,9 +37,15 @@
     <title>Dorm - Course review</title>
     <style>
  .input-wrapper-text-area{
-    width: 90vw;
-    display: flex;
+    width: 100vw;
   }
+.bi-three-dots-vertical{
+    color: inherit;
+}
+
+.edit-menu ul li i{
+    color: inherit;   
+}
 
   .page-content{
             padding: 0px;
@@ -46,22 +53,19 @@
         }
     @media only screen and (max-width: 600px) 
     {
-    .page-content{
-            height: 76vh;
-            margin-top:2rem;
-        }
+  
+
+        .input-wrapper-text-area{
+    width: 95vw;
+    height: 40vh;
+  }
         }
 
         @media only screen and (min-width: 601px) 
     {
-    .page-content{
-            height: 100%;
-            margin-top:1rem;
-            margin-left: 6rem;
-        }
 
         .input-wrapper-text-area{
-    width: 80vw;
+    width: 70vw;
     display: flex;
   }
         }
@@ -126,7 +130,7 @@
                 <p class="icon-title">Course review</p>
             </a>      
         </li>
-        <li class="nav-item" title="Title">
+        <li class="nav-item" title="Texter">
             <a href="texter.html" class="nav-link">
                 <i class="bi bi-chat-left-text-fill"></i>   
                 <p class="icon-title">Texter</p>
@@ -154,9 +158,9 @@
 </div>
 
 <div class="page-content">
-    <div class="white">
-        <div class="post">
-            <i class="bi bi-x-lg" style="color: #f96b03; margin-left: 1rem;"></i>
+    <div class="create-r">
+        <div class="">
+            <i class="bi bi-x-lg " style="color: #f96b03; margin-left: 1rem;"></i>
             
                       
              <div class="login-form widt text-div">
@@ -189,9 +193,13 @@
     <div class="whiteback"></div>
     <div class="comment-white">
         <div class="comments">
-
-            <i class="bi bi-x-lg remove-comment" style="color: #f96b03;position: relative;"></i>
+            <div class="cancle-comment-div">
+                <i class="bi bi-x-lg remove-comment comment-cancel" style="color: #f96b03;position: relative;margin-top: 2rem;"></i>
+         
+            </div>
             <!--comment card start-->
+            
+ <div class="center-course-review-card">
             <div class="card comment-card">
                 <div class="profile-review-image">
                     <img src="images/avtr4.png" alt="">
@@ -206,86 +214,13 @@
                 <div class="reactions">
                     <ul>
                         <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
-                        <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
+                        <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
                        </ul>
                 </div>
                     </div>
+ </div>
             <!--comment card end-->
-            <!--comment card start-->
-            <div class="card comment-card">
-                <div class="profile-review-image">
-                    <img src="images/avtr4.png" alt="">
-                </div>
-                <p class="username-review">Jane Doe</p>
-                
-                <p class="comment-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odio eum error earum illum quaerat,
-                     vel at repudiandae eos obcaecati fuga mollitia debitis a vitae modi unde suscipit quisquam nemo.
-                </p>
-                
-                <div class="reactions">
-                    <ul>
-                        <li>  <span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
-                        <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
-                       </ul>
-                </div>
-                    </div>
-            <!--comment card end--><!--comment card start-->
-            <div class="card comment-card">
-                <div class="profile-review-image">
-                    <img src="images/avtr4.png" alt="">
-                </div>
-                <p class="username-review">Jane Doe</p>
-                
-                <p class="comment-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odio eum error earum illum quaerat,
-                     vel at repudiandae eos obcaecati fuga mollitia debitis a vitae modi unde suscipit quisquam nemo.
-                </p>
-                
-                <div class="reactions">
-                    <ul>
-                        <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
-                        <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
-                       </ul>
-                </div>
-                    </div>
-            <!--comment card end--><!--comment card start-->
-            <div class="card comment-card">
-                <div class="profile-review-image">
-                    <img src="images/avtr4.png" alt="">
-                </div>
-                <p class="username-review">Jane Doe</p>
-                
-                <p class="comment-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odio eum error earum illum quaerat,
-                     vel at repudiandae eos obcaecati fuga mollitia debitis a vitae modi unde suscipit quisquam nemo.
-                </p>
-                
-                <div class="reactions">
-                    <ul>
-                        <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
-                        <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
-                       </ul>
-                </div>
-                    </div>
-            <!--comment card end--><!--comment card start-->
-            <div class="card comment-card">
-                <div class="profile-review-image">
-                    <img src="images/avtr4.png" alt="">
-                </div>
-                <p class="username-review">Jane Doe</p>
-                
-                <p class="comment-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-                
-                <div class="reactions">
-                    <ul>
-                        <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
-                        <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
-                       </ul>
-                </div>
-                    </div>
+          
             <!--comment card end-->
 
             <div class="input-comment">
@@ -322,117 +257,224 @@
     
  <button class="create-review-btn">
     <i class="bi bi-plus"></i> Create Review
- </button>
+ </button> 
 </div>
 
 <div class="review-div">
  <!--course review card start-->
+ <div class="center-course-review-card">
     <div class="card">
-<div class="profile-review-image">
-    <img src="images/avtr4.png" alt="">
+        <div class="edit-menu-holder">
+       <i class="bi bi-three-dots-vertical" id="edit-1"></i>
+       <div class="edit-menu" id="edit-1-holder">
+           <ul>
+               <li><i class="bi bi-pencil-square"></i> Edit</li>
+               <li><i class="bi bi-trash3-fill"></i> Delete</li>
+           </ul>
+       </div>
+   </div>
+<div class="profile-review-image" id="dp-image-1">
+   <img src="images/avtr.png" alt="">
 </div>
 <p class="username-review">Jane Doe</p>
 <p class="tag">#ALL_LIVES_MATTER</p>
 <p class="review-body">
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
-    voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
-    cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
+   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
+   voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
+   cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
 </p>
-<div class="post-image">
-    <img src="images/house 4.jpg" alt="">
+<div class="post-image" id="post-image-1">
+   <img src="images/house 6.jpg" alt="">
 </div>
 
 <div class="reactions">
-    <ul>
-        <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
-        <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
-        <li><span class="number-of-comments">31</span><i class="fa fa-comment" aria-hidden="true"></i></li>
-    </ul>
+   <ul>
+       <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
+       <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+       <li><span class="number-of-comments">31</span><i class="fa fa-comment" aria-hidden="true"></i></li>
+       <li><i class="bi bi-share-fill" id="share-1"></i></li>
+   </ul>
 </div>
-    </div>
+   </div>
+ </div>
 <!--course review card end-->
-<!--course review card start-->
-<div class="card">
-    <div class="profile-review-image">
-        <img src="images/avtr4.png" alt="">
-    </div>
-    <p class="username-review">Jane Doe</p>
-    <p class="tag">#ALL_LIVES_MATTER</p>
-    <p class="review-body">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
-        voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
-        cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.orem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
-        voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
-        cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.orem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
-        voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
-        cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
-    </p>
-   
-    
-    <div class="reactions">
-        <ul>
-            <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
-            <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
-            <li><span class="number-of-comments">31</span><i class="fa fa-comment" aria-hidden="true"></i></li>
-        </ul>
-    </div>
-        </div>
-    <!--course review card end-->
-<!--course review card start-->
-<div class="card">
-    <div class="profile-review-image">
-        <img src="images/avtr4.png" alt="">
-    </div>
-    <p class="username-review">James Doe</p>
-    <p class="tag">#ALL_LIVES_MATTER</p>
-    <p class="review-body">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
-        voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
-        cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
-    </p>
-    <div class="post-image">
-        <img src="images/house 3.jpg" alt="">
-    </div>
-    
-    <div class="reactions">
-        <ul>
-            <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
-            <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
-            <li><span class="number-of-comments">31</span><i class="fa fa-comment" aria-hidden="true"></i></li>
-        </ul>
-    </div>
-        </div>
-    <!--course review card end-->
-<!--course review card start-->
-<div class="card">
-    <div class="profile-review-image">
-        <img src="images/avtr2.png" alt="">
-    </div>
-    <p class="username-review">John Doe</p>
-    <p class="tag">#ALL_LIVES_MATTER</p>
-    <p class="review-body">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
-        voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
-        cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
-    </p>
-    <div class="post-image">
-        <img src="images/house 4.jpg" alt="">
-    </div>
-    
-    <div class="reactions">
-        <ul>
-            <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
-            <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
-            <li><span class="number-of-comments">31</span><i class="fa fa-comment" aria-hidden="true"></i></li>
-        </ul>
-    </div>
-        </div>
+ <!--course review card start-->
+ <div class="center-course-review-card">
+    <div class="card">
+        <div class="edit-menu-holder">
+       <i class="bi bi-three-dots-vertical" id="edit-2"></i>
+       <div class="edit-menu" id="edit-2-holder">
+           <ul>
+               <li><i class="bi bi-pencil-square"></i> Edit</li>
+               <li><i class="bi bi-trash3-fill"></i> Delete</li>
+           </ul>
+       </div>
+   </div>
+<div class="profile-review-image" id="dp-image-2">
+   <img src="images/avtr3.png" alt="">
+</div>
+<p class="username-review">Jane Doe</p>
+<p class="tag">#ALL_LIVES_MATTER</p>
+<p class="review-body">
+   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
+   voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
+   cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
+</p>
+<div class="post-image" id="post-image-2">
+   <img src="images/gov.jpg" alt="">
+</div>
+
+<div class="reactions">
+   <ul>
+       <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
+       <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+       <li><span class="number-of-comments">31</span><i class="fa fa-comment" aria-hidden="true"></i></li>
+       <li><i class="bi bi-share-fill" id="share-2"></i></li>
+   </ul>
+</div>
+   </div>
+ </div>
+<!--course review card end-->
+ <!--course review card start-->
+ <div class="center-course-review-card">
+    <div class="card">
+        <div class="edit-menu-holder">
+       <i class="bi bi-three-dots-vertical" id="edit-3"></i>
+       <div class="edit-menu" id="edit-3-holder">
+           <ul>
+               <li><i class="bi bi-pencil-square"></i> Edit</li>
+               <li><i class="bi bi-trash3-fill"></i> Delete</li>
+           </ul>
+       </div>
+   </div>
+<div class="profile-review-image" id="dp-image-3">
+   <img src="images/avtr4.png" alt="">
+</div>
+<p class="username-review">Jane Doe</p>
+<p class="tag">#ALL_LIVES_MATTER</p>
+<p class="review-body">
+   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
+   voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
+   cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
+</p>
+<div class="post-image" id="post-image-3">
+   <img src="images/ict.jpg" alt="">
+</div>
+
+<div class="reactions">
+   <ul>
+       <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
+       <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+       <li><span class="number-of-comments">31</span><i class="fa fa-comment" aria-hidden="true"></i></li>
+       <li><i class="bi bi-share-fill" id="share-3"></i></li>
+   </ul>
+</div>
+   </div>
+ </div>
+<!--course review card end-->
+ <!--course review card start-->
+ <div class="center-course-review-card">
+    <div class="card">
+        <div class="edit-menu-holder">
+       <i class="bi bi-three-dots-vertical" id="edit-4"></i>
+       <div class="edit-menu" id="edit-4-holder">
+           <ul>
+               <li><i class="bi bi-pencil-square"></i> Edit</li>
+               <li><i class="bi bi-trash3-fill"></i> Delete</li>
+           </ul>
+       </div>
+   </div>
+<div class="profile-review-image" id="dp-image-4">
+   <img src="images/avtr.png" alt="">
+</div>
+<p class="username-review">Jane Doe</p>
+<p class="tag">#ALL_LIVES_MATTER</p>
+<p class="review-body">
+   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
+   voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
+   cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
+</p>
+<div class="post-image" id="post-image-4">
+   <img src="images/ict.jpg" alt="">
+</div>
+
+<div class="reactions">
+   <ul>
+       <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
+       <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+       <li><span class="number-of-comments">31</span><i class="fa fa-comment" aria-hidden="true"></i></li>
+       <li><i class="bi bi-share-fill" id="share-4"></i></li>
+   </ul>
+</div>
+   </div>
+ </div>
+<!--course review card end-->
+ <!--course review card start-->
+ <div class="center-course-review-card">
+    <div class="card">
+        <div class="edit-menu-holder">
+       <i class="bi bi-three-dots-vertical" id="edit-3"></i>
+       <div class="edit-menu" id="edit-3-holder">
+           <ul>
+               <li><i class="bi bi-pencil-square"></i> Edit</li>
+               <li><i class="bi bi-trash3-fill"></i> Delete</li>
+           </ul>
+       </div>
+   </div>
+<div class="profile-review-image" id="dp-image-5">
+   <img src="images/avtr.png" alt="">
+</div>
+<p class="username-review">Jane Doe</p>
+<p class="tag">#ALL_LIVES_MATTER</p>
+<p class="review-body">
+   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
+   voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
+   cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
+   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
+   voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
+   cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
+   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
+   voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
+   cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
+   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
+   voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
+   cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
+   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
+   voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
+   cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
+   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
+   voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
+   cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
+   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum non perferendis? Quisquam nemo 
+   voluptates at consequatur alias? Sit, explicabo tempore quos consectetur repellat nihil vel quisquam eum id corporis!
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit ab adipisci recusandae tempora. Laboriosam rerum minus 
+   cupiditate aliquam excepturi non quos necessitatibus suscipit! Eveniet magni modi nam? Illum, perferendis.
+
+</p>
+
+
+<div class="reactions">
+   <ul>
+       <li><span class="number-of-ups">30</span><i class="fa fa-chevron-up" aria-hidden="true"></i></li>
+       <li> <span class="number-of-downs">2</span><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+       <li><span class="number-of-comments">31</span><i class="fa fa-comment" aria-hidden="true"></i></li>
+       <li><i class="bi bi-share-fill" id="share-3"></i></li>
+   </ul>
+</div>
+   </div>
+ </div>
+<!--course review card end-->
+
     <!--course review card end-->
             
 </div>
@@ -444,13 +486,7 @@
 
 <script>
 
-        
-tippy('.bi-bell-fill', {
-    content: 'My tooltip!',
-    theme: 'tomato',
-    content: '<p class="usermessage">Dorm User Notification</strong>',
-  allowHTML: true,
-  });
+      
 
   tippy('.bot-head', {
     content: 'My tooltip!',
@@ -459,8 +495,41 @@ tippy('.bi-bell-fill', {
   allowHTML: true,
   });
 
+
+  const shareBtn1 = document.getElementById("share-1");
   
+  const shareBtn2 = document.getElementById("share-2");
+
+  shareBtn1.addEventListener('click', event => {
+      if(navigator.share){
+          navigator.share({
+              text:"check out course Review by John Doe",
+              url:'coursereview.html'
+          }).then(() => {
+              console.log('thanks for sharing!');
+          })
+          .catch((err) =>console.error(err));
+      }
+      else{
+          alert("unsupported by browser please share link manully")
+      }
+  });
+
   
+  shareBtn2.addEventListener('click', event => {
+      if(navigator.share){
+          navigator.share({
+              text:"check out course Review by John Doe",
+              url:'coursereview.html'
+          }).then(() => {
+              console.log('thanks for sharing!');
+          })
+          .catch((err) =>console.error(err));
+      }
+      else{
+          alert("unsupported by browser please share link manully")
+      }
+  });
 </script>
 <script src="dist/vanillatop.min.js"></script>
         <script src="js/popper.js"></script>
@@ -474,6 +543,26 @@ $(".searchbar-for-menu").click(function(){
 $(".most-searched-divv").fadeToggle();
 });
 
+$("#edit-1").click(function(){
+$("#edit-1-holder").fadeToggle("fast");
+});
+
+
+$("#edit-2").click(function(){
+$("#edit-2-holder").fadeToggle("fast");
+});
+
+$("#edit-3").click(function(){
+$("#edit-3-holder").fadeToggle("fast");
+});
+
+$("#edit-4").click(function(){
+$("#edit-4-holder").fadeToggle("fast");
+});
+
+$("#edit-5").click(function(){
+$("#edit-5-holder").fadeToggle("fast");
+});
 
 $(".search-wrapper").click(function(){
 $(".most-searched-divv").fadeToggle();
@@ -485,13 +574,13 @@ $(".most-searched-divv").fadeOut("fast");
 
 
 $(".create-review-btn").click(function(){
-$(".white").fadeIn();
+$(".create-r").fadeIn('fast');
 $(".review-div").fadeOut('fast');
 });
 
 
 $(".bi-x-lg").click(function(){
-$(".white").fadeOut();
+$(".create-r").fadeOut('fast');
 $(".comment-div").fadeOut();
 $(".review-div").fadeIn('fast');
 });
@@ -515,6 +604,59 @@ $(".create-review-btn").fadeIn('fast');
 
 $(".bi-bell-fill").click(function(){
   $(".notification").fadeToggle('fast');
+});
+
+
+$("#dp-image-1").click(function(){
+  $("#dp-image-1").toggleClass("profile-review-image image-full-screen");
+});
+
+$("#dp-image-2").click(function(){
+  $("#dp-image-2").toggleClass("profile-review-image image-full-screen");
+});
+
+$("#dp-image-3").click(function(){
+  $("#dp-image-3").toggleClass("profile-review-image image-full-screen");
+});
+
+$("#dp-image-4").click(function(){
+  $("#dp-image-4").toggleClass("profile-review-image image-full-screen");
+});
+
+$("#dp-image-5").click(function(){
+  $("#dp-image-5").toggleClass("profile-review-image image-full-screen");
+});
+
+$("#dp-image-6").click(function(){
+  $("#dp-image-6").toggleClass("profile-review-image image-full-screen");
+});
+
+$("#dp-image-7").click(function(){
+  $("#dp-image-7").toggleClass("profile-review-image image-full-screen");
+});
+
+$("#dp-image-8").click(function(){
+  $("#dp-image-8").toggleClass("profile-review-image image-full-screen");
+});
+
+
+$("#post-image-1").click(function(){
+  $("#post-image-1").toggleClass("post-image image-full-screen");
+});
+$("#post-image-2").click(function(){
+  $("#post-image-2").toggleClass("post-image image-full-screen");
+});$("#post-image-3").click(function(){
+  $("#post-image-3").toggleClass("post-image image-full-screen");
+});$("#post-image-4").click(function(){
+  $("#post-image-4").toggleClass("post-image image-full-screen");
+});$("#post-image-5").click(function(){
+  $("#post-image-5").toggleClass("post-image image-full-screen");
+});$("#post-image-6").click(function(){
+  $("#post-image-6").toggleClass("post-image image-full-screen");
+});$("#post-image-7").click(function(){
+  $("#post-image-7").toggleClass("post-image image-full-screen");
+});$("#post-image-8").click(function(){
+  $("#post-image-8").toggleClass("post-image image-full-screen");
 });
 
 function Search(item){

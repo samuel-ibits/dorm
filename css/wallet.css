@@ -24,6 +24,8 @@
    
 }
 
+
+
 .wrapper-input i{
     border: none;
     background: transparent;
@@ -47,8 +49,8 @@
     color: #eee;
     padding: .4rem;
     margin-top: 1rem;
-    box-shadow: 0px 2px 3px #333;
-    text-shadow: 0px 2px 2px #333;
+    box-shadow: 0px 1px 2px #333;
+    text-shadow: 0px 1px 1px #333;
     transition: .5 linear;
 }
 
@@ -60,7 +62,6 @@
     font-size: .8rem;
     color: var(--dormblue);
     font-weight: 600;
-    text-shadow: 0px 1px 1px #333;
 }
 
 
@@ -68,7 +69,6 @@
     color: #333;
     font-size: .7rem;
     font-weight: 700;
-    text-shadow: 1px 1px 2px #aaa ;
     color: var(--dormblue);
 }
 
@@ -77,13 +77,11 @@
 .money-available{
     margin: .4rem 0px;
     font-size: 1.9rem;
-    text-shadow: 1px 1px 2px #aaa ;
     color: var(--dormblue);
 }
 
 .sub-text{
     font-size: .9rem;
-    text-shadow: 0px 1px 1px #aaa ;
 }
 
 .firsttdiv{
@@ -98,7 +96,6 @@
 .greet-user{
     font-weight: 300;
     font-size: 1.6rem;
-    text-shadow: 1px 1px 1px #aaa ;
     color: var(--dormorange);
 }
 
@@ -119,8 +116,6 @@
     width: max-content;
     color: #eee;
     background: var(--dormblue);
-    box-shadow: 0px 2px 3px #333;
-    text-shadow: 0px 2px 3px #333;
 transform: scale(.9);
     transition: .5s linear;
 }
@@ -134,7 +129,6 @@ transform: scale(.9);
 .big-text{
     font-size: 1.2rem;
     font-weight: 600;
-    text-shadow: 0px 1px 3px #aaa ;
 }
 
 .third-div-card-holder{
@@ -147,7 +141,7 @@ transform: scale(.9);
 .third-div-card{
     width: fit-content;
     height: auto;
-    box-shadow: 0px 1px 3px #333;
+    box-shadow: 0px 1px 2px #333;
     padding: .4rem;
     display: flex;
     margin: 1rem 0px;
@@ -178,8 +172,6 @@ border: none;
 background: var(--dormblue);
 color: #eee;
 padding: .3rem;
-text-shadow: 0px 2px 3px #222;
-box-shadow: 0px 2px 3px #222;
 margin-left: auto;
 }
 
@@ -209,13 +201,12 @@ margin-left: auto;
 }
 
 .sub-card{
-    text-shadow: 0px 2px 3px #222;
-    box-shadow: 0px 2px 3px #222;
     background: var(--dormblue);
     width: max-content;
     height: auto;
     padding: .5rem;
     display: none;
+    margin-top: -1rem;
 }
 
 .radio-toolbar input[type="radio"] {
@@ -246,8 +237,6 @@ margin-left: auto;
       height: 100%;
       background: var(--dormorange);
       color: #eee;
-      text-shadow: 0px 2px 3px #333;
-      box-shadow: 0px 2px 3px #333;
   }
 
 

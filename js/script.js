@@ -1,9 +1,3 @@
-
-   
-
-
-
-
 function subname(){
     let name = document.getElementById('name-text');
     let nameInput = document.getElementById('Name-input');
@@ -39,6 +33,14 @@ function subname(){
     let DateInput = document.getElementById('Date-input');
     
 
+    let state = document.getElementById('state-text');
+    let stateinput = document.getElementById('state-input');
+
+    
+    let location = document.getElementById('location-text');
+    let locationinput = document.getElementById('location-input');
+
+    
     let How = document.getElementById('How-text');
     let HowInput = document.getElementById('How-input');
     
@@ -75,7 +77,6 @@ function subname(){
     let loveInput = document.getElementById('love-input');
     
 
-
     
            name.style.display = 'inline-block';
             nameInput.style.display = 'none';
@@ -97,6 +98,10 @@ function subname(){
             
             Bio.style.display = 'inline-block';
             BioInput.style.display = 'none';
+
+            
+            state.style.display = 'inline-block';
+            stateinput.style.display = 'none';
            
             Date.style.display = 'inline-block';
             DateInput.style.display = 'none';
@@ -127,6 +132,10 @@ function subname(){
             
             love.style.display = 'inline-block';
             loveInput.style.display = 'none';
+
+            
+            location.style.display = 'inline-block';
+            locationinput.style.display = 'none';
            
             name.innerHTML = "NAME: " + nameInput.value;
             username.innerHTML = "USER NAME: " + usernameInput.value;
@@ -137,6 +146,8 @@ function subname(){
             Bio.innerHTML = "BIO: " + BioInput.value;
             Date.innerHTML = "DATE: " + DateInput.value;
             How.innerHTML = "HOW HAS SCHOOL BEEN: " + HowInput.value;
+            location.innerHTML = "LOCATION: " + locationinput.value;
+            state.innerHTML = "STATE: " + stateinput.value;
             course.innerHTML = "BEST COURSE SO FAR: " + courseInput.value;
             study.innerHTML = "BEST STUDY TIME: " + studyInput.value;
             Recent.innerHTML = "RECENT CRUSH: " + RecentInput.value;
@@ -167,6 +178,13 @@ function editname(){
     let Course = document.getElementById('Course-text');
     let CourseInput = document.getElementById('Course-input');
     
+    
+    let state = document.getElementById('state-text');
+    let stateinput = document.getElementById('state-input');
+
+    let location = document.getElementById('location-text');
+    let locationinput = document.getElementById('location-input');
+
 
     let Year = document.getElementById('Year-text');
     let YearInput = document.getElementById('Year-input');
@@ -195,7 +213,7 @@ function editname(){
     let study = document.getElementById('study-text');
     let studyInput = document.getElementById('study-input');
     
-
+  
     let Recent = document.getElementById('Recent-text');
     let RecentInput = document.getElementById('Recent-input');
     
@@ -219,6 +237,7 @@ function editname(){
     let love = document.getElementById('love-text');
     let loveInput = document.getElementById('love-input');
     
+    
 
 
     
@@ -239,6 +258,13 @@ function editname(){
            
             SchoolInput.style.display = 'inline-block';
             School.style.display = 'none';
+
+            
+            stateinput.style.display = 'inline-block';
+            state.style.display = 'none';
+
+            locationinput.style.display = 'inline-block';
+            location.style.display = 'none';
             
             BioInput.style.display = 'inline-block';
             Bio.style.display = 'none';
@@ -272,126 +298,4 @@ function editname(){
             
             loveInput.style.display = 'inline-block';
             love.style.display = 'none';
-}
-
-function editBilling(){
-let locationInput = document.getElementById("location-input");
-let location = document.getElementById("location") ;
-
-let accountNumberInput = document.getElementById("accountNumber-input");
-let accountNumber = document.getElementById("accountNumber") ;
-
-let bankNameInput = document.getElementById("bankName-input");
-let bankName = document.getElementById("bankName") ;
-
-let editBtn = document.getElementById("editBtn");
-
-let submitBtn = document.getElementById("submitBtn");
-
-let toplabel = document.getElementById("top-label");
-
-let label1 = document.getElementById("label-text-id-1");
-
-let label2 = document.getElementById("label-text-id-2");
-
-let label3 = document.getElementById("label-text-id-3");
-
-
-let toplabel1 = document.getElementById("top-label-1");
-let toplabel2 = document.getElementById("top-label-2");
-let toplabel3 = document.getElementById("top-label-3");
-
-
-submitBtn.style.display = "inline-block";
-
-editBtn.style.display = "none";
-
-    label1.style.display = "none";
-    label2.style.display = "none";
-    label3.style.display = "none";
-
-
-    toplabel1.style.display = "inline-block";
-    toplabel2.style.display = "inline-block";
-    toplabel3.style.display = "inline-block";
-
-    location.innerHTML =  locationInput.value;
-    locationInput.style.display = "inline-block";
-    location.style.display = "none";
-    
-
-
-    accountNumber.innerHTML =  accountNumberInput.value;
-    accountNumberInput.style.display = "inline-block";
-    accountNumber.style.display = "none";
-
-    
-
-
-    bankName.innerHTML =  bankNameInput.value;
-    bankNameInput.style.display = "inline-block";
-    bankName.style.display = "none";
-
-
-}
-
-
-function submitBilling(){
-    let locationInput = document.getElementById("location-input");
-    let location = document.getElementById("location") ;
-    
-    let accountNumberInput = document.getElementById("accountNumber-input");
-    let accountNumber = document.getElementById("accountNumber") ;
-    
-    let bankNameInput = document.getElementById("bankName-input");
-    let bankName = document.getElementById("bankName") ;
-    
-    let editBtn = document.getElementById("editBtn");
-    
-    let submitBtn = document.getElementById("submitBtn");
-    
-let label1 = document.getElementById("label-text-id-1");
-
-let label2 = document.getElementById("label-text-id-2");
-
-let label3 = document.getElementById("label-text-id-3");
-
-
-    
-let toplabel1 = document.getElementById("top-label-1");
-let toplabel2 = document.getElementById("top-label-2");
-let toplabel3 = document.getElementById("top-label-3");
-
-
-submitBtn.style.display = "none";
-
-editBtn.style.display = "inline-block";
-
-toplabel1.style.display = "none";
-toplabel2.style.display = "none";
-toplabel3.style.display = "none";
-
-    label1.style.display = "inline-block";
-    label2.style.display = "inline-block";
-    label3.style.display = "inline-block";
-
-    
-        location.innerHTML =  locationInput.value;
-        locationInput.style.display = "none";
-        location.style.display = "inline-block";
-   
-
-
-
-        
-        accountNumber.innerHTML =  accountNumberInput.value;
-        accountNumberInput.style.display = "none";
-        accountNumber.style.display = "inline-block";
-
-    
-
-        bankName.innerHTML =  bankNameInput.value;
-        bankNameInput.style.display = "none";
-        bankName.style.display = "inline-block";
-
 }

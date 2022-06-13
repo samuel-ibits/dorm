@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#0688d3">
+   
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dorm - Market</title>
@@ -43,7 +45,7 @@
         @media only screen and (max-width: 600px) {
             .inspect-market-item{
     width: 100%;
-    height: 95%;
+    height: auto;
     overflow: scroll;
     margin-top: 2rem;
     position: relative;
@@ -54,30 +56,28 @@
 
 
     .page-of-grid-view{
-            height: 80vh;
+            height:90vh;
             overflow: scroll;
         }
 
         
     .request-div-holder{
-    position: fixed;
+        position: fixed;
     width: 100%;
-    height: 80vh;
+    height: 100%;
     background: #020202;
     opacity: .96;
     z-index: 9999999;
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
+
+
 
 }
 
-.inspect-market-item{
-    display: none;
-}
-    
+ 
 
 @media only screen and (min-width: 700px) {
     .page-of-grid-view{
@@ -88,17 +88,7 @@
             overflow: scroll;
         }
 
-        .inspect-market-item{
-            margin-top: 5rem;
-        width: 100%;
-        height: 100vh;
-        overflow: scroll;
-        position: absolute;
-        background: var(--white);
-        display: none;
-        z-index: 999;
-    }
-
+ 
 
 }
 
@@ -110,12 +100,10 @@
     color: #fff;
     z-index: 9999;
     background: var(--dormblue);
-    margin-top: 6rem;
+    margin-top: 20rem;
     margin-left: -3rem;
     border-radius: 20px;
     width: 5rem;
-    text-shadow: 0px 3px 3px #333;
-    box-shadow: 0px 2px 3px #333;
 }
 
 
@@ -129,12 +117,10 @@
     color: #fff;
     z-index: 9999;
     background: var(--dormblue);
-    margin-top: 5rem;
-    margin-left: 1rem;
+    margin-top: 20rem;
+    margin-left: 3rem;
     border-radius: 20px;
     width: 6rem;
-    text-shadow: 0px 3px 3px #333;
-    box-shadow: 0px 2px 3px #333;
 }
 
 
@@ -142,12 +128,20 @@
     float: right;
 }
 
-
-
-
 }
 
 
+.add-product-div{
+    width: auto;
+    padding: .3rem;
+    transform: scale(.9);
+    background: #0688d3;
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+    color: #fff;
+    border-radius: 5px;
+}
 </style>
 </head>
 <body>
@@ -157,6 +151,10 @@
     <i class="bi bi-question-lg open-request"></i>
   </div>
   
+
+  <div class="add-product-div add-product">
+    <i class="bi bi-plus-lg"></i> Add product
+  </div>
   
   <div class="request-div-holder">
   
@@ -253,6 +251,7 @@
           <li class="nav-item" title="Martket">
               <a href="marketgrid.html" class="nav-link active-nav-link">
                   <i class="bi bi-shop"></i>   
+                  
                   <p class="icon-title">Market</p>
               </a>              
           </li>
@@ -267,6 +266,12 @@
 
   <div class="page-of-grid-view">
 
+    <div class="upload-to-market">
+        <div class="embeder product-uploader">
+          <i class="bi bi-x-lg remove-market" ></i>
+          <object data="marketupload.html" width="100%" height="auto"></object>
+      </div>
+      </div>
     
 <div class="most-searched-divv">
     <div class="most-searched-holder-div">
@@ -295,16 +300,16 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                 <div class="swiper-slide">         
-                    <img src="images/house 2.jpg" alt="">
+                    <img src="images/shirt2.jpg" alt="">
                 </div>  
                 <div class="swiper-slide">         
-                    <img src="images/house 3.jpg" alt="">
+                    <img src="images/shirt2.jpg" alt="">
                 </div>  
                 <div class="swiper-slide">         
-                    <img src="images/house 4.jpg" alt="">
+                    <img src="images/shirt2.jpg" alt="">
                 </div>  
                 <div class="swiper-slide">         
-                    <img src="images/house 6.jpg" alt="">
+                    <img src="images/shirt2.jpg" alt="">
                 </div>  
                  
                     
@@ -313,13 +318,10 @@
         </div>
 
         <div class="about-product">
-<div class="cart">
-    <i class="bi bi-cart-plus-fill"></i>
-</div>
+
 
 <div class="tools-shopping-grid">
     <ul>
-        <li><i class="bi bi-plus-circle-fill"></i></li>
         <li><i class="bi bi-heart-fill"></i></li>
         <li><i class="bi bi-chat-dots-fill"></i></li>
         <li><i class="bi bi-share-fill"></i></li>
@@ -346,401 +348,134 @@
   
      <div class="contentgrid">
         
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
+            <div class="center-card">
+                <div class="shoping-card">
+                    <div class="shoping-card-image">
+                        <img src="images/shirt2.jpg" alt="">
+                    </div>
+                    <div class="shoping-card-text">
+                        <p class="name-of-item-shoping-card">
+                             amama mam
+                        </p>
+                        <p class="shoping-card-price">
+                            NGN 2,093
+                        </p>
+                        <p class="number-of-likes">
+                            <i class="bi love-orange bi-heart-fill"></i> 2,098
+                        </p>
+                    </div>
                 </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                         amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 2,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
+            </div>
+            <div class="center-card">
+                <div class="shoping-card">
+                    <div class="shoping-card-image">
+                        <img src="images/shirt2.jpg" alt="">
+                    </div>
+                    <div class="shoping-card-text">
+                        <p class="name-of-item-shoping-card">
+                             amama mam
+                        </p>
+                        <p class="shoping-card-price">
+                            NGN 2,093
+                        </p>
+                        <p class="number-of-likes">
+                            <i class="bi love-orange bi-heart-fill"></i> 2,098
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="center-card">
+                <div class="shoping-card">
+                    <div class="shoping-card-image">
+                        <img src="images/shirt2.jpg" alt="">
+                    </div>
+                    <div class="shoping-card-text">
+                        <p class="name-of-item-shoping-card">
+                             amama mam
+                        </p>
+                        <p class="shoping-card-price">
+                            NGN 2,093
+                        </p>
+                        <p class="number-of-likes">
+                            <i class="bi love-orange bi-heart-fill"></i> 2,098
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="center-card">
+                <div class="shoping-card">
+                    <div class="shoping-card-image">
+                        <img src="images/shirt2.jpg" alt="">
+                    </div>
+                    <div class="shoping-card-text">
+                        <p class="name-of-item-shoping-card">
+                             amama mam
+                        </p>
+                        <p class="shoping-card-price">
+                            NGN 2,093
+                        </p>
+                        <p class="number-of-likes">
+                            <i class="bi love-orange bi-heart-fill"></i> 2,098
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="center-card">
+                <div class="shoping-card">
+                    <div class="shoping-card-image">
+                        <img src="images/shirt2.jpg" alt="">
+                    </div>
+                    <div class="shoping-card-text">
+                        <p class="name-of-item-shoping-card">
+                             amama mam
+                        </p>
+                        <p class="shoping-card-price">
+                            NGN 2,093
+                        </p>
+                        <p class="number-of-likes">
+                            <i class="bi love-orange bi-heart-fill"></i> 2,098
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="center-card">
+                <div class="shoping-card">
+                    <div class="shoping-card-image">
+                        <img src="images/shirt2.jpg" alt="">
+                    </div>
+                    <div class="shoping-card-text">
+                        <p class="name-of-item-shoping-card">
+                             amama mam
+                        </p>
+                        <p class="shoping-card-price">
+                            NGN 2,093
+                        </p>
+                        <p class="number-of-likes">
+                            <i class="bi love-orange bi-heart-fill"></i> 2,098
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="center-card">
+                <div class="shoping-card">
+                    <div class="shoping-card-image">
+                        <img src="images/shirt2.jpg" alt="">
+                    </div>
+                    <div class="shoping-card-text">
+                        <p class="name-of-item-shoping-card">
+                             amama mam
+                        </p>
+                        <p class="shoping-card-price">
+                            NGN 2,093
+                        </p>
+                        <p class="number-of-likes">
+                            <i class="bi love-orange bi-heart-fill"></i> 2,098
+                        </p>
+                    </div>
                 </div>
             </div>
           
 
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
-          
- 
-
-            <div class="shoping-card">
-                <div class="shoping-card-image">
-                    <img src="images/house 3.jpg" alt="">
-                </div>
-                <div class="shoping-card-text">
-                    <p class="name-of-item-shoping-card">
-                        lorem amama mam
-                    </p>
-                    <p class="shoping-card-price">
-                        NGN 1,093
-                    </p>
-                    <p class="number-of-likes">
-                        <i class="bi love-orange bi-heart-fill"></i> 2,098
-                    </p>
-                </div>
-            </div>
      </div>
 
      
@@ -774,6 +509,13 @@ $(".request").ready(function(){
   $(".request-div-holder").fadeOut('fast');
 });
 
+$(".remove-market").click(function(){
+  $(".upload-to-market").fadeOut('fast');
+});
+
+$(".add-product").click(function(){
+  $(".upload-to-market").fadeIn('fast');
+});
 
 
             $(".shoping-card").click(function(){
@@ -806,7 +548,24 @@ $(".request").ready(function(){
             }
     }
 
-                
+
+    const shareproduct = document.querySelector(".bi-share-fill");
+
+
+shareproduct.addEventListener('click', event => {
+      if(navigator.share){
+          navigator.share({
+              text:"Product X from John Doe Store",
+              url:'marketfullscreen.html'
+          }).then(() => {
+              console.log('thanks for sharing!');
+          })
+          .catch((err) =>console.error(err));
+      }
+      else{
+          alert("unsupported by browser please share link manully")
+      }
+  });                
         </script>
 </body>
 </html>

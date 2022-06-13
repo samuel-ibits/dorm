@@ -1,0 +1,518 @@
+:root{
+    --dark-1: #111;
+    --light-1: #eee;
+    --light-2: #ddd;
+    --text-color-1: #333;
+    --transitime: .4s;
+}
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: inherit;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-pagination-bullet{
+      background: var(--dark-1);
+  }
+
+  .billing{
+      width: 100%;
+      height: auto;
+      margin-left: 3rem;
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: repeat(auto-fill,minmax(170px,1fr)); 
+  
+  }
+
+
+  .billing-info-box div:nth-child(1){
+      font-weight: 600;
+      font-size: .8rem;
+      padding: .3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .billing-info-box div:nth-child(1) ion-icon{
+      margin-left: auto;
+      color: var(--text-color-1);
+      padding: .2rem;
+      cursor: pointer;
+      border-radius: 50%;
+    transition: var(--transitime) ease;
+  }
+
+  .billing-info-box div ion-icon:hover{
+      background: var(--light-2);
+  }
+
+  
+  .billing-info-box div:nth-child(2){
+    padding: .3rem;
+}
+
+.billing-info-box div:nth-child(2) p:nth-child(2){
+    margin-top: .5rem;
+}
+
+.bolder{
+    font-weight: 600;
+}
+  
+  .username{
+      font-size: .8rem;
+  }
+
+  .location{
+      font-size: .7rem;
+  }
+
+  .lighter{
+      color: #aaa;
+  }
+
+  .asteric{
+      display: flex;
+      list-style: none;
+      font-size: .5rem;
+      gap: .3rem;
+      color: #bbb;
+      margin: .7rem 0px .3rem 0;
+  }
+
+  .product-name{
+      margin-left: 3rem;
+  }
+
+.inspect-details{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin: 1rem 0px 0px 0px;
+}
+
+.inspect{
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 3rem;
+}
+
+.inspect-img{
+    width: 40rem;
+    height: 30rem;
+    overflow: hidden; 
+    position: fixed;
+    background: var(--light-2);
+}
+
+.inspect-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.inspect-product-detail{
+    width: 50%;
+    position: absolute;
+    right: .5rem;
+}
+
+.under-lined{
+    margin: 1rem 0px 1rem 0;
+}
+
+
+.lighter-text{
+ font-weight: 100 !important;
+ font-size: .7rem;   
+}
+
+.view-holders{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-left: 3rem;
+    color: rgb(184, 184, 184);
+}
+
+
+.view-holders h5::after{
+    content: '';
+    width: 0rem;
+    height: 2px;
+    background: var(--dark-1);
+    position: absolute;
+    margin-left: -4.5rem;
+    margin-top: 1rem;
+    transition: var(--transitime) ease;
+}
+.view-holders h5:hover::after{
+    content: '';
+    width: 5rem;
+    height: 2px;
+    background: var(--dark-1);
+    position: absolute;
+    margin-left: -4.5rem;
+    margin-top: 1rem;
+}
+
+.marginer{
+    margin: 1rem 0px;
+}
+
+.focus{
+    font-weight: 1000;
+    text-shadow: 5px 5px 10px var(--light-2);
+    color: var(--dark-1);
+}
+
+.under-lined::after{
+    content: '' !important;
+    width: 5rem !important;
+    height: 2px ;
+    background: var(--dark-1);
+    position: absolute;
+    margin-left: -4.5rem;
+    margin-top: 1rem;
+}
+
+
+.description-holder{
+    display: block;
+    width: 90%;
+    margin-left: 3rem;
+}
+
+.billing-holder{
+    width: 100%;
+    height: auto;
+}
+
+.review-holder{
+    width: 100%;
+    height: auto;
+    overflow-y: scroll;
+    display: none;
+}
+
+.review-holder::-webkit-scrollbar {
+   display: none;
+   visibility: hidden;
+  }
+
+.review-card{
+    background: #fff;
+    margin: 2rem;
+}
+
+.reaction{
+    margin-left: auto;
+}
+
+.reaction ion-icon{
+    color: green;
+}
+.reaction span{
+    color: var(--text-color-1);
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+.review-card-image{
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.review-card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review-card-visible-content{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.star-list{
+    list-style: none;
+    color: rgb(255, 185, 8);
+    font-size: .8rem;
+    display: flex;
+    gap: .3rem;
+}
+
+.review-card-details{
+    margin-left: 1rem;
+}
+
+.username{
+    font-weight: 700;
+}
+
+.date{
+    font-size: .7rem;
+    font-weight: 600;
+    color: var(--text-color-1);
+}
+
+.review-body{
+    padding: 1rem;
+    font-size: .6rem;
+    width: 100%;
+}
+
+.sizing{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+
+.bolden{
+    font-size: .8rem;
+    font-weight: 900;
+}
+
+.size-btns {
+    display: flex;
+    gap: .5rem;
+}
+.size-btns button{
+    border: none;
+    background: var(--light-2);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.size-btns button:focus{
+    border: 2px solid var(--text-color-1);
+}
+
+
+.product-card-1-bottom-div{
+    margin-top: 10rem;
+}
+
+.qnty-counter{
+    width: 4rem;
+    padding: .3rem;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    text-align: center;
+    background: var(--light-2);
+}
+
+.return-link{
+    color: var(--dark-1);
+    width: 5rem;
+    height: 4rem;
+    margin-left: 4rem;
+    font-size: .6rem;
+    color: #bbb;
+    letter-spacing: 1px;
+}
+
+.cusomizer-tool-bar{
+    position: fixed;
+    left: 0;
+    width: 3rem;
+    height: 6rem;
+    z-index: 9;
+}
+
+.cusomizer-tool-bar ul{
+    list-style: none;
+}
+
+.cusomizer-tool-bar ul li{
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem 1rem 2rem 0rem;
+    cursor: pointer;
+    transition: var(--transitime) ease;
+}
+
+.cusomizer-tool-bar ul li:hover{
+transform: scale(1.1);
+}
+
+.cusomizer-tool-bar ul li div{
+    width: 100%;
+    height: 100%;
+}
+
+
+.cusomizer-tool-bar ul li  p{
+    font-size: .7rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.cusomizer-tool-bar ul li div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+@media only screen  and  (min-width: 657px){
+   
+}
+
+@media only screen  and  (max-width: 656px){
+    .inspect{
+        width: 100%;
+        min-height: 100%;
+        height: auto;
+        display: block;
+        margin-top: 3rem;
+    }
+    
+    
+.inspect-img{
+    width: 100%;
+    height: 40vh;
+    overflow: hidden; 
+    position: relative;
+    background: var(--light-2);
+}
+
+
+.inspect-product-detail{
+    width: 100%;
+    position: relative;
+}
+
+.description-holder{
+    display: block;
+    width: 90%;
+    margin-left: 1rem;
+}
+
+.billing{
+    width: 100%;
+    height: auto;
+    margin-left: 0rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); 
+
+}
+
+.product-card-1-bottom-div{
+    margin-top: 1rem;
+    position: fixed;
+    bottom: -1rem;
+    width: 100%;
+    padding: 1rem;
+    margin-left: -1rem;
+    background: var(--light-1);
+    box-shadow: 0px 2px 4px var(--dark-1);
+}
+
+
+.view-holders{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-left: 1rem;
+    color: rgb(201, 199, 199);
+}
+
+.product-name{
+    margin-left: 1rem;
+}
+
+.return-link{
+    margin: 1rem 1rem 0px 1rem;
+}
+
+.margin-top{
+    margin-top: 2rem;
+}
+
+.cusomizer-tool-bar{
+    position: absolute;
+    left: 0;
+    width: 3rem;
+    height: 6rem;
+    z-index: 1;
+    transform: scale(.8);
+}
+
+.review-holder{
+    overflow-y: scroll;
+    display: none;
+}
+
+.review-card{
+    background: #fff;
+    margin: 1rem;
+    width: 100%;
+    padding: .7rem;
+}
+
+
+.review-body{
+    padding: .2rem;
+    font-size: .7rem;
+    width: 100%;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+ 
+
+  .overlay h1{
+      font-size: 4rem;
+      color: var(--light-1);
+      position: absolute;
+  }
+}

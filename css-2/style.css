@@ -26,7 +26,7 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 
-.number{
+.notification span:nth-child(2){
     background: var(--dormorange);
     border-radius: 50%;
     width: 1.2rem;
@@ -35,22 +35,38 @@ font-family: 'Source Sans Pro', sans-serif;
     justify-content: center;
     align-items: center;
     margin-left: .4rem;
-    box-shadow: 0px 2px 3px #333;
-    text-shadow: 0px 2px 3px #333;
+    text-shadow: 0px 0px 0px transparent;
 }
 
 .notification{
     background: var(--dormblue);
-    box-shadow: 0px 2px 3px #333;
+    box-shadow: 0px .5px 2px #333;
     color: #eee;
-    position:relative;
+    position:fixed;
     margin-left: auto;
+    margin-top: -.1rem;
     width: fit-content;
-    padding: .2rem;
+    padding: .5rem;
     height: auto;
     font-size: .8rem;
-    display: none;
+    display: none; 
+    transform: scale(.7);
+    right: -2.5rem;
+    
+
 }
+
+.notification:after {
+    content: " ";
+    position: absolute;
+    right: .6rem;
+    top: -.4rem;
+    border-top: none;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    border-bottom: 7px solid var(--dormblue);
+   
+  }
 
 .notification ul li{
     display: flex;
@@ -66,10 +82,10 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 .pronounds{
-    color: var(--dormorange);
+    color: var(--white);
     font-weight: 600;
-    text-shadow: 0px 2px 3px #333;
     margin: 0px .4rem;
+    text-shadow: 0px 0px 0px transparent;
 }
 
 .hide{
@@ -107,7 +123,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
 .my-note-text{
     text-align: center;
-    text-shadow: 0px 3px 4px #aaa;
+    text-shadow: 0px 0px 0px transparent;
     color: #555;
 }
 
@@ -418,11 +434,12 @@ min-height: 100vh;
 .input-wrapper input{
 border: none;
 outline: none;
-background: transparent;
+background: #fff;
 width: 90%;
 height: fit-content;
 padding: .2rem;
 }
+
 
 .input-wrapper-text-area{
     display: flex;
@@ -468,7 +485,7 @@ padding: .2rem;
 
 .login-btn button{
     width: 100%;
-    background: transparent;
+    background: var(--dormblue);
     border: none;
     outline: none;
     color: var(--white);
@@ -528,7 +545,6 @@ a{
     font-weight: 700;
     color: var(--maincolor);
     cursor: pointer;
-    text-shadow: 0px 1px 2px #333;
     font-size: 1.3rem;
 }
 
@@ -704,41 +720,41 @@ a{
     0%{
         margin-top: -40vh;
         margin-left: 10vh;
-        opacity: 5;
+        opacity: .8;
         background: var(--dormorange);
 
     }
 
     0%{
         margin-top: -40vh;
-        opacity: .4;
+        opacity: .9;
         background: var(--dormblue);
 
     }
     20%{
         margin-top: 30vh;
-        opacity: .3;
+        opacity: .8;
         background: var(--dormblue);
 
     }
 
     40%{
         margin-top: -40vh;
-        opacity: .3;
+        opacity: .9;
         background: var(--dormorange);
 
     }
 
     60%{
         margin-top: 30vh;
-        opacity: .2;
+        opacity: .8;
         background: var(--dormblue);
 
     }
 
     80%{
         margin-top:-40vh;
-        opacity: .4;
+        opacity: .9;
         background: var(--dormblue);
 
     }
@@ -746,9 +762,20 @@ a{
     100%{
        
         margin-top: 20vh;
-        opacity: .2;
+        opacity: .8;
         background: var(--dormash);
        
+    }
+}
+
+
+@keyframes dots{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
     }
 }
 .loading-screen{
@@ -763,6 +790,29 @@ a{
     text-align: center;
 }
 
+.loading-text span:nth-child(1){
+    animation: dots 1s ease-in-out infinite alternate;
+    animation-delay: 1s;
+}
+.loading-text span:nth-child(2){
+    animation: dots 1s ease-in-out infinite alternate;
+    animation-delay: 2s;
+}
+
+.loading-text span:nth-child(3){
+    animation: dots 1s ease-in-out infinite alternate;
+    animation-delay: 3s;
+}
+.loading-text span:nth-child(4){
+    animation: dots 1s ease-in-out infinite alternate;
+    animation-delay: 4s;
+}
+.loading-text span:nth-child(5){
+    animation: dots 1s ease-in-out infinite alternate;
+    animation-delay: 5s;
+}
+
+
 .loading-image{
     height: 5rem;
     overflow: hidden;
@@ -773,6 +823,17 @@ a{
     height: 100%;
 }
 
+.loading-text{
+    text-shadow: 0px 0px 0px transparent;
+    position: absolute;
+}
+
+
+.loading-text span{
+font-size: 4rem;
+line-height: .2rem;
+font-weight: 31200;
+}
 .google-sign{
     margin-top: 1rem;
     display: flex;
@@ -826,6 +887,13 @@ a{
     padding: .5rem;
     font-size: 17px;
     cursor: pointer;
+}
+
+.holder{
+    position: fixed;
+    bottom: 5rem;
+    right: .1rem;
+    z-index: 999;
 }
 
 
@@ -1184,39 +1252,36 @@ a{
 
 
   @media only screen and (min-width: 200px) and (max-width: 300px) {
-        .tool-holder{
+        .holder{
         height: auto;
         width: fit-content;
-        margin-left: 80vw;
-        margin-top: 1rem;
+      
     }
 
-    .tool-holder .tools{
+    .holder .tools{
         width: .3rem;
         height: .3rem;
-        margin-left: .3rem ;
+       
     }
 
-    .tool-holder .tools i{
+    .holder .tools i{
         font-size: .8rem;
     }
 }
 
 @media only screen and (min-width: 301px) and (max-width: 360px) {
-        .tool-holder{
+        .holder{
         height: auto;
         width: fit-content;
-        margin-left: 80vw;
-        margin-top: 1rem;
         position: fixed;
     }
 
-    .tool-holder .tools{
+    .holder .tools{
         width: .3rem;
         height: .3rem;
     }
 
-    .tool-holder .tools i{
+    .holder .tools i{
         font-size: .8rem;
     }
 }
@@ -1224,43 +1289,40 @@ a{
 @media only screen and (min-width: 361px) and (max-width: 400px) {
   
 
-        .tool-holder{
+        .holder{
         height: auto;
         width: fit-content;
-        margin-left: 85vw;
-        margin-top: 1rem;
         position: fixed;
     }
 
 
     
-    .tool-holder .tools{
+    .holder .tools{
         width: .3rem;
         height: .3rem;
     }
 
-    .tool-holder .tools i{
+    .holder .tools i{
         font-size: .8rem;
     }
 }
 
 @media only screen and (min-width: 401px) and (max-width: 500px) {
 
-        .tool-holder{
+        .holder{
         height: auto;
         width: fit-content;
-        margin-left: 88vw;
-        margin-top: 1rem;
+      
         position: fixed;
     }
 
     
-    .tool-holder .tools{
+    .holder .tools{
         width: .3rem;
         height: .3rem;
     }
 
-    .tool-holder .tools i{
+    .holder .tools i{
         font-size: .8rem;
     }
 }
@@ -1269,11 +1331,10 @@ a{
 
     @media only screen and (min-width: 501px) and (max-width: 550px) {
 
-        .tool-holder{
+        .holder{
         height: auto;
         width: fit-content;
-        margin-left: 88vw;
-        margin-top: 1rem;
+       
         position: fixed;
     }
 
@@ -1283,11 +1344,10 @@ a{
 @media only screen and (min-width: 551px) and (max-width: 600px) {
 
 
-        .tool-holder{
+        .holder{
         height: auto;
         width: fit-content;
-        margin-left: 88vw;
-        margin-top: 1rem;
+       
         position: fixed;
     }
 }
@@ -1296,12 +1356,10 @@ a{
 
     
 @media only screen and (min-width: 951px) {
-    .tool-holder{
+    .holder{
         height: auto;
         width: fit-content;
-        margin-left: 85vw;
-        margin-top: 0vh;
+       
         position: fixed;
     }
 }
-

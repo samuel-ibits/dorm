@@ -15,8 +15,92 @@ body{
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
+.cartegorier{
+    width: 80vw;
+    height: auto;
+    padding: .5rem;
+    background: var(--dormblue);
+    margin-top: 2rem;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.centerer{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
+
+.profile-elements{
+    width: auto;
+    height: auto;
+    overflow: scroll;
+    padding: .5rem;
+    display: none;
+}
+
+
+.cartegory-title{
+    margin-left: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.cartegory-icon{
+    margin-left: auto;
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+.input-wrapper-profile:nth-child(1)
+{
+    margin-top: 0rem;
+}
+
+.text-element{
+    text-align: center;
+    margin-top: 1rem;
+    width: 90%;
+}
+
+
+.text-element p:nth-child(1){
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.text-element p:nth-child(2){
+    font-size: 1rem;
+    color: var(--dormblue)
+}
+
+.text-element p:nth-child(3){
+    font-size: .7rem;
+    color: #000;
+}
+
+.image-full-screen{
+    position: fixed;
+    width: 100%; 
+    height: 100%;
+    border-radius: 0px;
+    top: 3rem;
+    left: 0;
+    background: rgb(252, 250, 250);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-full-screen img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 
 .upload-wrapper{
@@ -52,14 +136,18 @@ body{
     height: 100%;
 }
 
+.marginer{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
 .profile-image{
     width: 100px;
     height: 100px;
     border-radius: 50%;
     border: 5px solid var(--dormorange);
     overflow: hidden;
-    margin-top: 1rem;
-    margin-left: 3rem;
 }
 
 .profile-image img{
@@ -67,20 +155,18 @@ body{
 }
 
 .profile-image-holder{
-    display: grid;
-    gap: 4rem;
-    grid-template-columns: repeat(auto-fill,minmax(90px,1fr));
+   width: 90%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-.profile-image-holder h3{
-    font-size: 17px;
-    font-weight: bolder;
-    color: #555;
-    text-align: left;
+.center-button{
     margin-top: 1rem;
-    margin-left: 3%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
 }
-
 
 .profile-image-holder button{
     margin-top: 2rem;
@@ -95,10 +181,6 @@ body{
     transition: .5s linear;
 }
 
-.profile-body h3{
-    font-weight: bold;
-    margin-top: 3rem;
-}
 
 .profile-image-holder button:hover{
     background: var(--dormorange);
@@ -110,8 +192,12 @@ body{
 
 .input-wrapper-profile{
     display: flex;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    width: 7rem;
+    height: auto;
+    overflow: scroll;
 }
+
 
 .changer input{
  margin-left: 0rem;
@@ -134,15 +220,15 @@ body{
     padding: .5rem;
     color: #020202;
     width: fit-content;
-    font-size: .9rem;
+    font-size: .6rem;
+    font-weight: 500;
 }
 
 .profile-input-holders{
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(max-width,1fr));
     margin-bottom: 4rem;
-
 }
 
 .profile-holder1{
@@ -166,7 +252,7 @@ body{
     position: absolute;
     overflow: hidden;
     cursor: pointer;
-    margin-left: 8rem;
+    margin-left: 5rem;
     background: #ffffff;
     margin-top: 5rem;
 
@@ -201,17 +287,27 @@ body{
 
 .submit{
     border: none;
-    border-radius: 10px;
+    border-radius: 3px;
     outline: none;
     background: var(--dormblue);
     color: #eee;
-    width: fit-content;
-    padding: .3rem;
-    box-shadow: 0px 2px 3px #333;
-    text-shadow: 0px 2px 3px #333;
-    transition: .5s linear;
+    width: max-content;
+    height: auto;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    transition: .2s linear;
 }
 
 .submit:hover{
     background: var(--dormorange);
+}
+
+
+@media only screen and (max-width: 600px){
+
+    .image-full-screen img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }

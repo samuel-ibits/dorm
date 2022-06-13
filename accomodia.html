@@ -1,750 +1,931 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#0688d3">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accomodia</title>
-    <link rel="stylesheet" href="menu/css/styles.css"> 
+
+    <link rel="stylesheet" href="menu/css/styles.css">
     <link rel="stylesheet" href="css/accomodia.css">
     <link rel="stylesheet" href="css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css-2/style.css">
     <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
     <link rel="stylesheet" href="update.css">
     <link rel="stylesheet" href="style.css">
 
     <!-- start vanillatop plugin -->
     <link rel="stylesheet" href="dist/vanillatop.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
-     
-     .page-content{
-         overflow-x: hidden;
-     }
-
-    @media only screen and (max-width: 600px) {
-    .page-content{
-            height: 72vh;
+        .page-content {
+            overflow-x: hidden;
         }
 
-        .request{
-    position: fixed;
-    padding: .5rem;
-    color: #fff;
-    z-index: 99999;
-    background: var(--dormblue);
-    margin-top: 4rem;
-    margin-left: -3rem;
-    border-radius: 20px;
-    width: 5rem;
-    text-shadow: 0px 3px 3px #333;
-    box-shadow: 0px 2px 3px #333;
-}
+        @media only screen and (max-width: 600px) {
+
+
+            .request {
+                position: fixed;
+                padding: .5rem;
+                color: #fff;
+                z-index: 99999;
+                background: var(--dormblue);
+                margin-top: 4rem;
+                margin-left: -3rem;
+                border-radius: 20px;
+                width: 5rem;
+            }
 
 
 
-.request-div-holder{
-    position: fixed;
-    width: 100%;
-    height: 80vh;
-    background: #020202;
-    opacity: .96;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-
-}
-
-@media only screen and (min-width: 601px) {
-    .addhouse-div{
-    width: max-content;
-    height: 90vh;
-    overflow: scroll;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #ffffff;
-    z-index: 999999;
-    display: none;
-    padding: 3rem;
-    margin-left: 5rem
-    
-}
-
-.request{
-    position: absolute;
-    width: max-content;
-    padding: .5rem;
-    color: #fff;
-    z-index: 99999;
-    background: var(--dormblue);
-    margin-top: 4rem;
-    margin-left: 1rem;
-    border-radius: 20px;
-    width: 7rem;
-   
-    text-shadow: 0px 3px 3px #333;
-    box-shadow: 0px 2px 3px #333;
-}
+            .request-div-accomodia-holder {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background: #020202;
+                opacity: .96;
+                z-index: 9999999;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
 
-.open-request{
-    float: right;
-}
+        }
+
+        @media only screen and (min-width: 601px) {
+            .addhouse-div {
+                width: max-content;
+                height: 90vh;
+                overflow: scroll;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #ffffff;
+                z-index: 999999;
+                display: none;
+                padding: 3rem;
+                margin-left: 5rem
+            }
+
+            .request {
+                position: absolute;
+                width: max-content;
+                padding: .5rem;
+                color: #fff;
+                z-index: 99999;
+                background: var(--dormblue);
+                top: 6rem;
+                margin-left: 1rem;
+                border-radius: 20px;
+                width: 7rem;
+
+            }
 
 
+            .open-request {
+                float: right;
+            }
 
-}
+            .request-div-accomodia-holder {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background: #020202;
+                opacity: .96;
+                z-index: 9999999;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
-
-
-   </style>
+        }
+    </style>
 </head>
+
 <body>
 
-    
-<div class="request">
-    <i class="bi bi-question-lg open-request"></i>
-</div>
+
+    <div class="request">
+        <i class="bi bi-question-lg open-request"></i>
+    </div>
 
 
-<div class="request-div-holder">
+    <div class="request-div-accomodia-holder">
 
-    <div class="request-div-inner-div">
-        <div class="exit-big-screen">
-            <i class="bi bi-x open-request"></i>
-        </div>
-        <p class="title-text">Prefered specs</p>
-
-
-        <div class="spec-wrapper">
-            <span class="spec-label">Price(Naira)</span> 
-            <div class="spec-div">
-               <span class="input-label">From:</span> <input type="number">    <span class="input-label">To:</span><input type="number">
+        <div class="request-div-inner-div">
+            <div class="exit-big-screen">
+                <i class="bi bi-x open-request"></i>
             </div>
-        </div>
-        <div class="spec-wrapper">
-            <span class="spec-label">Walking distance(meters)</span> 
-            <div class="spec-div">
-               <span class="input-label">From:</span> <input type="number">    <span class="input-label">To:</span><input type="number">
+            <p class="title-text">Prefered specs</p>
+
+
+            <div class="spec-wrapper">
+                <span class="spec-label">Price(Naira)</span>
+                <div class="spec-div">
+                    <span class="input-label">From:</span> <input type="number"> <span
+                        class="input-label">To:</span><input type="number">
+                </div>
             </div>
-        </div>
-        <div class="spec-wrapper">
-            <span class="spec-label">Number of bedrooms</span> 
-            <div class="spec-div">
-               <span class="input-label">From:</span> <input type="number">    <span class="input-label">To:</span><input type="number">
+            <div class="spec-wrapper">
+                <span class="spec-label">Walking distance(meters)</span>
+                <div class="spec-div">
+                    <span class="input-label">From:</span> <input type="number"> <span
+                        class="input-label">To:</span><input type="number">
+                </div>
             </div>
-        </div>
-        <div class="spec-wrapper">
-            <span class="spec-label">Any special specification you may want to add</span> 
-            <div class="spec-div">
-                <textarea name="" placeholder="e.g some where with freqent electricity " id="" cols="30" rows="10"></textarea>
+            <div class="spec-wrapper">
+                <span class="spec-label">Number of bedrooms</span>
+                <div class="spec-div">
+                    <span class="input-label">From:</span> <input type="number"> <span
+                        class="input-label">To:</span><input type="number">
+                </div>
             </div>
-        </div>
-        <div class="spec-wrapper">
-<button>Sumbit</button>
+            <div class="spec-wrapper">
+                <span class="spec-label">Any special specification you may want to add</span>
+                <div class="spec-div">
+                    <textarea name="" placeholder="e.g some where with freqent electricity " id="" cols="30"
+                        rows="10"></textarea>
+                </div>
+            </div>
+            <div class="spec-wrapper">
+                <button>Sumbit</button>
+            </div>
         </div>
     </div>
-</div>
 
 
     <div class="top-div-search">
         <div class="search-wrapper" style="z-index:1; position: absolute;margin-top: -1rem;">
             <i class="bi bi-search"></i>
-            <input type="search" class="search-input" placeholder="search e.g previous review, user name etc" name="" id=""  oninput = "Search((this.value).toLowerCase())">
-         </div>
-        
-    </div>
-<div class="inspect-image">
-    <div class="remove">
-        <i class="bi bi-arrow-left-circle-fill"></i>
-    </div>
-    <div class="home-info">
-        <p class="contact-agent">
-          <span> 08023978872
-
-                <button class="chat">
-                    Chat with agent
-                </button>
-          </span>
-        </p>
-    </div>
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><div class="house-images"> <img src="images/living-room-1.jpg" alt=""></div></div>
-          <div class="swiper-slide"><div class="house-images"> <img src="images/living-room-2.jpg" alt=""></div></div>
-          <div class="swiper-slide"><div class="house-images"> <img src="images/living-room-3.jpg" alt=""></div></div>
-          <div class="swiper-slide"><div class="house-images"> <img src="images/living-room-4.jpg" alt=""></div></div>
-          <div class="swiper-slide"><div class="house-images"> <img src="images/living-room-5.jpg" alt=""></div></div>
-          <div class="swiper-slide"><div class="house-images"> <img src="images/living-room-6.jpg" alt=""></div></div>
-          <div class="swiper-slide"><div class="house-images"> <img src="images/living-room-7.jpg" alt=""></div></div>
-          <div class="swiper-slide"><div class="house-images"> <img src="images/living-room-8.jpg" alt=""></div></div>
-          <div class="swiper-slide"><div class="house-images"> <img src="images/living-room-9.jpg" alt=""></div></div>
+            <input type="search" class="search-input" placeholder="search e.g previous review, user name etc"
+                name="" id="" oninput="Search((this.value).toLowerCase())">
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-</div>
 
+    </div>
+    <div class="inspect-image">
+        <div class="remove">
+            <i class="bi bi-arrow-left-circle-fill"></i>
+        </div>
+        <div class="home-info">
+            <p class="contact-agent">
+                <span> 08023978872
 
-
-<div class="addhouse-div">
-  
-<div class="middler">
-    
-   
-        <div class="upper-div">
-        
-            <form action="">
-                <div class="upload-wrapper">
-                   
-            <div class="upload-body">
-               
-                   <i class="bi bi-x-lg" style="color: #f96b03;"></i>
-             
-                <div class="upload-package-container">
-                    <div class="uploader">
-                        <div class="upload-input">
-                            <input placeholder="Select Thumbnail" type="text" disabled> 
-                            <span class="file-selected"> <input type="file"><i class="bi bi-camera2"></i> </span>
-                        </div>
-                    </div>
-                    <div class="cartegory-div">
-                        <input type="text" placeholder="Type of House / Number of rooms">
-                    </div>
-                    <div class="cartegory-div">
-                        <input type="number" placeholder="whatsapp phone number">
-                    </div>
-            
-                    <div class="addbtn add-1">
-                        Additional Information (not compulsory) <i class="bi bi-plus"></i>
-                    </div>
-                    <div class="additional-info add-1-div">
-                                    
-            
-                        <div class="uploader">
-                            <div class="upload-input">
-                                <input placeholder="Room 1" type="text" readonly disabled> 
-                                <span class="file-selected"><input type="file"><i class="bi bi-camera"></i> </span>
-                            </div>
-                        </div>
-            
-                                    <div class="uploader">
-                                        <div class="upload-input">
-                                            <input placeholder="Room 2" type="text" readonly disabled> 
-                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i> </span>
-                                        </div>
-                                    </div>
-            
-                                    <div class="uploader">
-                                        <div class="upload-input">
-                                            <input placeholder="Room 3" type="text" readonly disabled> 
-                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i> </span>
-                                        </div>
-                                    </div>
-                                    <div class="uploader">
-                                        <div class="upload-input">
-                                            <input placeholder="Room 4" type="text" readonly disabled> 
-                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i> </span>
-                                        </div>
-                                    </div>
-                                    <div class="uploader">
-                                        <div class="upload-input">
-                                            <input placeholder="Kitchen" type="text" readonly disabled> 
-                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i> </span>
-                                        </div>
-                                    </div>
-                                    <div class="uploader">
-                                        <div class="upload-input">
-                                            <input placeholder="Toilet" type="text" readonly disabled> 
-                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i> </span>
-                                        </div>
-                                    </div>
-                         </div>
+                    <button class="chat">
+                        Chat with agent
+                    </button>
+                </span>
+            </p>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="house-images"> <img src="images/house 2.jpg" alt=""></div>
                 </div>
-
-
-
-                <!---->
-                <div class="upload-package-container">
-                    <div class="uploader">
-                        <div class="upload-input">
-                            <input placeholder="Select Thumbnail" type="text" disabled> 
-                            <span class="file-selected"> <input type="file"><i class="bi bi-camera2"></i> </span>
-                        </div>
-                    </div>
-                    <div class="cartegory-div">
-                        <input type="text" placeholder="Type of House / Number of rooms">
-                    </div>
-                    <div class="cartegory-div">
-                        <input type="number" placeholder="whatsapp phone number">
-                    </div>
-                    <div class="addbtn add-2">
-                        Additional Information (not compulsory) <i class="bi bi-plus"></i>
-                    </div>
-                    <div class="additional-info add-2-div">
-                                    
-            
-                        <div class="uploader">
-                            <div class="upload-input">
-                                <input placeholder="Room 1" type="text" readonly disabled> 
-                                <span class="file-selected"><input type="file"><i class="bi bi-camera"></i> </span>
-                            </div>
-                        </div>
-            
-                                    <div class="uploader">
-                                        <div class="upload-input">
-                                            <input placeholder="Room 2" type="text" readonly disabled> 
-                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i> </span>
-                                        </div>
-                                    </div>
-            
-                                    <div class="uploader">
-                                        <div class="upload-input">
-                                            <input placeholder="Room 3" type="text" readonly disabled> 
-                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i> </span>
-                                        </div>
-                                    </div>
-                                    <div class="uploader">
-                                        <div class="upload-input">
-                                            <input placeholder="Room 4" type="text" readonly disabled> 
-                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i> </span>
-                                        </div>
-                                    </div>
-                                    <div class="uploader">
-                                        <div class="upload-input">
-                                            <input placeholder="Kitchen" type="text" readonly disabled> 
-                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i> </span>
-                                        </div>
-                                    </div>
-                                    <div class="uploader">
-                                        <div class="upload-input">
-                                            <input placeholder="Toilet" type="text" readonly disabled> 
-                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i> </span>
-                                        </div>
-                                    </div>
-                         </div>
+                <div class="swiper-slide">
+                    <div class="house-images"> <img src="images/house 3.jpg" alt=""></div>
                 </div>
-        <!---->
-                 
-         
-            <div class="upload-package-container">
-                <div class="uploader">
-                    <div class="upload-input">
-                        <input placeholder="Select Thumbnail" type="text" disabled> 
-                        <span class="file-selected"> <input type="file"><i class="bi bi-camera2"></i> </span>
-                    </div>
+                <div class="swiper-slide">
+                    <div class="house-images"> <img src="images/house 4.jpg" alt=""></div>
                 </div>
-                <div class="cartegory-div">
-                    <input type="text" placeholder="Type of House / Number of rooms">
-                </div>
-                <div class="cartegory-div">
-                    <input type="number" placeholder="whatsapp phone number">
-                </div>
-                <div class="addbtn add-3">
-                    Additional Information (not compulsory) <i class="bi bi-plus"></i>
-                </div>
-                <div class="additional-info add-3-div">
-                                
-        
-                    <div class="uploader">
-                        <div class="upload-input">
-                            <input placeholder="Room 1" type="text" readonly disabled> 
-                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i> </span>
-                        </div>
-                    </div>
-        
-                                <div class="uploader">
-                                    <div class="upload-input">
-                                        <input placeholder="Room 2" type="text" readonly disabled> 
-                                        <span class="file-selected"><input type="file"><i class="bi bi-camera"></i> </span>
-                                    </div>
-                                </div>
-        
-                                <div class="uploader">
-                                    <div class="upload-input">
-                                        <input placeholder="Room 3" type="text" readonly disabled> 
-                                        <span class="file-selected"><input type="file"><i class="bi bi-camera"></i> </span>
-                                    </div>
-                                </div>
-                                <div class="uploader">
-                                    <div class="upload-input">
-                                        <input placeholder="Room 4" type="text" readonly disabled> 
-                                        <span class="file-selected"><input type="file"><i class="bi bi-camera"></i> </span>
-                                    </div>
-                                </div>
-                                <div class="uploader">
-                                    <div class="upload-input">
-                                        <input placeholder="Kitchen" type="text" readonly disabled> 
-                                        <span class="file-selected"><input type="file"><i class="bi bi-camera"></i> </span>
-                                    </div>
-                                </div>
-                                <div class="uploader">
-                                    <div class="upload-input">
-                                        <input placeholder="Toilet" type="text" readonly disabled> 
-                                        <span class="file-selected"><input type="file"><i class="bi bi-camera"></i> </span>
-                                    </div>
-                                </div>
-                     </div>
             </div>
-        
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+
+    <div class="addhouse-div">
+
+        <div class="middler">
+
+
+            <div class="upper-div">
+
+                <form action="">
+                    <div class="upload-wrapper">
+
+                        <div class="upload-body">
+
+                            <i class="bi bi-x-lg" style="color: #f96b03; margin-top: 1rem;"></i>
+
+                            <div class="upload-package-container">
+                                <div class="uploader">
+                                    <div class="upload-input">
+                                        <input placeholder="Select Thumbnail" type="text" disabled>
+                                        <span class="file-selected"> <input type="file"><i class="bi bi-camera2"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="cartegory-div">
+                                    <input type="text" placeholder="Type of House / Number of rooms" name="">
+                                </div>
+                                <div class="cartegory-div">
+                                    <input type="number" placeholder="whatsapp phone number">
+                                </div>
+
+                                <div class="addbtn add-1">
+                                    Additional Information (not compulsory) <i class="bi bi-plus"></i>
+                                </div>
+                                <div class="additional-info add-1-div">
+
+
+                                    <div class="uploader">
+                                        <div class="upload-input">
+                                            <input placeholder="Room 1" type="text" readonly disabled>
+                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="uploader">
+                                        <div class="upload-input">
+                                            <input placeholder="Room 2" type="text" readonly disabled>
+                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="uploader">
+                                        <div class="upload-input">
+                                            <input placeholder="Room 3" type="text" readonly disabled>
+                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="uploader">
+                                        <div class="upload-input">
+                                            <input placeholder="Room 4" type="text" readonly disabled>
+                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="uploader">
+                                        <div class="upload-input">
+                                            <input placeholder="Kitchen" type="text" readonly disabled>
+                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="uploader">
+                                        <div class="upload-input">
+                                            <input placeholder="Toilet" type="text" readonly disabled>
+                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!---->
+                            <div class="upload-package-container">
+                                <div class="uploader">
+                                    <div class="upload-input">
+                                        <input placeholder="Select Thumbnail" type="text" disabled>
+                                        <span class="file-selected"> <input type="file"><i class="bi bi-camera2"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="cartegory-div">
+                                    <input type="text" placeholder="Type of House / Number of rooms">
+                                </div>
+                                <div class="cartegory-div">
+                                    <input type="number" placeholder="whatsapp phone number">
+                                </div>
+                                <div class="addbtn add-2">
+                                    Additional Information (not compulsory) <i class="bi bi-plus"></i>
+                                </div>
+                                <div class="additional-info add-2-div">
+
+
+                                    <div class="uploader">
+                                        <div class="upload-input">
+                                            <input placeholder="Room 1" type="text" readonly disabled>
+                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="uploader">
+                                        <div class="upload-input">
+                                            <input placeholder="Room 2" type="text" readonly disabled>
+                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="uploader">
+                                        <div class="upload-input">
+                                            <input placeholder="Room 3" type="text" readonly disabled>
+                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="uploader">
+                                        <div class="upload-input">
+                                            <input placeholder="Room 4" type="text" readonly disabled>
+                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="uploader">
+                                        <div class="upload-input">
+                                            <input placeholder="Kitchen" type="text" readonly disabled>
+                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="uploader">
+                                        <div class="upload-input">
+                                            <input placeholder="Toilet" type="text" readonly disabled>
+                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+
+
+                            <div class="upload-package-container">
+                                <div class="uploader">
+                                    <div class="upload-input">
+                                        <input placeholder="Select Thumbnail" type="text" disabled>
+                                        <span class="file-selected"> <input type="file"><i class="bi bi-camera2"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="cartegory-div">
+                                    <input type="text" placeholder="Type of House / Number of rooms">
+                                </div>
+                                <div class="cartegory-div">
+                                    <input type="number" placeholder="whatsapp phone number">
+                                </div>
+                                <div class="addbtn add-3">
+                                    Additional Information (not compulsory) <i class="bi bi-plus"></i>
+                                </div>
+                                <div class="additional-info add-3-div">
+
+
+                                    <div class="uploader">
+                                        <div class="upload-input">
+                                            <input placeholder="Room 1" type="text" readonly disabled>
+                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="uploader">
+                                        <div class="upload-input">
+                                            <input placeholder="Room 2" type="text" readonly disabled>
+                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="uploader">
+                                        <div class="upload-input">
+                                            <input placeholder="Room 3" type="text" readonly disabled>
+                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="uploader">
+                                        <div class="upload-input">
+                                            <input placeholder="Room 4" type="text" readonly disabled>
+                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="uploader">
+                                        <div class="upload-input">
+                                            <input placeholder="Kitchen" type="text" readonly disabled>
+                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="uploader">
+                                        <div class="upload-input">
+                                            <input placeholder="Toilet" type="text" readonly disabled>
+                                            <span class="file-selected"><input type="file"><i class="bi bi-camera"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <button class="submit">SUBMIT <i class="bi bi-box-arrow-in-down"></i></button>
+                        </div>
+
+
+                </form>
+
             </div>
-        <div >
-            <button class="submit">SUBMIT <i class="bi bi-box-arrow-in-down"></i></button>
+        </div>
     </div>
 
-   
-            </form>
-        
-        </div>
-        </div>
-</div>
-
- 
-
-</div>
 
 
-<div class="top-div">
-    <div class="logo">
-        <img src="images/dorm_no_bg.png" alt="">
     </div>
 
-    <div class="searchbar-for-menu">
-        <i class="bi bi-search"></i> <input type="search" name="" id="" oninput = "Search((this.value).toLowerCase())">
+
+    <div class="top-div">
+        <div class="logo">
+            <img src="images/dorm_no_bg.png" alt="">
+        </div>
+
+        <div class="searchbar-for-menu">
+            <i class="bi bi-search"></i> <input type="search" name="" id="" placeholder="search for house, price, location of price etc"
+                oninput="Search((this.value).toLowerCase())">
+        </div>
+
+        <div class="bot-head">
+            <div class="ears-head">
+                <div class="left-ear-head"></div>
+                <div class="right-ear-head"></div>
+            </div>
+            <div class="eyes-head">
+                <div class="right-eye-head"></div>
+                <div class="left-eye-head"></div>
+            </div>
+
+            <div class="mouth-head"></div>
+        </div>
+        <i class="bi bi-bell-fill"></i>
+    </div>
+    <div class="full-width">
+        <div class="notification">
+            <ul>
+                <li>Your <span class="pronounds">Accomodia</span> request has returned results <span
+                        class="number">34</span></li>
+                <li>Your <span class="pronounds">Market</span> request has returned results <span
+                        class="number">3</span></li>
+            </ul>
+        </div>
     </div>
 
-    <div class="bot-head">
-        <div class="ears-head">
-            <div class="left-ear-head"></div> 
-            <div class="right-ear-head"></div>
-        </div>
-        <div class="eyes-head">
-            <div class="right-eye-head"></div>
-            <div class="left-eye-head"></div>
-        </div>
-
-        <div class="mouth-head"></div>            
-</div>
-    <i class="bi bi-bell-fill"></i>
-</div>
-<div class="full-width">
-    <div class="notification">
-        <ul>
-            <li>Your  <span class="pronounds">Accomodia</span> request has returned results <span class="number">34</span></li>
-            <li>Your  <span class="pronounds">Market</span> request has returned results <span class="number">3</span></li>
+    <div class="nav-bar">
+        <ul class="nav-list">
+            <li class="nav-item" title="Study Tools">
+                <a href="studytools.html" class="nav-link">
+                    <i class="bi bi-tools"></i>
+                    <p class="icon-title">Study tools</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Course Review">
+                <a href="coursereview.html" class="nav-link">
+                    <i class="bi bi-book-fill"></i>
+                    <p class="icon-title">Course review</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Title">
+                <a href="texter.html" class="nav-link">
+                    <i class="bi bi-chat-left-text-fill"></i>
+                    <p class="icon-title">Texter</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Accomodia">
+                <a href="accomodia.html" class="nav-link active-nav-link">
+                    <i class="bi bi-house"></i>
+                    <p class="icon-title">Accomodia</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Martket">
+                <a href="market.html" class="nav-link">
+                    <i class="bi bi-shop"></i>
+                    <p class="icon-title">Market</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Setting">
+                <a href="setting.html" class="nav-link">
+                    <i class="bi bi-gear-fill"></i>
+                    <p class="icon-title">Setting</p>
+                </a>
+            </li>
         </ul>
     </div>
-</div>
 
-<div class="nav-bar">
-<ul class="nav-list">
-    <li class="nav-item" title="Study Tools">
-        <a href="studytools.html" class="nav-link">
-            <i class="bi bi-tools"></i>    
-            <p class="icon-title">Study tools</p>
-        </a>  
-     </li>
-    <li class="nav-item" title="Course Review">
-        <a href="coursereview.html" class="nav-link">
-            <i class="bi bi-book-fill"></i>    
-            <p class="icon-title">Course review</p>
-        </a>      
-    </li>
-    <li class="nav-item" title="Title">
-        <a href="texter.html" class="nav-link">
-            <i class="bi bi-chat-left-text-fill"></i>   
-            <p class="icon-title">Texter</p>
-        </a>               
-    </li>
-    <li class="nav-item" title="Accomodia">
-        <a href="accomodia.html" class="nav-link active-nav-link">
-            <i class="bi bi-house"></i>   
-            <p class="icon-title">Accomodia</p>
-        </a>              
-    </li>
-    <li class="nav-item" title="Martket">
-        <a href="market.html" class="nav-link">
-            <i class="bi bi-shop"></i>   
-            <p class="icon-title">Market</p>
-        </a>              
-    </li>
-    <li class="nav-item" title="Setting">
-        <a href="setting.html" class="nav-link">
-            <i class="bi bi-gear-fill"></i>   
-            <p class="icon-title">Setting</p>
-        </a>              
-    </li>
-</ul>
-</div>
-
-<div class="page-content">
+    <div class="page-content">
 
 
 
-<div class="centered-div">
-    
-    <div class="accomodia">
+        <div class="centered-div">
 
-        <div class="accomodia-card">
-            <div class="holder">
-              
-            <span class="statues">Rent</span>
-           
-            <span class="price-of-house">
-                <i class="bi bi-currency-dollar"></i> 300,000
-            </span>
+            <div class="accomodia">
+                <div class="center-accomodia-card">
+                    <div class="accomodia-card">
+                        <div class="accomodia-holder">
+
+                            <span class="statues">Rent</span>
+
+                            <span class="price-of-house">
+                                <i class="bi bi-currency-dollar"></i> 300,000
+                            </span>
+                        </div>
+                        <div class="top-image">
+                            <img src="images/house 2.jpg" alt="" srcset="">
+                        </div>
+                        <div class="bottom-div">
+                            <p class="name-of-house">
+                                Lorem Ipsum Lorem
+                            </p>
+                            <p class="location"><i class="bi bi-geo-alt-fill"></i>
+                                Location of House for person
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="center-accomodia-card">
+                    <div class="accomodia-card">
+                        <div class="accomodia-holder">
+
+                            <span class="statues">Rent</span>
+
+                            <span class="price-of-house">
+                                <i class="bi bi-currency-dollar"></i> 300,000
+                            </span>
+                        </div>
+                        <div class="top-image">
+                            <img src="images/house 2.jpg" alt="" srcset="">
+                        </div>
+                        <div class="bottom-div">
+                            <p class="name-of-house">
+                                Lorem Ipsum Lorem
+                            </p>
+                            <p class="location"><i class="bi bi-geo-alt-fill"></i>
+                                Location of House for person
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="center-accomodia-card">
+                    <div class="accomodia-card">
+                        <div class="accomodia-holder">
+
+                            <span class="statues">Rent</span>
+
+                            <span class="price-of-house">
+                                <i class="bi bi-currency-dollar"></i> 300,000
+                            </span>
+                        </div>
+                        <div class="top-image">
+                            <img src="images/house 2.jpg" alt="" srcset="">
+                        </div>
+                        <div class="bottom-div">
+                            <p class="name-of-house">
+                                Lorem Ipsum Lorem
+                            </p>
+                            <p class="location"><i class="bi bi-geo-alt-fill"></i>
+                                Location of House for person
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="center-accomodia-card">
+                    <div class="accomodia-card">
+                        <div class="accomodia-holder">
+
+                            <span class="statues">Rent</span>
+
+                            <span class="price-of-house">
+                             <i class="bi bi-currency-dollar"></i> 300,000
+                            </span>
+                        </div>
+                        <div class="top-image">
+                            <img src="images/house 2.jpg" alt="" srcset="">
+                        </div>
+                        <div class="bottom-div">
+                            <p class="name-of-house">
+                                Lorem Ipsum Lorem
+                            </p>
+                            <p class="location"><i class="bi bi-geo-alt-fill"></i>
+                                Location of House for person
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="center-accomodia-card">
+                    <div class="accomodia-card">
+                        <div class="accomodia-holder">
+
+                            <span class="statues">Rent</span>
+
+                            <span class="price-of-house">
+                                <i class="bi bi-currency-dollar"></i> 300,000
+                            </span>
+                        </div>
+                        <div class="top-image">
+                            <img src="images/house 2.jpg" alt="" srcset="">
+                        </div>
+                        <div class="bottom-div">
+                            <p class="name-of-house">
+                                Lorem Ipsum Lorem
+                            </p>
+                            <p class="location"><i class="bi bi-geo-alt-fill"></i>
+                                Location of House for person
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="center-accomodia-card">
+                    <div class="accomodia-card">
+                        <div class="accomodia-holder">
+
+                            <span class="statues">Rent</span>
+
+                            <span class="price-of-house">
+                                <i class="bi bi-currency-dollar"></i> 300,000
+                            </span>
+                        </div>
+                        <div class="top-image">
+                            <img src="images/house 2.jpg" alt="" srcset="">
+                        </div>
+                        <div class="bottom-div">
+                            <p class="name-of-house">
+                                Lorem Ipsum Lorem
+                            </p>
+                            <p class="location"><i class="bi bi-geo-alt-fill"></i>
+                                Location of House for person
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="center-accomodia-card">
+                    <div class="accomodia-card">
+                        <div class="accomodia-holder">
+
+                            <span class="statues">Rent</span>
+
+                            <span class="price-of-house">
+                                <i class="bi bi-currency-dollar"></i> 300,000
+                            </span>
+                        </div>
+                        <div class="top-image">
+                            <img src="images/house 2.jpg" alt="" srcset="">
+                        </div>
+                        <div class="bottom-div">
+                            <p class="name-of-house">
+                                Lorem Ipsum Lorem
+                            </p>
+                            <p class="location"><i class="bi bi-geo-alt-fill"></i>
+                                Location of House for person
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="center-accomodia-card">
+                    <div class="accomodia-card">
+                        <div class="accomodia-holder">
+
+                            <span class="statues">Rent</span>
+
+                            <span class="price-of-house">
+                                <i class="bi bi-currency-dollar"></i> 300,000
+                            </span>
+                        </div>
+                        <div class="top-image">
+                            <img src="images/house 2.jpg" alt="" srcset="">
+                        </div>
+                        <div class="bottom-div">
+                            <p class="name-of-house">
+                                Lorem Ipsum Lorem
+                            </p>
+                            <p class="location"><i class="bi bi-geo-alt-fill"></i>
+                                Location of House for person
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="center-accomodia-card">
+                    <div class="accomodia-card">
+                        <div class="accomodia-holder">
+
+                            <span class="statues">Rent</span>
+
+                            <span class="price-of-house">
+                                <i class="bi bi-currency-dollar"></i> 300,000
+                            </span>
+                        </div>
+                        <div class="top-image">
+                            <img src="images/house 2.jpg" alt="" srcset="">
+                        </div>
+                        <div class="bottom-div">
+                            <p class="name-of-house">
+                                Lorem Ipsum Lorem
+                            </p>
+                            <p class="location"><i class="bi bi-geo-alt-fill"></i>
+                                Location of House for person
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center-accomodia-card">
+                    <div class="accomodia-card">
+                        <div class="accomodia-holder">
+
+                            <span class="statues">Rent</span>
+
+                            <span class="price-of-house">
+                                <i class="bi bi-currency-dollar"></i> 300,000
+                            </span>
+                        </div>
+                        <div class="top-image">
+                            <img src="images/house 2.jpg" alt="" srcset="">
+                        </div>
+                        <div class="bottom-div">
+                            <p class="name-of-house">
+                                Lorem Ipsum Lorem
+                            </p>
+                            <p class="location"><i class="bi bi-geo-alt-fill"></i>
+                                Location of House for person
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="center-accomodia-card">
+                    <div class="accomodia-card">
+                        <div class="accomodia-holder">
+
+                            <span class="statues">Rent</span>
+
+                            <span class="price-of-house">
+                                <i class="bi bi-currency-dollar"></i> 600,000
+                            </span>
+                        </div>
+                        <div class="top-image">
+                            <img src="images/house 2.jpg" alt="" srcset="">
+                        </div>
+                        <div class="bottom-div">
+                            <p class="name-of-house">
+                                Lorem Ipsum Lorem
+                            </p>
+                            <p class="location"><i class="bi bi-geo-alt-fill"></i>
+                                Location of House for person
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+               
+
+
+
+                <div class="add-house">
+                    <i class="bi bi-plus"></i> Add House
+                </div>
+
+
             </div>
-            <div class="top-image">
-            <img src="images/house 2.jpg" alt="" srcset="">
-            </div>
-            <div class="bottom-div">
-                <p class="name-of-house">
-                    Lorem Ipsum Lorem
-                </p>
-                <p class="location"><i class="bi bi-geo-alt-fill"></i>
-                    Location of House for person
-                    </p>
-            </div>   
+
         </div>
-
-
-
-        <div class="accomodia-card">
-            <div class="holder">
-            <span class="statues">Room mate</span>
-
-            <span class="price-of-house">
-                <i class="bi bi-currency-dollar"></i> 300,000
-            </span>
-            </div>
-            <div class="top-image">
-            <img src="images/house 2.jpg" alt="" srcset="">
-            </div>
-            <div class="bottom-div">
-                <p class="name-of-house">
-                    Lorem Ipsum Lorem
-                </p>
-                <p class="location"><i class="bi bi-geo-alt-fill"></i>
-                    Location of House for person
-                    </p>
-            </div>   
-        </div>
-
-
-
-        <div class="accomodia-card">
-            <div class="holder">
-            <span class="statues">Rent</span>
-
-            <span class="price-of-house">
-                <i class="bi bi-currency-dollar"></i> 300,000
-            </span>
-            </div>
-            <div class="top-image">
-            <img src="images/house 2.jpg" alt="" srcset="">
-            </div>
-            <div class="bottom-div">
-                <p class="name-of-house">
-                    Lorem Ipsum Lorem
-                </p>
-                <p class="location"><i class="bi bi-geo-alt-fill"></i>
-                    Location of House for person
-                    </p>
-            </div>   
-        </div>
-
-
-
-        <div class="accomodia-card">
-            <div class="holder">
-            <span class="statues">Rent</span>
-
-            <span class="price-of-house">
-                <i class="bi bi-currency-dollar"></i> 300,000
-            </span>
-            </div>
-            <div class="top-image">
-            <img src="images/house 2.jpg" alt="" srcset="">
-            </div>
-            <div class="bottom-div">
-                <p class="name-of-house">
-                    Lorem Ipsum Lorem
-                </p>
-                <p class="location"><i class="bi bi-geo-alt-fill"></i>
-                    Location of House for person
-                    </p>
-            </div>   
-        </div>
-
-
-
-        <div class="accomodia-card">
-            <div class="holder">
-            <span class="statues">Rent</span>
-
-            <span class="price-of-house">
-                <i class="bi bi-currency-dollar"></i> 300,000
-            </span>
-            </div>
-            <div class="top-image">
-            <img src="images/house 2.jpg" alt="" srcset="">
-            </div>
-            <div class="bottom-div">
-                <p class="name-of-house">
-                    Lorem Ipsum Lorem
-                </p>
-                <p class="location"><i class="bi bi-geo-alt-fill"></i>
-                    Location of House for person
-                    </p>
-            </div>   
-        </div>
-
-
-        <div class="bottomspace">
-
-        </div>
-
-
-
-        
-<div class="add-house">
-    <i class="bi bi-plus"></i> Add House
-</div>
-
-
-   </div>     
-    
     </div>
-</div>
 
 
 
-    
-
-
-<a href="#!" class="vanillatop"></a>
-
-    
-<script src="dist/vanillatop.min.js"></script>
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<script src="https://unpkg.com/@popperjs/core@2"></script>
-<script src="https://unpkg.com/tippy.js@6"></script>
-
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
-  $(".accomodia-card").click(function(){
-  $(".inspect-image").fadeIn('fast');
-  $(".darkbackground").show(1000); 
-  $(".inspect-image").animate({
-    left: '0px',
-  });
-});
-
-$(".bi-arrow-left-circle-fill").click(function(){
-  $(".inspect-image").fadeOut('fast');
-  $(".darkbackground").hide(100); 
-  $(".inspect-image").animate({
-    left: '-200px',
-  });
-});
-
-$(".request").ready(function(){
-  $(".request-div-holder").fadeOut('fast');
-});
-
-
-$(".exit-big-screen").click(function(){
-  $(".request-div-holder").fadeOut('fast');
-});
 
 
 
-$(".bi-bell-fill").click(function(){
-  $(".notification").fadeToggle('fast');
-});
-
-$(".request").click(function(){
-  $(".request-div-holder").fadeToggle('fast');
-});
+    <a href="#!" class="vanillatop"></a>
 
 
-$(".add-house").click(function(){
-  $(".addhouse-div").fadeIn('fast');
-  $(".accomodia").fadeOut('fast');
-});
+    <script src="dist/vanillatop.min.js"></script>
 
-$(".bi-x-lg").click(function(){
-  $(".addhouse-div").fadeOut('fast');
-  $(".accomodia").fadeIn('fast');
-});
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-$(".add-1").click(function(){
-  $(".add-1-div").slideToggle();
-}); 
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
 
-$(".add-2").click(function(){
-  $(".add-2-div").slideToggle();
-}); 
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
 
-$(".add-3").click(function(){
-  $(".add-3-div").slideToggle();
-}); 
+        $(".accomodia-card").click(function () {
+            $(".inspect-image").fadeIn('fast');
+            $(".darkbackground").show(1000);
+            $(".inspect-image").animate({
+                left: '0px',
+            });
+        });
+
+        $(".bi-arrow-left-circle-fill").click(function () {
+            $(".inspect-image").fadeOut('fast');
+            $(".darkbackground").hide(100);
+            $(".inspect-image").animate({
+                left: '-200px',
+            });
+        });
+
+        $(".request").ready(function () {
+            $(".request-div-accomodia-holder").fadeOut('fast');
+        });
+
+
+        $(".exit-big-screen").click(function () {
+            $(".request-div-accomodia-holder").fadeOut('fast');
+        });
 
 
 
-  tippy('.bot-head', {
-    content: 'My tooltip!',
-    theme: 'tomato',
-    content: '<p class="dormbotmessage">Hi, I"m your Dorm assistant, Always, here to help.</strong>',
-  allowHTML: true,
-  });
+        $(".bi-bell-fill").click(function () {
+            $(".notification").fadeToggle('fast');
+        });
+
+        $(".request").click(function () {
+            $(".request-div-accomodia-holder").fadeToggle('fast');
+        });
 
 
-  function Search(item){
+        $(".add-house").click(function () {
+            $(".addhouse-div").fadeIn('fast');
+            $(".accomodia").fadeOut('fast');
+        });
+
+        $(".bi-x-lg").click(function () {
+            $(".addhouse-div").fadeOut('fast');
+            $(".accomodia").fadeIn('fast');
+        });
+
+        $(".add-1").click(function () {
+            $(".add-1-div").slideToggle();
+        });
+
+        $(".add-2").click(function () {
+            $(".add-2-div").slideToggle();
+        });
+
+        $(".add-3").click(function () {
+            $(".add-3-div").slideToggle();
+        });
+
+
+
+        tippy('.bot-head', {
+            content: 'My tooltip!',
+            theme: 'tomato',
+            content: '<p class="dormbotmessage">Hi, I"m your Dorm assistant, Always, here to help.</strong>',
+            allowHTML: true,
+        });
+
+
+        function Search(item) {
             var collection = document.getElementsByClassName("accomodia-card");
-            for (i = 0;i < collection.length; i++){
+            for (i = 0; i < collection.length; i++) {
                 if (((collection[i].innerHTML).toLowerCase()).indexOf(item) > -1) {
                     collection[i].style.display = "block";
-                    } else {
-                        collection[i].style.display = "none";
-                        }
+                } else {
+                    collection[i].style.display = "none";
+                }
             }
-    }
-</script>
-     
+        }
+    </script>
+
 </body>
+
 </html>

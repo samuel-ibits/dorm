@@ -8,31 +8,57 @@ html {
   font-family: "Roboto", sans-serif;
 }
 header {
-  padding: 3rem;
   margin: auto;
 }
 /* re-useable CSS */
 .display-row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+}
+li {
+  list-style-type: none;
 }
 /* ============= */
 .logo img {
   height: 30px;
   width: auto;
 }
+.side-bar {
+  width: 20%;
+  background-color: #ece9e9;
+  height: 100vh;
+  padding: 3rem;
+}
+.side-bar li {
+  cursor: pointer;
+  margin: 2rem 0;
+  font-size: 1.1rem;
+  color: #5f6061;
+  transition: all 0.5s ease;
+}
+.side-bar li:hover {
+  color: #01a3fe;
+}
+.side-bar ul {
+  margin-top: 3rem;
+}
 .container {
   width: 80%;
-  margin: 5rem auto;
+  margin: 3rem auto;
 }
 .clearfix::after {
   content: " ";
   clear: both;
   display: table;
 }
+.head-text {
+  font-size: 1.5rem;
+  /* padding: 2em 0 0; */
+}
 form {
   width: 60%;
-  margin: auto;
+  margin: 0 auto;
+  /* padding: 3rem 0; */
 }
 .input-div {
   display: block;
@@ -50,6 +76,7 @@ input {
 }
 
 input[type="text"] {
+  border: 1px solid #5f6061;
   border-radius: 7px;
   padding: 15px 30px;
 }
@@ -71,11 +98,22 @@ textarea:focus {
   border: 0;
 }
 .btn {
+  cursor: pointer;
   border-radius: 7px;
   padding: 20px 50px;
   width: 20%;
   float: right;
   color: #f1f1f1;
   border: none;
-  background-color: #01a3fe;
+  background: linear-gradient(
+    to right,
+    rgb(16, 139, 211) 50%,
+    rgb(1, 163, 254) 50%
+  );
+  background-position: right;
+  background-size: 200%;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  background-position: left;
 }

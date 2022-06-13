@@ -12,36 +12,44 @@
     <title>Blog Entry</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="assets/img/dorm_no_bg.png" alt="Logo" />
+    <section class="display-row">
+      <div class="side-bar">
+        <header>
+          <div class="logo">
+            <img src="assets/img/dorm_no_bg.png" alt="Logo" />
+          </div>
+        </header>
+        <ul>
+          <li id="PostPage">Post</li>
+          <li id="DeletePostPage">Delete post</li>
+          <li id="EditPostPage">Edit post</li>
+        </ul>
       </div>
-    </header>
-    <section class="display-row"></section>
-    <div class="container clearfix">
-      <div class="head-text">Add new blog post</div>
-      <form action="">
-        <div class="input-div">
-          <label for="BlogTitle">Blog title</label>
-          <input type="text" placeholder="Enter the blog title" required />
-        </div>
-        <div class="input-div">
-          <label for="Image">Select image</label>
-          <input type="file" required placeholder="select image" />
-        </div>
-        <div class="input-div">
-          <label for="BlogPost">Blog post</label>
-          <textarea
-            name="Blog"
-            id="Blog-text"
-            cols="20"
-            rows="15"
-            placeholder="Enter blog post"
-            required
-          ></textarea>
-        </div>
-        <button class="btn" type="submit">Post</button>
-      </form>
-    </div>
+      <div class="container clearfix">
+        <form action="">
+          <div class="head-text">Add new blog post</div>
+          <div class="input-div">
+            <label for="BlogTitle">Blog title</label>
+            <input type="text" placeholder="Enter the blog title" required />
+          </div>
+          <div class="input-div">
+            <label for="Image">Select image</label>
+            <input type="file" required placeholder="select image" />
+          </div>
+          <div class="input-div">
+            <label for="BlogPost">Blog post</label>
+            <textarea
+              name="Blog"
+              id="Blog-text"
+              cols="20"
+              rows="15"
+              placeholder="Enter blog post"
+              required
+            ></textarea>
+          </div>
+          <button class="btn" type="submit">Post</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>

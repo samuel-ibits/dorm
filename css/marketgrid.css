@@ -35,23 +35,22 @@ body{
 .upload-to-market{
     position: fixed;
     width: 100%;
-    height: 90%;
+    height: 95%;
     background: #eee;
     z-index: 9999;
     left: 0;
+    display: grid;
+    place-items: center;
     top: 3rem;
     overflow-y: scroll;
     display: none;
 }
 
-
 .embeder{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 99999;
-    overflow-y: scroll;    
+    height:auto;
+    background: #fff;
 }
+
 
 
 .exit-big-screen{
@@ -190,6 +189,7 @@ body{
     height: fit-content;
     box-shadow: 0px 1px 2px #333;
     cursor: pointer;
+    background: var(--white);
 
 }
 
@@ -204,25 +204,27 @@ body{
 }
 
 .inspect-market-item{
-    width: 100%;
+    width: 90%;
     height: max-content;
     overflow: scroll;
     position: absolute;
-    display: none;
-    top: 1rem;
+    top: 3rem;
+    transform: scale(1);
     background: rgb(252, 250, 250);
     box-shadow: 0px 2px 4px #555;
     z-index: 999;
+    display: none;
 }
 
 .inspect-market-image {
-    height: 70%;
+    height: 20rem;
     width: 100%; 
 }
 
 .inspect-market-image img{
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 .about-product{
@@ -372,7 +374,6 @@ transition: .5s;
     text-align: center;
     font-size: 18px;
     background: #fff;
-
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -401,11 +402,29 @@ transition: .5s;
         width: 93%;
         margin-left: auto;
     }
-       
+    
+    
+    .center-card{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(.8);
+    }
   }
 
 
 @media only screen and (min-width: 200px) and (max-width: 286px) {
+    .center-card{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(.8);
+    }
+    
+
+
     .most-searched-divv{
         width: 100%;
         height: auto;
@@ -430,7 +449,7 @@ transition: .5s;
 
     .inspect-market-item{
         width: 100%;
-        height: 80vh;
+        height: auto;
         overflow: scroll;
         position: absolute;
         display: none;
@@ -455,7 +474,7 @@ transition: .5s;
   
     .inspect-market-item{
         width: 100%;
-        height: 80vh;
+        height: auto;
         overflow: scroll;
         position: absolute;
         display: none;
@@ -471,16 +490,6 @@ transition: .5s;
     .contentgrid{
         margin-top: 6rem;
         z-index: 9999999;
-    }
-
-
-    .inspect-market-item{
-        width: 100%;
-        height: 80vh;
-        overflow: scroll;
-        position: absolute;
-        display: none;
-        z-index: 999;
     }
     
 }
@@ -506,7 +515,7 @@ transition: .5s;
 
     .inspect-market-item{
         width: 100%;
-        height: 66vh;
+        height: auto;
         overflow: scroll;
         position: absolute;
         display: none;
@@ -583,26 +592,6 @@ transition: .5s;
 
 @media only screen and (min-width: 700px){
     
-    .upload-to-market{
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background: #eee;
-        z-index: 9999;
-        left: 5rem;
-        top: 4rem;
-        overflow-y: scroll;
-    }
-    
-    
-    .embeder{
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        z-index: 99999;
-        overflow-y: scroll;    
-    }
-
     .remove-market{
     color: #f96b03; 
     right: 7rem; 

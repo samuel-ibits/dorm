@@ -10,14 +10,6 @@
 *{
     margin: 0;
     padding: 0;
-    
-    font-family: 'Dosis', sans-serif;
-font-family: 'Fredoka', sans-serif;
-font-family: 'Hubballi', cursive;
-font-family: 'Hurricane', cursive;
-font-family: 'Indie Flower', cursive;
-font-family: 'M PLUS Rounded 1c', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;
 }
 
 body{
@@ -37,8 +29,10 @@ body{
     width: fit-content;
     height: 100vh;
     z-index: 9999;
+    transform: scale(.7);
     display: none;
-    top: 6rem;
+    top: 0rem;
+    padding: 1rem;
 }
 
 
@@ -258,7 +252,8 @@ body{
 }
 
 .review-body{
-    font-size: .9rem;
+    font-size: .7rem;
+    font-weight: lighter !important;
 }
 
 .reactions{

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#0688d3">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="../CSS/style-2.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+
+<body>
+    <div class="page-content-holder">
+        <div class="top-div">
+           <div>
+            <p class="big-bold">CURRENT STATS</p>
+            <p class="date" id="dateId"></p>
+
+           </div>
+            <a href="../index.html" class="marger"><button class="log-out"><ion-icon name="log-out"></ion-icon> LOG OUT</button></a>
+        </div>
+        <section class="section-1">
+            <div class="section-1-child">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="stat-1">
+                                <p class="total-books">
+                                    <ion-icon name="book"></ion-icon> <span class="books-number">400</span> Books
+                                </p>
+                                <p class="sub-text">Target number of books</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="stat-1">
+                                <p class="total-books">
+                                    <ion-icon name="document"></ion-icon> <span class="passed-question-number">9</span>
+                                    Passed questions
+                                </p>
+                                <p class="sub-text">Total number of pass questions Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="card-1 blue-bottom">
+            <p class="title-text-1"> <span class="number-of-books-uploaded-total">300</span> TEXTBOOKS</p>
+            <p class="sub-text-2">TARGET NUMBER OF TEXTBOOK </p>
+        </div>
+        <section class="section-2">
+            <div class="card-1">
+                <p class="title-text-1"> <span class="number-of-books-uploaded-total">125</span> TEXTBOOKS</p>
+                <p class="sub-text-2">TOTAL TEXTBOOKS UPLOADED</p>
+            </div>
+            <div class="card-1">
+                <p class="title-text-1"> <span class="number-of-books-uploaded-total">0</span> PASSED QUESTIONS</p>
+                <p class="sub-text-2">TOTAL PASSED QUESTIONS UPLOADED</p>
+            </div>
+            <div class="card-1">
+                <p class="title-text-1"> <span class="number-of-books-uploaded-total">10</span> PASSED QUESTIONS</p>
+                <p class="sub-text-2">TOTAL PASSED QUESTIONS UPLOADED</p>
+            </div>
+            <div class="card-1">
+                <p class="title-text-1"> <span class="number-of-books-uploaded-total">10</span>/<span
+                        class="number-of-books-uploaded-total">15</span> TEXTBOOKS</p>
+                <p class="sub-text-2">WEEKLY OBJECTIVE TRACKER</p>
+            </div>
+        </section>
+
+        <section class="section-3">
+            <p class="section-title">UPLOADER</p>
+            <div class="uploader-div-holder">
+                <p class="book-title">TEXTBOOK 1</p>
+                <div class="uploader-container">
+                    <div class="custom-file-upload">
+                        <input type="file" id="file" name="myfiles[]" />
+                    </div>
+
+                    <input type="text" name="booktitle" id="" placeholder="BOOK TITLE">
+                    <div class="additional">
+                        <button id="additonal-1">ADDTIONAL INFORMATION</button>
+                        <div class="toggler" id="toggler-1">
+                            <input type="text" name="authorname" id="" placeholder="AUTHOR NAME">
+                            <input type="text" name="aboutbook" id="" placeholder="ABOUT THE BOOK">
+                            <input type="text" name="source" id="" placeholder="SOURCE">
+                            <div class="file-uploader">
+                                <input type="text" name="pagepicture" id="" placeholder="SCREENSHOT OF COVER PAGE"
+                                    disabled>
+                                <div>
+                                    <ion-icon name="image"></ion-icon>
+                                    <div class="file-upload-holder"><input type="file" name="" id="" class="file-2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="DEPARMENT" name="department">
+                </div>
+            </div>
+
+            <div class="uploader-div-holder">
+                <p class="book-title">TEXTBOOK 2</p>
+                <div class="uploader-container">
+                    <div class="custom-file-upload">
+                        <input type="file" id="file" name="myfiles[]" />
+                    </div>
+
+                    <input type="text" name="booktitle" id="" placeholder="BOOK TITLE">
+                    <div class="additional">
+                        <button id="additonal-2">ADDTIONAL INFORMATION</button>
+                        <div class="toggler" id="toggler-2">
+                            <input type="text" name="authorname" id="" placeholder="AUTHOR NAME">
+                            <input type="text" name="aboutbook" id="" placeholder="ABOUT THE BOOK">
+                            <input type="text" name="source" id="" placeholder="SOURCE">
+                            <div class="file-uploader">
+                                <input type="text" name="pagepicture" id="" placeholder="SCREENSHOT OF COVER PAGE"
+                                    disabled>
+                                <div>
+                                    <ion-icon name="image"></ion-icon>
+                                    <div class="file-upload-holder"><input type="file" name="" id="" class="file-2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="DEPARMENT" name="department">
+                </div>
+            </div>
+
+            <div class="uploader-div-holder">
+                <p class="book-title">TEXTBOOK 3</p>
+                <div class="uploader-container">
+                    <div class="custom-file-upload">
+                        <input type="file" id="file" name="myfiles[]" />
+                    </div>
+
+                    <input type="text" name="booktitle" id="" placeholder="BOOK TITLE">
+                    <div class="additional">
+                        <button id="additonal-3">ADDTIONAL INFORMATION</button>
+                        <div class="toggler" id="toggler-3">
+                            <input type="text" name="authorname" id="" placeholder="AUTHOR NAME">
+                            <input type="text" name="aboutbook" id="" placeholder="ABOUT THE BOOK">
+                            <input type="text" name="source" id="" placeholder="SOURCE">
+                            <div class="file-uploader">
+                                <input type="text" name="pagepicture" id="" placeholder="SCREENSHOT OF COVER PAGE"
+                                    disabled>
+                                <div>
+                                    <ion-icon name="image"></ion-icon>
+                                    <div class="file-upload-holder"><input type="file" name="" id="" class="file-2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="DEPARMENT" name="department">
+                </div>
+            </div>
+
+            <button class="submit-btn">SUBMIT</button>
+        </section>
+
+        <section class="section-3">
+            <p class="section-title">LIBRARY</p>
+
+            <div class="long-card">
+                <ul>
+                    <li>
+                        <ion-icon name="library"></ion-icon>
+                    </li>
+                    <li>LIBRARY</li>
+                    <li> <a href="">OPEN</a></li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="section-3">
+            <p class="section-title">RESOUCE LINKS</p>
+
+            <div class="long-card">
+                LINK 1: <a href="https://www.pdfdrive.com" target="_blank">RESOUCE LINK 1</a>
+            </div>
+            <div class="long-card">
+                LINK 2: <a href="https://open.umn.edu/opentextbooks" target="_blank">RESOUCE LINK 2</a>
+            </div>
+        </section>
+        <a href="../index.html" class="big-screen-hide"><button class="log-out">LOG OUT</button></a>
+    </div>
+    <script src="../JS/script.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        $("#additonal-1").click(function () {
+            $("#toggler-1").fadeToggle('fast');
+        });
+
+        $("#additonal-2").click(function () {
+            $("#toggler-2").fadeToggle('fast');
+        });
+
+        $("#additonal-3").click(function () {
+            $("#toggler-3").fadeToggle('fast');
+        });
+    </script>
+</body>
+
+</html>

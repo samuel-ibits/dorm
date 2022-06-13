@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+
+:root{
+    --dark-1: #111;
+    --light-1: #eee;
+    --text-color-1: #333;
+    --transitime: .4s;
+}
+
+body{
+    background: var(--light-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.loading-screen-anim{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light-1);
+    z-index: 4;
+    top: 0;
+    display: grid;
+    place-items: center;
+}
+
+.btn-holder{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-holder ion-icon{
+    font-size: 1.5rem;
+}
+
+.sign-up-div{
+    position: fixed;
+    padding: .5rem;
+    height: auto;
+    display: none;
+    width: auto;
+    bottom: 0;
+    left: 0;
+    background: var(--light-1);
+    z-index: 4;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+
+.sign-up-div  form input[type = 'text'], button{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: .7rem .9rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+}
+
+
+
+.login-container{
+    overflow: hidden;
+    width: 80%;
+    height: auto;
+    padding: 2rem;
+    color: var(--text-color-1);
+    display: flex;
+    box-shadow: 0px 2px 4px #aaa;
+}
+
+.login-container div{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.login-container div form h1{
+    font-size: 6rem;
+    font-weight: 1000;
+}
+
+.login-container div form{
+    display: block;
+}
+
+
+.login-container div form input[type = 'text'], button{
+    width: 60%;
+    border: none;
+    outline: none;
+    padding: .7rem .9rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+}
+
+.forgot-password{
+    font-weight: 900;
+    margin: 1rem auto;
+    cursor: pointer;
+    transition: var(--transitime);
+}
+
+.forgot-password:hover{
+    transform: scale(1.05);
+}
+
+.big-black-btn{
+    background: var(--dark-1);
+    color: var(--light-1);
+    border: none;
+    outline: none;
+    transition: var(--transitime);
+}
+
+.big-black-btn:hover{
+    background: var(--text-color-1);
+}
+
+.login-container div:nth-child(1){
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container div:nth-child(2){
+    overflow: hidden;
+}
+
+
+.login-container div:nth-child(2) img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.login-container div p{
+    font-size: .6rem;
+}
+
+#slider {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  }
+
+  #slider ul {
+    position: relative;
+    list-style: none;
+    height: 100%;
+    width: 10000%;
+    padding: 0;
+    margin: 0;
+    transition: all 750ms ease;
+    left: 0;
+  }
+  #slider ul li {
+    position: relative;
+    height: 100%;
+    float: left;
+  }
+
+  #slider ul li img{
+    width: 20rem;
+    height: auto;
+  }
+
+  .slider-navigation{
+      position: absolute;
+     display: none;
+     visibility: hidden;
+  }
+
+  .slider-navigation ion-icon{
+      font-size: 1.5rem;
+      color: var(--dark-1);
+  }
+
+  .slider-navigation ion-icon:nth-child(2){
+      float: right;
+  }
+
+#svgText{
+    animation: fill 0.5s ease forwards 2s;
+}
+
+  #svgText path:nth-child(1){
+     stroke-dasharray: 354.1079406738281;
+     stroke-dashoffset: 354.1079406738281;
+     animation:  line-anim 2s ease forwards 0.1s;
+  }
+
+  
+  #svgText path:nth-child(2){
+    stroke-dasharray: 339.78668212890625;
+    stroke-dashoffset: 339.78668212890625;
+    animation:  line-anim 2s ease forwards 0.3s;
+}
+
+#svgText path:nth-child(3){
+    stroke-dasharray: 375.1319885253906;
+    stroke-dashoffset: 375.1319885253906;
+    animation:  line-anim 2s ease forwards 0.5s;
+}
+
+#svgText path:nth-child(4){
+    stroke-dasharray: 202.87179565429688;
+    stroke-dashoffset: 202.87179565429688;
+    animation:  line-anim 2s ease forwards 0.7s;
+}
+
+#svgText path:nth-child(5){
+    stroke-dasharray: 395.00982666015625;
+    stroke-dashoffset: 395.00982666015625; 
+    animation:  line-anim 2s ease forwards 0.9s;   
+}
+
+#svgText path:nth-child(6){
+    stroke-dasharray: 395.0098876953125;
+    stroke-dashoffset: 395.0098876953125;
+    animation:  line-anim 2s ease forwards 1.2s;       
+}
+
+#svgText path:nth-child(7){
+    stroke-dasharray:  382.1815185546875;
+    stroke-dashoffset:  382.1815185546875;    
+    animation:  line-anim 2s ease forwards 1.5s;   
+}
+
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill{
+    from{
+        fill: transparent;
+    }
+
+    to{
+       fill: var(--dark-1);
+    }
+}
+  @media only screen  and (max-width: 815px){
+    .login-container{
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        color: var(--text-color-1);
+        display: block;
+        box-shadow: 0px 0px 0px transparent;
+    }
+
+    
+.login-container div{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.login-container div form h1{
+    font-size: 4rem;
+    font-weight: 1000;
+}
+
+
+.login-container div form input[type = 'text'], button{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: .7rem .9rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+}
+
+
+.login-container div form{
+    display: block;
+}
+
+
+.login-container div:nth-child(2){
+   height: 20rem;
+}
+
+.forgot-password{
+  text-align: left;
+}
+
+  }
+
+
+
+
+  @media only screen  and (min-width: 816px)  and (max-width: 1056px){
+    .login-container div form h1{
+        font-size: 4rem;
+        font-weight: 1000;
+    }
+    
+  }

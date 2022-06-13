@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  padding: 3rem;
+  margin: auto;
+}
+/* re-useable CSS */
+.display-row {
+  display: flex;
+  align-items: center;
+}
+/* ============= */
+.logo img {
+  height: 30px;
+  width: auto;
+}
+.container {
+  width: 80%;
+  margin: 5rem auto;
+}
+.clearfix::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+form {
+  width: 60%;
+  margin: auto;
+}
+.input-div {
+  display: block;
+  margin: 2rem 0;
+}
+label {
+  font-size: 0.9rem;
+}
+input {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input[type="text"] {
+  border-radius: 7px;
+  padding: 15px 30px;
+}
+input:focus {
+  outline: 1px solid #01a3fe;
+  border: 0;
+}
+textarea {
+  margin-top: 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 7px;
+  padding: 20px 30px;
+  resize: none;
+  transition: all 0.3s ease;
+}
+textarea:focus {
+  outline: 1px solid #01a3fe;
+  border: 0;
+}
+.btn {
+  border-radius: 7px;
+  padding: 20px 50px;
+  width: 20%;
+  float: right;
+  color: #f1f1f1;
+  border: none;
+  background-color: #01a3fe;
+}

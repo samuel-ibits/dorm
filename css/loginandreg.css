@@ -123,9 +123,9 @@ body{
 
 .left-form-stuff p{
    color: #fff;
-   font-size: 2.5rem;
+   font-size: 3rem;
    font-weight: 100;
-   line-height: 3rem;
+   line-height: 4rem;
 }
 
 .left-form-stuff button{
@@ -134,7 +134,7 @@ body{
     color: var(--white);
     padding: .5rem 1rem;
     width: fit-content;
-    margin-top: .1rem;
+    margin-top: 1rem;
     font-size: .7rem;
     font-weight: 1000;
     border-radius: 3px;
@@ -194,7 +194,7 @@ body{
     display: flex;
     gap: .9rem;
     width: 60%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     align-items: center;
 }
 
@@ -364,6 +364,14 @@ body{
     .hide-on-big-screen{
         display: block;
     }
+
+    .screen-container{
+        background: var(--white);
+    }
+
+    body{
+        background: var(--white);
+    }
     .sub-screen-container:nth-child(1){
         display: none;
     }
@@ -372,6 +380,11 @@ body{
         width: auto;
         height: auto;
         text-align: left !important;
+        padding: 2rem 0px;
+    }
+
+    .registration{
+        margin: 2rem 0px;
     }
 
     .center{

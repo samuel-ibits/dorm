@@ -58,6 +58,54 @@ body{
     z-index: 1;
 }
 
+.forgot-password-form-2 {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-forgot h4{
+    margin: 1rem 0px;
+    color: var(--dormblue);
+}
+
+
+.btn-1{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: var(--white);
+    font-weight: 1000;
+    background: var(--dormorange);
+   border-radius: 50%;
+    animation: wiggle .5s ease-in  infinite alternate;
+}
+
+.instruction-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 20rem;
+    background: var(--white);
+    font-weight: 1000;
+    padding: 1rem;
+    margin-left: -3rem;
+    margin-top: -5rem;
+    box-shadow: 0px 0px .3rem var(--ash);
+    text-align: left;
+}
+
+.instruction-div span{
+    color: var(--dormblue);
+}
+
 .left-form-stuff{
     width: 40vw;
     height: 70vh;
@@ -242,6 +290,7 @@ body{
     z-index: 13;
 }
 
+
 .forgot-password-div{
     background: var(--white);
     width: 40vw;
@@ -278,6 +327,10 @@ body{
     display: none;
 }
 
+.hide-on-small-screen{
+    display: block;
+}
+
 
 .bk-btn{
     width: 3rem;
@@ -297,7 +350,20 @@ body{
     z-index: 20;
 }
 
+@keyframes wiggle{
+    from{
+      transform: rotate(-5deg);
+    }
+
+    to{
+        transform: rotate(5deg);
+    }
+}
+
 @media only screen and  (max-width: 650px) {
+    .hide-on-big-screen{
+        display: block;
+    }
     .sub-screen-container:nth-child(1){
         display: none;
     }
@@ -378,14 +444,15 @@ body{
 
  .input-holder button:nth-child(2) ion-icon{
      color: var(--dormblue);
-     font-size: 1rem;
+     font-size: 2rem;
  }
 
  .forgot-password-div{
     background: var(--white);
-    width: 90vw;
+    width: 95vw;
     height: auto;
     padding: 2rem 0px;
+    overflow: visible;
    
 }
 

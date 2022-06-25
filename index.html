@@ -1,255 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta name="theme-color" content="#1597E2">
+     <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
     <meta charset="UTF-8">
-    <meta name="theme-color" content="#0688d3">
-   
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
-    <title>Dorm - Login</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Fredoka:wght@400;500&family=Hubballi&family=Hurricane&family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="menu/css/styles.css"> 
-<link rel="stylesheet" href="css/style2.css">
-<link rel="stylesheet" href="css-2/bot.css">
-<link rel="stylesheet" href="css-2/style.css">
-<script src="sweetalert2.min.js"></script>
-<link rel="stylesheet" href="sweetalert2.min.css">
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
-<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="update.css">
-<link rel="stylesheet" href="style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<style>
-    .bi{
-        color: #333;
-    }
-
-    .bi-arrow-left{
-        color: #eee;
-    }
-
-    .bi-google{
-        color: inherit;
-    }
-</style>
-<script>
-   $(document).ready(function(){
-    setTimeout(function(){ $(".loadingscreen").hide(); }, 2000);
-    setTimeout(function(){ $(".login-page").show(); });});
-    
-</script>
-
+    <title>login and registration</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="css/loginandreg.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
+
 <body>
+    <div class="forgot-password-holder">
+        <div class="forgot-password-div">
+            <div class="center-forgot">
+                <div class="top-form-logo">
+                    
+                    <button class="bk-btn close-pss">
+                        <ion-icon name="arrow-back-circle"></ion-icon>
+                    </button>
 
-<div class="loadingscreen">
-    <div class="loadingscreen-elements">
-        <div class="loading-image">
-<img src="images/dorm_no_bg.png" alt="">
+                    <img src="images/dorm_no_bg.png" alt="">
+                </div>
+                <h3>Forgot Password</h3>
+                <form action="#!" class="forgot-password-form-1">
+                    <h4>STEP 1</h4>
+                    <div class="input-holder">
+                        <ion-icon name="person"></ion-icon> <input type="text" placeholder="Username">
+                    </div>
+
+                    <div class="input-holder">
+                        <ion-icon name="call"></ion-icon> <input type="text" placeholder="Phone number">
+                    </div>
+                    <div class="input-holder">
+                        <button class="sign-up-btn get-code">GET CODE</button>
+                    </div>
+
+                    <p class="forgot-password">
+                        <span class="">Try another way</span>
+                    </p>
+                </form>
+
+                <form action="#!" class="forgot-password-form-2">
+                    <h4>STEP 2</h4>
+                    <div class="btn-1"><ion-icon name="alert"></ion-icon></div>
+                    <div class="input-holder">
+                        <ion-icon name="qr-code"></ion-icon> <input type="number" placeholder="Enter 4-digit code">
+                    </div>
+
+                    <div class="input-holder">
+                        <button class="sign-up-btn verify">VERIFY</button>
+                    </div>
+
+
+                    <div class="instruction-div">
+                        
+                    <div class="btn-1"><ion-icon name="alert"></ion-icon></div>
+
+                    If you did not get the sms with 3(three) minutes, please send "forgot password,username,phonenumber" to <span>08151519625</span> with your phone number to get your new password
+                    </div>
+                    
+                </form>
+
+                <form action="#!" class="forgot-password-form-3">
+                    <h4>STEP 3</h4>
+                    <div class="input-holder">
+                        <ion-icon name="lock-open"></ion-icon> <input type="text" placeholder="New password">
+                    </div>
+
+                    <div class="input-holder">
+                        <ion-icon name="lock-open"></ion-icon> <input type="text" placeholder="Confirm password">
+                    </div>
+                    <div class="input-holder">
+                        <button class="sign-up-btn">SET PASSWORD</button>
+                    </div>
+
+                
+                </form>
+            </div>
         </div>
-        <p class="loading-text">
-            Dorm every students assistant <span>.</span><span>.</span><span>.</span><span>.</span>
-        </p>
-        <div class="ball-animations">
-            <div class="ball ball-1"></div>
-            <div class="ball-2 ball-2"></div>
-            <div class="ball ball-3"></div>
-            <div class="ball-2 ball-4"></div>
-            
-           
+    </div>
+
+    <div class="forgot-password-holder-bg">
+
+    </div>
+
+    <div class="screen-container">
+        <div class="sub-screen-container">
+            <div class="blue">
+            </div>
+            <div class="left-img">
+                <img src="images/students.jpg" alt="">
+            </div>
+            <div class="left-form-stuff">
+                <div>
+                    <p>Every Student Asssistant</p>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+        <div class="sub-screen-container login">
+            <div class="center">
+                <div class="top-form-logo">
+                    <img src="images/dorm_no_bg.png" alt="">
+                </div>
+                <p class="welcome-txt hide-on-big-screen">Hello, welcome</p>
+                <form action="studytools.html">
+                    <div class="input-holder">
+                        <ion-icon name="person"></ion-icon> <input type="text" placeholder="Username or Phone number">
+                    </div>
 
+                    <div class="input-holder">
+                        <ion-icon name="lock-open"></ion-icon> <input type="text" placeholder="Password">
+                    </div>
 
-    <div class="bot-container">
-<div class="need-help-message">
-    <h3><i class="bi bi-x"></i></h3>      
-</div>
+                    <div class="input-holder">
+                        <button>SIGN IN</button>
+                    </form>
+                        <button  class="btn hide-on-big-screen">
+                            <ion-icon name="logo-google"></ion-icon>
+                        </button>
+                        <div class="open-reg btn hide-on-small-screen">SIGN UP</div>
+                    </div>
 
-        <div class="robots">    
-          <div class="android">
-              <div class="ears">
-                  <div class="left-ear">
-                  </div>
-                  <div class="right-ear">
-                  </div>
-              </div>
-              <div class="head"> 
-                  <div class="eyes"> 
-                      <div class="left_eye"></div> 
-                      <div class="right_eye"></div>
-            <div class="mouth"></div>
-                  </div> 
-              </div> 
-              <div class="upper_body"> 
-                  <div class="left_arm"></div> 
-                  <div class="torso">
-        
-          </div> 
-                  <div class="right_arm"></div> 
-              </div> 
-              <div class="lower_body"> 
-                  <div class="left_leg"></div> 
-                  <div class="right_leg"></div> 
-              </div> 
-          </div>
-      </div>
- 
-  </div>
-
-    <div class="background-image">
-        <img src="images/dorm_no_bg.png" alt="" srcset="">
-    </div>
-
-    <div class="login-wrapper">
-
-        <div class="box login-div">
-<div class="login-form">
-    <div class="logo-login">
-        <img src="images/dorm_no_bg.png" alt="">
-    </div>
-
-    <form action="" id="login">
-
-        <h2>Sign in</h2>
-
-        <div class="input-wrapper">
-            <i class="bi bi-person-fill"></i> <input type="text" id="useraname" placeholder="User Name or Phone Number">
+                    <p class="forgot-password">
+                        Forgot passord? <span class="forgt-password">Click here</span>
+                    </p>
+                    <p class="forgot-password hide-on-big-screen">
+                        Don't have an account? <span class="open-reg">Click here</span>
+                    </p>
+               
+            </div>
         </div>
 
+        <div class="sub-screen-container registration">
+            <div class="center">
+                <div class="top-form-logo-2">
+                    <button class="bck-to-login">
+                        <ion-icon name="arrow-back-circle"></ion-icon>
+                    </button>
+                    <img src="images/dorm_no_bg.png" alt="">
+                </div>
 
-        <div class="input-wrapper">
-            <i class="bi bi-lock-fill"></i> <input type="password" id="password" placeholder="Password">
+                <form action="">
+                    <div class="input-holder">
+                        <ion-icon name="person"></ion-icon> <input type="text" placeholder="First name">
+                    </div>
+                    <div class="input-holder">
+                        <ion-icon name="person"></ion-icon> <input type="text" placeholder="Surname">
+                    </div>
+
+                    <div class="input-holder">
+                        <ion-icon name="mail"></ion-icon> <input type="email" placeholder="Mail">
+                    </div>
+
+                    <div class="input-holder">
+                        <ion-icon name="call"></ion-icon> <input type="number" placeholder="Phone number">
+                    </div>
+                    <div class="input-holder">
+                        <ion-icon name="lock-open"></ion-icon> <input type="text" placeholder="Password">
+                    </div>
+                    <div class="input-holder">
+                        <ion-icon name="lock-open"></ion-icon> <input type="text" placeholder="Re-type assword">
+                    </div>
+                    <div class="input-holder">
+                        <button class="sign-up-btn">SIGN UP</button>
+                    </div>
+
+                </form>
+            </div>
         </div>
-
-        <div class="login-btn">
-            <button onclick="confirmlogin()" class="login-button">
-                SIGN IN
-            </button>
-        </div>
-
-        <div class="forgot-password">
-            Forgot Password<i class="bi bi-question"></i>
-        </div>
-
-        <div class="google-sign">
-            <i class="bi bi-google"></i> Sign with google
-        </div>
-    </form>
-
-    <div class="create-new-account">
-        Don't have an account<i class="bi bi-question"></i> <span class="create-new">Create new one</span>
     </div>
-</div>
-
-        </div>
-<div class="box signup-div">
-
-    <div class="back-btn">
-        <i class="bi bi-arrow-left"></i>
-    </div>
-   <form action="#">
-    <h2 class="up-index">Sign up</h2>
-    <div class="input-wrapper">
-        <i class="bi bi-person-fill"></i> <input type="text" placeholder="First name">
-    </div>
-    <div class="input-wrapper">
-        <i class="bi bi-person-fill"></i> <input type="text" placeholder="Sur name">
-    </div>
-    <div class="input-wrapper">
-        <i class="bi bi-envelope-fill"></i> <input type="email" placeholder="Email">
-    </div>
-    <div class="input-wrapper">
-        <i class="bi bi-telephone-fill"></i> <input type="number" placeholder="Phone Number">
-    </div>
-    <div class="input-wrapper">
-        <i class="bi bi-lock-fill"></i> <input type="password" placeholder="Password">
-    </div>
-    <div class="input-wrapper">
-        <i class="bi bi-lock-fill"></i> <input type="password" placeholder="Re-type password">
-    </div>
-    <div class="input-wrapper">
-        <i class="bi bi-person-fill"></i> <input type="text" placeholder="User Name">
-    </div>
-
-    <div class="login-btn">
-        <button>SIGN UP</button>
-   </div>
-   </form>
-
-</div>
-
-    </div>
-    
 
     <script>
-
-        $(".create-new").click(function(){
-  $(".signup-div").fadeIn('fast');
-  $(".login-div").css("opacity", ".2");
-$('#useraname').prop('disabled', true);
-$('#password').prop('disabled', true);
-$('.login-button').prop('disabled', true);
-});
+        $(".forgot-password-holder").fadeOut('slow');
+        $(".forgot-password-holder-bg").fadeOut('slow');
+        $(".instruction-div").fadeOut('fast');
+        $(".forgot-password-form-2").fadeOut('fast');
+        $(".forgot-password-form-3").fadeOut('fast');
 
 
-$(".back-btn").click(function(){
-  $(".signup-div").fadeOut('fast');
-  $(".login-div").css("opacity", ".9");
-$('#useraname').prop('disabled', false);
-$('#password').prop('disabled', false);
-$('.login-button').prop('disabled', false);
-});
+        $(".get-code").click(function () {
+        $(".forgot-password-form-1").fadeOut('fast');
+        $(".forgot-password-form-2").fadeIn('fast');
+        $(".forgot-password-form-3").fadeOut('fast');
+        });
 
 
+        $(".verify").click(function () {
+        $(".forgot-password-form-1").fadeOut('fast');
+        $(".forgot-password-form-2").fadeOut('fast');
+        $(".forgot-password-form-3").fadeIn('fast');
+        });
 
-$(".bi-x").click(function(){
-  $(".bot-container").fadeOut('fast');
-});
+        $(".open-reg").click(function () {
+            $(".login").fadeOut('fast');
+            $(".registration").fadeIn('slow');
+        });
 
+        $(".forgt-password").click(function () {
+            $(".forgot-password-holder").fadeIn('fast');
+            $(".forgot-password-holder-bg").fadeIn('fast');
+        });
 
-
-function confirmlogin(){
-
-    let useraname = document.getElementById("useraname").value;
-    let password = document.getElementById("password").value;
-    let correctusername = 'jone';
-    let correctpassword = 'jone'
-
-    if(useraname.toLowerCase() != correctusername.toLowerCase() || password.toLowerCase() != correctpassword.toLowerCase()){
-        $(".bot-container").fadeIn('fast');
-        $(".bot-container").css("visibility", "visible");
-        Swal.fire(
-  'Sorry',
-  'Password or username is not valid',
-  'error'
-)
+        $(".btn-1").click(function () {
+            $(".instruction-div").fadeToggle('fast');
+        });
 
 
-    }
+        $(".close-pss").click(function () {
+            $(".forgot-password-holder").fadeOut('fast');
+            $(".forgot-password-holder-bg").fadeOut('fast');
+        });
 
-    else{
-        Swal.fire(
-            'Welcome',
-        'Wellcome Back',
-        'success'
-                )
-         document.getElementById("login").action = "studytools.html";
-    }
-}
+        $(".bck-to-login").click(function () {
+            $(".login").fadeIn('slow');
+            $(".registration").fadeOut('fast');
+        });
     </script>
 </body>
+
 </html>

@@ -24,6 +24,7 @@ li {
   width: auto;
 }
 .side-bar {
+  position: fixed;
   width: 20%;
   background-color: #ece9e9;
   height: 100vh;
@@ -44,7 +45,8 @@ li {
 }
 .container {
   width: 80%;
-  margin: 3rem auto;
+  margin: 3rem 0;
+  margin-left: 20%;
 }
 .clearfix::after {
   content: " ";
@@ -72,6 +74,7 @@ input {
   margin-top: 1rem;
   width: 100%;
   outline: none;
+  background-color: transparent;
   transition: all 0.3s ease;
 }
 
@@ -88,6 +91,7 @@ textarea {
   margin-top: 1rem;
   display: block;
   width: 100%;
+  background-color: transparent;
   border-radius: 7px;
   padding: 20px 30px;
   resize: none;
@@ -101,7 +105,7 @@ textarea:focus {
   cursor: pointer;
   border-radius: 7px;
   padding: 20px 50px;
-  width: 20%;
+  width: 30%;
   float: right;
   color: #f1f1f1;
   border: none;
@@ -116,4 +120,68 @@ textarea:focus {
 }
 .btn:hover {
   background-position: left;
+}
+
+@media (max-width: 950px) {
+  form {
+    width: 70%;
+  }
+  .side-bar {
+    width: 30%;
+  }
+  .container {
+    width: 70%;
+    margin-left: 30%;
+  }
+  .btn {
+    width: 40%;
+  }
+}
+@media (max-width: 640px) {
+  form {
+    width: 80%;
+  }
+  .side-bar {
+    width: 32%;
+  }
+  .container {
+    width: 68%;
+    margin-left: 32%;
+  }
+}
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+  }
+  .side-bar {
+    height: unset;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  header {
+    margin: 0;
+  }
+  .side-bar ul {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+  }
+  .side-bar li {
+    font-size: 0.9rem;
+    margin: 0 0 0 1.5rem;
+  }
+  .container {
+    width: 80%;
+    margin: 120px auto 5rem;
+  }
+  .logo img {
+    height: 20px;
+  }
+  section.display-row {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }

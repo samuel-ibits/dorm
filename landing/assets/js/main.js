@@ -55,7 +55,6 @@
     window.addEventListener("load", headerScrolled);
     onscroll(document, headerScrolled);
   }
-
   /**
    * Mobile nav toggle
    */
@@ -64,7 +63,6 @@
     // this.classList.toggle("changes");
     this.classList.toggle("change");
   });
-
   /**
    * Back to top button
    */
@@ -80,8 +78,7 @@
     window.addEventListener("load", toggleBacktotop);
     onscroll(document, toggleBacktotop);
   }
-
-  /**
+  /*
    * Mobile nav dropdowns activate
    */
   on(
@@ -95,7 +92,6 @@
     },
     true
   );
-
   /**
    * Testimonials slider
    */

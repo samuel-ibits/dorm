@@ -26,24 +26,39 @@
         </ul>
       </div>
       <div class="container clearfix">
-        <form action="">
+        <form
+          action="https://api.dorm.com.ng/blogssend.php?blog_id=value&blog_title=value&blog_text=value&blog_img=value&blogger_name=value&blogger_post_datehttps://api.dorm.com.ng/blogssend.php?blog_id=value&blog_title=value&blog_text=value&blog_img=value&blogger_name=value&blogger_post_date
+          "
+          id="blog_entry_form"
+          method="post"
+        >
           <div class="head-text">Add new blog post</div>
           <div class="input-div">
             <label for="BlogTitle">Blog title</label>
-            <input type="text" placeholder="Enter the blog title" required />
+            <input
+              name="blog_title"
+              type="text"
+              placeholder="Enter the blog title"
+              required
+            />
           </div>
           <div class="input-div">
             <label for="Image">Select image</label>
-            <input type="file" required placeholder="select image" />
+            <input
+              name="blog_img"
+              type="file"
+              required
+              placeholder="select image"
+            />
           </div>
           <div class="input-div">
             <label for="BlogPost">Blog post</label>
             <textarea
-              name="Blog"
+              name="blog_text"
               id="Blog-text"
               cols="20"
               rows="15"
-              placeholder="Enter blog post"
+              placeholder="Enter blog post..."
               required
             ></textarea>
           </div>
@@ -51,5 +66,10 @@
         </form>
       </div>
     </section>
+    <script>
+      alert("products posted success");
+    </script>
+    {"response_code":200,"response_desc":"post sent sucessfully"}
+    <script src="assets/js/blog.js"></script>
   </body>
 </html>

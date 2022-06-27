@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+:root{
+    --ash: #e9e9e9;
+    --white: #ffffff;
+    --dormblue: #1597E2;
+    --darkcolor: #020202;
+    --dormash: lightgrey;
+    --dormorange: #f96b03;
+    --darker-text:#444;
+    --ligher-text:#999;
+    --boxop: .8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.library-holder{
+    width: 100%;
+    height: auto;
+}
+
+.library{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.underlined-text{
+    font-size: 1.1rem;
+    color: #888;
+}
+
+.library-card-image{
+    width: 3rem;
+    height: 3rem;
+}
+
+.library-card-image img{
+    object-fit: contain !important;
+}
+
+.library-grid{
+    margin-top: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill,minmax(4rem,1fr)); 
+
+}
+
+.book-title{
+    font-size: .5rem;
+    color: #666;
+    margin-top: .5rem;
+}
+
+.library-card{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(248, 247, 247);
+    text-align: center;
+    padding: .2rem;
+}
+
+.library-card-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.blue-area-2{
+    width: 100%;
+    height: fit-content;
+    background: var(--dormblue);
+    color: var(--white);
+    margin-top: auto;
+    border-radius: 5px;
+    padding: 1rem .5rem;
+    margin-top: auto;
+}
+
+.more-padding{
+    padding: 0rem 1rem;
+}
+
+
+.notification-holder-2{
+    border-top: 1px solid var(--white);
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.heading-text{
+    border-bottom: 1px solid var(--white);
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    width: 100%;
+}
+
+
+
+  .cartegories{
+    width: 100%;
+    height: auto;
+    margin: 1rem 0px;
+    overflow-x: scroll;
+  }
+
+  .cartegory-card{
+    border: 1px solid var(--darker-text);
+    padding: 1rem;
+    text-align: left;
+    border-radius: 10px;
+    height: 13rem;
+  }
+
+  .cartegory-heading{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--darker-text);
+  }
+
+
+
+  .big-blue-text{
+    color: var(--dormblue);
+    margin: .5rem 0px;
+    margin-top: 1rem;
+  }
+
+  .seemore{
+    text-decoration: underline;
+    font-size: .7rem;
+    color: var(--dormblue);
+    margin-top: 2rem;
+  }
+
+.long-btn-holder{
+  width: 100%;
+  place-items: center;
+  display: grid;
+}
+
+.big-btn{
+  border: none;
+  background: var(--dormorange);
+  padding: 0.4rem 2rem;
+  color: var(--white);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.cart-holder{
+  width: 100%;
+  height: auto;
+  margin: 1rem 0rem;
+  overflow-x: scroll;
+  background: rgb(248, 248, 248);
+}
+
+.cart-elements{
+  width: 200vw;
+  height: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.cartegory-box{
+  min-width: 15rem;
+  height: 100%;
+  background: var(--white);
+  padding: .5rem;
+  
+
+}
+
+.cartegory-list{
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  font-size: .7rem;
+  color: #888;
+  font-weight: 300;
+}
+
+.cartegory-list  li a{
+  text-decoration: underline;
+}
+
+.smaller a li p{
+  width: 100% !important;
+  font-size: .7rem !important;
+}
+  @media only screen and (min-width: 285px) and (max-width: 500px) {
+
+  }

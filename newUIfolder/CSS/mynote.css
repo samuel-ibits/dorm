@@ -122,9 +122,15 @@
     width: 100%;
 }
 
+.bottom-side-list-2 ul{
+    display: flex;
+    gap: .2rem;
+    flex-direction: column;
+}
+
 .bottom-side-list ul{
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     flex-direction: column;
 }
 
@@ -188,8 +194,10 @@
 position: absolute;
 }
 
-
-
+.smaller a li p{
+    width: 100% !important;
+    font-size: .7rem !important;
+}
 
 @media only screen and (min-width: 600px) 
 {

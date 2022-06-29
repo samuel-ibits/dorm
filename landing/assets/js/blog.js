@@ -20,17 +20,27 @@ window.addEventListener("load", function () {
   //   });
 
   async function getBlog() {
-    let response = await fetch("https://api.dorm.com.ng/blogsfetch.php", {
-      method: "GET",
-      mode: "cors",
-      cache: "no-cache",
-      credentials: "same-origin",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-    let blogData = await response.json;
-    console.log(blogData);
+    try {
+      let response = await fetch("https://api.dorm.com.ng/blogsfetch.php");
+      if (response.status === 200) {
+        const result = await response.json();
+        console.log(result);
+        return result;
+      }
+    } catch (err) {
+      // console.log(err);
+    }
+    // let response = await fetch("https://api.dorm.com.ng/blogsfetch.php", {
+    //   method: "GET",
+    //   // mode: "cors",
+    //   cache: "no-cache",
+    //   credentials: "same-origin",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // });
+    // let blogData = await response.json;
+    // console.log(blogData);
   }
 
   getBlog();

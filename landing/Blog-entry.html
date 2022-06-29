@@ -34,7 +34,7 @@
         >
           <div class="head-text">Add new blog post</div>
           <div class="input-div">
-            <label for="BlogTitle">Blog title</label>
+            <label for="blog_title">Blog title</label>
             <input
               name="blog_title"
               type="text"
@@ -43,7 +43,7 @@
             />
           </div>
           <div class="input-div">
-            <label for="Image">Select image</label>
+            <label for="blog_img">Select image</label>
             <input
               name="blog_img"
               type="file"
@@ -52,7 +52,7 @@
             />
           </div>
           <div class="input-div">
-            <label for="BlogPost">Blog post</label>
+            <label for="Blog-text">Blog post</label>
             <textarea
               name="blog_text"
               id="Blog-text"
@@ -62,14 +62,34 @@
               required
             ></textarea>
           </div>
-          <button class="btn" type="submit">Post</button>
+          <div class="input-div">
+            <label for="blogger_name">Blogger name</label>
+            <input
+              name="blogger_name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <button class="btn" type="submit" onclick="submitForm()">Post</button>
         </form>
       </div>
     </section>
     <script>
+      document.cookie =
+        "AC-C=ac-c;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSite=Lax";
+      alert(document.cookie);
+    </script>
+    <script>
+      function submitForm() {
+        let form = document.getElementById("blog_entry_form");
+        form.submit();
+      }
+    </script>
+    <!-- <script>
       alert("products posted success");
     </script>
-    {"response_code":200,"response_desc":"post sent sucessfully"}
+    {"response_code":200,"response_desc":"post sent sucessfully"} -->
     <script src="assets/js/blog.js"></script>
   </body>
 </html>

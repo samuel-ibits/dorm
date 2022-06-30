@@ -34,7 +34,7 @@ window.addEventListener("load", function () {
     });
 
     // Parsing it to JSON format
-    const data = await response.json();
+    const data = await response;
     //just for show
     console.log(data[0]);
     console.log(data.blog_text);

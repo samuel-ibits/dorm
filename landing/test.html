@@ -1,0 +1,133 @@
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content=
+	"width=device-width, initial-scale=1.0" />
+
+<!-- font-awesome library to make the
+	webpage more appealing -->
+<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<!-- Internal CSS styling -->
+<style>
+	.content {
+	text-align: center;
+	padding: 30px;
+	margin: 0px auto;
+	}
+
+	.details {
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	img {
+	border-radius: 5px;
+	box-shadow: black;
+	}
+
+	table,
+	td {
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 10px;
+	border: 1px solid black;
+	}
+</style>
+</head>
+
+<body>
+<div class="content">
+	<div class="head">
+	<h1 id="head"></h1>
+	</div>
+	<div class="email">
+	<i class="fa fa-envelope" style=
+		"font-size: 15px; color: blue;"></i>
+	<a href="" id="email"> </a>
+	</div>
+	<div class="phone">
+	<i class="fa fa-phone" style=
+		"font-size: 15px; color: blue;"></i>
+	<a href="" id="phone"> </a>
+	</div>
+	<br />
+	<div id="user-img"><img src=""></div>
+	<br />
+
+	<div class="details">
+	<table>
+		<tr>
+		<td>blog id</td>
+		<td><span id="id"></span></td>
+		</tr>
+		<tr>
+		<td>blog title</td>
+		<td><span id="title"></span></td>
+		</tr>
+		<tr>
+		<td>bloger text</td>
+		<td><span id="text"></span></td>
+		</tr>
+		<tr>
+		<td>bloger date</td>
+		<td><span id="date"></span></td>
+		</tr>
+	</table>
+	</div>
+</div>
+</body>
+<script>
+const api_url = "https://api.dorm.com.ng/blogsfetch.php";
+
+async function getUser() {
+
+	// Making an API call (request)
+	// and getting the response back
+	const response = await fetch(api_url, {
+    method: 'GET', // *GET, POST, PUT, DELETE, etc.
+    mode: 'cors', // no-cors, *cors, same-origin
+    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'same-origin', // include, *same-origin, omit
+    headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    }});
+
+	// Parsing it to JSON format
+	const data = await response.json();
+	//just for show 
+	console.log(data[0]);
+    console.log(data.blog_text);
+    console.log(data.response_code);
+	// Retrieving data from JSON
+	
+	let image= data.blog_img;
+
+	let id= data.blog_id;
+	let title= data.blog_title;
+	let text= data.blog_text;
+	let date= data.blog_post_date;
+
+	// Accessing the div container and modify/add
+	// elements to the containers
+	
+	
+	// document.getElementById("image").src = image;
+	
+	document.getElementById("id").innerHTML = id;
+	document.getElementById("title").innerHTML = title;
+	document.getElementById("text").innerHTML = text;
+	document.getElementById("date").innerHTML = date;
+	
+}
+
+// Calling the function
+getUser();
+</script>
+
+</html>

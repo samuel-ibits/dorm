@@ -18,29 +18,28 @@ window.addEventListener("load", function () {
   //   .then((json) => {
   //     console.log(json);
   //   });
+  const api_url = "https://api.dorm.com.ng/blogsfetch.php";
 
   async function getBlog() {
-    try {
-      let response = await fetch("https://api.dorm.com.ng/blogsfetch.php");
-      if (response.status === 200) {
-        const result = await response.json();
-        console.log(result);
-        return result;
-      }
-    } catch (err) {
-      // console.log(err);
-    }
-    // let response = await fetch("https://api.dorm.com.ng/blogsfetch.php", {
-    //   method: "GET",
-    //   // mode: "cors",
-    //   cache: "no-cache",
-    //   credentials: "same-origin",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    // });
-    // let blogData = await response.json;
-    // console.log(blogData);
+    // Making an API call (request)
+    // and getting the response back
+    const response = await fetch(api_url, {
+      method: "GET", // *GET, POST, PUT, DELETE, etc.
+      mode: "cors", // no-cors, *cors, same-origin
+      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: "same-origin", // include, *same-origin, omit
+      headers: {
+        "Content-Type": "application/json",
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+    });
+
+    // Parsing it to JSON format
+    const data = await response.json();
+    //just for show
+    console.log(data[0]);
+    console.log(data.blog_text);
+    console.log(data.response_code);
   }
 
   getBlog();

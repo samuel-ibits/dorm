@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="theme-color" content="#1597E2">
+    <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Review</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="css/mynote.css">
+    <link rel="stylesheet" href="css/studytools.css">
+    <link rel="stylesheet" href="css/menucss.css">
+    <link rel="stylesheet" href="css/coursereview.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="mobile-add-review-holder">
+        <div class="mobile-add-review">
+            <div class="add-review-user-image">
+                <img src="images/avtr2.png" alt="">
+            </div>
+            <p class="create-mobile-review">Create a review...</p>
+            <input type="search" class="search" placeholder="Search for a review....">
+            <span class="open-mobile-search">
+                <ion-icon name="search"></ion-icon>
+            </span>
+
+            <span class="open-create-review">
+                <ion-icon name="pencil-outline"></ion-icon>
+            </span>
+        </div>
+    </div>
+    <div class="post-holder">
+        <div class="post-div">
+            <div class="top-post-div">
+                <div class="course-review-user-info-avater">
+                    <img src="images/avtr2.png" alt="">
+                </div>
+                <div class="post-username">
+                    <p>Joe Great</p>
+                    <input type="text" name="" placeholder="#tag" id="">
+                </div>
+                <div class="remove">
+                    <ion-icon name="close"></ion-icon>
+                </div>
+            </div>
+
+
+            <div class="post-div-text">
+                <textarea placeholder="How are lectures going" name="" id=""></textarea>
+            </div>
+
+            <div class="post-div-functions">
+                <div class="post-function-holder">
+                    <p class="post-function-icon blue-icon">
+                        <ion-icon name="image"></ion-icon>
+                    </p>
+
+                    <p class="post-function-icon blue-icon">
+                        <ion-icon name="mic"></ion-icon>
+                    </p>
+
+                    <button class="medium-btn">submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay">
+
+    </div>
+
+
+
+    <div class="top-mobile-menu">
+        <div class="mobile-logo"><img src="images/dorm_no_bg.png" alt=""></div>
+
+        <span class="noti-mobile">
+            <ion-icon name="notifications"></ion-icon>
+        </span>
+    </div>
+
+    <div class="page-container">
+        <div class="menu">
+            <div class="logo-img"><img src="images/dorm_logo_white.png" alt="">
+            </div>
+            <ul class="menu-list">
+                <a href="studytools.html">
+                    <li class="menu-item">
+                        <div class="icon-img"><img src="images/bag-img.png" alt=""></div>
+                        <p class="menu-list-title-sub-side">Study Tools</p>
+                    </li>
+                </a>
+                <a href="coursereview.html">
+                    <li class="active-nav  menu-item">
+                        <div class="icon-img"><img src="images/coursereview.png" alt=""></div>
+                        <p class="menu-list-title-sub-side">Course Review</p>
+                    </li>
+                </a>
+                <a href="texter.html">
+                    <li class="menu-item">
+                        <div class="icon-img"><img src="images/text.png" alt=""></div>
+                        <p class="menu-list-title-sub-side">Texter</p>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="menu-item">
+                        <div class="icon-img"><img src="images/house.png" alt=""></div>
+                        <p class="menu-list-title-sub-side">Accomodia</p>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="menu-item">
+                        <div class="icon-img"><img src="images/market.png" alt=""></div>
+                        <p class="menu-list-title-sub-side">Market</p>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="menu-item">
+                        <div class="icon-img"><img src="images/setting.png" alt=""></div>
+                        <p class="menu-list-title-sub-side">Setting</p>
+                    </li>
+                </a>
+            </ul>
+            <div class="user">
+                <div class="user-img">
+                    <img src="images/avtr2.png" alt="">
+                </div>
+                <div class="user-info">
+                    <p class="name">Great Etubi</p>
+                    <p class="username">@Greatetubi</p>
+                </div>
+                <div class="icon-holder">
+                    <i class="bi bi-three-dots"></i>
+                </div>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="course-review-grid">
+                <div class="course-review-card">
+                    <div class="course-review-card-post">
+                        <div class="course-review-card-post-div">
+                            <div class="course-review-user-info">
+                                <div class="course-review-user-info-avater">
+                                    <img src="images/avtr2.png" alt="">
+                                </div>
+                                <div class="course-review-post-data">
+                                    <p class="course-review-user-name">Jane Doe</p>
+                                    <p class="course-review-post-title">#ALL_LIVES_MATTER</p>
+                                </div>
+                            </div>
+                            <div class="course-review-post-data-container">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, eum ullam error cumque
+                                    ex in architecto, et, cum fugiat optio iure laboriosam consequuntur qui sed. Soluta
+                                    quod iste nostrum omnidolor sit amet consectetur adipisicing elit. At, eum ullam
+                                    error cumque
+                                    ex in architecto, et, cum fugiat optio iure laboriosam consequuntur qui sed. Soluta
+                                    quod iste nostrum omnis.
+                                </p>
+                                <div class="post-image">
+                                    <img src="images/ful.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="course-review-post-functions">
+                                <div class="reaction-functions">
+                                    <button class="blue">
+                                        <ion-icon name="chevron-up"></ion-icon> <span class="number-of-likes">13</span>
+                                    </button>
+                                    <button class="orange">
+                                        <ion-icon name="chevron-down"></ion-icon><span
+                                            class="number-of-unlikes">1</span>
+                                    </button>
+                                    <button class="blue" id="send-1">
+                                        <ion-icon name="chatbox"></ion-icon> <span class="number-of-comments">5</span>
+                                    </button>
+                                </div>
+                                <p class="course-review-send">
+                                    <ion-icon name="send"></ion-icon>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-review-card-comment">
+                        <div class="course-review-comment-card" id="comment-1">
+                            <div class="course-review-user-info">
+                                <div class="course-review-user-info-avater">
+                                    <img src="images/avtr2.png" alt="">
+                                </div>
+                                <div class="course-review-post-data">
+                                    <p class="course-review-user-name">Jane Doe</p>
+                                </div>
+
+                                <div class="comment">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        laborum.</p>
+                                    <p class="more-comments"><a href="commentpage.html">More comments...</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!---->
+                <div class="course-review-card">
+                    <div class="course-review-card-post">
+                        <div class="course-review-card-post-div">
+                            <div class="course-review-user-info">
+                                <div class="course-review-user-info-avater">
+                                    <img src="images/avtr2.png" alt="">
+                                </div>
+                                <div class="course-review-post-data">
+                                    <p class="course-review-user-name">Jane Doe</p>
+                                    <p class="course-review-post-title">#ALL_LIVES_MATTER</p>
+                                </div>
+                            </div>
+                            <div class="course-review-post-data-container">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, eum ullam error cumque
+                                    ex in architecto.
+                                </p>
+                                <div class="post-image">
+                                    <img src="images/avtr2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="course-review-post-functions">
+                                <div class="reaction-functions">
+                                    <button class="blue">
+                                        <ion-icon name="chevron-up"></ion-icon> <span class="number-of-likes">13</span>
+                                    </button>
+                                    <button class="orange">
+                                        <ion-icon name="chevron-down"></ion-icon><span
+                                            class="number-of-unlikes">1</span>
+                                    </button>
+                                    <button class="blue" id="send-2">
+                                        <ion-icon name="chatbox"></ion-icon> <span class="number-of-comments">5</span>
+                                    </button>
+                                </div>
+                                <p class="course-review-send">
+                                    <ion-icon name="send"></ion-icon>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-review-card-comment">
+                        <div class="course-review-comment-card" id="comment-2">
+                            <div class="course-review-user-info">
+                                <div class="course-review-user-info-avater">
+                                    <img src="images/avtr2.png" alt="">
+                                </div>
+                                <div class="course-review-post-data">
+                                    <p class="course-review-user-name">Jane Doe</p>
+                                </div>
+
+                                <div class="comment">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        laborum.</p>
+                                    <p class="more-comments"><a href="commentpage.html">More comments...</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!---->
+
+
+                <!---->
+                <div class="course-review-card">
+                    <div class="course-review-card-post">
+                        <div class="course-review-card-post-div">
+                            <div class="course-review-user-info">
+                                <div class="course-review-user-info-avater">
+                                    <img src="images/avtr2.png" alt="">
+                                </div>
+                                <div class="course-review-post-data">
+                                    <p class="course-review-user-name">Jane Doe</p>
+                                    <p class="course-review-post-title">#ALL_LIVES_MATTER</p>
+                                </div>
+                            </div>
+                            <div class="course-review-post-data-container">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, eum ullam error cumque
+                                    ex in architecto.
+                                </p>
+                                <div class="post-image">
+                                    <img src="images/assu-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="course-review-post-functions">
+                                <div class="reaction-functions">
+                                    <button class="blue">
+                                        <ion-icon name="chevron-up"></ion-icon> <span class="number-of-likes">13</span>
+                                    </button>
+                                    <button class="orange">
+                                        <ion-icon name="chevron-down"></ion-icon><span
+                                            class="number-of-unlikes">1</span>
+                                    </button>
+                                    <button class="blue" id="send-3">
+                                        <ion-icon name="chatbox"></ion-icon> <span class="number-of-comments">5</span>
+                                    </button>
+                                </div>
+                                <p class="course-review-send">
+                                    <ion-icon name="send"></ion-icon>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-review-card-comment">
+                        <div class="course-review-comment-card" id="comment-3">
+                            <div class="course-review-user-info">
+                                <div class="course-review-user-info-avater">
+                                    <img src="images/avtr2.png" alt="">
+                                </div>
+                                <div class="course-review-post-data">
+                                    <p class="course-review-user-name">Jane Doe</p>
+                                </div>
+
+                                <div class="comment">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        laborum.</p>
+                                    <p class="more-comments"><a href="commentpage.html">More comments...</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!---->
+
+                <!---->
+                <div class="course-review-card">
+                    <div class="course-review-card-post">
+                        <div class="course-review-card-post-div">
+                            <div class="course-review-user-info">
+                                <div class="course-review-user-info-avater">
+                                    <img src="images/avtr2.png" alt="">
+                                </div>
+                                <div class="course-review-post-data">
+                                    <p class="course-review-user-name">Jane Doe</p>
+                                    <p class="course-review-post-title">#ALL_LIVES_MATTER</p>
+                                </div>
+                            </div>
+                            <div class="course-review-post-data-container">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, eum ullam error cumque
+                                    ex in architecto.
+                                </p>
+                                <div class="post-image">
+                                    <img src="images/ful.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="course-review-post-functions">
+                                <div class="reaction-functions">
+                                    <button class="blue">
+                                        <ion-icon name="chevron-up"></ion-icon> <span class="number-of-likes">13</span>
+                                    </button>
+                                    <button class="orange">
+                                        <ion-icon name="chevron-down"></ion-icon><span
+                                            class="number-of-unlikes">1</span>
+                                    </button>
+                                    <button class="blue" id="send-4">
+                                        <ion-icon name="chatbox"></ion-icon> <span class="number-of-comments">5</span>
+                                    </button>
+                                </div>
+                                <p class="course-review-send">
+                                    <ion-icon name="send"></ion-icon>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-review-card-comment">
+                        <div class="course-review-comment-card" id="comment-4">
+                            <div class="course-review-user-info">
+                                <div class="course-review-user-info-avater">
+                                    <img src="images/avtr2.png" alt="">
+                                </div>
+                                <div class="course-review-post-data">
+                                    <p class="course-review-user-name">Jane Doe</p>
+                                </div>
+
+                                <div class="comment">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        laborum.</p>
+                                    <p class="more-comments"><a href="commentpage.html">More comments...</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!---->
+                <!---->
+                <div class="course-review-card">
+                    <div class="course-review-card-post">
+                        <div class="course-review-card-post-div">
+                            <div class="course-review-user-info">
+                                <div class="course-review-user-info-avater">
+                                    <img src="images/avtr2.png" alt="">
+                                </div>
+                                <div class="course-review-post-data">
+                                    <p class="course-review-user-name">Jane Doe</p>
+                                    <p class="course-review-post-title">#ALL_LIVES_MATTER</p>
+                                </div>
+                            </div>
+                            <div class="course-review-post-data-container">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, eum ullam error cumque
+                                    ex in architecto.
+                                </p>
+                                <div class="post-image">
+                                    <img src="images/assu-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="course-review-post-functions">
+                                <div class="reaction-functions">
+                                    <button class="blue">
+                                        <ion-icon name="chevron-up"></ion-icon> <span class="number-of-likes">13</span>
+                                    </button>
+                                    <button class="orange">
+                                        <ion-icon name="chevron-down"></ion-icon><span
+                                            class="number-of-unlikes">1</span>
+                                    </button>
+                                    <button class="blue" id="send-5">
+                                        <ion-icon name="chatbox"></ion-icon> <span class="number-of-comments">5</span>
+                                    </button>
+                                </div>
+                                <p class="course-review-send">
+                                    <ion-icon name="send"></ion-icon>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-review-card-comment">
+                        <div class="course-review-comment-card" id="comment-5">
+                            <div class="course-review-user-info">
+                                <div class="course-review-user-info-avater">
+                                    <img src="images/avtr2.png" alt="">
+                                </div>
+                                <div class="course-review-post-data">
+                                    <p class="course-review-user-name">Jane Doe</p>
+                                </div>
+
+                                <div class="comment">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        laborum.</p>
+                                    <p class="more-comments"><a href="commentpage.html">More comments...</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!---->
+                <!---->
+                <div class="course-review-card">
+                    <div class="course-review-card-post">
+                        <div class="course-review-card-post-div">
+                            <div class="course-review-user-info">
+                                <div class="course-review-user-info-avater">
+                                    <img src="images/avtr2.png" alt="">
+                                </div>
+                                <div class="course-review-post-data">
+                                    <p class="course-review-user-name">Jane Doe</p>
+                                    <p class="course-review-post-title">#ALL_LIVES_MATTER</p>
+                                </div>
+                            </div>
+                            <div class="course-review-post-data-container">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, eum ullam error cumque
+                                    ex in architecto.
+                                </p>
+                                <div class="post-image">
+                                    <img src="images/assu-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="course-review-post-functions">
+                                <div class="reaction-functions">
+                                    <button class="blue">
+                                        <ion-icon name="chevron-up"></ion-icon> <span class="number-of-likes">13</span>
+                                    </button>
+                                    <button class="orange">
+                                        <ion-icon name="chevron-down"></ion-icon><span
+                                            class="number-of-unlikes">1</span>
+                                    </button>
+                                    <button class="blue" id="send-6">
+                                        <ion-icon name="chatbox"></ion-icon> <span class="number-of-comments">5</span>
+                                    </button>
+                                </div>
+                                <p class="course-review-send">
+                                    <ion-icon name="send"></ion-icon>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-review-card-comment">
+                        <div class="course-review-comment-card" id="comment-6">
+                            <div class="course-review-user-info">
+                                <div class="course-review-user-info-avater">
+                                    <img src="images/avtr2.png" alt="">
+                                </div>
+                                <div class="course-review-post-data">
+                                    <p class="course-review-user-name">Jane Doe</p>
+                                </div>
+
+                                <div class="comment">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        laborum.</p>
+                                    <p class="more-comments"><a href="commentpage.html">More comments...</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!---->
+
+
+            </div>
+
+
+        </div>
+        <div class="page-side">
+            <div class="search-2">
+                <ion-icon name="search"></ion-icon> <input type="text" placeholder="Search for a note" name="" id="">
+            </div>
+            <div class="double-section">
+
+                <div class="side-user-info">
+                    <div class="userimage-info-side">
+                        <div class="user-img-side">
+                            <img src="images/avtr2.png" alt="">
+                        </div>
+                        <div class="user-info-side">
+                            <p class="name-side">Great Etubi</p>
+                            <p class="username-side">@Greatetubi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-icon add-review">
+                    <div class="icon"><img src="images/add-icon.png" alt=""></div>
+                    <p class="double-section-text">Create Review</p>
+                </div>
+
+                <div class="bottom-notification">
+                    <ion-icon name="notifications"></ion-icon>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+      
+
+       
+
+
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

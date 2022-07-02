@@ -22,6 +22,8 @@
 
 .save{
     width: 100%;
+    position: absolute;
+    bottom: 0rem;
 }
 
 .save button{
@@ -54,9 +56,30 @@
 .notebook textarea{
     margin-top: 3vh;
     width: 100%;
-    min-height: 66vh;
+    height: 70vh;
     border: none;
     padding: 1rem;
     outline: none;
     color: var(--darker-text);
+}
+
+
+
+@media only screen and (max-width: 600px) 
+{
+
+    .save{
+        width: 100%;
+        position: absolute;
+        bottom: 0rem;
+    }
+    
+    .save button{
+        width: 100%;
+        padding: 1rem 0px;
+        border: none;
+        outline: none;
+        background: var(--dormorange);
+        color: var(--white);
+    }
 }

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="theme-color" content="#1597E2">
+    <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login and registration</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="forgot-password-holder">
+        <div class="forgot-password-div">
+            <div class="center-forgot">
+                <div class="top-form-logo">
+
+                    <button class="bk-btn close-pss">
+                        <ion-icon name="arrow-back-circle"></ion-icon>
+                    </button>
+
+                    <img src="images/dorm_no_bg.png" alt="">
+                </div>
+                <h3>Forgot Password</h3>
+                <form action="#!" class="forgot-password-form-1">
+                    <h4>STEP 1</h4>
+                    <div class="input-holder">
+                        <ion-icon name="person"></ion-icon> <input type="text" placeholder="Username">
+                    </div>
+
+                    <div class="input-holder">
+                        <ion-icon name="call"></ion-icon> <input type="text" placeholder="Phone number">
+                    </div>
+                    <div class="input-holder">
+                        <button class="sign-up-btn get-code">GET CODE</button>
+                    </div>
+
+                    <p class="forgot-password">
+                        <span class="">Try another way</span>
+                    </p>
+                </form>
+
+                <form action="#!" class="forgot-password-form-2">
+                    <h4>STEP 2</h4>
+                    <div class="btn-1">
+                        <ion-icon name="alert"></ion-icon>
+                    </div>
+                    <div class="input-holder">
+                        <ion-icon name="qr-code"></ion-icon> <input type="number" placeholder="Enter 4-digit code">
+                    </div>
+
+                    <div class="input-holder">
+                        <button class="sign-up-btn verify">VERIFY</button>
+                    </div>
+
+
+                    <div class="instruction-div">
+
+                        <div class="btn-1">
+                            <ion-icon name="alert"></ion-icon>
+                        </div>
+
+                        If you did not get the sms with 3(three) minutes, please send "forgot
+                        password,username,phonenumber" to <span>08151519625</span> with your phone number to get your
+                        new password
+                    </div>
+
+                </form>
+
+                <form action="#!" class="forgot-password-form-3">
+                    <h4>STEP 3</h4>
+                    <div class="input-holder">
+                        <ion-icon name="lock-open"></ion-icon> <input type="text" placeholder="New password">
+                    </div>
+
+                    <div class="input-holder">
+                        <ion-icon name="lock-open"></ion-icon> <input type="text" placeholder="Confirm password">
+                    </div>
+                    <div class="input-holder">
+                        <button class="sign-up-btn">SET PASSWORD</button>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="forgot-password-holder-bg">
+
+    </div>
+
+    <div class="screen-container">
+        <div class="sub-screen-container login">
+            <div class="center">
+                <div class="top-form-canopy">
+                    <img src="images/Asset 3@2x.png" alt="">
+                </div>
+
+                <div class="top-form-logo">
+                    <img src="images/dorm_no_bg.png" alt="">
+                </div>
+                <p class="welcome-txt hide-on-big-screen">Hello, welcome</p>
+                <form action="#!">
+                   
+                    <h2 class="big-blue-title">Sell like a pro</h2>
+                    <div class="input-holder">
+                        <ion-icon name="person"></ion-icon> <input type="text" placeholder="Username or Phone number">
+                    </div>
+
+                    <div class="input-holder">
+                        <ion-icon name="lock-open"></ion-icon> <input type="text" placeholder="Password">
+                    </div>
+
+                    <div class="input-holder">
+                        <button>SIGN IN</button>
+                </form>
+                <button class="btn hide-on-big-screen">
+                    <ion-icon name="logo-google"></ion-icon>
+                </button>
+                <div class="open-reg btn hide-on-small-screen">SIGN UP</div>
+            </div>
+
+            <p class="forgot-password">
+                Forgot passord? <span class="forgt-password">Click here</span>
+            </p>
+            <p class="forgot-password hide-on-big-screen">
+                Don't have an account? <span class="open-reg">Click here</span>
+            </p>
+
+        </div>
+    </div>
+<!-- 
+    <div class="sub-screen-container registration">
+        <div class="center">
+            <div class="top-form-logo-2">
+                <button class="bck-to-login">
+                    <ion-icon name="arrow-back-circle"></ion-icon>
+                </button>
+                <img src="images/dorm_no_bg.png" alt="">
+            </div>
+
+            <form action="">
+                <div class="input-holder">
+                    <ion-icon name="person"></ion-icon> <input type="text" placeholder="First name">
+                </div>
+                <div class="input-holder">
+                    <ion-icon name="person"></ion-icon> <input type="text" placeholder="Surname">
+                </div>
+
+                <div class="input-holder">
+                    <ion-icon name="mail"></ion-icon> <input type="email" placeholder="Mail">
+                </div>
+
+                <div class="input-holder">
+                    <ion-icon name="call"></ion-icon> <input type="number" placeholder="Phone number">
+                </div>
+                <div class="input-holder">
+                    <ion-icon name="lock-open"></ion-icon> <input type="text" placeholder="Password">
+                </div>
+                <div class="input-holder">
+                    <ion-icon name="lock-open"></ion-icon> <input type="text" placeholder="Re-type assword">
+                </div>
+                <div class="input-holder">
+                    <button class="sign-up-btn">SIGN UP</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    </div> -->
+
+    <script>
+        $(".forgot-password-holder").fadeOut('slow');
+        $(".forgot-password-holder-bg").fadeOut('slow');
+        $(".instruction-div").fadeOut('fast');
+        $(".forgot-password-form-2").fadeOut('fast');
+        $(".forgot-password-form-3").fadeOut('fast');
+
+
+        $(".get-code").click(function () {
+            $(".forgot-password-form-1").fadeOut('fast');
+            $(".forgot-password-form-2").fadeIn('fast');
+            $(".forgot-password-form-3").fadeOut('fast');
+        });
+
+
+        $(".verify").click(function () {
+            $(".forgot-password-form-1").fadeOut('fast');
+            $(".forgot-password-form-2").fadeOut('fast');
+            $(".forgot-password-form-3").fadeIn('fast');
+        });
+
+        $(".open-reg").click(function () {
+            $(".login").fadeOut('fast');
+            $(".registration").fadeIn('slow');
+        });
+
+        $(".forgt-password").click(function () {
+            $(".forgot-password-holder").fadeIn('fast');
+            $(".forgot-password-holder-bg").fadeIn('fast');
+        });
+
+        $(".btn-1").click(function () {
+            $(".instruction-div").fadeToggle('fast');
+        });
+
+
+        $(".close-pss").click(function () {
+            $(".forgot-password-holder").fadeOut('fast');
+            $(".forgot-password-holder-bg").fadeOut('fast');
+        });
+
+        $(".bck-to-login").click(function () {
+            $(".login").fadeIn('slow');
+            $(".registration").fadeOut('fast');
+        });
+    </script>
+</body>
+
+</html>

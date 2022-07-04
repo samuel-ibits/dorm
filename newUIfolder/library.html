@@ -69,8 +69,13 @@
 
     <div class="page-container">
         <div class="menu">
-            <div class="logo-img"><img src="images/dorm_logo_white.png" alt=""></div>
+            <div class="logo-img">
+                <img class="logo-pc" src="images/dorm_logo_white.png" alt="">
 
+                <span class="menu-toggler">
+                    <ion-icon name="menu"></ion-icon>
+                </span>
+            </div>
             <ul class="menu-list">
                 <a href="studytools.html">
                     <li class="active-nav  menu-item">
@@ -78,13 +83,13 @@
                         <p class="menu-list-title-sub-side">Study Tools</p>
                     </li>
                 </a>
-                <a href="">
+                <a href="coursereview.html">
                     <li class="menu-item">
                         <div class="icon-img"><img src="images/coursereview.png" alt=""></div>
                         <p class="menu-list-title-sub-side">Course Review</p>
                     </li>
                 </a>
-                <a href="">
+                <a href="texter.html">
                     <li class="menu-item">
                         <div class="icon-img"><img src="images/text.png" alt=""></div>
                         <p class="menu-list-title-sub-side">Texter</p>
@@ -386,32 +391,32 @@
                         <a href="notebook.html">
                             <li class="menu-item">
                                 <div class="icon-img-small-icon"><img src="images/nootbook.png" alt=""></div>
-                                <p class="menu-list-title-sub-side">Note Book</p>
+                                <p class="menu-list-title-sub-side-1">Note Book</p>
                             </li>
                         </a>
 
                         <a href="noteweb.html">
                             <li class="menu-item">
                                 <div class="icon-img-small-icon"><img src="images/upload.png" alt=""></div>
-                                <p class="menu-list-title-sub-side">Note Web</p>
+                                <p class="menu-list-title-sub-side-1">Note Web</p>
                             </li>
                         </a>
                         <a href="">
                             <li class="menu-item">
                                 <div class="icon-img-small-icon"><img src="images/calculator.png" alt=""></div>
-                                <p class="menu-list-title-sub-side">CGPA Calculator</p>
+                                <p class="menu-list-title-sub-side-1">CGPA Calculator</p>
                             </li>
                         </a>
                         <a href="library.html">
                             <li class="active-tool-icon menu-item">
                                 <div class="icon-img-small-icon"><img src="images/book.png" alt=""></div>
-                                <p class="menu-list-title-sub-side">Library</p>
+                                <p class="menu-list-title-sub-side-1">Library</p>
                             </li>
                         </a>
                         <a href="cbt.html">
                             <li class="menu-item">
                                 <div class="icon-img-small-icon"><img src="images/monitor.png" alt=""></div>
-                                <p class="menu-list-title-sub-side">CBT Test</p>
+                                <p class="menu-list-title-sub-side-1">CBT Test</p>
                             </li>
                         </a>
                     </ul>
@@ -434,22 +439,8 @@
             },
         });
     </script>
-      <script>
-        $(".study-tool-tool").fadeOut('fast');
-        $(".grid-icon").click(function () {
-            $(".study-tool-tool").fadeToggle('fast');
-            $(".grid-icon").fadeToggle('fast');
-            $(".close-icon").fadeToggle('fast');
-
-        });
-
-        $(".close-icon").click(function () {
-            $(".study-tool-tool").fadeToggle('fast');
-            $(".grid-icon").fadeToggle('fast');
-            $(".close-icon").fadeToggle('fast');
-
-        });
-    </script>
+    
+    <script src="js/script.js"></script>
 </body>
 
 </html>

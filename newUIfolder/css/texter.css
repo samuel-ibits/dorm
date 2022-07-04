@@ -260,8 +260,7 @@
         right: 1rem;
         bottom: 5rem;
         display: block;
-        background: var(--white);
-        box-shadow: 0px 1px 5px var(--darker-text);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     }
 
     .mobile-search{

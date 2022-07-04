@@ -256,12 +256,15 @@ opacity: .2;
 
 .post-holder{
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 15;
     position: fixed;
+    z-index: 20;
+    top: 3rem;
+    border: 3rem;
+
 }
 
 .post-div{
@@ -297,6 +300,10 @@ opacity: .2;
     background: var(--lighterblue);
 }
 
+.post-div-functions{
+    position: fixed;
+    width: 100%;
+}
 
 .post-div-text{
     width: 100%;

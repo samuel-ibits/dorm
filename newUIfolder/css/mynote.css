@@ -115,7 +115,7 @@
     margin-top: auto;
     border-radius: 5px;
     padding: 1rem 2rem;
-    margin-top: 3rem;
+    margin-top: auto;
 }
 
 .bottom-side-list{
@@ -162,7 +162,7 @@
     height: 3rem;
     background: #eee;
     position: fixed;
-    bottom: 5rem;
+    bottom: 4rem;
     z-index: 1;
     display: flex;
     padding: .3rem 0px;

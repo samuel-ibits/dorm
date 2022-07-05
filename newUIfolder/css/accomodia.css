@@ -561,10 +561,10 @@ border: none;
 margin-left: auto;
 color: var(--white);
 background: var(--dormorange);
-padding: .1rem .9rem;
+padding: .5rem 1.5rem;
 position: absolute;
-margin-top: -19rem;
-right: .1rem;
+margin-top: -19.1rem;
+right: 0rem;
 }
 
 .accomodia-card-holder{
@@ -850,7 +850,7 @@ background: var(--lighterblue-input);
 }
 
 .blue-small{
-    font-size: .5rem;
+    font-size: .6rem;
 }
 
 .thumbnail{
@@ -869,9 +869,16 @@ background: var(--lighterblue-input);
     padding: 2rem 10px;
     width: 80vw;
     margin-bottom: 6rem;
+    margin-top: 1rem;
 }
+
 
 .about-house-info p{
     font-size: .7rem;
 }
+
+.thick{
+    font-weight: 500;
+}
+
 }

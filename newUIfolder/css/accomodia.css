@@ -180,8 +180,15 @@
 }
 
 .rating ion-icon{
-    color: rgb(228, 132, 7);
     cursor: pointer;
+}
+
+.good{
+    color: rgb(243, 163, 57);
+}
+
+.not-good{
+    color: var(--ligher-text);
 }
 
 
@@ -704,7 +711,6 @@ right: .1rem;
     padding: 3rem 1rem;
     width: 100%;
     background: var(--dormblue);
-   
     border-bottom-left-radius: 25px;
 }
 
@@ -781,8 +787,8 @@ background: var(--lighterblue-input);
 
 
 .mobile-house-info-holder{
-    height: 50vh;
-    margin-top: auto;
+    height: 75vh;
+   top: 35vh;
     width: 100vw;
     position: absolute;
     overflow-y: scroll;
@@ -792,14 +798,16 @@ background: var(--lighterblue-input);
     flex-direction: column;
     bottom: 4rem;
     z-index: 0;
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
 .slider{
     position: fixed;
-    height: 40vh;
+    height: 39vh;
+    top: 2rem;
     z-index: 99;
+    background: var(--white);
 }
 
 
@@ -816,23 +824,54 @@ background: var(--lighterblue-input);
     height: 2rem;
     cursor: pointer;
     position: absolute;
-    font-size: 1.5rem;
+    font-size: 1rem;
     z-index: 10;
-    color: var(--white);
+    color: var(--darker-text);
     display: grid;
     place-items: center;
     border-radius: 50%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    background: var(--white);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
 }
 
 .house-info{
     margin-top: 5rem;
+    border-radius: 10px;
+    background: var(--white);
+    margin-top: 12rem;
 }
 
 
 .house-info-sub h2{
-    font-size: 1rem !important;
+    font-size: .9rem !important;
     font-weight: 400;
 }
 
+.blue-small{
+    font-size: .5rem;
+}
+
+.thumbnail{
+    margin-top: -9vh;
+}
+
+
+.lighter{
+    background: var(--white);
+    border-radius: 10px;
+}
+
+.bottom-div{
+    background: var(--white);
+    border-radius: 10px;
+    padding: 2rem 10px;
+    width: 80vw;
+    margin-bottom: 6rem;
+}
+
+.about-house-info p{
+    font-size: .7rem;
+}
 }

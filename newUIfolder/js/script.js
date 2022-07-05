@@ -216,6 +216,9 @@ $("#chat-6").hide('fast');
             $(".filter-holder").toggle('fast');
             $("#filt1-title").click(function () {
                 $("#flt1").toggleClass("down", 'fast');
+                $("#flt2").removeClass("down", 'fast');
+                $("#flt3").removeClass("down", 'fast');
+                $("#flt4").removeClass("down", 'fast');
                 $("#filter1").toggle('fast');
                 $("#filter2").hide('fast');
                 $("#filter3").hide('fast');
@@ -226,6 +229,9 @@ $("#chat-6").hide('fast');
 
             $("#filt2-title").click(function () {
                 $("#flt2").toggleClass("down", 'fast'); 
+                $("#flt1").removeClass("down", 'fast');
+                $("#flt3").removeClass("down", 'fast');
+                $("#flt4").removeClass("down", 'fast');
                 $("#filter2").toggle('fast');
                 $("#filter1").hide('fast');
                 $("#filter3").hide('fast');
@@ -234,6 +240,9 @@ $("#chat-6").hide('fast');
             });
             $("#filt3-title").click(function () {
                 $("#flt3").toggleClass("down", 'fast');
+                $("#flt2").removeClass("down", 'fast');
+                $("#flt1").removeClass("down", 'fast');
+                $("#flt4").removeClass("down", 'fast');
                 $("#filter3").toggle('fast');
                 $("#filter2").hide('fast');
                 $("#filter1").hide('fast');
@@ -242,6 +251,9 @@ $("#chat-6").hide('fast');
             });
             $("#filt4-title").click(function () {
                 $("#flt4").toggleClass("down", 'fast'); 
+                $("#flt2").removeClass("down", 'fast');
+                $("#flt3").removeClass("down", 'fast');
+                $("#flt1").removeClass("down", 'fast');
                 $("#filter4").toggle('fast');
                 $("#filter2").hide('fast');
                 $("#filter3").hide('fast');

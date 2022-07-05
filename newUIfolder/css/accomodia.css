@@ -570,7 +570,7 @@ right: 0rem;
 .accomodia-card-holder{
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 2rem;
 }
 
 .back-to-accomodia{
@@ -881,4 +881,7 @@ background: var(--lighterblue-input);
     font-weight: 500;
 }
 
+.bg-grey{
+    background: var(--darker-text) !important;
+}
 }

@@ -191,3 +191,60 @@ $("#chat-6").hide('fast');
             $("#pi7").click(function () {
                 $("#pi7").toggleClass("fixed-image", 'fast');
             });
+
+
+            $(".accomodia-inspect").hide("fast");
+            $("#accomodia-ispect-1").click(function () {
+                $(".accomodia-inspect").toggle("fast");
+                $(".accomodia-card-holder").toggle("fast");
+            });
+
+
+            $("#accomodia-ispect-1-pc").click(function () {
+                $(".accomodia-inspect").toggle("fast");
+                $(".accomodia-card-holder").toggle("fast");
+            });
+
+
+            $(".back-to-accomodia").click(function () {
+                $(".accomodia-inspect").toggle("fast");
+                $(".accomodia-card-holder").toggle("fast");
+            });
+
+            
+            $(".mobile-filter").hide('fast');
+            $(".filter-holder").toggle('fast');
+            $("#filt1-title").click(function () {
+                $("#flt1").toggleClass("down", 'fast');
+                $("#filter1").toggle('fast');
+                $("#filter2").hide('fast');
+                $("#filter3").hide('fast');
+                $("#filter4").hide('fast');
+                $(".filter-holder").show('fast');
+            });
+            
+
+            $("#filt2-title").click(function () {
+                $("#flt2").toggleClass("down", 'fast'); 
+                $("#filter2").toggle('fast');
+                $("#filter1").hide('fast');
+                $("#filter3").hide('fast');
+                $("#filter4").hide('fast');
+                $(".filter-holder").show('fast');
+            });
+            $("#filt3-title").click(function () {
+                $("#flt3").toggleClass("down", 'fast');
+                $("#filter3").toggle('fast');
+                $("#filter2").hide('fast');
+                $("#filter1").hide('fast');
+                $("#filter4").hide('fast');
+                $(".filter-holder").show('fast');
+            });
+            $("#filt4-title").click(function () {
+                $("#flt4").toggleClass("down", 'fast'); 
+                $("#filter4").toggle('fast');
+                $("#filter2").hide('fast');
+                $("#filter3").hide('fast');
+                $("#filter1").hide('fast');
+                $(".filter-holder").show('fast');
+            });

@@ -271,6 +271,7 @@
         gap: .3rem;
         height: auto;
         margin: 1rem 0px;
+        background: var(--white);
     }
 
     .mobile-search input{

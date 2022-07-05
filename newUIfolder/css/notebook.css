@@ -72,8 +72,8 @@
 
     .save{
         width: 100%;
-        position: absolute;
-        bottom: 0rem;
+        position: fixed;
+        bottom: 4rem;
     }
     
     .save button{

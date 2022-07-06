@@ -27,7 +27,11 @@
 .active-tool-icon{
     opacity: 1 !important;
 }
-
+.study-tool-icon {
+    color: var(--white);
+    font-size: 2rem;
+    padding: 2rem 0px;
+}
 .fixed-image{
     position: fixed;
     width: 100vw;

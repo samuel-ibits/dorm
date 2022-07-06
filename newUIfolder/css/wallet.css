@@ -1,0 +1,274 @@
+:root{
+    --ash: #e9e9e9;
+    --white: #ffffff;
+    --dormblue: #1597E2;
+    --darkcolor: #020202;
+    --dormash: lightgrey;
+    --dormorange: #f96b03;
+    --boxop: .8;
+}
+
+.billing-info{
+    padding: 1rem;
+    width: 100%;
+}
+
+.billing-info h3
+
+.wrapper-input{
+    width: max-content;   
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: .1rem;
+   
+}
+
+.wallet-page{
+    width: 100%;
+}
+
+
+
+.wrapper-input i{
+    border: none;
+    background: transparent;
+}
+
+.wrapper-input input{
+    border: 2px solid var(--dormblue);
+    padding: .3rem;
+    outline: none;
+    margin-left: .5rem;
+    border-radius: 50px;
+    background: transparent;
+    width: 100%;
+ 
+}
+
+
+.submit{
+    border: none;
+    outline: none;
+    background: var(--dormblue);
+    color: #eee;
+    padding: .4rem;
+    margin-top: 1rem;
+    box-shadow: 0px 1px 2px #333;
+    text-shadow: 0px 1px 1px #333;
+    transition: .5 linear;
+}
+
+.submit:hover{
+    background: var(--dormorange);
+}
+
+.bold-blue{
+    font-size: .8rem;
+    color: var(--dormblue);
+    font-weight: 600;
+}
+
+
+.type-of-account{
+    color: #333;
+    font-size: .7rem;
+    font-weight: 700;
+    color: var(--dormblue);
+}
+
+
+
+.money-available{
+    margin: .4rem 0px;
+    font-size: 1.9rem;
+    color: var(--dormblue);
+}
+
+.sub-text{
+    font-size: .9rem;
+}
+
+.firsttdiv{
+    margin: 1rem 0px;
+    padding: 1rem;
+}
+
+.secondtdiv{
+    padding: 1rem;
+}
+
+.greet-user{
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: var(--dormorange);
+}
+
+.thirddiv{
+    margin: 1rem;
+}
+
+.button-holder{
+    width: 90%;
+    display: flex;
+    gap: .3rem;
+    margin-top: .5rem;
+}
+
+.button-holder div button{
+    padding: .4rem;
+    border: none;
+    width: max-content;
+    color: #eee;
+    background: var(--dormblue);
+transform: scale(.9);
+    transition: .5s linear;
+}
+
+.button-holder div button:hover{
+    background: var(--dormorange);
+}
+
+
+
+.big-text{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.third-div-card-holder{
+    margin: 1rem 0px;
+    height: 43vh;
+    gap: 0rem;
+    overflow: scroll;
+}
+
+.third-div-card{
+    width: fit-content;
+    height: auto;
+    box-shadow: 0px 1px 2px #333;
+    padding: .4rem;
+    display: flex;
+    margin: 1rem 0px;
+}
+
+.third-div-card-icon{
+    width: 4rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dormblue);
+    text-shadow: 0px 1px 2px #333;
+    font-size: 1.6rem;
+}
+
+.third-div-card-button{
+    height: auto;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.third-div-card-button button{
+border: none;
+background: var(--dormblue);
+color: #eee;
+padding: .3rem;
+margin-left: auto;
+}
+
+.third-div-card-text{
+    text-align: left;
+    padding: .5rem;
+    width: 60%;
+    height: 100%;
+    font-size: .6rem;
+}
+
+.label-text{
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.info-billing-info-data{
+    font-size: .7rem;
+    
+}
+
+.bolt{
+    text-align: center;
+    font-size: 1.7rem;
+    text-shadow: 0px 1px 2px #222;
+    color: var(--dormblue);
+}
+
+.sub-card{
+    background: var(--dormblue);
+    width: max-content;
+    height: auto;
+    padding: .5rem;
+    display: none;
+    margin-top: -1rem;
+}
+
+.radio-toolbar input[type="radio"] {
+    display: none;
+  }
+  
+  .radio-toolbar label {
+      width: fit-content;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dormblue);
+    color: #eee;
+    border: 2px solid var(--white);
+    padding: 4px 11px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .radio-toolbar input[type="radio"]:checked+label {
+    background-color: var(--dormorange);
+  }
+
+  .confirm{
+      border: none;
+      padding: 9px 11px;
+      font-size: 16px;
+      height: 100%;
+      background: var(--dormorange);
+      color: #eee;
+  }
+
+
+  @media only screen and (max-width: 600px) 
+  {
+  .sub-third-div{
+      font-size: .6rem;
+  }
+
+
+  
+.thirddiv{
+  width: fit-content;
+}
+      }
+
+
+      @media only screen and (max-width: 280px) 
+      {
+        .button-holder{
+            width: 90%;
+            display: block;
+            gap: 1rem;
+            margin-top: .5rem;
+        }
+
+        .button-holder div {
+            margin-top: 1rem;
+        }
+          }

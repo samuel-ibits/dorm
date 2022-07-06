@@ -1,0 +1,79 @@
+:root{
+    --ash: #e9e9e9;
+    --white: #ffffff;
+    --dormblue: #1597E2;
+    --darkcolor: #020202;
+    --dormash: lightgrey;
+    --dormorange: #f96b03;
+}
+
+.tool
+
+.about-RT{
+    height: 1.2rem;  
+    overflow: hidden;
+    position: relative;
+    margin: .3rem 0px;
+    background: var(--ash);
+}
+
+.about-RT-text{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dormblue);
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);  
+    transform:translateX(100%);
+    /* Apply animation to this element */  
+    -moz-animation: rtl 30s linear infinite;
+    -webkit-animation: rtl 30s linear infinite;
+    animation: rtl 30s linear infinite;
+}
+
+@-moz-keyframes rtl {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes rtl {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes rtl {
+    0%   { 
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%);     
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%); 
+    }
+   }
+
+   .embeder{
+       position: fixed;
+       width: 100vw;
+       height: 72vh;
+       background: var(--white);
+       z-index: 99999;
+       display: none;
+   }
+
+   @media only screen and (min-width: 601px) 
+   {
+    .embeder{
+        position: fixed;
+        width: 100vw;
+        height: 90%;
+        background: var(--white);
+        z-index: 99999;
+        
+    }
+ 
+       }

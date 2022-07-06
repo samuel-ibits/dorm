@@ -1,0 +1,48 @@
+:root{
+    --ash: #e9e9e9;
+    --white: #ffffff;
+    --dormblue: #1597E2;
+    --darkcolor: #020202;
+    --dormash: lightgrey;
+    --dormorange: #f96b03;
+}
+
+
+body{
+    background: rgb(252, 250, 250);
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Hubballi', cursive;
+    font-family: 'Hurricane', cursive;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+
+
+.imagebg {
+	background-image: url("../images/dorm_no_bg.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	background-attachment: fixed;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  filter: blur(3px);
+  opacity: 1;
+}
+.form-container
+{
+	background-color: #fff;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 20px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+    border-radius: 8px;	
+	opacity: .9;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.btn-block{
+	background: var(--dormblue);
+	border: none;
+}

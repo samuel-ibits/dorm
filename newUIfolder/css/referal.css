@@ -1,0 +1,115 @@
+:root{
+    --ash: #e9e9e9;
+    --white: #ffffff;
+    --dormblue: #1597E2;
+    --darkcolor: #020202;
+    --dormash: lightgrey;
+    --dormorange: #f96b03;
+ 
+}
+.section-head{
+   background: linear-gradient(to right, #0688d3 0%,#0186d3 100%);
+   width: 100%;
+   height: 5rem;
+}
+
+.section-details{
+    margin: 1rem 0 0 1rem;
+    position: absolute;
+    color: var(--white);
+}
+
+.section-details p{
+    font-size: .6rem;
+}
+
+.points-label{
+    padding: 1rem 0px;
+    width: fit-content;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px #333;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.points-label ion-icon{
+    color: var(--dormblue);
+}
+
+.point-card{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    height: auto;
+    border-radius: 3px;
+    background: #fff;
+    margin: 1rem 0px 0px 0px;
+    box-shadow: 0px 2px 3px #999;
+}
+
+.point-card:nth-last-child(1){
+    margin-bottom: 1rem;
+}
+
+.points-div{
+    width: 90%;
+    height: auto;
+    overflow-y: scroll;
+}
+
+.point-card-right{
+margin-left: auto;
+}
+
+.point-card-right button{
+    border: none;
+    color: var(--white);
+    padding: .5rem 1rem;
+    border-radius: 2px;
+}
+
+.blue{
+    background: linear-gradient(to right, #0688d3 0%,#0186d3 100%);
+    transition: .5s;
+    cursor: pointer;
+}
+.blue:hover{
+    background: var(--dormorange);
+}
+
+.grey{
+    background: var(--ash);
+}
+
+.point-card-left{
+    text-align: center;
+}
+
+.point-card-left h3{
+    color: #222;
+    font-size: 1rem;
+}
+
+.point-card-left p{
+    font-size: .8rem;
+    color: var(--darkcolor);
+}
+
+
+@media only screen and (max-width: 700px){
+    .points-div{
+        width: 100%;
+        height: auto;
+        overflow-y: scroll;
+    }
+    .points-label{
+        padding: 1rem 0px;
+        font-weight: 500;
+        text-shadow: 0px 1px 1px #333;
+        font-size: 1rem;
+        margin: 0px 0px 0px 1rem;
+    }
+}

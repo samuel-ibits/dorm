@@ -1,0 +1,278 @@
+:root {
+    --ash: #e9e9e9;
+    --white: #ffffff;
+    --dormblue: #1597E2;
+    --darkcolor: #020202;
+    --dormash: lightgrey;
+    --dormorange: #f96b03;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+.addhouse-div {
+    margin-top: 100px;
+}
+
+
+.add-btn-div {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.add-btn-div button {
+    background: var(--dormblue);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    padding: .5rem;
+}
+
+.upload-wrapper {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    transform: scale(.7);
+
+}
+
+.upper-div {
+    height: 100px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.upload-wrapper .upload-package-container .uploader .upload-input span {
+    font-weight: bolder;
+    float: right;
+    margin-left: auto;
+}
+
+.upper-div-img {
+    width: 100px;
+    overflow: hidden;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.upper-div-img img {
+    width: 100%;
+}
+
+.uploader {
+    border: 2px solid;
+    margin-top: 1rem;
+}
+
+
+.upload-input {
+    display: flex;
+}
+
+.upload-input input {
+    border: none;
+    outline: none;
+    background: transparent;
+    border: none;
+    padding: .5rem;
+}
+
+
+.file-selected {
+    display: flex;
+    background: var(--dormblue);
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    overflow: hidden;
+    padding: .5rem;
+}
+
+.file-selected input[type=file] {
+    transform: scale(4);
+    opacity: 0;
+    z-index: 5;
+}
+
+.bi-filetype-pdf {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+}
+
+.bi-camera {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+}
+
+.cartegory-div {
+    width: 100%;
+    border: 2px solid #aaa;
+    margin: .5rem;
+    margin-left: 0rem;
+
+}
+
+.cartegory-div input {
+    border: none;
+    outline: none;
+    outline: none;
+    width: 95%;
+    padding: .3rem;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--dormorange);
+}
+
+.submit {
+    width: 100%;
+    background: var(--dormblue);
+    margin-top: 1rem;
+    padding: .5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    margin-bottom: 3rem;
+}
+
+.additional-info {
+    display: none;
+}
+
+
+.addbtn {
+    background: var(--dormblue);
+    padding: .3rem;
+    border: none;
+    color: #ffffff;
+    transform: scale(.9);
+    width: max-content;
+    font-size: 10px;
+}
+
+.additional-info .uploader {
+    border: 2px solid #eee;
+}
+
+.upload-package-container {
+    width: 100%;
+}
+
+.middler {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+@media only screen and (min-width: 700px) {
+
+    .upload-package-container {
+        width: 600px;
+    }
+
+
+    .submit {
+        width: 150px;
+        background: var(--dormblue);
+        margin-top: 1rem;
+        padding: .7rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border: none;
+        outline: none;
+        color: #ffffff;
+        margin-bottom: 3rem;
+    }
+
+    .submit:hover {
+        background: #f96b03;
+        cursor: pointer;
+    }
+
+}
+
+#numofbooks {
+    width: 1rem;
+    background: transparent;
+    color: var(--white);
+    padding: .3rem;
+    border: none;
+}
+
+.upload-books-detail {
+    background: var(--dormorange);
+    width: fit-content;
+    padding: 1rem;
+    color: var(--white);
+}
+
+
+.confimation-div {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: var(--darkcolor);
+    z-index: 99;
+    opacity: .98;
+}
+
+.confirmation-div-holder {
+    display: none;
+}
+
+.congrat-text {
+    width: fit-content;
+    height: auto;
+    background: var(--dormblue);
+    color: var(--white);
+    padding: .5rem;
+}
+
+.image-sign-dorm {
+    width: 7rem;
+    overflow: hidden;
+}
+
+.image-sign-dorm img {
+    width: 100%;
+}
+
+
+.important {
+    background: var(--dormorange);
+    padding: .4rem;
+    font-weight: 600;
+}

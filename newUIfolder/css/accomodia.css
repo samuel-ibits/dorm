@@ -28,6 +28,98 @@
     visibility: visible;
 }
 
+.meeting-card-holder-dark-bg{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: var(--darkcolor);
+    z-index: 9;
+    top: 0;
+    left: 0;
+    opacity: .5;
+}
+
+.meeting-card-holder{
+    width: 100vw;
+    height: 100vh;
+    display: flex; z-index: 10;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.meeting-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 18rem;
+    height: 80vh;
+    background: var(--white);
+    position: absolute;box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.meeting-card-profile-pic{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid var(--dormblue);
+}
+
+.meeting-card-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.meeting-qr{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--dormblue);
+    cursor: pointer;
+}
+
+.meeeting-id div{
+    width: 100%;
+    padding: .2rem .4rem;
+    border: none;
+    background: var(--dormorange);
+    color: var(--white);
+    border-radius: 2px;
+}
+
+.meeting-card-warning{
+    width: 80%;
+    color: var(--ligher-text);
+}
+
+.meeting-card-warning p{
+    font-size: .5rem;
+}
+
+
+
+.meeting-card-user-name{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.meeting-sub{
+    font-size: .5rem;
+    color: var(--ligher-text);
+}
 
 /*swiper.js slider starts here*/
 .swiper {
@@ -121,6 +213,7 @@
 
 .accomodia-inspect{
     display: flex;
+    gap: .5rem;
     flex-direction: column;
     align-items: center;
 }
@@ -470,6 +563,15 @@ margin-top: .3rem;
 
 .hide-mobile{
     display: inherit;
+}
+
+.mobile-house-info-holder{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -883,5 +985,103 @@ background: var(--lighterblue-input);
 
 .bg-grey{
     background: var(--darker-text) !important;
+}
+
+
+
+.meeting-card-holder-dark-bg{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: var(--darkcolor);
+    z-index: 191;
+    top: 0;
+    left: 0;
+    opacity: .7;
+}
+
+.meeting-card-holder{
+    width: 100vw;
+    height: 100vh;
+    display: flex; 
+    z-index: 210;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.meeting-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 90vw;
+    height: 90vh;
+    background: var(--white);
+    position: absolute;
+    margin-top: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.meeting-card-profile-pic{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid var(--dormblue);
+}
+
+.meeting-card-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.meeting-qr{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--dormblue);
+}
+
+.meeeting-id div{
+    width: 100%;
+    padding: .2rem .4rem;
+    border: none;
+    background: var(--dormorange);
+    color: var(--white);
+    border-radius: 2px;
+}
+
+.meeting-card-warning{
+    width: 80%;
+    color: var(--ligher-text);
+}
+
+.meeting-card-warning p{
+    font-size: .6rem;
+    text-align: center;
+}
+
+
+
+.meeting-card-user-name{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.meeting-sub{
+    font-size: .5rem;
+    color: var(--ligher-text);
 }
 }

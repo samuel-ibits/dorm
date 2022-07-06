@@ -260,3 +260,17 @@ $("#chat-6").hide('fast');
                 $("#filter1").hide('fast');
                 $(".filter-holder").show('fast');
             });
+
+
+
+            $(".meeting-card-holder").hide("fast");
+            $(".meeting-card-holder-dark-bg").hide("fast");
+            $("#meetagent1").click(function () {
+            $(".meeting-card-holder").show("fast");
+            $(".meeting-card-holder-dark-bg").show("fast");
+            });
+            
+            $(".meeting-card-holder-dark-bg").click(function () {
+            $(".meeting-card-holder").hide("fast");
+            $(".meeting-card-holder-dark-bg").hide("fast");
+            });

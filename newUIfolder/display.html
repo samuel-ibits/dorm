@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#1597E2">
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorm -  Dispaly setting</title>
+    <link rel="stylesheet" href="menu/css/styles.css">
+    <link rel="stylesheet" href="css/accomodia.css">
+        <link rel="stylesheet" href="css/agent.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css-2/style.css">
+    <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!--=============== BOXICONS ===============-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="update.css">
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="css/display.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!--=============== CSS ===============-->
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+     
+i{
+    color: inherit;
+}
+@media only screen and (min-width: 601px) {
+   .search-bar{
+       display: none;
+   }
+}
+
+
+.upload-input{
+    height: 2rem;
+    border: none;
+}
+
+strong{
+  font-weight: 800;
+  color: #f96b03;
+  text-shadow: 0px 2px 3px #333;
+}
+</style>
+</head>
+<body>
+ 
+
+    <div class="top-div">
+        <div class="logo">
+            <img src="images/dorm_no_bg.png" alt="">
+        </div>
+
+        <div class="searchbar-for-menu">
+            <i class="bi bi-search"></i> <input type="search" name="" id="searchBar" oninput = "Search((this.value).toLowerCase())">
+        </div>
+
+        
+  <div class="bot-head">
+    <div class="ears-head">
+        <div class="left-ear-head"></div> 
+        <div class="right-ear-head"></div>
+    </div>
+    <div class="eyes-head">
+        <div class="right-eye-head"></div>
+        <div class="left-eye-head"></div>
+    </div>
+
+    <div class="mouth-head"></div>            
+</div>
+
+        <i class="bi bi-bell-fill"></i>
+</div>
+<div class="full-width">
+  <div class="notification">
+      <ul>
+          <li>Your  <span class="pronounds">Accomodia</span> request has returned results <span class="number">34</span></li>
+          <li>Your  <span class="pronounds">Market</span> request has returned results <span class="number">3</span></li>
+      </ul>
+  </div>
+</div>
+
+<div class="nav-bar">
+    <ul class="nav-list">
+        <li class="nav-item" title="Study Tools">
+            <a href="studytools.html" class="nav-link">
+                <i class="bi bi-tools"></i>    
+                <p class="icon-title">Study tools</p>
+            </a>  
+         </li>
+        <li class="nav-item" title="Course Review">
+            <a href="coursereview.html" class="nav-link">
+                <i class="bi bi-book-fill"></i>    
+                <p class="icon-title">Course review</p>
+            </a>      
+        </li>
+        <li class="nav-item" title="Title">
+            <a href="texter.html" class="nav-link">
+                <i class="bi bi-chat-left-text-fill"></i>   
+                <p class="icon-title">Texter</p>
+            </a>               
+        </li>
+        <li class="nav-item" title="Accomodia">
+            <a href="accomodia.html" class="nav-link">
+                <i class="bi bi-house"></i>   
+                <p class="icon-title">Accomodia</p>
+            </a>              
+        </li>
+        <li class="nav-item" title="Martket">
+            <a href="market.html" class="nav-link">
+                <i class="bi bi-shop"></i>   
+                <p class="icon-title">Market</p>
+            </a>              
+        </li>
+        <li class="nav-item" title="Setting">
+            <a href="setting.html" class="nav-link active-nav-link">
+                <i class="bi bi-gear-fill"></i>   
+                <p class="icon-title">Setting</p>
+            </a>              
+        </li>
+    </ul>
+</div>
+
+<div class="page-content">
+<div class="menu-holder">
+ 
+</div>
+<div class="container">
+        
+        <div class="switch-holder" id="marketView">
+            <div class="switch-label">
+                <i class="bi bi-display-fill"></i><span>Market Display</span>
+            </div>
+            <div class="switch-toggle">
+                <input type="checkbox" id="market-view">
+                <label for="market-view"></label>
+            </div>
+        </div>
+
+        <div class="switch-holder" id="brightnessMode">
+            <div class="switch-label">
+                <i class="bi bi-moon-fill"></i><span>Mode</span>
+            </div>
+            <div class="switch-toggle">
+                <input type="checkbox" id="mode">
+                <label for="mode"></label>
+            </div>
+        </div>
+      
+
+       
+
+    </div>
+
+
+
+
+
+
+
+</div>
+   
+</div>
+</div>
+</div>
+
+
+</div>
+
+
+
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+
+$(".add-1").click(function(){
+  $(".add-1-div").slideToggle();
+});
+
+$(".add-2").click(function(){
+  $(".add-2-div").slideToggle();
+});
+
+        var swiper = new Swiper(".mySwiper", {
+          direction: "vertical",
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+
+        tippy('#addhouse', {
+  
+            theme: 'translucent',
+             trigger: 'focus',
+            arrow: true,
+            placement: 'bottom',
+            animation: 'fade',
+            content: '<strong style="color: aqua;">Add houses to ACCOMODIA</strong>',
+            allowHTML: true,
+            followCursor: true,
+});
+
+
+tippy('#myhoueses', {
+  
+  theme: 'translucent',
+   trigger: 'focus',
+  arrow: true,
+  placement: 'bottom',
+  animation: 'fade',
+  content: '<strong style="color: aqua;">My houses on ACCOMODIA</strong>',
+  allowHTML: true,
+  followCursor: true,
+});
+
+$(".fa-info-circle").click(function(){
+  $(".inspect-wrapper").fadeIn();
+  $(".house-wrapper").fadeOut();
+});
+
+
+$(".open-edit-accomodia-1").click(function(){
+  $(".accomodia-1-edit-holder").fadeToggle("fast");
+});
+
+$(".open-edit-market-1").click(function(){
+  $(".market-1-edit-holder").fadeToggle("fast");
+});
+
+
+
+
+$(".bi-box-arrow-left").click(function(){
+  $(".inspect-wrapper").fadeOut();
+  $(".house-wrapper").fadeIn();
+});
+
+
+  tippy('.bot-head', {
+    content: 'My tooltip!',
+    theme: 'tomato',
+    content: '<p class="dormbotmessage">Hi, I"m your Dorm assistant, Always, here to help.</strong>',
+  allowHTML: true,
+  });
+
+  function delet() {
+    Swal.fire({
+  title: 'Do you want to delete ?',
+  showDenyButton: true,
+  showCancelButton: true,
+  confirmButtonText: 'Delete',
+  denyButtonText: `Don't Delete`,
+}).then((result) => {
+  /* Read more about isConfirmed, isDenied below */
+  if (result.isConfirmed) {
+    Swal.fire('Deleted', '', 'success')
+  } else if (result.isDenied) {
+    Swal.fire('Not Deleted', '', 'error')
+  }
+})
+  }
+
+  function boost(){
+    Swal.fire({
+  title: 'Do you want to Boost Product ?',
+  showDenyButton: true,
+  showCancelButton: true,
+  confirmButtonText: 'Boost',
+  denyButtonText: `Don't Boost`,
+}).then((result) => {
+  if (result.isConfirmed) {
+    Swal.fire('Dorm will confirm your wallet details and get back to you', '', 'success')
+  } else if (result.isDenied) {
+    Swal.fire('Boost aborted', '', 'error')
+  }
+})
+  }
+
+  $(".bi-bell-fill").click(function(){
+  $(".notification").fadeToggle('fast');
+});
+
+
+function Search(item){
+            var collection = document.getElementsByClassName("agent-card");
+            for (i = 0;i < collection.length; i++){
+                if (((collection[i].innerHTML).toLowerCase()).indexOf(item) > -1) {
+                    collection[i].style.display = "flex";
+                    } else {
+                        collection[i].style.display = "none";
+                        }
+            }
+    }
+      </script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+     
+</body>
+</html>

@@ -21,14 +21,50 @@
     <link rel="stylesheet" href="css/texter.css">
 
     <style>
-     
+        .page-content {
+            width: 45%;
+            height: 100vh;
+            position: relative;
+            overflow-y: scroll;
+            top: 0;
+        }
+
+        .page-side {
+            width: 35%;
+            height: 100vh;
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-left: 2px solid var(--ash);
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            .page-content {
+                width: 0%;
+               display: none;
+            }
+
+            .page-side{
+                width: 100%;
+                top: 3rem;
+                height: auto;
+                overflow-y: scroll;
+                position: absolute;
+                bottom: 5rem;
+                top: 3rem;
+                box-shadow: none;
+            }
+        }
     </style>
 </head>
 
 <body>
-<div class="mobile-add-contact">
-    <img src="images/add-icon.png" alt="">
-</div>
+
+
     <div class="top-mobile-menu">
         <div class="mobile-logo"><img src="images/dorm_no_bg.png" alt=""></div>
 
@@ -92,18 +128,14 @@
                     <p class="name">Great Etubi</p>
                     <p class="username">@Greatetubi</p>
                 </div>
-                
                 <div class="icon-holder">
                     <i class="bi bi-three-dots"></i>
                 </div>
             </div>
         </div>
         <div class="page-content">
-            <div class="mobile-search">
-                <ion-icon name="search"></ion-icon> <input type="text" placeholder="Search for messages">
-            </div>
             <div class="texter-card-holder">
-                <div class="comment-card">
+                <div class="comment-card" id="chatopen-1">
                     <div class="top-texter-div">
                         <div class="userimage-info-side gap-1">
                             <div class="user-img-side">
@@ -126,7 +158,7 @@
                     </div>
                 </div>
 
-                <div class="comment-card">
+                <div class="comment-card" id="chatopen-2">
                     <div class="top-texter-div">
                         <div class="userimage-info-side gap-1">
                             <div class="user-img-side">
@@ -149,7 +181,7 @@
                     </div>
                 </div>
 
-                <div class="comment-card">
+                <div class="comment-card" id="chatopen-3">
                     <div class="top-texter-div">
                         <div class="userimage-info-side gap-1">
                             <div class="user-img-side">
@@ -172,7 +204,7 @@
                     </div>
                 </div>
 
-                <div class="comment-card">
+                <div class="comment-card" id="chatopen-4">
                     <div class="top-texter-div">
                         <div class="userimage-info-side gap-1">
                             <div class="user-img-side">
@@ -195,7 +227,7 @@
                     </div>
                 </div>
 
-                <div class="comment-card">
+                <div class="comment-card" id="chatopen-5">
                     <div class="top-texter-div">
                         <div class="userimage-info-side gap-1">
                             <div class="user-img-side">
@@ -218,7 +250,7 @@
                     </div>
                 </div>
 
-                <div class="comment-card">
+                <div class="comment-card" id="chatopen-6">
                     <div class="top-texter-div">
                         <div class="userimage-info-side gap-1">
                             <div class="user-img-side">
@@ -245,35 +277,125 @@
 
         </div>
         <div class="page-side">
-            <div class="search-2">
-                <ion-icon name="search"></ion-icon> <input type="text" placeholder="Search for a note" name="" id="">
+            <div class="side-chat-holder" id="chat-1">
+                <div class="side-chat-card">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto labore, provident necessitatibus impedit distinctio. Aliquid dicta
+                        est expedita at cupiditate explicabo.</p>
+                </div>
+
+                <div class="side-chat-card" >
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto labore.</p>
+                </div>
+
+                <div class="side-chat-card">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto .</p>
+                </div>
+
+                <div class="side-chat-card">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto labore,.</p>
+                </div>
             </div>
-            <div class="double-section">
 
-                <div class="side-user-info">
-                    <div class="userimage-info-side">
-                        <div class="user-img-side">
-                            <img src="images/avtr2.png" alt="">
-                        </div>
-                        <div class="user-info-side">
-                            <p class="name-side">Great Etubi</p>
-                            <p class="username-side">@Greatetubi</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-icon add-review">
-                    <div class="icon"><img src="images/add-icon.png" alt=""></div>
-                    <p class="double-section-text">Send Text</p>
+            <div class="side-chat-holder" id="chat-2">
+                <div class="side-chat-card">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto labore, provident necessitatibus impedit distinctio. Aliquid dicta
+                        est expedita at cupiditate explicabo.</p>
                 </div>
 
-                <div class="bottom-notification">
-                    <ion-icon name="notifications"></ion-icon>
+                <div class="side-chat-card" >
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto labore.</p>
                 </div>
 
+                <div class="side-chat-card">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto .</p>
+                </div>
+
+                <div class="side-chat-card">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto labore,.</p>
+                </div>
             </div>
+
+            <div class="side-chat-holder" id="chat-3">
+                <div class="side-chat-card">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto labore, provident necessitatibus impedit distinctio. Aliquid dicta
+                        est expedita at cupiditate explicabo.</p>
+                </div>
+
+                <div class="side-chat-card" >
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto labore.</p>
+                </div>
+
+                <div class="side-chat-card">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto .</p>
+                </div>
+
+                <div class="side-chat-card">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto labore,.</p>
+                </div>
+            </div>
+
+            <div class="side-chat-holder" id="chat-4">
+                <div class="side-chat-card">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto labore, provident necessitatibus impedit distinctio. Aliquid dicta
+                        est expedita at cupiditate explicabo.</p>
+                </div>
+
+                <div class="side-chat-card" >
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto labore.</p>
+                </div>
+
+                <div class="side-chat-card">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto .</p>
+                </div>
+
+                <div class="side-chat-card">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto labore,.</p>
+                </div>
+            </div>
+
+            <div class="side-chat-holder" id="chat-6">
+                <div class="side-chat-card">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto labore, provident necessitatibus impedit distinctio. Aliquid dicta
+                        est expedita at cupiditate explicabo.</p>
+                </div>
+
+                <div class="side-chat-card" >
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto labore.</p>
+                </div>
+
+                <div class="side-chat-card">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto .</p>
+                </div>
+
+                <div class="side-chat-card">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem rem at, dolores sapiente
+                        et voluptatem officiis iusto labore,.</p>
+                </div>
+            </div>
+
+          
 
         </div>
-    </div>
+    
     <script src="js/script.js"></script>
 </body>
 

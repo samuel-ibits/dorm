@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="theme-color" content="#1597E2">
+    <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/mynote.css">
+    <link rel="stylesheet" href="css/menucss.css">
+    <link rel="stylesheet" href="css/library.css">
+    <link rel="stylesheet" href="css/studytools.css">
+    <link rel="stylesheet" href="css/accomodiadashboard.css">
+
+    <style>
+        .bi-cash-stack {
+            color: inherit;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .page-content {
+                width: 100%;
+                height: auto;
+                overflow-y: scroll;
+                position: absolute;
+                padding: 0rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="top-mobile-menu">
+        <div class="mobile-logo"><img src="images/dorm_no_bg.png" alt=""></div>
+
+        <span class="noti-mobile">
+            <ion-icon name="notifications"></ion-icon>
+        </span>
+    </div>
+
+    <div class="page-container">
+        <div class="menu">
+            <div class="logo-img">
+                <img class="logo-pc" src="images/dorm_logo_white.png" alt="">
+
+                <span class="menu-toggler">
+                    <ion-icon name="menu"></ion-icon>
+                </span>
+            </div>
+            <ul class="menu-list">
+                <a href="studytools.html">
+                    <li class="menu-item">
+                        <div class="icon-img"><img src="images/bag-img.png" alt=""></div>
+                        <p class="menu-list-title-sub-side">Study Tools</p>
+                    </li>
+                </a>
+                <a href="coursereview.html">
+                    <li class="menu-item">
+                        <div class="icon-img"><img src="images/coursereview.png" alt=""></div>
+                        <p class="menu-list-title-sub-side">Course Review</p>
+                    </li>
+                </a>
+                <a href="texter.html">
+                    <li class="menu-item">
+                        <div class="icon-img"><img src="images/text.png" alt=""></div>
+                        <p class="menu-list-title-sub-side">Texter</p>
+                    </li>
+                </a>
+                <a href="accomodia.html">
+                    <li class="menu-item">
+                        <div class="icon-img"><img src="images/house.png" alt=""></div>
+                        <p class="menu-list-title-sub-side">Accomodia</p>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="menu-item">
+                        <div class="icon-img"><img src="images/market.png" alt=""></div>
+                        <p class="menu-list-title-sub-side">Market</p>
+                    </li>
+                </a>
+                <a href="setting.html">
+                    <li class="active-nav menu-item">
+                        <div class="icon-img"><img src="images/setting.png" alt=""></div>
+                        <p class="menu-list-title-sub-side">Setting</p>
+                    </li>
+                </a>
+            </ul>
+            <div class="user">
+                <div class="user-img">
+                    <img src="images/avtr2.png" alt="">
+                </div>
+                <div class="user-info">
+                    <p class="name">Great Etubi</p>
+                    <p class="username">@Greatetubi</p>
+                </div>
+                <div class="icon-holder">
+                    <i class="bi bi-three-dots"></i>
+                </div>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="accomodia-dashboard">
+                <div class="accomodia-maindashboard">
+                    <div class="accomodia-maindashboard-card">
+                        <i class='bx bxs-building-house'></i>   
+                       <div>
+                        <h3 class="main-text">N400,000</h3>
+                        <p class="sub-text">Total Value of assets yearly</p>
+                       </div>
+                    </div>
+
+                    <div class="accomodia-maindashboard-card">
+                        <i class='bx bxs-building-house'></i>   
+                       <div>
+                        <h3 class="main-text">7 house(s)</h3>
+                        <p class="sub-text">Total number of houses</p>
+                       </div>
+                    </div>
+
+                    <div class="accomodia-maindashboard-card orange-bg">
+                        <ion-icon name="people"></ion-icon>   
+                       <div>
+                        <h3 class="main-text">0</h3>
+                        <p class="sub-text">Tentant(s) in debt</p>
+                       </div>
+                    </div>
+
+                    <div class="accomodia-maindashboard-card orange-bg">
+                        <i class='bx bx-money-withdraw'></i>  
+                       <div>
+                        <h3 class="main-text">N350,000</h3>
+                        <p class="sub-text">Total amount recieved this year</p>
+                       </div>
+                    </div>
+
+                    <div class="accomodia-maindashboard-card orange-bg">
+                        <i class='bx bxs-hourglass'></i>  
+                       <div>
+                        <h3 class="main-text">3</h3>
+                        <p class="sub-text">pending complains</p>
+                       </div>
+                    </div>
+
+                    <div class="accomodia-maindashboard-card">
+                        <i class='bx bxs-building-house'></i>   
+                       <div>
+                        <h3 class="main-text">1</h3>
+                        <p class="sub-text">Total number of free houses</p>
+                       </div>
+                    </div>
+
+                </div>
+                <div class="accomodiadashboard-card-holder">
+                    <div class="accomodiadashboard-card">
+                        <div class="accomodiadashboard-card-image">
+                            <img src="images/house 2.jpg" alt="">
+                        </div>
+                        <div class="accomodiadashboard-card-data">
+                            <h3>ID: <span class="houseid">House 2</span></h3>
+                            <p class="location-of-house">Lorem ipsum dolor sit amet consectetur adipisici!</p>
+
+                            <div class="sub-info-of-house">
+                                <div>
+                                    <p class="status"><span class="label">Status</span>:<span class="house-statuse free">Free</span></p>
+                                    <p class="status"><span class="label">Tentant</span>:<span class="tenant-name"> Joe-etubi great</span></p>
+                                  <p class="status"><span class="label">Rent duration</span>:<span class="tenant-name"> 3rd June 2021 - 3rd August 2022 <span class="orange">(1 year)</span></span></p>   <p class="status"><span class="label">Rent expiration:</span><span class="tenant-name"> 3rd August 2020 <span class="orange">(21days left)</span></span></p>
+                                </div>
+                                <div>
+                                    <p class="status">RENT:<span class="rent-price"></span> N80,000</p>
+                                </div>
+                            </div>
+
+                            <div class="complain-div">
+                                <h4>Complaints:</h4>
+
+                                <p class="complain">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium enim eos ad ullam un
+                                    de dolore nam quaerat, vel omnis neque cupiditate dicta nostrum odio iste debitis. Obcaecati, quia eum?
+                                </p>
+                            </div>
+                            <div class="reply">
+                                <input type="text" name="" id="" placeholder="Reply tenant complain..."> <button>Send</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accomodiadashboard-card">
+                        <div class="accomodiadashboard-card-image">
+                            <img src="images/house 2.jpg" alt="">
+                        </div>
+                        <div class="accomodiadashboard-card-data">
+                            <h3>ID: <span class="houseid">House 1</span></h3>
+                            <p class="location-of-house">Lorem ipsum dolor sit amet consectetur adipisici!</p>
+
+                            <div class="sub-info-of-house">
+                                <div>
+                                    <p class="status"><span class="label">Status</span>:<span class="house-statuse taken">Taken</span></p>
+                                    <p class="status"><span class="label">Tentant</span>:<span class="tenant-name"> Joe-etubi great</span></p>
+                                                                         <p class="status"><span class="label">Rent expiration:</span><span class="tenant-name"> 3rd August 2020 <span class="orange">(21days left)</span></span></p>
+                                </div>
+                                <div>
+                                    <p class="status">RENT:<span class="rent-price"></span> N80,000</p>
+                                </div>
+                            </div>
+
+                            <div class="complain-div">
+                                <h4>Complaints:</h4>
+
+                                <p class="complain">
+                                    
+                                </p>
+                            </div>
+                            <div class="reply">
+                                <input type="text" name="" id="" placeholder="Reply tenant complain..."> <button>Send</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accomodiadashboard-card">
+                        <div class="accomodiadashboard-card-image">
+                            <img src="images/house 2.jpg" alt="">
+                        </div>
+                        <div class="accomodiadashboard-card-data">
+                            <h3>ID: <span class="houseid">House 3</span></h3>
+                            <p class="location-of-house">Lorem ipsum dolor sit amet consectetur adipisici!</p>
+
+                            <div class="sub-info-of-house">
+                                <div>
+                                    <p class="status"><span class="label">Status</span>:<span class="house-statuse taken">Taken</span></p>
+                                    <p class="status"><span class="label">Tentant</span>:<span class="tenant-name"> Joe-etubi great</span></p>
+                                    <p class="status"><span class="label">Rent duration</span>:<span class="tenant-name"> 3rd June 2021 - 3rd August 2022 <span class="orange">(1 year)</span></span></p>
+                                    <p class="status"><span class="label">Rent expiration:</span><span class="tenant-name"> 3rd August 2020 <span class="orange">(21days left)</span></span></p>
+                                </div>
+                                <div>
+                                    <p class="status">RENT:<span class="rent-price"></span> N80,000</p>
+                                </div>
+                            </div>
+
+                            <div class="complain-div">
+                                <h4>Complaints:</h4>
+
+                                <p class="complain">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium enim eos ad ullam un
+                                    de dolore nam quaerat, vel omnis neque cupiditate dicta nostrum odio iste debitis. Obcaecati, quia eum?
+                                </p>
+                            </div>
+                            <div class="reply">
+                                <input type="text" name="" id="" placeholder="Reply tenant complain..."> <button>Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="page-side">
+            <div class="blue-area-2">
+                <p class="heading-text">Setting</p>
+
+                <div class="bottom-side-list">
+                    <ul class="smaller">
+                        <a href="profile.html">
+                            <li class="menu-item">
+                                <div class="icon-img-small-icon">
+                                    <ion-icon name="person"></ion-icon>
+                                </div>
+                                <p class="menu-list-title-sub-side-1">Profile</p>
+                            </li>
+                        </a>
+
+                        <a href="wallet.html">
+                            <li class="menu-item">
+                                <div class="icon-img-small-icon">
+                                    <ion-icon name="wallet"></ion-icon>
+                                </div>
+                                <p class="menu-list-title-sub-side-1">Wallet</p>
+                            </li>
+                        </a>
+                        <a href="manageproduct.html">
+                            <li class="menu-item">
+                                <div class="icon-img-small-icon">
+                                    <i class="bi bi-graph-up-arrow"></i>
+                                </div>
+                                <p class="menu-list-title-sub-side-1">Manage products</p>
+                            </li>
+                        </a>
+                        <a href="marketdashboard.html">
+                            <li class="menu-item">
+                                <div class="icon-img-small-icon">
+                                    <ion-icon name="speedometer"></ion-icon>
+                                </div>
+                                <p class="menu-list-title-sub-side-1">Market dashboard</p>
+                            </li>
+                        </a>
+                        <a href="accomodiadashboard.html">
+                            <li class="menu-item    active-tool-icon">
+                                <div class="icon-img-small-icon">
+                                    <ion-icon name="speedometer"></ion-icon>
+                                </div>
+                                <p class="menu-list-title-sub-side-1">Accomodia dashboard</p>
+                            </li>
+                        </a>
+                        <a href="resourceteam.html">
+                            <li class="menu-item">
+                                <div class="icon-img-small-icon">
+                                    <ion-icon name="people"></ion-icon>
+                                </div>
+                                <p class="menu-list-title-sub-side-1">Resource team</p>
+                            </li>
+                        </a>
+                        <a href="feedback.html">
+                            <li class="menu-item">
+                                <div class="icon-img-small-icon">
+                                    <ion-icon name="chatbubble"></ion-icon>
+                                </div>
+                                <p class="menu-list-title-sub-side-1">Feedback</p>
+                            </li>
+                        </a>
+                        <a href="#!" id="shareDorm">
+                            <li class="menu-item">
+                                <div class="icon-img-small-icon">
+                                    <ion-icon name="share-social"></ion-icon>
+                                </div>
+                                <p class="menu-list-title-sub-side-1">Share</p>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="menu-item">
+                                <div class="icon-img-small-icon">
+                                    <ion-icon name="exit"></ion-icon>
+                                </div>
+                                <p class="menu-list-title-sub-side-1">Exit</p>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="notification-holder-2">
+                    <ion-icon name="notifications"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/profile.js"></script>
+    <script>
+        const labels = [
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June',
+            'July',
+            'August',
+            'September',
+            'October',
+            'November',
+            'December'
+        ];
+
+
+        const data = {
+            labels: labels,
+            datasets: [{
+                label: 'PROFIT MADE IN NAIRA',
+                data: [65, 59, 80, 81, 56, 55, 40],
+                backgroundColor: [
+                    '#f96b03',
+                    '#0688d3',
+                    '#f96b03',
+                    '#0688d3',
+                    '#f96b03',
+                    '#0688d3'
+                ],
+                borderColor: [
+                    '#f96b03',
+                    '#0688d3',
+                    '#f96b03',
+                    '#0688d3',
+                    '#f96b03',
+                    '#0688d3'
+                ],
+                borderWidth: 1
+            }]
+        };
+
+        const config = {
+            type: 'bar',
+            data: data,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            },
+        };
+    </script>
+    <script>
+        const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+    </script>
+    <script>
+        $(".bi-x").click(function () {
+            $(".bot-container-2").fadeOut("fast");
+        });
+
+        $(".bi-bell-fill").click(function () {
+            $(".notification").fadeToggle('fast');
+        });
+
+
+        $(".product-uploader-holder").fadeOut('fast');
+        $(".dark-bg").fadeOut('fast');
+        $(".remove-product").click(function () {
+            $(".product-uploader-holder").fadeOut('fast');
+            $(".dark-bg").fadeOut('fast');
+        });
+
+
+        $(".add-product-btn").click(function () {
+            $(".product-uploader-holder").fadeIn('fast');
+            $(".dark-bg").fadeIn('fast');
+        });
+    </script>
+
+</body>
+
+</html>

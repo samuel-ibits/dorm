@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="theme-color" content="#1597E2">
+    <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text upload</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/mynote.css">
+    <link rel="stylesheet" href="css/menucss.css">
+    <link rel="stylesheet" href="css/library.css">
+    <link rel="stylesheet" href="css/studytools.css">
+    <link rel="stylesheet" href="css/wallet.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/bookupload.css">
+
+    <style>
+        .bi-cash-stack {
+            color: inherit;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .page-content {
+                width: 100%;
+                height: auto;
+                overflow-y: scroll;
+                position: absolute;
+                padding: 0rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-mobile-menu">
+        <div class="mobile-logo"><img src="images/dorm_no_bg.png" alt=""></div>
+
+        <span class="noti-mobile">
+            <ion-icon name="notifications"></ion-icon>
+        </span>
+    </div>
+
+    <div class="page-container">
+        <div class="menu">
+            <div class="logo-img">
+                <img class="logo-pc" src="images/dorm_logo_white.png" alt="">
+
+                <span class="menu-toggler">
+                    <ion-icon name="menu"></ion-icon>
+                </span>
+            </div>
+            <ul class="menu-list">
+                <a href="studytools.html">
+                    <li class="menu-item">
+                        <div class="icon-img"><img src="images/bag-img.png" alt=""></div>
+                        <p class="menu-list-title-sub-side">Study Tools</p>
+                    </li>
+                </a>
+                <a href="coursereview.html">
+                    <li class="menu-item">
+                        <div class="icon-img"><img src="images/coursereview.png" alt=""></div>
+                        <p class="menu-list-title-sub-side">Course Review</p>
+                    </li>
+                </a>
+                <a href="texter.html">
+                    <li class="menu-item">
+                        <div class="icon-img"><img src="images/text.png" alt=""></div>
+                        <p class="menu-list-title-sub-side">Texter</p>
+                    </li>
+                </a>
+                <a href="accomodia.html">
+                    <li class="menu-item">
+                        <div class="icon-img"><img src="images/house.png" alt=""></div>
+                        <p class="menu-list-title-sub-side">Accomodia</p>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="menu-item">
+                        <div class="icon-img"><img src="images/market.png" alt=""></div>
+                        <p class="menu-list-title-sub-side">Market</p>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="active-nav menu-item">
+                        <div class="icon-img"><img src="images/setting.png" alt=""></div>
+                        <p class="menu-list-title-sub-side">Setting</p>
+                    </li>
+                </a>
+            </ul>
+            <div class="user">
+                <div class="user-img">
+                    <img src="images/avtr2.png" alt="">
+                </div>
+                <div class="user-info">
+                    <p class="name">Great Etubi</p>
+                    <p class="username">@Greatetubi</p>
+                </div>
+                <div class="icon-holder">
+                    <i class="bi bi-three-dots"></i>
+                </div>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="book-upload">
+                <div class="page-content-holder">
+                    <div class="top-div">
+                        <div>
+                            <p class="big-bold">CURRENT STATS</p>
+                            <p class="date" id="dateId"></p>
+
+                        </div>
+
+                        <a href="" class="marger"><button class="log-out"><ion-icon name="log-out"></ion-icon>Back to resourceteam</button></a>
+      
+                    </div>
+                   
+                    <div class="card-1 blue-bottom">
+                        <p class="title-text-1"> <span class="number-of-books-uploaded-total">300</span> BOOKS</p>
+                        <p class="sub-text-2">TOTAL NUMBER OF BOOKS </p>
+                    </div>
+                    <section class="section-2">
+                        <div class="card-1">
+                            <p class="title-text-1"> <span class="number-of-books-uploaded-total">125</span> TEXTBOOKS
+                            </p>
+                            <p class="sub-text-2">TOTAL TEXTBOOKS UPLOADED</p>
+                        </div>
+                        <div class="card-1">
+                            <p class="title-text-1"> <span class="number-of-books-uploaded-total">0</span> PASSED
+                                QUESTIONS</p>
+                            <p class="sub-text-2">TOTAL PASSED NOTEBOOKS UPLOADED</p>
+                        </div>
+                        <div class="card-1">
+                            <p class="title-text-1"> <span class="number-of-books-uploaded-total">10</span> PASSED
+                                QUESTIONS</p>
+                            <p class="sub-text-2">TOTAL PASSED QUESTIONS UPLOADED</p>
+                        </div>
+                        <div class="card-1">
+                            <p class="title-text-1"> <span class="number-of-books-uploaded-total">2</span>/<span
+                                    class="number-of-books-uploaded-total">5</span> TEXTBOOKS</p>
+                            <p class="sub-text-2">TEXTBOOK TRACKER</p>
+                        </div>
+                    </section>
+
+                    <section class="section-3">
+                        <div class="uploader-div-holder">
+                            <p class="book-title">TEXTBOOK 1</p>
+                            <div class="uploader-container">
+                                <div class="custom-file-upload">
+                                    <input type="file" id="file" name="myfiles[]" />
+                                </div>
+
+                                <input type="text" name="booktitle" id="" placeholder="BOOK TITLE">
+                                <div class="additional">
+                                    <button id="additonal-1">ADDTIONAL INFORMATION</button>
+                                    <div class="toggler" id="toggler-1">
+                                        <input type="text" name="authorname" id="" placeholder="AUTHOR NAME">
+                                        <input type="text" name="aboutbook" id="" placeholder="ABOUT THE BOOK">
+                                        <input type="text" name="source" id="" placeholder="SOURCE">
+                                        <div class="file-uploader">
+                                            <input type="text" name="pagepicture" id=""
+                                                placeholder="SCREENSHOT OF COVER PAGE" disabled>
+                                            <div>
+                                                <ion-icon name="image"></ion-icon>
+                                                <div class="file-upload-holder"><input type="file" name="" id=""
+                                                        class="file-2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="text" placeholder="DEPARMENT" name="department">
+                            </div>
+                        </div>
+
+                        <div class="uploader-div-holder">
+                            <p class="book-title">TEXTBOOK 2</p>
+                            <div class="uploader-container">
+                                <div class="custom-file-upload">
+                                    <input type="file" id="file" name="myfiles[]" />
+                                </div>
+
+                                <input type="text" name="booktitle" id="" placeholder="BOOK TITLE">
+                                <div class="additional">
+                                    <button id="additonal-2">ADDTIONAL INFORMATION</button>
+                                    <div class="toggler" id="toggler-2">
+                                        <input type="text" name="authorname" id="" placeholder="AUTHOR NAME">
+                                        <input type="text" name="aboutbook" id="" placeholder="ABOUT THE BOOK">
+                                        <input type="text" name="source" id="" placeholder="SOURCE">
+                                        <div class="file-uploader">
+                                            <input type="text" name="pagepicture" id=""
+                                                placeholder="SCREENSHOT OF COVER PAGE" disabled>
+                                            <div>
+                                                <ion-icon name="image"></ion-icon>
+                                                <div class="file-upload-holder"><input type="file" name="" id=""
+                                                        class="file-2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="text" placeholder="DEPARMENT" name="department">
+                            </div>
+                        </div>
+
+                        <div class="uploader-div-holder">
+                            <p class="book-title">TEXTBOOK 3</p>
+                            <div class="uploader-container">
+                                <div class="custom-file-upload">
+                                    <input type="file" id="file" name="myfiles[]" />
+                                </div>
+
+                                <input type="text" name="booktitle" id="" placeholder="BOOK TITLE">
+                                <div class="additional">
+                                    <button id="additonal-3">ADDTIONAL INFORMATION</button>
+                                    <div class="toggler" id="toggler-3">
+                                        <input type="text" name="authorname" id="" placeholder="AUTHOR NAME">
+                                        <input type="text" name="aboutbook" id="" placeholder="ABOUT THE BOOK">
+                                        <input type="text" name="source" id="" placeholder="SOURCE">
+                                        <div class="file-uploader">
+                                            <input type="text" name="pagepicture" id=""
+                                                placeholder="SCREENSHOT OF COVER PAGE" disabled>
+                                            <div>
+                                                <ion-icon name="image"></ion-icon>
+                                                <div class="file-upload-holder"><input type="file" name="" id=""
+                                                        class="file-2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="text" placeholder="DEPARMENT" name="department">
+                            </div>
+                        </div>
+
+                        <button class="submit-btn">SUBMIT</button>
+                    </section>
+
+                    <section class="section-3">
+                        <p class="section-title">LIBRARY</p>
+
+                        <div class="long-card">
+                            <ul>
+                                <li>
+                                    <ion-icon name="library"></ion-icon>
+                                </li>
+                                <li>LIBRARY</li>
+                                <li> <a href="" class="big-blue">OPEN</a></li>
+                            </ul>
+                        </div>
+                    </section>
+
+
+                    <section class="section-3">
+                        <p class="section-title">RESOUCE LINKS</p>
+
+                        <div class="long-card">
+                            LINK 1: <a href="https://www.pdfdrive.com" target="_blank">RESOUCE LINK 1</a>
+                        </div>
+                        <div class="long-card">
+                            LINK 2: <a href="https://open.umn.edu/opentextbooks" target="_blank">RESOUCE LINK 2</a>
+                        </div>
+                    </section>
+                    <a href="resourceteam.html" class="big-screen-hide"><button class="log-out">Back to resource team</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="page-side">
+
+            <div class="blue-area-2">
+                <p class="heading-text">Setting</p>
+
+                <div class="bottom-side-list">
+                    <ul class="smaller">
+                        <a href="profile.html">
+                            <li class="menu-item">
+                                <div class="icon-img-small-icon">
+                                    <ion-icon name="person"></ion-icon>
+                                </div>
+                                <p class="menu-list-title-sub-side-1">Profile</p>
+                            </li>
+                        </a>
+
+                        <a href="wallet.html">
+                            <li class="menu-item">
+                                <div class="icon-img-small-icon">
+                                    <ion-icon name="wallet"></ion-icon>
+                                </div>
+                                <p class="menu-list-title-sub-side-1">Wallet</p>
+                            </li>
+                        </a>
+                        <a href="manageproduct.html">
+                            <li class="menu-item">
+                                <div class="icon-img-small-icon">
+                                    <i class="bi bi-graph-up-arrow"></i>
+                                </div>
+                                <p class="menu-list-title-sub-side-1">Manage products</p>
+                            </li>
+                        </a>
+                        <a href="marketdashboard.html">
+                            <li class="menu-item">
+                                <div class="icon-img-small-icon">
+                                    <ion-icon name="speedometer"></ion-icon>
+                                </div>
+                                <p class="menu-list-title-sub-side-1">Market dashboard</p>
+                            </li>
+                        </a>
+                        <a href="resourceteam.html">
+                            <li class="menu-item   active-tool-icon">
+                                <div class="icon-img-small-icon">
+                                    <ion-icon name="people"></ion-icon>
+                                </div>
+                                <p class="menu-list-title-sub-side-1">Resource team</p>
+                            </li>
+                        </a>
+                        <a href="feedback.html">
+                            <li class="menu-item">
+                                <div class="icon-img-small-icon">
+                                    <ion-icon name="chatbubble"></ion-icon>
+                                </div>
+                                <p class="menu-list-title-sub-side-1">Feedback</p>
+                            </li>
+                        </a>
+                        <a href="#!" id="shareDorm">
+                            <li class="menu-item">
+                                <div class="icon-img-small-icon">
+                                    <ion-icon name="share-social"></ion-icon>
+                                </div>
+                                <p class="menu-list-title-sub-side-1">Share</p>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="menu-item">
+                                <div class="icon-img-small-icon">
+                                    <ion-icon name="exit"></ion-icon>
+                                </div>
+                                <p class="menu-list-title-sub-side-1">Exit</p>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="notification-holder-2">
+                    <ion-icon name="notifications"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+
+    <script>
+        $(".bi-x").click(function () {
+            $(".bot-container-2").fadeOut("fast");
+        });
+
+        $(".bi-bell-fill").click(function () {
+            $(".notification").fadeToggle('fast');
+        });
+    </script>
+    <script>
+      
+        $("#additonal-1").click(function () {
+            $("#toggler-1").fadeToggle('fast');
+        });
+
+        $("#additonal-2").click(function () {
+            $("#toggler-2").fadeToggle('fast');
+        });
+
+        $("#additonal-3").click(function () {
+            $("#toggler-3").fadeToggle('fast');
+        });
+    </script>
+
+</body>
+
+</html>

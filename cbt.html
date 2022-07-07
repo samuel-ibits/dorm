@@ -7,30 +7,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noteweb</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>CBT</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="css/mynote.css">
-    <link rel="stylesheet" href="css/noteweb.css">
     <link rel="stylesheet" href="css/studytools.css">
+    <link rel="stylesheet" href="css/library.css">
     <link rel="stylesheet" href="css/menucss.css">
+    <link rel="stylesheet" href="css/categories.css">
+
+    <style>
+
+    </style>
 </head>
 
 <body>
     <div class="study-tools-tool-holder">
         <div class="study-tool-tool">
             <ul class="tool-icon-holder">
-                <ul class="tool-icon-holder">
-                    <li class="tool-icon"><a href="notebook.html"><img src="images/nootbook.png" alt=""></a></li>
-                    <li class="active-tool-icon tool-icon"><a href="noteweb.html"><img src="images/upload.png" alt=""></a></li>
-                    <li class="tool-icon"><a href=""><img src="images/calculator.png" alt=""></a></li>
-                    <li class="tool-icon"><a href="library.html"><img src="images/book.png" alt=""></a></li>
-                    <li class="tool-icon"><a href=""><img src="images/monitor.png" alt=""></a></li>
-                </ul>
+                <li class="tool-icon"><a href="notebook.html"><img src="images/nootbook.png" alt=""></a></li>
+                <li class="tool-icon"><a href="noteweb.html"><img src="images/upload.png" alt=""></a></li>
+                <li class="tool-icon"><a href=""><img src="images/calculator.png" alt=""></a></li>
+                <li class="tool-icon"><a href="library.html"><img src="images/book.png" alt=""></a></li>
+                <li class="active-tool-icon tool-icon"><a href="cbt.html"><img src="images/monitor.png" alt=""></a></li>
+            </ul>
         </div>
         <div class="study-tool-tools-toggle">
             <span class="grid-icon">
@@ -40,8 +44,8 @@
                 <ion-icon name="close"></ion-icon>
             </span>
         </div>
-    </div>
 
+    </div>
 
     <div class="top-mobile-menu">
         <div class="mobile-logo"><img src="images/dorm_no_bg.png" alt=""></div>
@@ -50,6 +54,7 @@
             <ion-icon name="notifications"></ion-icon>
         </span>
     </div>
+
     <div class="page-container">
         <div class="menu">
             <div class="logo-img">
@@ -72,7 +77,7 @@
                         <p class="menu-list-title-sub-side">Course Review</p>
                     </li>
                 </a>
-                <a href="texter.html">
+                <a href="texter-2.html">
                     <li class="menu-item">
                         <div class="icon-img"><img src="images/text.png" alt=""></div>
                         <p class="menu-list-title-sub-side">Texter</p>
@@ -111,64 +116,112 @@
             </div>
         </div>
         <div class="page-content">
-            <div class="noteweb-page">
-
-                <div class="noteweb-box">
-                    <div class="search-3">
-                        <ion-icon name="search"></ion-icon> <input type="text" name="" id=""
-                            placeholder="Search for a note">
+            <div class="my-notes-page">
+                <div class="page-title">ALL CATEGORIES</div>
+                <div class="category-sub">
+                    <div class="page-title">
+                        <p class="lighter">Test your self on various subjects.</p>
                     </div>
-                    <button class="big-orange-2">SEARCH</button>
-                   <a href="mynotes.html"> <p class="unserlined-blue">Publish a note</p></a>
+                    <div class="search-4">
+                        <div class="">
+                            <ion-icon name="search"></ion-icon> <input type="text" placeholder="Search for a note">
+                        </div>
+                    </div>
+                    <div class="note-card-holder">
+                        <div class="note-card flex">
+                            <div class="note-card-info">
+                                <p class="name-of-note margin-left-1rem">CSC (101 intro to csc)</p>
+                            </div>
+                            <span class="right-arrow"><ion-icon name="chevron-forward"></ion-icon></span>
+                        </div>
+
+                        <div class="note-card flex">
+                            <div class="note-card-info">
+                                <p class="name-of-note margin-left-1rem">CSC (101 intro to csc)</p>
+                            </div>
+                            <span class="right-arrow"><ion-icon name="chevron-forward"></ion-icon></span>
+                        </div>
+
+                        <div class="note-card flex">
+                            <div class="note-card-info">
+                                <p class="name-of-note margin-left-1rem">CSC (101 intro to csc)</p>
+                            </div>
+                            <span class="right-arrow"><ion-icon name="chevron-forward"></ion-icon></span>
+                        </div>
+                        <div class="note-card flex">
+                            <div class="note-card-info">
+                                <p class="name-of-note margin-left-1rem">CSC (101 intro to csc)</p>
+                            </div>
+                            <span class="right-arrow"><ion-icon name="chevron-forward"></ion-icon></span>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
+
+
         <div class="page-side">
+            <div class="search-2">
+                <ion-icon name="search"></ion-icon> <input type="text" placeholder="Search for a note" name="" id="">
+            </div>
+            <div class="double-section">
+                <div class="text-icon border-bottom">
+                    <div class="icon"><img src="images/dorm_icon.png" alt=""></div>
+                    <p class="double-section-text">Create a new note</p>
+                </div>
+                <div class="text-icon">
+                    <div class="icon"><img src="images/dorm_icon.png" alt=""></div>
+                    <p class="double-section-text">Create a new note</p>
+                </div>
+            </div>
+
             <div class="blue-area">
                 <p class="heading-text">Study tools</p>
-
-                <div class="bottom-side-list">
-                    <ul class="menu-list more-padding text-smaller">
+                <div class="bottom-side-list-2">
+                    <ul class="smaller">
                         <a href="notebook.html">
                             <li class="menu-item">
                                 <div class="icon-img-small-icon"><img src="images/nootbook.png" alt=""></div>
-                                <p class="menu-list-title-sub-side-2">Note Book</p>
+                                <p class="menu-list-title-sub-side-1">Note Book</p>
                             </li>
                         </a>
 
                         <a href="noteweb.html">
-                            <li class="active-tool-icon menu-item">
+                            <li class="menu-item">
                                 <div class="icon-img-small-icon"><img src="images/upload.png" alt=""></div>
-                                <p class="menu-list-title-sub-side-2">Note Web</p>
+                                <p class="menu-list-title-sub-side-1">Note Web</p>
                             </li>
                         </a>
                         <a href="">
                             <li class="menu-item">
                                 <div class="icon-img-small-icon"><img src="images/calculator.png" alt=""></div>
-                                <p class="menu-list-title-sub-side-2">CGPA Calculator</p>
+                                <p class="menu-list-title-sub-side-1">CGPA Calculator</p>
                             </li>
                         </a>
                         <a href="library.html">
                             <li class="menu-item">
                                 <div class="icon-img-small-icon"><img src="images/book.png" alt=""></div>
-                                <p class="menu-list-title-sub-side-2">Library</p>
+                                <p class="menu-list-title-sub-side-1">Library</p>
                             </li>
                         </a>
-                        <a href="cbt.html">
-                            <li class="menu-item">
+                        <a href="cbt-test.html">
+                            <li class="active-tool-icon tool menu-item">
                                 <div class="icon-img-small-icon"><img src="images/monitor.png" alt=""></div>
-                                <p class="menu-list-title-sub-side-2">CBT Test</p>
+                                <p class="menu-list-title-sub-side-1">CBT Test</p>
                             </li>
                         </a>
                     </ul>
                 </div>
-                <div class="notification-holder-3">
+                <div class="notification-holder-2">
                     <ion-icon name="notifications"></ion-icon>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+    
+    </script>
     <script src="js/script.js"></script>
 </body>
 

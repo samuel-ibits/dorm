@@ -40,8 +40,9 @@ body{
 display: none;
 }
 
-.center form{
-    width: 100%; align-items: center;
+.center .form{
+    width: 100%;
+     align-items: center;
     display: flex;
     flex-direction: column;
 
@@ -398,7 +399,7 @@ display: none;
         margin-bottom: 1rem;
     }
     
-    .center form{
+    .center .form{
         width: 100%; 
         align-items: center;
         display: flex;

@@ -447,3 +447,12 @@ var d = new Date(),
 }(jQuery));
 
 $('input[type=file]').customFile();
+
+
+$(".product-uploader-holder").fadeOut('fast');
+$(".dark-bg").fadeOut('fast');
+$(".remove-product").click(function () {
+  $(".product-uploader-holder").fadeOut('fast');
+  $(".dark-bg").fadeOut('fast');
+});
+

@@ -455,3 +455,4 @@ $(".remove-product").click(function () {
   $(".product-uploader-holder").fadeOut('fast');
   $(".dark-bg").fadeOut('fast');
 });
+

@@ -219,9 +219,25 @@ gap: .2rem;
 }
 @media only screen and (max-width: 600px) 
 {
-    
+
+    .request-div-inner-div{
+        transform: scale(.8);
+    }
+
 .study-tools-tool-holder{
     display: block;
+}
+
+.flexer .icon-holder {
+    display: none;
+}
+
+.flexer .user-info{
+    display: none;
+}
+
+.flexer .relative-class{
+    display: none;
 }
 
     .menu-item{

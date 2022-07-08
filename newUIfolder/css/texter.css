@@ -19,9 +19,85 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.bottom-notification-2{
+    width: 100%;
+    border-top: 1px solid var(--darker-text);
+    margin-top: 55vh;
+    text-align: right;
+    padding-top: .5rem;
+}
+
+.file-holder{
+    overflow: hidden;
+    width: auto;
+}
+
+.icon-file{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    
+}
+
+.icon-file img{
+    width: 2rem;
+}
+
+
+.file-holder input{
+    transform: scale(2);
+    opacity: 0;
+}
+
+
+.add-contact-div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-contact-div form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.add-contact-div form input{
+    width: 40%;
+    padding: .5rem;
+    border: none;
+    outline: none;
+}
+
+.add-contact-div form input[type = 'submit']
+{
+    background: var(--dormblue);
+    color: var(--white);
+}
+.dark-bg-texter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--darkcolor);
+    opacity: .9;
+}
+
 .body-texter{
     width: 100%;
     overflow-y: scroll;
+}
+
+.margin-top{
+    margin-top: 1rem;
 }
 
 .texter-icon{
@@ -248,6 +324,11 @@
     align-items: center;
     display: flex;
 }
+
+.mobile-add-contact-list{
+    display:  none;
+}
+
 @media only screen and (max-width: 600px) {
 
     .mobile-add-contact{
@@ -256,11 +337,33 @@
         height: 2.5rem;
         border-radius: 50%;
         overflow: hidden;
-        z-index: 9;
+        z-index: 100;
         right: 1rem;
         bottom: 5rem;
         display: block;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    .mobile-add-contact-list{
+        position: fixed;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        overflow: hidden;
+        z-index: 100;
+        right: 1rem;
+        bottom: 9rem;
+        display: block;
+    }
+
+    .mobile-add-contact-list input{
+        opacity: 0;
+        z-index: 9;
+    }
+
+
+    .mobile-add-contact-list img{
+        position: absolute;
     }
 
     .mobile-search{
@@ -390,5 +493,13 @@
     color: var(--white);
     
 }
+
+.add-contact-div form input{
+    width: 70%;
+    padding: .5rem;
+    border: none;
+    outline: none;
+}
+
 }
 

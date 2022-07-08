@@ -185,6 +185,7 @@ a{
     .study-tools-page {
        display: flex;
        place-items: center;
+       height: max-content;
 
     }
     
@@ -208,6 +209,22 @@ a{
     justify-content: center;
     display: flex;
     align-items: center;
+}
+
+
+.study-tool-sub-text{
+    font-size: .6rem;
+}
+
+.study-tool-title{
+    font-size: .8rem;
+}
+
+
+.page-content {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 }

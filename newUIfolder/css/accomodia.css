@@ -16,6 +16,13 @@
 }
 
 
+.remove-card{
+    margin-right: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    color: var(--dormorange);
+}
+
 .accomodia{
     width: 100%;
     height: auto;
@@ -27,6 +34,35 @@
     margin-top: 1rem;
     visibility: visible;
 }
+
+.date-and-time{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: .7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-and-time{
+    font-weight: 600;
+}
+
+.date-and-time span{
+    font-weight: 400;
+}
+
+.send-btn{
+    width: 90%;
+    padding: .5rem;
+    background: var(--darkblue);
+    border: none;
+    color: var(--ash);
+    font-weight: 400;
+    font-size: .9rem;
+border-radius: 5px;
+cursor: pointer;}
 
 .meeting-card-holder-dark-bg{
     width: 100vw;
@@ -59,7 +95,9 @@
     width: 18rem;
     height: 80vh;
     background: var(--white);
-    position: absolute;box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: absolute;
+    padding-bottom: .6rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .meeting-card-profile-pic{

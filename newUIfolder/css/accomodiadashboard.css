@@ -140,6 +140,7 @@ margin-left: auto;
     margin-top: 2rem;
     background: var(--ash);
     padding: .5rem;
+    border-radius: 10px;
 }
 
 .complain-div h4{
@@ -205,6 +206,130 @@ margin-left: auto;
     height: 100%;
     object-fit: cover;
   }
+
+
+  .request-card{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: .5rem;
+    gap: .5rem;
+  }
+
+  .request-card-holder{
+   min-width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: .5rem;
+    gap: 1rem;
+  }
+  .request-inspect-div{
+    margin-top: 1rem;
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .request-inspect-div h3{
+    color: #555;
+  }
+  .reqest-info{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .request-user-user-name{
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--darkcolor);
+  }
+
+  .request-function{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .request-function button{
+    border: none;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    opacity: .5;
+    transition: .5s linear;
+  }
+
+  .request-function button:hover{
+    opacity: 1;
+  }
+
+.circle-image{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--dormblue);
+  
+}
+
+.blue-bg{
+    color: var(--white);
+    background: var(--dormblue);
+}
+
+.black-bg{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: var(--darkcolor);
+    z-index: 10;
+    opacity: .8;
+}
+
+.request-comfirmation-div-holder{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: grid;
+    place-items: center;
+    z-index: 12;
+}
+
+.request-confirmation-div{
+    width: 16rem;
+    height: auto;
+    background: var(--white);
+    padding: 1rem;
+}
+
+
+.request-confirmation-div form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.request-confirmation-div form input{
+    border: 2px solid var(--dormblue);
+    padding: .3rem;
+}
+
+.request-confirmation-div form .confirmation-functions{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.request-confirmation-div form .confirmation-functions button{
+    width: 50%;
+    padding: .5rem;
+    border: none;
+}
+
 
 @media only screen and (max-width: 800px) {
     .sub-info-of-house{

@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+:root{
+    --ash: #e9e9e9;
+    --lighttext:#555;
+    --white: #ffffff;
+    --dormblue: #1597E2;
+    --darkcolor: #020202;
+    --dormash: lightgrey;
+    --dormorange: #f96b03;
+    --unnamed-color-f3f3f3: #F3F3F3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sub{
+    font-size: .6rem;
+    font-weight: 900;
+    width: max-content;
+}
+
+.center{
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.big-blue-title{
+display: none;
+}
+
+.center .form{
+    width: 100%;
+     align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sub-screen-container{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-img{
+    width: 40vw;
+    height: 80vh;
+    position: absolute;
+}
+
+.left-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blue{
+    background: var(--dormblue);
+    width: 40vw;
+    height: 80vh;
+    opacity: .9;
+    position: absolute;
+    z-index: 1;
+}
+
+.forgot-password-form-2 {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-forgot h4{
+    margin: 1rem 0px;
+    color: var(--dormblue);
+}
+
+
+.btn-1{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: var(--white);
+    font-weight: 1000;
+    background: var(--dormorange);
+   border-radius: 50%;
+    animation: wiggle .5s ease-in  infinite alternate;
+}
+
+.instruction-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 20rem;
+    background: var(--white);
+    font-weight: 1000;
+    padding: 1rem;
+    margin-left: -3rem;
+    margin-top: -5rem;
+    box-shadow: 0px 0px .3rem var(--ash);
+    text-align: left;
+}
+
+.instruction-div span{
+    color: var(--dormblue);
+}
+
+.left-form-stuff{
+    width: 40vw;
+    height: 70vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    z-index: 6;
+}
+
+.left-form-stuff div{
+    margin: 0px 3rem;
+}
+
+.left-form-stuff p{
+   color: #fff;
+   font-size: 3rem;
+   font-weight: 100;
+   line-height: 4rem;
+}
+
+.left-form-stuff button{
+    border: none;
+    background: var(--dormorange);
+    color: var(--white);
+    padding: .5rem 1rem;
+    width: fit-content;
+    margin-top: 1rem;
+    font-size: .7rem;
+    font-weight: 1000;
+    border-radius: 3px;
+}
+
+
+
+.top-form-logo{
+    width: 6rem;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.top-form-canopy{
+    width: 25rem;
+    height: 15vh;
+    top: 1rem;
+    position: absolute;
+}
+
+.top-form-logo-2{
+    width: 7rem;
+    gap: 1rem;
+    height: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.top-form-logo-2 img{
+    width: 3rem;
+    height: 1rem;
+}
+
+.top-form-logo-2 button{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 4rem;
+    background: var(--white);
+    color: var(--dormblue);
+}
+
+ img{
+    width: 100%;
+    height: auto;
+}
+
+.input-holder{
+    display: flex;
+    gap: .9rem;
+    width: 60%;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.input-holder input{
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 1px solid var(--lighttext);
+    padding-bottom: .5rem;
+    color: var(--darkcolor);
+    font-weight: 1000;
+    background: transparent;
+}
+
+.input-holder input::placeholder{
+    font-size: .6rem;
+    color: var(--lighttext);
+    font-weight: 1000;
+}
+
+
+.input-holder ion-icon{
+  color: var(--lighttext);
+}
+
+.input-holder button{
+    border: 2px solid var(--dormorange);
+    padding: .5rem;
+    width: 50%;
+    font-weight: 1000;
+    border-radius: 5px;
+    font-size: .7rem;
+    background: var(--white);
+    cursor: pointer;
+}
+
+.input-holder button:nth-child(1){
+    background: var(--dormorange);
+    color: var(--white);
+}
+
+.input-holder .btn{
+    border: 2px solid var(--dormorange);
+    padding: .5rem;
+    font-weight: 1000;
+    border-radius: 5px;
+    width: 50%;
+    font-size: .7rem;
+    background: var(--white);
+    cursor: pointer;
+    text-align: center;
+}
+
+.input-holder .btn:nth-child(1){
+    background: var(--dormorange);
+    color: var(--white);
+}
+
+.forgot-password{
+    font-size: .6rem;
+    font-weight: 1000;
+    padding: .3rem 0px;
+    text-align: center;
+}
+
+.forgot-password span{
+    color: var(--dormblue);
+    cursor: pointer;
+}
+
+.registration{
+    display: none;
+}
+
+.sign-up-btn{
+    width: 100%;
+}
+
+
+.forgot-password-holder-bg{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: var(--darkcolor);
+    opacity: .5;
+    z-index: 10;
+}
+
+.forgot-password-holder{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 13;
+}
+
+
+.forgot-password-div{
+    background: var(--white);
+    width: 40vw;
+    height: auto;   
+    padding: 2rem 2rem;
+}
+
+
+.center-forgot{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 .5rem;
+}
+
+.center-forgot h3{
+    margin-bottom: 1rem;
+}
+
+.center-forgot .input-holder{
+    width: 100%;
+}
+
+.center-forgot .top-form-logo{
+    width: 4rem;
+    margin-top: 2rem;
+}
+
+
+.hide-on-big-screen{
+    display: none;
+}
+
+.hide-on-small-screen{
+    display: block;
+}
+
+
+.bk-btn{
+    width: 3rem;
+    margin-left: -15rem;
+    position: absolute;
+    height: 3rem;
+    display: flex;
+    margin-top: -1rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 4rem;
+    background: var(--white);
+    color: var(--dormblue);
+    z-index: 20;
+}
+
+@keyframes wiggle{
+    from{
+      transform: rotate(-5deg);
+    }
+
+    to{
+        transform: rotate(5deg);
+    }
+}
+
+@media only screen and  (max-width: 650px) {
+    .center{
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .big-blue-title{
+        color: var(--dormblue);
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    
+    .center .form{
+        width: 100%; 
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .sub-screen-container{
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-form-canopy{
+        width: 90vw;
+        height: 15vh;
+        top: 1rem;
+        position: absolute;
+    } 
+
+
+    .big-blue-title{
+        color: var(--dormblue);
+        font-weight: 600;
+        margin-bottom: 1rem;
+        display: block;
+    }
+    
+}

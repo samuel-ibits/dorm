@@ -60,8 +60,8 @@
             <form action="">
               <p class="confirmation-message">Are you sure you want to decline this meeting, user will get notified you declined their meeting request.</p>
                 <div class="confirmation-functions">
-                    <button class="blue-bg" id="confirm-1">Confirm</button>
-                    <button class="orange-bg" id="decline-1">Back</button>
+                    <button class="blue-bg" id="confirm-1-1">Confirm</button>
+                    <button class="orange-bg" id="decline-1-1">Back</button>
                 </div>
             </form>
         </div>
@@ -90,37 +90,37 @@
                 </span>
             </div>
             <ul class="menu-list">
-                <a href="studytools.html">
+                <a href="#!">
                     <li class="menu-item">
                         <div class="icon-img"><img src="images/bag-img.png" alt=""></div>
                         <p class="menu-list-title-sub-side">Study Tools</p>
                     </li>
                 </a>
-                <a href="coursereview.html">
+                <a href="#!">
                     <li class="menu-item">
                         <div class="icon-img"><img src="images/coursereview.png" alt=""></div>
                         <p class="menu-list-title-sub-side">Course Review</p>
                     </li>
                 </a>
-                <a href="texter.html">
+                <a href="#!">
                     <li class="menu-item">
                         <div class="icon-img"><img src="images/text.png" alt=""></div>
                         <p class="menu-list-title-sub-side">Texter</p>
                     </li>
                 </a>
-                <a href="accomodia.html">
+                <a href="#!">
                     <li class="menu-item">
                         <div class="icon-img"><img src="images/house.png" alt=""></div>
                         <p class="menu-list-title-sub-side">Accomodia</p>
                     </li>
                 </a>
-                <a href="">
+                <a href="#!">
                     <li class="menu-item">
                         <div class="icon-img"><img src="images/market.png" alt=""></div>
                         <p class="menu-list-title-sub-side">Market</p>
                     </li>
                 </a>
-                <a href="setting.html">
+                <a href="#!">
                     <li class="active-nav menu-item">
                         <div class="icon-img"><img src="images/setting.png" alt=""></div>
                         <p class="menu-list-title-sub-side">Setting</p>
@@ -450,7 +450,7 @@
 
                 <div class="bottom-side-list">
                     <ul class="smaller">
-                        <a href="profile.html">
+                        <a href="#!">
                             <li class="menu-item">
                                 <div class="icon-img-small-icon">
                                     <ion-icon name="person"></ion-icon>
@@ -459,7 +459,7 @@
                             </li>
                         </a>
 
-                        <a href="wallet.html">
+                        <a href="#!">
                             <li class="menu-item">
                                 <div class="icon-img-small-icon">
                                     <ion-icon name="wallet"></ion-icon>
@@ -467,7 +467,7 @@
                                 <p class="menu-list-title-sub-side-1">Wallet</p>
                             </li>
                         </a>
-                        <a href="manageproduct.html">
+                        <a href="#!">
                             <li class="menu-item">
                                 <div class="icon-img-small-icon">
                                     <i class="bi bi-graph-up-arrow"></i>
@@ -475,7 +475,7 @@
                                 <p class="menu-list-title-sub-side-1">Manage products</p>
                             </li>
                         </a>
-                        <a href="marketdashboard.html">
+                        <a href="#!">
                             <li class="menu-item">
                                 <div class="icon-img-small-icon">
                                     <ion-icon name="speedometer"></ion-icon>
@@ -483,7 +483,7 @@
                                 <p class="menu-list-title-sub-side-1">Market dashboard</p>
                             </li>
                         </a>
-                        <a href="accomodiadashboard.html">
+                        <a href="#!">
                             <li class="menu-item    active-tool-icon">
                                 <div class="icon-img-small-icon">
                                     <ion-icon name="speedometer"></ion-icon>
@@ -491,7 +491,7 @@
                                 <p class="menu-list-title-sub-side-1">Accomodia dashboard</p>
                             </li>
                         </a>
-                        <a href="resourceteam.html">
+                        <a href="#!">
                             <li class="menu-item">
                                 <div class="icon-img-small-icon">
                                     <ion-icon name="people"></ion-icon>
@@ -499,7 +499,7 @@
                                 <p class="menu-list-title-sub-side-1">Resource team</p>
                             </li>
                         </a>
-                        <a href="feedback.html">
+                        <a href="#!">
                             <li class="menu-item">
                                 <div class="icon-img-small-icon">
                                     <ion-icon name="chatbubble"></ion-icon>
@@ -639,6 +639,7 @@ $("#accept-1").click(function () {
     $(".request-comfirmation-div-holder").fadeIn('fast');
 $(".black-bg").fadeIn('fast');
 $("#accept").fadeIn('fast');
+$("#decline").fadeOut('fast');
 });
 
 
@@ -646,6 +647,7 @@ $("#reject-1").click(function () {
     $(".request-comfirmation-div-holder").fadeIn('fast');
 $(".black-bg").fadeIn('fast');
 $("#decline").fadeIn('fast');
+$("#accept").fadeOut('fast');
 });
 
 
@@ -660,6 +662,22 @@ $("#decline-1").click(function () {
 $(".black-bg").fadeOut('fast');
 });
 
+
+
+$("#confirm-1-1").click(function () {
+    $(".request-comfirmation-div-holder").fadeOut('fast');
+$(".black-bg").fadeOut('fast');
+});
+
+
+$("#decline-1-1").click(function () {
+    $(".request-comfirmation-div-holder").fadeOut('fast');
+$(".black-bg").fadeOut('fast');
+});
+
+$("a").click(function () {
+alert("Your currently logged in as an agent, please login into your dorm account to access this Function")
+});
 </script>
 </body>
 

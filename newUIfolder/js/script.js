@@ -263,18 +263,21 @@ $("#chat-6").hide('fast');
 
 
 
-            $(".meeting-card-holder").hide("fast");
-            $(".meeting-card-holder-dark-bg").hide("fast");
+            $(".meeting-card-holder").fadeOut("fast");
+            $(".meeting-card-holder-dark-bg").fadeOut("fast");
             $("#meetagent1").click(function () {
-            $(".meeting-card-holder").show("fast");
-            $(".meeting-card-holder-dark-bg").show("fast");
+            $(".meeting-card-holder").fadeIn("fast");
+            $(".meeting-card-holder-dark-bg").fadeIn("fast");
+
+            alert("Request has been sent, check back for time and location")
             });
             
-            $(".meeting-card-holder-dark-bg").click(function () {
-            $(".meeting-card-holder").hide("fast");
-            $(".meeting-card-holder-dark-bg").hide("fast");
+            $(".remove-card").click(function () {
+            $(".meeting-card-holder").fadeOut("fast");
+            $(".meeting-card-holder-dark-bg").fadeOut("fast");
             });
-
+ 
+            
 
             
 share = document.getElementById('shareDorm')

@@ -1,5 +1,5 @@
 /**
- * Swiper 8.2.6
+ * Swiper 8.3.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: June 29, 2022
+ * Released on: July 6, 2022
  */
 
 ! function (e, t) {
@@ -3869,7 +3869,7 @@
             },
             b = () => {
                 const e = t.params.a11y;
-                e.itemRoleDescriptionMessage && c(d(t.slides), e.itemRoleDescriptionMessage), o(d(t.slides), e.slideRole);
+                e.itemRoleDescriptionMessage && c(d(t.slides), e.itemRoleDescriptionMessage), e.slideRole && o(d(t.slides), e.slideRole);
                 const s = t.params.loop ? t.slides.filter((e => !e.classList.contains(t.params.slideDuplicateClass))).length : t.slides.length;
                 e.slideLabelMessage && t.slides.each(((a, i) => {
                     const r = d(a),

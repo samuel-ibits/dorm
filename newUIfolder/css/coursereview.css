@@ -19,6 +19,18 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.post-btn {
+    margin-left: auto;
+}
+
+.post-btn button{
+    border: none;
+    outline: none;
+    padding: .3rem 1rem;
+    color: var(--white);
+    background: var(--dormblue);
+}
+
 
 .user-info-side{
     font-size: .7rem;
@@ -99,11 +111,14 @@
 
 .course-review-comment-card{
     border: 1.5px solid var(--ligher-text);
+    border-top: none;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
     height: auto;
     border-radius: 10px;
     overflow: hidden;
     padding: 0.5rem; 
-    margin-top: -1rem;  
+    margin-top: 0rem;  
     background: var(--white);
     z-index: 2;
 }
@@ -525,4 +540,6 @@ opacity: .2;
     border-radius: 0px;
     position: absolute;
 }
+
+
 }

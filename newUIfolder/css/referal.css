@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
 :root{
     --ash: #e9e9e9;
     --white: #ffffff;
@@ -5,10 +6,19 @@
     --darkcolor: #020202;
     --dormash: lightgrey;
     --dormorange: #f96b03;
- 
+    --darker-text:#444;
+    --ligher-text:#999;
+    --boxop: .8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 .section-head{
-   background: linear-gradient(to right, #0688d3 0%,#0186d3 100%);
+   background: linear-gradient(to right, #1597E2 0%,#0186d3 100%);
    width: 100%;
    height: 5rem;
 }
@@ -47,7 +57,7 @@
     border-radius: 3px;
     background: #fff;
     margin: 1rem 0px 0px 0px;
-    box-shadow: 0px 2px 3px #999;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .point-card:nth-last-child(1){
@@ -55,7 +65,7 @@
 }
 
 .points-div{
-    width: 90%;
+    width: 100%;
     height: auto;
     overflow-y: scroll;
 }
@@ -96,6 +106,11 @@ margin-left: auto;
 .point-card-left p{
     font-size: .8rem;
     color: var(--darkcolor);
+}
+
+
+.full-refcontainer{
+    width: 100% !important;
 }
 
 

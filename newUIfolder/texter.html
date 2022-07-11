@@ -2,208 +2,356 @@
 <html lang="en">
 
 <head>
-    <meta name="theme-color" content="#1597E2">
-    <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#1597E2">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Texter</title>
+    <title>Dorm - Texter</title>
+    <link rel="stylesheet" href="menu/css/styles.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css-2/bot.css">
+    <link rel="stylesheet" href="css-2/style.css">
+    <link rel="stylesheet" href="css/texter(meta).css">
+    <script src="sweetalert2.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="update.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--=============== CSS ===============-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="css/mynote.css">
-    <link rel="stylesheet" href="css/studytools.css">
-    <link rel="stylesheet" href="css/menucss.css">
-    <link rel="stylesheet" href="css/coursereview.css">
-    <link rel="stylesheet" href="css/texter.css">
 
-    <style>
-
-    </style>
 </head>
 
 <body>
-    <div class="mobile-add-contact toggleaddcontact">
-        <img src="images/add-icon.png" alt="">
-    </div>
 
-    <div class="mobile-add-contact-list">
-        <img src="images/Icon material-cloud-upload.png" alt="">
-   
-        <input type="file" name="" id="">
-    </div>
 
-    <div class="top-mobile-menu">
-        <div class="mobile-logo"><img src="images/dorm_no_bg.png" alt=""></div>
 
-        <span class="noti-mobile">
-            <ion-icon name="notifications"></ion-icon>
-        </span>
-    </div>
 
-    <div class="page-container">
-        <div class="menu">
-            <div class="logo-img">
-                <img class="logo-pc" src="images/dorm_logo_white.png" alt="">
+    <div class="top-div" style="color: white;">
+        <div class="logo">
+            <img src="images/dorm_no_bg.png" alt="">
+        </div>
 
-                <span class="menu-toggler">
-                    <ion-icon name="menu"></ion-icon>
-                </span>
+        <div class="searchbar-for-menu">
+            <i class="bi bi-search"></i> <input type="search" name="" id="" disabled>
+        </div>
+
+        <div class="bot-head">
+            <div class="ears-head">
+                <div class="left-ear-head"></div>
+                <div class="right-ear-head"></div>
             </div>
-            <ul class="menu-list">
-                <a href="studytools.html">
-                    <li class="menu-item">
-                        <div class="icon-img"><img src="images/bag-img.png" alt=""></div>
-                        <p class="menu-list-title-sub-side">Study Tools</p>
-                    </li>
-                </a>
-                <a href="coursereview.html">
-                    <li class="menu-item">
-                        <div class="icon-img"><img src="images/coursereview.png" alt=""></div>
-                        <p class="menu-list-title-sub-side">Course Review</p>
-                    </li>
-                </a>
-                <a href="texter.html">
-                    <li class="active-nav  menu-item">
-                        <div class="icon-img"><img src="images/text.png" alt=""></div>
-                        <p class="menu-list-title-sub-side">Texter</p>
-                    </li>
-                </a>
-                <a href="accomodia.html">
-                    <li class="menu-item">
-                        <div class="icon-img"><img src="images/house.png" alt=""></div>
-                        <p class="menu-list-title-sub-side">Accomodia</p>
-                    </li>
-                </a>
-                <a href="">
-                    <li class="menu-item">
-                        <div class="icon-img"><img src="images/market.png" alt=""></div>
-                        <p class="menu-list-title-sub-side">Market</p>
-                    </li>
-                </a>
-                <a href="">
-                    <li class="menu-item">
-                        <div class="icon-img"><img src="images/setting.png" alt=""></div>
-                        <p class="menu-list-title-sub-side">Setting</p>
-                    </li>
-                </a>
+            <div class="eyes-head">
+                <div class="right-eye-head"></div>
+                <div class="left-eye-head"></div>
+            </div>
+
+            <div class="mouth-head"></div>
+        </div>
+
+        <i class="bi bi-bell-fill"></i>
+    </div>
+    <div class="full-width">
+        <div class="notification">
+            <ul>
+                <li>Your <span class="pronounds">Accomodia</span> request has returned results <span
+                        class="number">34</span></li>
+                <li>Your <span class="pronounds">Market</span> request has returned results <span
+                        class="number">3</span></li>
             </ul>
-            <div class="user">
-                <div class="user-img">
-                    <img src="images/avtr2.png" alt="">
-                </div>
-                <div class="user-info">
-                    <p class="name">Great Etubi</p>
-                    <p class="username">@Greatetubi</p>
-                </div>
-
-                <div class="icon-holder">
-                    <i class="bi bi-three-dots"></i>
-                </div>
-            </div>
-        </div>
-        <div class="page-content">
-            <div class="add-contact-div">
-                <form action="">
-                    <input type="text" name="" id="" placeholder="John doe">
-                    <input type="number" placeholder="09123665783">
-                    <input type="submit" value="Submit">
-                </form>
-
-            </div>
-            <div class="dark-bg-texter">
-
-            </div>
-            <div class="mobile-search">
-                <ion-icon name="search"></ion-icon> <input type="text" placeholder="Search for messages">
-            </div>
-            <div class="texter-card-holder">
-                <div class="comment-card">
-                    <div class="top-texter-div">
-                        <div class="userimage-info-side gap-1">
-                            <div class="user-img-side">
-                                <img src="images/avtr2.png" alt="">
-                            </div>
-                            <div class="user-info-side">
-                                <p class="name-side">Great Etubi</p>
-                                <p class="username-side">08146149310</p>
-                            </div>
-                        </div>
-                        <div class="texter-icon">
-                            <img src="images/Subtraction 10.png" alt="">
-                        </div>
-                    </div>
-                </div>       
-            </div>
-
-
-        </div>
-        <div class="page-side">
-            <div class="search-2">
-                <ion-icon name="search"></ion-icon> <input type="text" placeholder="Search for a note" name="" id="">
-            </div>
-            <div class="double-section">
-
-                <div class="side-user-info">
-                    <div class="userimage-info-side">
-                        <div class="user-img-side">
-                            <img src="images/avtr2.png" alt="">
-                        </div>
-                        <div class="user-info-side">
-                            <p class="name-side">Great Etubi</p>
-                            <p class="username-side">@Greatetubi</p>
-                        </div>
-                    </div>
-                </div>
-                <a href="texter-send-msg.html">
-                    <div class="text-icon add-review">
-                        <div class="icon">
-                            <img src="images/add-icon.png" alt="">
-                        </div>
-                        <p class="double-section-text">Send text</p>
-                    </div>
-                </a>
-                <div class="text-icon add-review margin-top toggleaddcontact">
-                    <div class="icon">
-                        <img src="images/add-icon.png" alt="">
-                    </div>
-                    <p class="double-section-text">Add contact</p>
-                </div>
-
-                <div class="text-icon add-review margin-top file-holder">
-                    <div class="icon-file">
-                        <img src="images/Icon material-cloud-upload.png" alt="">
-                    
-                        
-                    <p class="double-section-text">Upload contact list</p>
-                    </div>
-                    <input type="file" name="" id="">
-                </div>
-
-                <div class="bottom-notification-2">
-                    <ion-icon name="notifications"></ion-icon>
-                </div>
-
-            </div>
-
         </div>
     </div>
-    <script src="js/script.js"></script>
-    <script>
-        
-  $(".add-contact-div").fadeOut('fast');
-  $(".dark-bg-texter").fadeOut('fast');
-  
-$(".toggleaddcontact").click(function () {
-  $(".add-contact-div").fadeToggle('fast');
-  $(".dark-bg-texter").fadeToggle('fast');
-});
+
+    <div class="nav-bar">
+        <ul class="nav-list">
+            <li class="nav-item" title="Study Tools">
+                <a href="studytools.html" class="nav-link">
+                    <i class="bi bi-tools"></i>
+                    <p class="icon-title">Study tools</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Course Review">
+                <a href="coursereview.html" class="nav-link">
+                    <i class="bi bi-book-fill"></i>
+                    <p class="icon-title">Course review</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Title">
+                <a href="texter.html" class="nav-link active-nav-link">
+                    <i class="bi bi-chat-left-text-fill"></i>
+                    <p class="icon-title">Texter</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Accomodia">
+                <a href="accomodia.html" class="nav-link">
+                    <i class="bi bi-house"></i>
+                    <p class="icon-title">Accomodia</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Martket">
+                <a href="market.html" class="nav-link">
+                    <i class="bi bi-shop"></i>
+                    <p class="icon-title">Market</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Setting">
+                <a href="setting.html" class="nav-link">
+                    <i class="bi bi-gear-fill"></i>
+                    <p class="icon-title">Setting</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="page-content">
+        <div class="texter-ii-page-holders">
+            <div class="texter-ii-page-sub-page-holders">
+                <div class="file-btn-holder">
+                    <input type="file" name="" id="">
+                    <div>
+                        <p>
+                            <ion-icon name="cloud-upload"></ion-icon>
+                        </p>
+                        <p>UPLOAD CONTACTS</p>
+                    </div>
+                </div>
+
+                <div class="search-bar">
+                    <input type="search" placeholder="SEARCH HERE CONTACTS" name="" id="">
+                    <ion-icon name="search"></ion-icon>
+                </div>
+
+                <div class="recievers-card-holder">
+                    <div class="recievers-card">
+                        <div class="reciever-card-image">
+                            <img src="images/dorm_icon.png" alt="">
+                        </div>
+                        <div class="reciever-card-details">
+                            <p>John samuel ibitoye</p>
+                            <p>090923734738</p>
+                        </div>
+                        <div class="statue-of-text chat-icon contacts">
+                            <ion-icon name="chatbox-ellipses"></ion-icon>
+                        </div>
+                        <div class="statue-of-text green">
+                            <ion-icon name="checkmark-done"></ion-icon>
+                            <p>SENT</p>
+                        </div>
+                    </div>
+                    <div class="recievers-card">
+                        <div class="reciever-card-image">
+                            <img src="images/dorm_icon.png" alt="">
+                        </div>
+                        <div class="reciever-card-details">
+                            <p>mark peter ibitoye</p>
+                            <p>090923734738</p>
+                        </div>
+                        <div class="statue-of-text chat-icon contacts">
+                            <ion-icon name="chatbox-ellipses"></ion-icon>
+                        </div>
+                        <div class="statue-of-text green">
+                            <ion-icon name="checkmark-done"></ion-icon>
+                            <p>SENT</p>
+                        </div>
+                    </div>                   
+                    <div class="recievers-card">
+                        <div class="reciever-card-image">
+                            <img src="images/dorm_icon.png" alt="">
+                        </div>
+                        <div class="reciever-card-details">
+                            <p>John samuel ibitoye</p>
+                            <p>090923734738</p>
+                        </div>
+                        <div class="statue-of-text chat-icon contacts">
+                            <ion-icon name="chatbox-ellipses"></ion-icon>
+                        </div>
+                        <div class="statue-of-text green">
+                            <ion-icon name="checkmark-done"></ion-icon>
+                            <p>SENT</p>
+                        </div>
+                    </div>
+                    <div class="recievers-card">
+                        <div class="reciever-card-image">
+                            <img src="images/dorm_icon.png" alt="">
+                        </div>
+                        <div class="reciever-card-details">
+                            <p>mark peter ibitoye</p>
+                            <p>090923734738</p>
+                        </div>
+                        <div class="statue-of-text chat-icon contacts">
+                            <ion-icon name="chatbox-ellipses"></ion-icon>
+                        </div>
+                        <div class="statue-of-text green">
+                            <ion-icon name="checkmark-done"></ion-icon>
+                            <p>SENT</p>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+
+            <div class="texter-ii-page-sub-page-holders messager">
+                <div class="texter-ii-page-sub-page-holders-top">
+                    <div class="recievers-card-ii">
+                        <div class="reciever-card-image">
+                            <img src="images/dorm_icon.png" alt="">
+                        </div>
+                        <div class="reciever-card-details">
+                            <p>John samuel ibitoye</p>
+                            <p>090923734738</p>
+                        </div>
+                    </div>
+
+                    <div class="texter-available">
+                        <p>TEXTER POINTS AVAILABLE: <span>5</span></p>
+                    </div>
+                </div>
+                <div class="message-holder">
+                    <div class="message-card">
+                        <div class="message">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Sint nostrum enim facilis quos nesciunt obcaecati illo inventore laboriosam vero nobis.
+                                Dolorem explicabo ut similique
+                                , officiis ipsa perspiciatis minima Lorem ipsum dolor sit, amet consectetur adipisicing
+                                elit.
+                                Sint nostrum enim facilis quos nesciunt obcaecati illo inventore laboriosam vero nobis.
+                                Dolorem explicabo ut similique
+                                , officiis ipsa perspiciatis minima Lorem ipsum dolor sit, amet consectetur adipisicing
+                                elit.
+                                Sint nostrum enim facilis quos nesciunt obcaecati illo inventore laboriosam vero nobis.
+                                Dolorem explicabo ut similique
+                                , officiis ipsa perspiciatis minima animi ad?
+                            </p>
+                        </div>
+                        <p class="date-of-sent-message">20 november 2022</p>
+                    </div>
+
+                    <div class="message-card">
+                        <div class="message">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Sint nostrum enim facilis quos nesciunt obcaecati illo inventore laboriosam vero nobis.
+                                Dolorem explicabo ut similique
+                            </p>
+                        </div>
+                        <p class="date-of-sent-message">10 january 2022</p>
+                    </div>
+                    <div class="message-card">
+                        <div class="message">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Sint nostrum enimrem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Sint nostrum enim facilis quos nesciunt obcaecati illo inventore laboriosam vero nobis.
+                                Dolorem explicabo ut similique
+                            </p>
+                        </div>
+                        <p class="date-of-sent-message">23 july 2022</p>
+                    </div>
+                    <div class="message-card">
+                        <div class="message">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Sint nostrum enimrem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Sint nostrum enim facilis quos nesciunt obcaecati illo inventore laboriosam vero nobis.
+                                Dolorem explicabo ut similique
+                            </p>
+                        </div>
+                        <p class="date-of-sent-message">20 november 2022</p>
+                    </div>
+                    <div class="message-card">
+                        <div class="message">
+                            <p>
+                                explicabo ut similique
+                            </p>
+                        </div>
+                        <p class="date-of-sent-message">10 december 2022</p>
+                    </div>
+                    <div class="message-card">
+                        <div class="message">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Sint nostrum enimrem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Sint nostrum enim facilis quos nesciunt obcaecati illo inventore laboriosam vero nobis.
+                                Dolorem explicabo ut similique
+                            </p>
+                        </div>
+                        <p class="date-of-sent-message">20 november 2022</p>
+                    </div>
+
+                    <div class="texting-area">
+                        <div class="text-input-box">
+                            <form action="#!">
+                                <input type="text" placeholder="Type a message here" name="" id="">
+                                <button>
+                                    <ion-icon name="send"></ion-icon>
+                                </button>
+                                <button class="btn-hide-bg-screen show-contacts">
+                                    <ion-icon name="people"></ion-icon>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
-    </script>
+        </div>
+
+
+        <script src="assets/js/main.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script>
+            $(".bi-x").click(function () {
+                $(".bot-container-2").fadeOut("fast");
+            });
+
+            $(".bi-bell-fill").click(function () {
+                $(".notification").fadeToggle('fast');
+            });
+
+
+
+            tippy('.bot-head', {
+                content: 'My tooltip!',
+                theme: 'tomato',
+                content: '<p class="dormbotmessage">Hi, I"m your Dorm assistant, Always, here to help.</strong>',
+                allowHTML: true,
+            });
+
+
+            $(".show-contacts").click(function () {
+                $(".contacts").fadeIn('fast');
+                $(".messager").fadeOut('fast');
+            });
+
+            $(".recievers-card").click(function () {
+                $(".contacts").fadeOut('fast');
+                $(".messager").fadeIn('fast');
+            });
+        </script>
+
 </body>
 
 </html>

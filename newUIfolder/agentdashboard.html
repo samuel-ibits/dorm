@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#1597E2">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorm - agent dashboard</title>
+    <link rel="stylesheet" href="menu/css/styles.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css-2/bot.css">
+    <link rel="stylesheet" href="css-2/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/agentdashboard.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="update.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--=============== CSS ===============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        * {
+            font-family: 'Dosis', sans-serif;
+            font-family: 'Varela Round', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+    <div class="top-div" style="color: white;">
+        <div class="logo">
+            <img src="images/dorm_no_bg.png" alt="">
+        </div>
+
+        <div class="searchbar-for-menu">
+            <i class="bi bi-search"></i> <input type="search" name="" id="" disabled>
+        </div>
+
+        <div class="bot-head">
+            <div class="ears-head">
+                <div class="left-ear-head"></div>
+                <div class="right-ear-head"></div>
+            </div>
+            <div class="eyes-head">
+                <div class="right-eye-head"></div>
+                <div class="left-eye-head"></div>
+            </div>
+
+            <div class="mouth-head"></div>
+        </div>
+
+        <i class="bi bi-bell-fill"></i>
+    </div>
+    <div class="full-width">
+        <div class="notification">
+            <ul>
+                <li>Your <span class="pronounds">Accomodia</span> request has returned results <span
+                        class="number">34</span></li>
+                <li>Your <span class="pronounds">Market</span> request has returned results <span
+                        class="number">3</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="nav-bar">
+        <ul class="nav-list">
+            <li class="nav-item" title="Study Tools">
+                <a href="studytools.html" class="nav-link">
+                    <i class="bi bi-tools"></i>
+                    <p class="icon-title">Study tools</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Course Review">
+                <a href="coursereview.html" class="nav-link">
+                    <i class="bi bi-book-fill"></i>
+                    <p class="icon-title">Course review</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Title">
+                <a href="texter.html" class="nav-link">
+                    <i class="bi bi-chat-left-text-fill"></i>
+                    <p class="icon-title">Texter</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Accomodia">
+                <a href="accomodia.html" class="nav-link">
+                    <i class="bi bi-house"></i>
+                    <p class="icon-title">Accomodia</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Martket">
+                <a href="market.html" class="nav-link">
+                    <i class="bi bi-shop"></i>
+                    <p class="icon-title">Market</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Setting">
+                <a href="setting.html" class="nav-link active-nav-link">
+                    <i class="bi bi-gear-fill"></i>
+                    <p class="icon-title">Setting</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="page-content">
+        <div class="fullagentscreen">
+            <div class="mainscreendata">
+                <div class="mainscreen-section-1">
+                    <div class="agent-screen-right">
+                        <div class="mainscreen-topcard-holder">
+                            <div class="mainscreen-topcard">
+                                <div class="mainscreen-topcard-box orange">
+                                    <ion-icon name="wallet-outline"></ion-icon>
+                                </div>
+                                <div class="mainscreen-topcard-text">
+                                    <p>lorem</p>
+                                    <p>21,094</p>
+                                </div>
+                            </div>
+                            <div class="mainscreen-topcard">
+                                <div class="mainscreen-topcard-box blue">
+                                    <ion-icon name="wallet-outline"></ion-icon>
+                                </div>
+                                <div class="mainscreen-topcard-text">
+                                    <p>lorem</p>
+                                    <p>21,094</p>
+                                </div>
+                            </div>
+                            <div class="mainscreen-topcard">
+                                <div class="mainscreen-topcard-box ash">
+                                    <ion-icon name="wallet-outline"></ion-icon>
+                                </div>
+                                <div class="mainscreen-topcard-text">
+                                    <p>lorem</p>
+                                    <p>21,094</p>
+                                </div>
+                            </div>
+                            <div class="mainscreen-topcard">
+                                <div class="mainscreen-topcard-box orange">
+                                    <ion-icon name="wallet-outline"></ion-icon>
+                                </div>
+                                <div class="mainscreen-topcard-text">
+                                    <p>lorem</p>
+                                    <p>21,094</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="chart-holder">
+                            <div>
+                                <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mainscreen-section-2">
+                    <h3>TRANSACTION HISTORY</h3>
+
+                    <div class="transaction-card-holder grider">
+                        <div class="transaction-card">
+                            <div class="transaction-card-image">
+                                <img src="images/avtr3.png" alt="">
+                            </div>
+                            <div class="transaction-card-data">
+                                <p>John doe</p>
+                                <p>Classic-cut T-shirt </p>
+                            </div>
+                            <div class="transaction-card-data">
+                                <p>Price</p>
+                                <p>
+                                    <ion-icon name="cash-outline"></ion-icon> 21,094
+                                </p>
+                            </div>
+
+                            <div class="transaction-card-data">
+                                <p>Date</p>
+                                <p>22 November 2021</p>
+                            </div>
+                            <div class="transcation-card-status green">
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                            </div>
+                            <div class="transaction-card-product-image">
+                                <img src="images/shirt2.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="transaction-card">
+                            <div class="transaction-card-image">
+                                <img src="images/avtr2.png" alt="">
+                            </div>
+                            <div class="transaction-card-data">
+                                <p>John doe</p>
+                                <p>Classic-cut T-shirt </p>
+                            </div>
+                            <div class="transaction-card-data">
+                                <p>Price</p>
+                                <p>
+                                    <ion-icon name="cash-outline"></ion-icon> 21,094
+                                </p>
+                            </div>
+
+                            <div class="transaction-card-data">
+                                <p>Date</p>
+                                <p>22 November 2021</p>
+                            </div>
+                            <div class="transcation-card-status green">
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                            </div>
+                            <div class="transaction-card-product-image">
+                                <img src="images/shirt4.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="transaction-card">
+                            <div class="transaction-card-image">
+                                <img src="images/avtr4.png" alt="">
+                            </div>
+                            <div class="transaction-card-data">
+                                <p>John doe</p>
+                                <p>Classic-cut T-shirt </p>
+                            </div>
+                            <div class="transaction-card-data">
+                                <p>Price</p>
+                                <p>
+                                    <ion-icon name="cash-outline"></ion-icon> 21,094
+                                </p>
+                            </div>
+
+                            <div class="transaction-card-data">
+                                <p>Date</p>
+                                <p>22 November 2021</p>
+                            </div>
+                            <div class="transcation-card-status green">
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                            </div>
+                            <div class="transaction-card-product-image">
+                                <img src="images/shirt1.png" alt="">
+                            </div>
+                        </div>
+
+
+                        <div class="transaction-card">
+                            <div class="transaction-card-image">
+                                <img src="images/avtr2.png" alt="">
+                            </div>
+                            <div class="transaction-card-data">
+                                <p>Jane doe</p>
+                                <p>Classic-cut T-shirt </p>
+                            </div>
+                            <div class="transaction-card-data">
+                                <p>Price</p>
+                                <p>
+                                    <ion-icon name="cash-outline"></ion-icon> 21,094
+                                </p>
+                            </div>
+
+                            <div class="transaction-card-data">
+                                <p>Date</p>
+                                <p>22 November 2021</p>
+                            </div>
+                            <div class="transcation-card-status red">
+                                <ion-icon name="close-outline"></ion-icon>
+                            </div>
+                            <div class="transaction-card-product-image">
+                                <img src="images/shirt2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="alterscreen">
+                <h3>BOOSTED PRODUCTS</h3>
+
+                <div class="boost-card-holder">
+                    <div class="boost-card">
+                        <div class="booster-card">
+                            <div class="inventory-card-image">
+                                <img src="images/shirt1.png" alt="">
+                            </div>
+                            <div class="inventory-card-total-number-of-product">
+                                <p>Expiration date</p>
+                                <p>22 November 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boost-card">
+                        <div class="booster-card">
+                            <div class="inventory-card-image">
+                                <img src="images/shirt4.png" alt="">
+                            </div>
+                            <div class="inventory-card-total-number-of-product">
+                                <p>Expiration date</p>
+                                <p>22 November 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boost-card">
+                        <div class="booster-card">
+                            <div class="inventory-card-image">
+                                <img src="images/shirt2.jpg" alt="">
+                            </div>
+                            <div class="inventory-card-total-number-of-product">
+                                <p>Expiration date</p>
+                                <p>22 November 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>REFFERALS PROGRAM</h3>
+
+                <div class="boost-card-holder">
+                    
+                    <div class="boost-card">
+                        <div class="booster-card">
+                            <div class="inventory-card-image">
+                                <img src="images/shirt4.png" alt="">
+                            </div>
+                            <div class="inventory-card-total-number-of-product">
+                                <p>Expiration date</p>
+                                <p>22 November 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boost-card">
+                        <div class="booster-card">
+                            <div class="inventory-card-image">
+                                <img src="images/shirt2.jpg" alt="">
+                            </div>
+                            <div class="inventory-card-total-number-of-product">
+                                <p>Expiration date</p>
+                                <p>22 November 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <h3>INVENTORY</h3>
+                    <div>
+                        <div class="inventory-card-holder">
+                            <div class="inventory-card">
+                                <div class="inventory-card-image">
+                                    <img src="images/shirt1.png" alt="">
+                                </div>
+                                <div class="inventory-card-total-number-of-product">
+                                    <p>Inspected</p>
+                                    <p>10</p>
+                                </div>
+
+                                <div class="inventory-card-number-sold">
+                                    <p>Sold</p>
+                                    <p>50/100</p>
+                                </div>
+                                <div class="inventory-card-price">
+                                    <p>Price/unit</p>
+                                    <p>
+                                        <ion-icon name="cash-outline"></ion-icon> 1,094
+                                    </p>
+                                </div>
+
+                                <div class="inventory-card-price">
+                                    <p>Total profit</p>
+                                    <p>
+                                        <ion-icon name="cash-outline"></ion-icon> 21,094
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="inventory-card">
+                                <div class="inventory-card-image">
+                                    <img src="images/shirt2.jpg" alt="">
+                                </div>
+                                <div class="inventory-card-total-number-of-product">
+                                    <p>Inspected</p>
+                                    <p>10</p>
+                                </div>
+
+                                <div class="inventory-card-number-sold">
+                                    <p>Sold</p>
+                                    <p>50/100</p>
+                                </div>
+                                <div class="inventory-card-price">
+                                    <p>Price/unit</p>
+                                    <p>
+                                        <ion-icon name="cash-outline"></ion-icon> 1,094
+                                    </p>
+                                </div>
+
+                                <div class="inventory-card-price">
+                                    <p>Total profit</p>
+                                    <p>
+                                        <ion-icon name="cash-outline"></ion-icon> 21,094
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="inventory-card">
+                                <div class="inventory-card-image">
+                                    <img src="images/shirt3.png" alt="">
+                                </div>
+                                <div class="inventory-card-total-number-of-product">
+                                    <p>Inspected</p>
+                                    <p>10</p>
+                                </div>
+
+                                <div class="inventory-card-number-sold">
+                                    <p>Sold</p>
+                                    <p>50/100</p>
+                                </div>
+                                <div class="inventory-card-price">
+                                    <p>Price/unit</p>
+                                    <p>
+                                        <ion-icon name="cash-outline"></ion-icon> 1,094
+                                    </p>
+                                </div>
+
+                                <div class="inventory-card-price">
+                                    <p>Total profit</p>
+                                    <p>
+                                        <ion-icon name="cash-outline"></ion-icon> 21,094
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="inventory-card">
+                                <div class="inventory-card-image">
+                                    <img src="images/shoe2.png" alt="">
+                                </div>
+                                <div class="inventory-card-total-number-of-product">
+                                    <p>Inspected</p>
+                                    <p>10</p>
+                                </div>
+
+                                <div class="inventory-card-number-sold">
+                                    <p>Sold</p>
+                                    <p>50/100</p>
+                                </div>
+                                <div class="inventory-card-price">
+                                    <p>Price/unit</p>
+                                    <p>
+                                        <ion-icon name="cash-outline"></ion-icon> 1,094
+                                    </p>
+                                </div>
+
+                                <div class="inventory-card-price">
+                                    <p>Total profit</p>
+                                    <p>
+                                        <ion-icon name="cash-outline"></ion-icon> 21,094
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <script src="assets/js/main.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script>
+            const labels = [
+                'January',
+                'February',
+                'March',
+                'April',
+                'May',
+                'June',
+                'July',
+                'August',
+                'September',
+                'October',
+                'November',
+                'December'
+            ];
+
+
+            const data = {
+                labels: labels,
+                datasets: [{
+                    label: 'PROFIT MADE IN NAIRA',
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    backgroundColor: [
+                        '#f96b03',
+                        '#0688d3',
+                        '#f96b03',
+                        '#0688d3',
+                        '#f96b03',
+                        '#0688d3'
+                    ],
+                    borderColor: [
+                        '#f96b03',
+                        '#0688d3',
+                        '#f96b03',
+                        '#0688d3',
+                        '#f96b03',
+                        '#0688d3'
+                    ],
+                    borderWidth: 1
+                }]
+            };
+
+            const config = {
+                type: 'bar',
+                data: data,
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                },
+            };
+        </script>
+        <script>
+            const myChart = new Chart(
+                document.getElementById('myChart'),
+                config
+            );
+        </script>
+        <script>
+            $(".bi-x").click(function () {
+                $(".bot-container-2").fadeOut("fast");
+            });
+
+            $(".bi-bell-fill").click(function () {
+                $(".notification").fadeToggle('fast');
+            });
+
+
+
+            tippy('.bot-head', {
+                content: 'My tooltip!',
+                theme: 'tomato',
+                content: '<p class="dormbotmessage">Hi, I"m your Dorm assistant, Always, here to help.</strong>',
+                allowHTML: true,
+            });
+        </script>
+
+</body>
+
+</html>

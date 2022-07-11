@@ -2,177 +2,273 @@
 <html lang="en">
 
 <head>
-    <meta name="theme-color" content="#1597E2">
-    <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#1597E2">
+   
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noteweb</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>Dorm - Note Book</title>
+    <link rel="stylesheet" href="menu/css/styles.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css-2/bot.css">
+    <link rel="stylesheet" href="css-2/style.css">
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="update.css">
+    <link rel="stylesheet" href="style.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="css/mynote.css">
-    <link rel="stylesheet" href="css/noteweb.css">
-    <link rel="stylesheet" href="css/studytools.css">
-    <link rel="stylesheet" href="css/menucss.css">
-    <link rel="stylesheet" href="css/notebook.css">
+    <style>
+        .bi-link {
+            color: #333;
+        }
+
+
+        .note-text-link {
+            margin: 0px 1rem;
+            text-shadow: none;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="study-tools-tool-holder">
-        <div class="study-tool-tool">
-            <ul class="tool-icon-holder">
-                <ul class="tool-icon-holder">
-                    <li class="active-tool-icon tool-icon"><a href="notebook.html"><img src="images/nootbook.png" alt=""></a></li>
-                    <li class="tool-icon"><a href="noteweb.html"><img src="images/upload.png" alt=""></a></li>
-                    <li class="tool-icon"><a href=""><img src="images/calculator.png" alt=""></a></li>
-                    <li class="tool-icon"><a href="library.html"><img src="images/book.png" alt=""></a></li>
-                    <li class="tool-icon"><a href="cbt.html"><img src="images/monitor.png" alt=""></a></li>
-                </ul>
+    <div class="top-div">
+        <div class="logo">
+            <img src="images/dorm_no_bg.png" alt="">
         </div>
-        <div class="study-tool-tools-toggle">
-            <span class="grid-icon">
-                <ion-icon name="grid"></ion-icon>
-            </span>
-            <span class="close-icon">
-                <ion-icon name="close"></ion-icon>
-            </span>
+
+        <div class="searchbar-for-menu">
+            <i class="bi bi-search"></i> <input type="search" name="" id="" disabled>
         </div>
-    </div>
 
-
-    <div class="top-mobile-menu">
-        <div class="mobile-logo"><img src="images/dorm_no_bg.png" alt=""></div>
-
-        <span class="noti-mobile">
-            <ion-icon name="notifications"></ion-icon>
-        </span>
-    </div>
-    <div class="page-container">
-        <div class="menu">
-            <div class="logo-img">
-                <img class="logo-pc" src="images/dorm_logo_white.png" alt="">
-
-                <span class="menu-toggler">
-                    <ion-icon name="menu"></ion-icon>
-                </span>
+        <div class="bot-head">
+            <div class="ears-head">
+                <div class="left-ear-head"></div>
+                <div class="right-ear-head"></div>
             </div>
-            <ul class="menu-list">
-                <a href="studytools.html">
-                    <li class="active-nav  menu-item">
-                        <div class="icon-img"><img src="images/bag-img.png" alt=""></div>
-                        <p class="menu-list-title-sub-side">Study Tools</p>
-                    </li>
-                </a>
-                <a href="coursereview.html">
-                    <li class="menu-item">
-                        <div class="icon-img"><img src="images/coursereview.png" alt=""></div>
-                        <p class="menu-list-title-sub-side">Course Review</p>
-                    </li>
-                </a>
-                <a href="texter.html">
-                    <li class="menu-item">
-                        <div class="icon-img"><img src="images/text.png" alt=""></div>
-                        <p class="menu-list-title-sub-side">Texter</p>
-                    </li>
-                </a>
-                <a href="accomodia.html">
-                    <li class="menu-item">
-                        <div class="icon-img"><img src="images/house.png" alt=""></div>
-                        <p class="menu-list-title-sub-side">Accomodia</p>
-                    </li>
-                </a>
-                <a href="">
-                    <li class="menu-item">
-                        <div class="icon-img"><img src="images/market.png" alt=""></div>
-                        <p class="menu-list-title-sub-side">Market</p>
-                    </li>
-                </a>
-                <a href="">
-                    <li class="menu-item">
-                        <div class="icon-img"><img src="images/setting.png" alt=""></div>
-                        <p class="menu-list-title-sub-side">Setting</p>
-                    </li>
-                </a>
+            <div class="eyes-head">
+                <div class="right-eye-head"></div>
+                <div class="left-eye-head"></div>
+            </div>
+
+            <div class="mouth-head"></div>
+        </div>
+        <i class="bi bi-bell-fill"></i>
+    </div>
+    <div class="full-width">
+        <div class="notification">
+            <ul>
+                <li>Your <span class="pronounds">Accomodia</span> request has returned results <span
+                        class="number">34</span></li>
+                <li>Your <span class="pronounds">Market</span> request has returned results <span
+                        class="number">3</span></li>
             </ul>
-            <div class="user">
-                <div class="user-img">
-                    <img src="images/avtr2.png" alt="">
-                </div>
-                <div class="user-info">
-                    <p class="name">Great Etubi</p>
-                    <p class="username">@Greatetubi</p>
-                </div>
-                <div class="icon-holder">
-                    <i class="bi bi-three-dots"></i>
-                </div>
-            </div>
-        </div>
-        <div class="page-content">
-            <div class="notebookpage">
-                <div class="notebook">
-                    <input type="text" placeholder="Title of note">
-
-                    <textarea name="" placeholder="Start typing your note...." id="" cols="30" rows="10"></textarea>
-
-                </div>
-                <div class="save">
-                    <button>SAVE</button>
-                </div>
-               
-            </div>
-        </div>
-        <div class="page-side">
-            <div class="blue-area">
-                <p class="heading-text">Study tools</p>
-
-                <div class="bottom-side-list">
-                    <ul class="menu-list more-padding text-smaller">
-                        <a href="notebook.html">
-                            <li class="active-tool-icon  menu-item">
-                                <div class="icon-img-small-icon"><img src="images/nootbook.png" alt=""></div>
-                                <p class="menu-list-title-sub-side-1">Note Book</p>
-                            </li>
-                        </a>
-
-                        <a href="noteweb.html">
-                            <li class="menu-item">
-                                <div class="icon-img-small-icon"><img src="images/upload.png" alt=""></div>
-                                <p class="menu-list-title-sub-side-1">Note Web</p>
-                            </li>
-                        </a>
-                        <a href="">
-                            <li class="menu-item">
-                                <div class="icon-img-small-icon"><img src="images/calculator.png" alt=""></div>
-                                <p class="menu-list-title-sub-side-1">CGPA Calculator</p>
-                            </li>
-                        </a>
-                        <a href="library.html">
-                            <li class="menu-item">
-                                <div class="icon-img-small-icon"><img src="images/book.png" alt=""></div>
-                                <p class="menu-list-title-sub-side-1">Library</p>
-                            </li>
-                        </a>
-                        <a href="cbt-test.html">
-                            <li class="menu-item">
-                                <div class="icon-img-small-icon"><img src="images/monitor.png" alt=""></div>
-                                <p class="menu-list-title-sub-side-1">CBT Test</p>
-                            </li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="notification-holder-3">
-                    <ion-icon name="notifications"></ion-icon>
-                </div>
-            </div>
         </div>
     </div>
 
-   
-    <script src="js/script.js"></script>
+    <div class="nav-bar">
+        <ul class="nav-list">
+            <li class="nav-item" title="Study Tools">
+                <a href="studytools.html" class="nav-link  active-nav-link">
+                    <i class="bi bi-tools"></i>
+                    <p class="icon-title">Study tools</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Course Review">
+                <a href="coursereview.html" class="nav-link">
+                    <i class="bi bi-book-fill"></i>
+                    <p class="icon-title">Course review</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Texter">
+                <a href="texter.html" class="nav-link">
+                    <i class="bi bi-chat-left-text-fill"></i>
+                    <p class="icon-title">Texter</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Accomodia">
+                <a href="accomodia.html" class="nav-link">
+                    <i class="bi bi-house"></i>
+                    <p class="icon-title">Accomodia</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Martket">
+                <a href="market.html" class="nav-link">
+                    <i class="bi bi-shop"></i>
+                    <p class="icon-title">Market</p>
+                </a>
+            </li>
+            <li class="nav-item" title="Setting">
+                <a href="setting.html" class="nav-link">
+                    <i class="bi bi-gear-fill"></i>
+                    <p class="icon-title">Setting</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="page-content">
+        <div class="holder">
+
+            <div class="tools top-index">
+                <i class="bi bi-arrow-up hider"></i>
+                <i class="bi bi-x toggletools"></i>
+            </div>
+            <div class="fade-tools">
+                <div class="tools active-tool">
+                    <a href="notebook.html"> <i class="bi bi-journal"></i></a>
+                </div>
+                <div class="tools">
+                    <a href="noteweb.html"><i class="bi bi-journal-bookmark"></i></a>
+                </div>
+                <div class="tools">
+                    <a href=""><i class="bi bi-calculator"></i></a>
+                </div>
+                <div class="tools">
+                    <a href="library.html"><i class="fa fa-book" aria-hidden="true"></i></a>
+                </div>
+                <div class="tools">
+                    <a href=""><i class="bi bi-pc-display"></i></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="hide">
+            <div class="login-form text-div">
+                <form action="#">
+                    <div class="input-wrapper">
+                        <i class="bi bi-pen-fill"></i> <input type="text" id="password" placeholder="Note Title">
+                    </div>
+
+                    <div class="input-wrapper-note-area">
+                        <textarea name="" class="note" id="" rows="4" placeholder="type in your Note"> </textarea>
+                    </div>
+                    <div class="login-btn">
+                        <button class="login-button">
+                            SEND
+                        </button>
+                    </div>
+                    <div class="login-btn back-to-note-choice">
+
+                        BACK
+
+                    </div>
+
+
+                </form>
+
+            </div>
+        </div>
+
+
+        <div class="note-type">
+            <div class="create-note">
+                <p>
+                    <i class="bi bi-journals"></i> <span class="create-note-txt">CREATE NEW NOTE</span>
+                </p>
+            </div>
+
+            <div class="create-note">
+                <p>
+                    OR
+                </p>
+            </div>
+
+
+            <div class="upload-note">
+                <p>
+                    <h3>Upload a note from device</h3>
+
+                    <input type="file" name="" id="">
+
+                    <button class="upload-button">
+                        Upload
+                    </button>
+                </p>
+            </div>
+        </div>
+
+        <a class="note-text-link" href="mynotes.html"><i class="bi bi-link"></i> my notes</a>
+    </div>
+    <script>
+        $(".create-note").click(function () {
+            $(".note-type").fadeOut('fast');
+            $(".hide").fadeIn('fast');
+        });
+
+        $(".back-to-note-choice").click(function () {
+            $(".note-type").fadeIn('fast');
+            $(".hide").fadeOut('fast');
+        });
+
+        $(".bi-bell-fill").click(function () {
+            $(".notification").fadeToggle('fast');
+        });
+    </script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        tippy('.bot-head', {
+            theme: 'tomato',
+            content: '<p class="dormbotmessage">Hi, I"m your Dorm assistant, Always, here to help.</p>',
+            allowHTML: true,
+        });
+
+        tippy('.bi-journal', {
+            theme: 'tomato',
+            content: '<p class="">Note Book</p>',
+            allowHTML: true,
+        });
+
+        tippy('.bi-journal-bookmark', {
+            theme: 'tomato',
+            content: '<p class="">Note Web.</p>',
+            allowHTML: true,
+        });
+        tippy('.bi-calculator', {
+            theme: 'tomato',
+            content: '<p class="">CGPA calculator.</p>',
+            allowHTML: true,
+        });
+        tippy('.fa-book', {
+            theme: 'tomato',
+            content: '<p class="">Library.</p>',
+            allowHTML: true,
+        });
+        tippy('.bi-pc-display', {
+            theme: 'tomato',
+            content: '<p class="">CBT Test.</p>',
+            allowHTML: true,
+        });
+
+        tippy('.fa-users', {
+            theme: 'tomato',
+            content: '<p class="dormbotmessage">Resource Team.</p>',
+            allowHTML: true,
+        });
+
+
+        $(".top-index").click(function () {
+            $(".hider").toggle();
+            $(".bi-x").toggle();
+            $(".fade-tools").fadeToggle();
+        });
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="theme-color" content="#1597E2">
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+    
+    <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css-2/comment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Fredoka:wght@400;500&family=Hubballi&family=Hurricane&family=Indie+Flower&family=M+PLUS+Rounded+1c:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+		<div class="comment_block">
+
+		<!-- 
+			Comments are structured in the following way:
+
+			{ul} defines a new comment (singular)
+			{li} defines a new reply to the comment {ul}
+
+			example:
+
+			<ul>
+				<comment>
+					
+				</comment
+
+					<li>
+						<reply>
+
+						</reply>
+					</li>
+
+					<li>
+						<reply>
+
+						</reply>
+					</li>
+
+					<li>
+						<reply>
+
+						</reply>
+					</li>
+			</ul>
+
+		 -->
+
+		 <!-- used by #{user} to create a new comment -->
+		 <div class="create_new_comment">
+
+			<!-- current #{user} avatar -->
+		 	<div class="user_avatar">
+		 		<img src="images/avtr4.png">
+		 	</div><!-- the input field --><div class="input_comment">
+		 		<input type="text" placeholder="Type in your comment..">
+                 <button type="button" class="btn btn-primary"><i class="bi bi-send-fill"></i> Send</button>
+		 	</div>
+
+		 </div>
+
+
+		 <!-- new comment -->
+		 <div class="new_comment">
+
+			<!-- build comment -->
+		 	<ul class="user_comment">
+
+		 		<!-- current #{user} avatar -->
+			 	<div class="user_avatar">
+			 		<img src="images/avtr2.png">
+			 	</div><!-- the comment body --><div class="comment_body">
+			 		<p>Gastropub cardigan jean shorts, kogi Godard PBR&B lo-fi locavore. Organic chillwave vinyl Neutra. Bushwick Helvetica cred freegan, crucifix Godard craft beer deep v mixtape cornhole Truffaut master cleanse pour-over Odd Future beard. Portland polaroid iPhone.</p>
+			 	</div>
+
+			 	<!-- comments toolbar -->
+			 	<div class="comment_toolbar">
+
+			 		<!-- inc. date and time -->
+			 		<div class="comment_details">
+			 			<ul>
+			 				<li><i class="fa fa-calendar"></i> 04/01/2015</li>
+			 				<li><i class="fa fa-pencil"></i> <span class="user">John Smith</span></li>
+			 			</ul>
+			 		</div><!-- inc. share/reply and love --><div class="comment_tools">
+			 			<ul>
+			 				<li><i class="fa fa-share-alt"></i></li>
+			 				<li><i class="fa fa-reply"></i></li>
+			 				<li><i class="fa fa-heart love"></i></li>
+			 			</ul>
+			 		</div>
+
+			 	</div>
+
+			 	<!-- start user replies -->
+		 	<li>
+		 		
+		 		<!-- current #{user} avatar -->
+			 	<div class="user_avatar">
+			 		<img src="images/avtr4.png">
+			 	</div><!-- the comment body --><div class="comment_body">
+			 		<p><div class="replied_to"><p><span class="user">John Smith:</span>Gastropub cardigan jean shorts, kogi Godard PBR&B lo-fi locavore. Organic chillwave vinyl Neutra. Bushwick Helvetica cred freegan, crucifix Godard craft beer deep v mixtape cornhole Truffaut master cleanse pour-over Odd Future beard. Portland polaroid iPhone.</p></div>That's exactly what I was thinking!</p>
+			 	</div>
+
+			 	<!-- comments toolbar -->
+			 	<div class="comment_toolbar">
+
+			 		<!-- inc. date and time -->
+			 		<div class="comment_details">
+			 			<ul>
+			 				
+			 				<li><i class="fa fa-calendar"></i> 04/01/2015</li>
+			 				<li><i class="fa fa-pencil"></i> <span class="user">Andrew Johnson</span></li>
+			 			</ul>
+			 		</div><!-- inc. share/reply and love --><div class="comment_tools">
+			 			<ul>
+			 				<li><i class="fa fa-share-alt"></i></li>
+			 				<li><i class="fa fa-reply"></i></li>
+			 				<li><i class="fa fa-heart love"><span class="love_amt"> 4</span></i></li>
+			 			</ul>
+			 		</div>
+
+			 	</div>
+
+
+		 	</li>
+
+		 		<!-- start user replies -->
+		 	<li>
+		 		
+		 		<!-- current #{user} avatar -->
+			 	<div class="user_avatar">
+			 		<img src="images/avtr2.png">
+			 	</div><!-- the comment body --><div class="comment_body">
+			 		<p><div class="replied_to"><p><span class="user">John Smith:</span>Gastropub cardigan jean shorts, kogi Godard PBR&B lo-fi locavore. Organic chillwave vinyl Neutra. Bushwick Helvetica cred freegan, crucifix Godard craft beer deep v mixtape cornhole Truffaut master cleanse pour-over Odd Future beard. Portland polaroid iPhone.</p></div>Finally someone who actually gets it!<div class="replied_to"><p><span class="user">Andrew Johnson:</span>That's exactly what I was thinking!</p></div>That's awesome!</p>
+			 	</div>
+
+			 	<!-- comments toolbar -->
+			 	<div class="comment_toolbar">
+
+			 		<!-- inc. date and time -->
+			 		<div class="comment_details">
+			 			<ul>
+			 				<li><i class="fa fa-calendar"></i> 04/01/2015</li>
+			 				<li><i class="fa fa-pencil"></i> <span class="user">Simon Gregor</span></li>
+			 			</ul>
+			 		</div><!-- inc. share/reply and love --><div class="comment_tools">
+			 			<ul>
+			 				<li><i class="fa fa-share-alt"></i></li>
+			 				<li><i class="fa fa-reply"></i></li>
+			 				<li><i class="fa fa-heart love"><span class="love_amt"> 4039</span></i></li>
+			 			</ul>
+			 		</div>
+
+			 	</div>
+
+
+		 	</li>
+
+		 	</ul>
+
+		 </div>
+
+<!-- new comment -->
+		 <div class="new_comment">
+
+			<!-- build comment -->
+		 	<ul class="user_comment">
+
+		 		<!-- current #{user} avatar -->
+			 	<div class="user_avatar">
+			 		<img src="images/avtr.png">
+			 	</div><!-- the comment body --><div class="comment_body">
+			 		<p>Gastropub cardigan jean shorts, kogi Godard PBR&B lo-fi locavore. Organic chillwave vinyl Neutra. Bushwick Helvetica cred freegan, crucifix Godard craft beer deep v mixtape cornhole Truffaut master cleanse pour-over Odd Future beard. Portland polaroid iPhone.</p>
+			 	</div>
+
+			 	<!-- comments toolbar -->
+			 	<div class="comment_toolbar">
+
+			 		<!-- inc. date and time -->
+			 		<div class="comment_details">
+			 			<ul>
+			 				<li><i class="fa fa-calendar"></i> 04/01/2015</li>
+			 				<li><i class="fa fa-pencil"></i> <span class="user">Sarah Walkman</span></li>
+			 			</ul>
+			 		</div><!-- inc. share/reply and love --><div class="comment_tools">
+			 			<ul>
+			 				<li><i class="fa fa-share-alt"></i></li>
+			 				<li><i class="fa fa-reply"></i></li>
+			 				<li><i class="fa fa-heart love"></i></li>
+			 			</ul>
+			 		</div>
+
+			 	</div>
+
+			 	<!-- start user replies -->
+		 	<li>
+		 		
+		 		<!-- current #{user} avatar -->
+			 	<div class="user_avatar">
+			 		<img src="images/avtr3.png">
+			 	</div><!-- the comment body --><div class="comment_body">
+			 		<p><div class="replied_to"><p><span class="user">Sarah Walkman:</span>Pork belly migas flexitarian messenger bag Brooklyn gluten-free. Tilde kitsch skateboard Helvetica, lumbersexual four loko direct trade pour-over. Cronut deep v keffiyeh cornhole food truck</p></div>I'm tired, does anybody know a good place to buy extra strength coffee?</p>
+			 	</div>
+
+			 	<!-- comments toolbar -->
+			 	<div class="comment_toolbar">
+
+			 		<!-- inc. date and time -->
+			 		<div class="comment_details">
+			 			<ul>
+			 				<li><i class="fa fa-clock-o"></i> 19:23</li>
+			 				<li><i class="fa fa-calendar"></i> 14/01/2015</li>
+			 				<li><i class="fa fa-pencil"></i> <span class="user">Blake Anderson</span></li>
+			 			</ul>
+			 		</div><!-- inc. share/reply and love --><div class="comment_tools">
+			 			<ul>
+			 				<li><i class="fa fa-share-alt"></i></li>
+			 				<li><i class="fa fa-reply"></i></li>
+			 				<li><i class="fa fa-heart love"><span class="love_amt"> 12</span></i></li>
+			 			</ul>
+			 		</div>
+
+			 	</div>
+
+
+		 	</li>
+
+		 	</ul>
+
+		 </div>
+
+		</div>
+</body>
+</html>

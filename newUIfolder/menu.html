@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#1597E2">
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="update.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-div">
+            <div class="logo">
+                <img src="images/dorm_no_bg.png" alt="">
+            </div>
+
+            <div class="searchbar-for-menu">
+                <i class="bi bi-search"></i> <input type="search" name="" id="">
+            </div>
+
+            <div class="bot-head">
+                <div class="ears-head">
+                    <div class="left-ear-head"></div> 
+                    <div class="right-ear-head"></div>
+                </div>
+                <div class="eyes-head">
+                    <div class="right-eye-head"></div>
+                    <div class="left-eye-head"></div>
+                </div>
+      
+                <div class="mouth-head"></div>            
+        </div>
+            <i class="bi bi-bell-fill"></i>
+    </div>
+    <div class="full-width">
+        <div class="notification">
+            <ul>
+                <li>Your  <span class="pronounds">Accomodia</span> request has returned results <span class="number">34</span></li>
+                <li>Your  <span class="pronounds">Market</span> request has returned results <span class="number">3</span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="nav-bar">
+        <ul class="nav-list">
+            <li class="nav-item" title="Study Tools">
+                <a href="studytools.html" class="nav-link">
+                    <i class="bi bi-tools"></i>    
+                    <p class="icon-title">Study tools</p>
+                </a>  
+             </li>
+            <li class="nav-item" title="Course Review">
+                <a href="coursereview.html" class="nav-link">
+                    <i class="bi bi-book-fill"></i>    
+                    <p class="icon-title">Course review</p>
+                </a>      
+            </li>
+            <li class="nav-item" title="Title">
+                <a href="texter.html" class="nav-link">
+                    <i class="bi bi-chat-left-text-fill"></i>   
+                    <p class="icon-title">Texter</p>
+                </a>               
+            </li>
+            <li class="nav-item" title="Accomodia">
+                <a href="accomodia.html" class="nav-link">
+                    <i class="bi bi-house"></i>   
+                    <p class="icon-title">Accomodia</p>
+                </a>              
+            </li>
+            <li class="nav-item" title="Martket">
+                <a href="market.html" class="nav-link">
+                    <i class="bi bi-shop"></i>   
+                    <p class="icon-title">Market</p>
+                </a>              
+            </li>
+            <li class="nav-item" title="Setting">
+                <a href="setting.html" class="nav-link">
+                    <i class="bi bi-gear-fill"></i>   
+                    <p class="icon-title">Setting</p>
+                </a>              
+            </li>
+        </ul>
+    </div>
+
+    <div class="page-content">
+        <div class="tool-holder">
+            <div class="tools top-index">
+                <i class="bi bi-tools toggletools"></i>
+            </div>
+            <div class="fade-tools">
+                <div class="tools active-tool">
+                    <i class="bi bi-journal"></i>
+                </div>
+                <div class="tools">
+                    <i class="bi bi-journal-bookmark"></i>
+                </div>
+                <div class="tools">
+                    <i class="bi bi-calculator"></i>
+                </div>
+                <div class="tools">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                </div>
+                <div class="tools">
+                    <i class="bi bi-pc-display"></i>
+                </div>
+                <div class="tools">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                </div>         
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+  tippy('.bi-bell-fill', {
+    theme: 'tomato',
+    content: '<p class="usermessage">Dorm User Notification</strong>',
+  allowHTML: true,
+  });
+
+  tippy('.bot-head', {
+    theme: 'tomato',
+    content: '<p class="dormbotmessage">Hi, I"m your Dorm assistant, Always, here to help.</strong>',
+  allowHTML: true,
+  });
+
+  tippy('.bi-journal', {
+    theme: 'tomato',
+    content: '<p class="">Note Book</strong>',
+  allowHTML: true,
+  });
+
+  tippy('.bi-journal-bookmark', {
+    theme: 'tomato',
+    content: '<p class="">Note Web.</strong>',
+  allowHTML: true,
+  });
+  tippy('.bi-calculator', {
+    theme: 'tomato',
+    content: '<p class="">CGPA calculator.</strong>',
+  allowHTML: true,
+  });
+  tippy('.fa-book', {
+    theme: 'tomato',
+    content: '<p class="">Library.</strong>',
+  allowHTML: true,
+  });
+  tippy('.bi-pc-display', {
+    theme: 'tomato',
+    content: '<p class="">CBT Test.</strong>',
+  allowHTML: true,
+  });
+  
+  tippy('.fa-users', {
+    theme: 'tomato',
+    content: '<p class="dormbotmessage">Resource Team.</strong>',
+  allowHTML: true,
+  });
+
+  $(".toggletools").click(function(){
+  $(".fade-tools").fadeToggle();
+});
+  
+</script>
+</html>

@@ -16,6 +16,17 @@
 }
 
 
+.search-2 button{
+    height: auto;
+    width: auto;
+    border: none;
+    background: var(--dormblue);
+    color: var(--white);
+    padding: .5rem 1rem;
+    margin-left: auto;
+}
+
+
 .remove-card{
     margin-right: auto;
     margin-bottom: auto;

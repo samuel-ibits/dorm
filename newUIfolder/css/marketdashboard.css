@@ -7,6 +7,54 @@
     --dormorange: #f96b03;
 }
 
+.fload-area-check{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: .5rem 0px;
+}
+.fload-area-check label{
+    font-size: .9rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.sub{
+    font-size: .7rem;
+}
+
+.security-level-holder{   
+    width: 100%;
+    padding: .3rem;
+    border: 2px solid var(--dormblue);
+    border-radius: 5px;
+    color: #555;
+}
+
+.security-level-holder select{
+    width: 100%;
+    outline: none;
+    border: 2px solid var(--dormblue);
+    color: #555;
+    font-weight: 700;
+}
+
+.preview-holder{
+    width: 5rem;
+    height: 100%;
+}
+
+.preview-holder ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.preview-holder ul li div img{
+    width: 3rem;
+    height: 3rem;
+}
+
 .product-upload-btn-holder{
     width:auto;
     height: auto;
@@ -64,7 +112,7 @@
 }
 
 .add-image{
-    width: 8rem;
+    width: 10rem;
     height: 7rem;
     border-radius: 5px;
     overflow: hidden;
@@ -86,7 +134,6 @@ z-index: 99;
     border-radius: 10px;
     align-items: center;
     padding: .5rem;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .product-uploader{
@@ -98,13 +145,15 @@ z-index: 99;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    border-radius: 10px;
 
 }
 
 .product-uploader-holder{
-    width: 100%;
+    width: 60vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
+    overflow-y: scroll;
     z-index: 999;
     justify-content: center;
     align-items: center;
@@ -457,7 +506,88 @@ gap: .5rem;
 }
 
 
+.remove-product{
+    margin-top: 1rem;
+    position: absolute;
+    font-size: 1rem;
+}
+
+.remove-product button{
+    border: none;
+    background: var(--dormblue);
+    color: var(--white);
+    border-radius: 3px;
+    padding: .3rem .5rem;
+    cursor: pointer;
+}
+
+
 @media only screen and (max-width: 600px) {  
+
+    .product-uploader{
+        width: 100%;
+        min-height: 100vh;
+        overflow-y: scroll;
+        padding: 1rem 10px;
+        background: var(--white);
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        border-radius: 0px;
+    
+    }
+    
+    .product-uploader-holder{
+        width: 100vw;
+        left: 0;
+        height: auto;
+        position: fixed;
+        overflow-y: scroll;
+        z-index: 9999;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .remove-product{
+        margin-top: 1rem;
+        position: absolute;
+        font-size: 1rem;
+    }
+
+    .remove-product button{
+        border: none;
+        background: var(--dormblue);
+        color: var(--white);
+        border-radius: 3px;
+        padding: .3rem .5rem;
+    }
+    
+
+    
+.preview-holder{
+    width: 100%;
+    height: 5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-holder ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+}
+
+.preview-holder ul li div img{
+    width: 3rem;
+    height: 3rem;
+}
+
 h3{
     font-size: .9rem;
     text-align: center;
@@ -639,18 +769,7 @@ h3{
     cursor: pointer;
 }
 
-.product-uploader-holder{
-    width: 100%;
-    left: 0;
-    height: 100vh;
-    position: absolute;
-    z-index: 999;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    z-index: 99;
-}
+
 
 
 .product-upload-card{
@@ -804,5 +923,11 @@ h3{
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         margin-left: 1rem;
     }
+
+
+
+    
+
+
 
     }

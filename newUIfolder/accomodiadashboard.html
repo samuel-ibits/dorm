@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/library.css">
     <link rel="stylesheet" href="css/studytools.css">
     <link rel="stylesheet" href="css/accomodiadashboard.css">
+    <link rel="stylesheet" href="css/marketdashboard.css">
 
     <style>
         .bi-cash-stack {
@@ -42,12 +43,16 @@
 </head>
 
 <body>
+    <button class="add-product-btn">
+        <ion-icon name="add"></ion-icon>
+    </button>
+
 
     <div class="request-comfirmation-div-holder">
         <div class="request-confirmation-div" id="accept">
             <form action="">
                 <input type="text" name="" id="" placeholder="Time">
-                <input type="date" name="" id="" >
+                <input type="date" name="" id="">
                 <input type="text" name="" id="" placeholder="Location">
                 <div class="confirmation-functions">
                     <button class="blue-bg" id="confirm-1">Confirm</button>
@@ -58,7 +63,8 @@
 
         <div class="request-confirmation-div" id="decline">
             <form action="">
-              <p class="confirmation-message">Are you sure you want to decline this meeting, user will get notified you declined their meeting request.</p>
+                <p class="confirmation-message">Are you sure you want to decline this meeting, user will get notified
+                    you declined their meeting request.</p>
                 <div class="confirmation-functions">
                     <button class="blue-bg" id="confirm-1">Confirm</button>
                     <button class="orange-bg" id="decline-1">Back</button>
@@ -141,54 +147,141 @@
             </div>
         </div>
         <div class="page-content">
+            <div class="product-uploader-holder">
+                <div class="product-uploader">
+                    <span class="remove-product">
+                        <button>Back</button>
+                    </span>
+                    <div class="product-upload-card">
+                        <div class="add-image">
+                            <p>
+                                <ion-icon name="add"></ion-icon>
+                            </p>
+                            <input type="file" name="" id="" multiple>
+                        </div>
+
+                        <div class="preview-holder">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <img src="images/house 2.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/house 3.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/house 4.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/house 2.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/house 2.jpg" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="prodcut-info-box-1">
+                            <input type="text" placeholder="Location of house">
+                            <input type="text" placeholder="Price of house">
+                            <div class="security-level-holder">
+                                <p class="sub">Security level</p>
+                                <select name="" id="">
+                                    <option value="">High Level Risk</option>
+                                    <option value="">Medium Level Risk</option>
+                                    <option value="">Safe</option>
+                                </select>
+
+                                <div class="fload-area-check"><input type="checkbox" name="" id="flood-area-checker">
+                                    <label for="flood-area-checker">Flood Area</label></div>
+                            </div>
+
+                            <div class="security-level-holder">
+                                <p class="sub">Walking distance from school</p>
+                                <select name="" id="">
+                                    <option value="">(Below 5 minutes) walk</option>
+                                    <option value="">(5 minutes  - 10 minutes) walk</option>
+                                    <option value="">(10 minutes - 15 minutes) walk</option>
+                                    <option value="">(15 minutes - 20 minutes) walk</option>
+                                    <option value="">(20 minutes - 25 minutes) walk</option>
+                                    <option value="">(25 minutes - 30 minutes) walk</option>
+                                    <option value="">(35 minutes - 40 minutes) walk</option>
+                                    <option value="">(45 minutes - 50 minutes) walk</option>
+                                    <option value="">(55 minutes - 60 minutes) walk</option>
+                                    <option value="">(60 minutes - Above) walk </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="product-upload-btn-holder">
+                            <button>
+                                <ion-icon name="cloud-upload"></ion-icon> Upload product
+                            </button>
+                            <button>
+                                <ion-icon name="cloud-upload"></ion-icon> Upload more products
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dark-bg"></div>
+
             <div class="accomodia-dashboard">
                 <div class="accomodia-maindashboard">
                     <div class="accomodia-maindashboard-card">
-                        <i class='bx bxs-building-house'></i>   
-                       <div>
-                        <h3 class="main-text">N400,000</h3>
-                        <p class="sub-text">Total Value of assets yearly</p>
-                       </div>
+                        <i class='bx bxs-building-house'></i>
+                        <div>
+                            <h3 class="main-text">N400,000</h3>
+                            <p class="sub-text">Total Value of assets yearly</p>
+                        </div>
                     </div>
 
                     <div class="accomodia-maindashboard-card">
-                        <i class='bx bxs-building-house'></i>   
-                       <div>
-                        <h3 class="main-text">7 house(s)</h3>
-                        <p class="sub-text">Total number of houses</p>
-                       </div>
+                        <i class='bx bxs-building-house'></i>
+                        <div>
+                            <h3 class="main-text">7 house(s)</h3>
+                            <p class="sub-text">Total number of houses</p>
+                        </div>
                     </div>
 
                     <div class="accomodia-maindashboard-card orange-bg">
-                        <ion-icon name="people"></ion-icon>   
-                       <div>
-                        <h3 class="main-text">0</h3>
-                        <p class="sub-text">Tentant(s) in debt</p>
-                       </div>
+                        <ion-icon name="people"></ion-icon>
+                        <div>
+                            <h3 class="main-text">0</h3>
+                            <p class="sub-text">Tentant(s) in debt</p>
+                        </div>
                     </div>
 
                     <div class="accomodia-maindashboard-card orange-bg">
-                        <i class='bx bx-money-withdraw'></i>  
-                       <div>
-                        <h3 class="main-text">N350,000</h3>
-                        <p class="sub-text">Total amount recieved this year</p>
-                       </div>
+                        <i class='bx bx-money-withdraw'></i>
+                        <div>
+                            <h3 class="main-text">N350,000</h3>
+                            <p class="sub-text">Total amount recieved this year</p>
+                        </div>
                     </div>
 
                     <div class="accomodia-maindashboard-card orange-bg">
-                        <i class='bx bxs-hourglass'></i>  
-                       <div>
-                        <h3 class="main-text">3</h3>
-                        <p class="sub-text">pending complains</p>
-                       </div>
+                        <i class='bx bxs-hourglass'></i>
+                        <div>
+                            <h3 class="main-text">3</h3>
+                            <p class="sub-text">pending complains</p>
+                        </div>
                     </div>
 
                     <div class="accomodia-maindashboard-card">
-                        <i class='bx bxs-building-house'></i>   
-                       <div>
-                        <h3 class="main-text">1</h3>
-                        <p class="sub-text">Total number of free houses</p>
-                       </div>
+                        <i class='bx bxs-building-house'></i>
+                        <div>
+                            <h3 class="main-text">1</h3>
+                            <p class="sub-text">Total number of free houses</p>
+                        </div>
                     </div>
 
                 </div>
@@ -197,19 +290,19 @@
                         <div class="accomodiadashboard-card-image">
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
                                 </div>
                                 <div class="swiper-button-next"></div>
                                 <div class="swiper-button-prev"></div>
-                              </div>
+                            </div>
                         </div>
                         <div class="accomodiadashboard-card-data">
                             <h3>ID: <span class="houseid">House 2</span></h3>
@@ -217,9 +310,16 @@
 
                             <div class="sub-info-of-house">
                                 <div>
-                                    <p class="status"><span class="label">Status</span>:<span class="house-statuse free">Free</span></p>
-                                    <p class="status"><span class="label">Tentant</span>:<span class="tenant-name"> Joe-etubi great</span></p>
-                                  <p class="status"><span class="label">Rent duration</span>:<span class="tenant-name"> 3rd June 2021 - 3rd August 2022 <span class="orange">(1 year)</span></span></p>   <p class="status"><span class="label">Rent expiration:</span><span class="tenant-name"> 3rd August 2020 <span class="orange">(21days left)</span></span></p>
+                                    <p class="status"><span class="label">Status</span>:<span
+                                            class="house-statuse free">Free</span></p>
+                                    <p class="status"><span class="label">Tentant</span>:<span class="tenant-name">
+                                            Joe-etubi great</span></p>
+                                    <p class="status"><span class="label">Rent duration</span>:<span
+                                            class="tenant-name"> 3rd June 2021 - 3rd August 2022 <span class="orange">(1
+                                                year)</span></span></p>
+                                    <p class="status"><span class="label">Rent expiration:</span><span
+                                            class="tenant-name"> 3rd August 2020 <span class="orange">(21days
+                                                left)</span></span></p>
                                 </div>
                                 <div>
                                     <p class="status">RENT:<span class="rent-price"></span> N80,000</p>
@@ -230,117 +330,120 @@
                                 <h4>Complaints:</h4>
 
                                 <p class="complain">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium enim eos ad ullam un
-                                    de dolore nam quaerat, vel omnis neque cupiditate dicta nostrum odio iste debitis. Obcaecati, quia eum?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium enim eos
+                                    ad ullam un
+                                    de dolore nam quaerat, vel omnis neque cupiditate dicta nostrum odio iste debitis.
+                                    Obcaecati, quia eum?
                                 </p>
 
                                 <div class="reply">
-                                    <input type="text" name="" id="" placeholder="Reply tenant complain..."> <button>Send</button>
+                                    <input type="text" name="" id="" placeholder="Reply tenant complain...">
+                                    <button>Send</button>
                                 </div>
                             </div>
 
-                           
+
                             <div class="request-inspect-div">
                                 <h3>Pending Request(s)</h3>
 
-                              <div class="request-card-holder">
-                                <div class="request-card">
-                                    <div class="circle-image">
-                                        <img src="images/avtr3.png" alt="">
+                                <div class="request-card-holder">
+                                    <div class="request-card">
+                                        <div class="circle-image">
+                                            <img src="images/avtr3.png" alt="">
+                                        </div>
+                                        <div class="reqest-info">
+                                            <p class="request-user-user-name">John doe</p>
+                                            <div class="request-function">
+                                                <button class="blue-bg" id="accept-1">Accept</button>
+                                                <button class="orange-bg" id="reject-1">Decline</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="reqest-info">
-                                        <p class="request-user-user-name">John doe</p>
-                                        <div class="request-function">
-                                            <button class="blue-bg" id="accept-1" >Accept</button>
-                                            <button class="orange-bg" id="reject-1">Decline</button>
+
+                                    <div class="request-card">
+                                        <div class="circle-image">
+                                            <img src="images/avtr3.png" alt="">
+                                        </div>
+                                        <div class="reqest-info">
+                                            <p class="request-user-user-name">John doe</p>
+                                            <div class="request-function">
+                                                <button class="blue-bg">Accept</button>
+                                                <button class="orange-bg">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="request-card">
+                                        <div class="circle-image">
+                                            <img src="images/avtr3.png" alt="">
+                                        </div>
+                                        <div class="reqest-info">
+                                            <p class="request-user-user-name">John doe</p>
+                                            <div class="request-function">
+                                                <button class="blue-bg">Accept</button>
+                                                <button class="orange-bg">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="request-card">
+                                        <div class="circle-image">
+                                            <img src="images/avtr3.png" alt="">
+                                        </div>
+                                        <div class="reqest-info">
+                                            <p class="request-user-user-name">John doe</p>
+                                            <div class="request-function">
+                                                <button class="blue-bg">Accept</button>
+                                                <button class="orange-bg">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="request-card">
+                                        <div class="circle-image">
+                                            <img src="images/avtr3.png" alt="">
+                                        </div>
+                                        <div class="reqest-info">
+                                            <p class="request-user-user-name">John doe</p>
+                                            <div class="request-function">
+                                                <button class="blue-bg">Accept</button>
+                                                <button class="orange-bg">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="request-card">
+                                        <div class="circle-image">
+                                            <img src="images/avtr3.png" alt="">
+                                        </div>
+                                        <div class="reqest-info">
+                                            <p class="request-user-user-name">John doe</p>
+                                            <div class="request-function">
+                                                <button class="blue-bg">Accept</button>
+                                                <button class="orange-bg">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="request-card">
+                                        <div class="circle-image">
+                                            <img src="images/avtr3.png" alt="">
+                                        </div>
+                                        <div class="reqest-info">
+                                            <p class="request-user-user-name">John doe</p>
+                                            <div class="request-function">
+                                                <button class="blue-bg">Accept</button>
+                                                <button class="orange-bg">Decline</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="request-card">
-                                    <div class="circle-image">
-                                        <img src="images/avtr3.png" alt="">
-                                    </div>
-                                    <div class="reqest-info">
-                                        <p class="request-user-user-name">John doe</p>
-                                        <div class="request-function">
-                                            <button class="blue-bg">Accept</button>
-                                            <button class="orange-bg">Decline</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="request-card">
-                                    <div class="circle-image">
-                                        <img src="images/avtr3.png" alt="">
-                                    </div>
-                                    <div class="reqest-info">
-                                        <p class="request-user-user-name">John doe</p>
-                                        <div class="request-function">
-                                            <button class="blue-bg">Accept</button>
-                                            <button class="orange-bg">Decline</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="request-card">
-                                    <div class="circle-image">
-                                        <img src="images/avtr3.png" alt="">
-                                    </div>
-                                    <div class="reqest-info">
-                                        <p class="request-user-user-name">John doe</p>
-                                        <div class="request-function">
-                                            <button class="blue-bg">Accept</button>
-                                            <button class="orange-bg">Decline</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="request-card">
-                                    <div class="circle-image">
-                                        <img src="images/avtr3.png" alt="">
-                                    </div>
-                                    <div class="reqest-info">
-                                        <p class="request-user-user-name">John doe</p>
-                                        <div class="request-function">
-                                            <button class="blue-bg">Accept</button>
-                                            <button class="orange-bg">Decline</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="request-card">
-                                    <div class="circle-image">
-                                        <img src="images/avtr3.png" alt="">
-                                    </div>
-                                    <div class="reqest-info">
-                                        <p class="request-user-user-name">John doe</p>
-                                        <div class="request-function">
-                                            <button class="blue-bg">Accept</button>
-                                            <button class="orange-bg">Decline</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="request-card">
-                                    <div class="circle-image">
-                                        <img src="images/avtr3.png" alt="">
-                                    </div>
-                                    <div class="reqest-info">
-                                        <p class="request-user-user-name">John doe</p>
-                                        <div class="request-function">
-                                            <button class="blue-bg">Accept</button>
-                                            <button class="orange-bg">Decline</button>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
                             </div>
-                            
 
 
-                            
+
+
                         </div>
                     </div>
 
@@ -348,19 +451,19 @@
                         <div class="accomodiadashboard-card-image">
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
                                 </div>
                                 <div class="swiper-button-next"></div>
                                 <div class="swiper-button-prev"></div>
-                              </div>
+                            </div>
                         </div>
                         <div class="accomodiadashboard-card-data">
                             <h3>ID: <span class="houseid">House 1</span></h3>
@@ -368,9 +471,13 @@
 
                             <div class="sub-info-of-house">
                                 <div>
-                                    <p class="status"><span class="label">Status</span>:<span class="house-statuse taken">Taken</span></p>
-                                    <p class="status"><span class="label">Tentant</span>:<span class="tenant-name"> Joe-etubi great</span></p>
-                                                                         <p class="status"><span class="label">Rent expiration:</span><span class="tenant-name"> 3rd August 2020 <span class="orange">(21days left)</span></span></p>
+                                    <p class="status"><span class="label">Status</span>:<span
+                                            class="house-statuse taken">Taken</span></p>
+                                    <p class="status"><span class="label">Tentant</span>:<span class="tenant-name">
+                                            Joe-etubi great</span></p>
+                                    <p class="status"><span class="label">Rent expiration:</span><span
+                                            class="tenant-name"> 3rd August 2020 <span class="orange">(21days
+                                                left)</span></span></p>
                                 </div>
                                 <div>
                                     <p class="status">RENT:<span class="rent-price"></span> N80,000</p>
@@ -381,13 +488,14 @@
                                 <h4>Complaints:</h4>
 
                                 <p class="complain">
-                                    
+
                                 </p>
-                             <div class="reply">
-                                <input type="text" name="" id="" placeholder="Reply tenant complain..."> <button>Send</button>
+                                <div class="reply">
+                                    <input type="text" name="" id="" placeholder="Reply tenant complain...">
+                                    <button>Send</button>
+                                </div>
                             </div>
-                            </div>
-                           
+
                         </div>
                     </div>
 
@@ -396,19 +504,19 @@
                         <div class="accomodiadashboard-card-image">
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
-                                  <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
+                                    <div class="swiper-slide"> <img src="images/house 2.jpg" alt=""></div>
                                 </div>
                                 <div class="swiper-button-next"></div>
                                 <div class="swiper-button-prev"></div>
-                              </div>
+                            </div>
                         </div>
                         <div class="accomodiadashboard-card-data">
                             <h3>ID: <span class="houseid">House 3</span></h3>
@@ -416,10 +524,16 @@
 
                             <div class="sub-info-of-house">
                                 <div>
-                                    <p class="status"><span class="label">Status</span>:<span class="house-statuse taken">Taken</span></p>
-                                    <p class="status"><span class="label">Tentant</span>:<span class="tenant-name"> Joe-etubi great</span></p>
-                                    <p class="status"><span class="label">Rent duration</span>:<span class="tenant-name"> 3rd June 2021 - 3rd August 2022 <span class="orange">(1 year)</span></span></p>
-                                    <p class="status"><span class="label">Rent expiration:</span><span class="tenant-name"> 3rd August 2020 <span class="orange">(21days left)</span></span></p>
+                                    <p class="status"><span class="label">Status</span>:<span
+                                            class="house-statuse taken">Taken</span></p>
+                                    <p class="status"><span class="label">Tentant</span>:<span class="tenant-name">
+                                            Joe-etubi great</span></p>
+                                    <p class="status"><span class="label">Rent duration</span>:<span
+                                            class="tenant-name"> 3rd June 2021 - 3rd August 2022 <span class="orange">(1
+                                                year)</span></span></p>
+                                    <p class="status"><span class="label">Rent expiration:</span><span
+                                            class="tenant-name"> 3rd August 2020 <span class="orange">(21days
+                                                left)</span></span></p>
                                 </div>
                                 <div>
                                     <p class="status">RENT:<span class="rent-price"></span> N80,000</p>
@@ -430,14 +544,17 @@
                                 <h4>Complaints:</h4>
 
                                 <p class="complain">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium enim eos ad ullam un
-                                    de dolore nam quaerat, vel omnis neque cupiditate dicta nostrum odio iste debitis. Obcaecati, quia eum?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium enim eos
+                                    ad ullam un
+                                    de dolore nam quaerat, vel omnis neque cupiditate dicta nostrum odio iste debitis.
+                                    Obcaecati, quia eum?
                                 </p>
-                             <div class="reply">
-                                <input type="text" name="" id="" placeholder="Reply tenant complain..."> <button>Send</button>
+                                <div class="reply">
+                                    <input type="text" name="" id="" placeholder="Reply tenant complain...">
+                                    <button>Send</button>
+                                </div>
                             </div>
-                            </div>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -618,49 +735,48 @@
         });
     </script>
 
-<script src="js/swiper.js"></script>
+    <script src="js/swiper.js"></script>
 
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
-
-  $(".request-comfirmation-div-holder").fadeOut('fast');
-$(".black-bg").fadeOut('fast');
-$(".request-confirmation-div").fadeOut('fast');
-$("#accept").fadeOut('fast');
-$("#decline").fadeOut('fast');
-$("#accept-1").click(function () {
-    $(".request-comfirmation-div-holder").fadeIn('fast');
-$(".black-bg").fadeIn('fast');
-$("#accept").fadeIn('fast');
-});
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
 
 
-$("#reject-1").click(function () {
-    $(".request-comfirmation-div-holder").fadeIn('fast');
-$(".black-bg").fadeIn('fast');
-$("#decline").fadeIn('fast');
-});
+        $(".request-comfirmation-div-holder").fadeOut('fast');
+        $(".black-bg").fadeOut('fast');
+        $(".request-confirmation-div").fadeOut('fast');
+        $("#accept").fadeOut('fast');
+        $("#decline").fadeOut('fast');
+        $("#accept-1").click(function () {
+            $(".request-comfirmation-div-holder").fadeIn('fast');
+            $(".black-bg").fadeIn('fast');
+            $("#accept").fadeIn('fast');
+        });
 
 
-$("#confirm-1").click(function () {
-    $(".request-comfirmation-div-holder").fadeOut('fast');
-$(".black-bg").fadeOut('fast');
-});
+        $("#reject-1").click(function () {
+            $(".request-comfirmation-div-holder").fadeIn('fast');
+            $(".black-bg").fadeIn('fast');
+            $("#decline").fadeIn('fast');
+        });
 
 
-$("#decline-1").click(function () {
-    $(".request-comfirmation-div-holder").fadeOut('fast');
-$(".black-bg").fadeOut('fast');
-});
+        $("#confirm-1").click(function () {
+            $(".request-comfirmation-div-holder").fadeOut('fast');
+            $(".black-bg").fadeOut('fast');
+        });
 
-</script>
+
+        $("#decline-1").click(function () {
+            $(".request-comfirmation-div-holder").fadeOut('fast');
+            $(".black-bg").fadeOut('fast');
+        });
+    </script>
 </body>
 
 </html>

@@ -459,3 +459,12 @@ $(".remove-product").click(function () {
   $(".dark-bg").fadeOut('fast');
 });
 
+
+
+
+$(".comment-holder").fadeOut("fast");
+$(".dark-bg").fadeOut("fast");
+$(".remove-card").click(function () {
+  $(".comment-holder").fadeIn("fast");
+  $(".dark-bg").fadeIn("fast");
+  });

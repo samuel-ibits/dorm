@@ -129,6 +129,37 @@
                             </p>
                             <input type="file" name="" id="" multiple>
                         </div>
+
+                        <div class="preview-holder">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <img src="images/house 2.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/house 3.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/house 4.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/house 2.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="images/house 2.jpg" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                       
                         <div class="prodcut-info-box-1">
                             <input type="text" placeholder="Name of product">
                             <input type="text" placeholder="Price of product">
@@ -146,9 +177,9 @@
                     </div>
                 </div>
             </div>
-
-
             <div class="dark-bg"></div>
+
+            
             <div class="mangeproductdiv">
                 <div class="fullagentscreen">
                     <div class="mainscreendata">
@@ -662,24 +693,24 @@
             $(".notification").fadeToggle('fast');
         });
 
-        
-$(".product-uploader-holder").fadeOut('fast');
-$(".dark-bg").fadeOut('fast');
-$(".remove-product").click(function () {
-  $(".product-uploader-holder").fadeOut('fast');
-  $(".dark-bg").fadeOut('fast');
-});
+
+        $(".product-uploader-holder").fadeOut('fast');
+        $(".dark-bg").fadeOut('fast');
+        $(".remove-product").click(function () {
+            $(".product-uploader-holder").fadeOut('fast');
+            $(".dark-bg").fadeOut('fast');
+        });
 
 
-$(".add-product-btn").click(function () {
-  $(".product-uploader-holder").fadeIn('fast');
-  $(".dark-bg").fadeIn('fast');
-});
+        $(".add-product-btn").click(function () {
+            $(".product-uploader-holder").fadeIn('fast');
+            $(".dark-bg").fadeIn('fast');
+        });
 
-$("a").click(function () {
-alert("Your currently logged in as an agent, please login into your dorm account to access this Function")
-});
-
+        $("a").click(function () {
+            alert(
+                "Your currently logged in as an agent, please login into your dorm account to access this Function")
+        });
     </script>
 
 </body>

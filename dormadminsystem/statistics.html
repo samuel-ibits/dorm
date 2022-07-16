@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="theme-color" content="#1597E2">
+    <link rel="shortcut icon" href="images/dorm_icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"
+        integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", {
+            packages: ["corechart"]
+        });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['LABEL', 'VALUE'],
+                ['EMPTY', 90],
+                ['OCCPIED', 10]
+            ]);
+            var options = {
+                title: 'SERVER SPACE',
+                pieHole: 0.4,
+            };
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <div class="menu">
+            <div class="menu-logo-holder">
+                <img src="images/dorm_no_bg.png" alt="">
+            </div>
+
+            <ul class="menu-activity">
+                <li class="unactive">
+                    <a href="dashboard.html"> <i class='bx bxs-dashboard'></i> <span>DASHBOARD</span></a>
+                </li>
+                <li class="unactive">
+                    <a href="teams.html">
+                        <i class="bi bi-people-fill"></i> <span>TEAMS</span>
+                    </a>
+
+                    <ul class="sub-menu">
+                        <li><a href="datamanagementteam.html"><i class='bx bxs-data'></i> DATA MANAEGMENT</a></li>
+                        <li><a href="marketing.html"><i class="bi bi-people-fill"></i> DATA MANAEGMENT</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="statistics.html"><i class='bx bxs-data'></i> <span>STATISTICS</span></a>
+                </li>
+
+                <li class="unactive">
+                    <a href="index.html"> <i class='bx bxs-exit'></i> <span>EXIT</span></a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="dashboard-holder">
+            <div class="mobile-top">
+                <div class="mobile-image">
+                    <img src="images/dorm_no_bg.png" alt="">
+                </div>
+                <span class="menu-toggler">
+                    <ion-icon name="menu"></ion-icon>
+                </span>
+            </div>
+            <div class="dashboard">
+                <div class="third-section">
+                    <div class="data-type-holder">
+                        <h2 class="light-texter logins" id="recent">RECENT LOGINS</h2>
+                        <h2 class="light-texter lower-opacity searches" id="bucket">SEARCH BUCKET</h2>
+                    </div>
+                    <div class="login-holders">
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+                        <div class="third-sub">
+                            <p>USER12034354</p>
+                            <div>
+                                <p>22 JULLY 2022</p>
+                                <p>12:00 PM</p>
+                            </div>
+                            <p>LOGIN MAIL</p>
+                        </div>
+
+
+                    </div>
+                    <div class="search-bucket">
+                        <table>
+                            <tr>
+                                <th>QUERY</th>
+                                <th>PAGE</th>
+                                <th>DATE</th>
+                            </tr>
+                            <tr>
+                                <td>MTH111</td>
+                                <td>Library</td>
+                                <td>22-05-12
+                                   <br> 04:33:29pm
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>MTH111</td>
+                                <td>Library</td>
+                                <td>22-05-12
+                                   <br> 04:33:29pm
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>MTH111</td>
+                                <td>Library</td>
+                                <td>22-05-12
+                                   <br> 04:33:29pm
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>MTH111</td>
+                                <td>Library</td>
+                                <td>22-05-12
+                                   <br> 04:33:29pm
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>MTH111</td>
+                                <td>Library</td>
+                                <td>22-05-12
+                                   <br> 04:33:29pm
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>MTH111</td>
+                                <td>Library</td>
+                                <td>22-05-12
+                                   <br> 04:33:29pm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MTH111</td>
+                                <td>Library</td>
+                                <td>22-05-12
+                                   <br> 04:33:29pm
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>MTH111</td>
+                                <td>Library</td>
+                                <td>22-05-12
+                                   <br> 04:33:29pm
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>MTH111</td>
+                                <td>Library</td>
+                                <td>22-05-12
+                                   <br> 04:33:29pm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MTH111</td>
+                                <td>Library</td>
+                                <td>22-05-12
+                                   <br> 04:33:29pm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MTH111</td>
+                                <td>Library</td>
+                                <td>22-05-12
+                                   <br> 04:33:29pm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MTH111</td>
+                                <td>Library</td>
+                                <td>22-05-12
+                                   <br> 04:33:29pm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MTH111</td>
+                                <td>Library</td>
+                                <td>22-05-12
+                                   <br> 04:33:29pm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MTH111</td>
+                                <td>Library</td>
+                                <td>22-05-12
+                                   <br> 04:33:29pm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MTH111</td>
+                                <td>Library</td>
+                                <td>22-05-12
+                                   <br> 04:33:29pm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MTH111</td>
+                                <td>Library</td>
+                                <td>22-05-12
+                                   <br> 04:33:29pm
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+
+$(".logins").click(function (){
+$("#recent").removeClass("lower-opacity", 'fast');
+$("#bucket").addClass("lower-opacity", 'fast');
+$(".login-holders").fadeIn('fast');
+$(".search-bucket").fadeOut('fast');
+}); 
+
+$(".searches").click(function (){
+$("#recent").addClass("lower-opacity", 'fast');
+$("#bucket").removeClass("lower-opacity", 'fast');
+$(".login-holders").fadeOut('fast');
+$(".search-bucket").fadeIn('fast');
+});
+</script>
+<script>
+         $(".menu-toggler").click(function () {
+              $(".menu").toggle('fast');
+           
+         });
+</script>
+</body>
+</html>

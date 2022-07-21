@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/scss/index.css">
+    <link rel="stylesheet" href="css/scss/index.css.map">
+</head>
+
+<body>
+    <div class="container">
+        <div class="carousel">
+            <input type="radio" id="carousel-1" name="carousel[]" checked>
+            <input type="radio" id="carousel-2" name="carousel[]">
+         <input type="radio" id="carousel-3" name="carousel[]">
+            <input type="radio" id="carousel-4" name="carousel[]">
+            <input type="radio" id="carousel-5" name="carousel[]">
+            <ul class="carousel__items">
+                <li class="carousel__item"><img src="//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG" alt=""></li>
+                <li class="carousel__item"><img src="//lh4.googleusercontent.com/-ntVHbbWX5eo/U8-EmV8P4cI/AAAAAAAABc4/ICYBGkcztTc/w1358-h905-no/carousel-2.jpg" alt=""></li>
+                <li class="carousel__item"><img src="//lh5.googleusercontent.com/-batEXUZE_e4/U8-EmLF9-hI/AAAAAAAABc0/J3tJVUa6Buk/w1358-h905-no/carousel-3.jpg" alt=""></li>
+                <li class="carousel__item"><img src="//lh5.googleusercontent.com/-gywqIeMvel0/U8-EolKdtkI/AAAAAAAABdM/G0-NHuvvJUU/w1358-h905-no/carousel-4.jpg" alt=""></li>
+                <li class="carousel__item"><img src="//lh5.googleusercontent.com/--2iANjL3ikc/U8-EoGJ18mI/AAAAAAAABdI/fBe-q3Gos6Y/w1358-h905-no/carousel-5.jpg" alt=""></li>
+            </ul>
+         <div class="carousel__prev">
+             <label for="carousel-1"></label>
+             <label for="carousel-2"></label>
+             <label for="carousel-3"></label>
+             <label for="carousel-4"></label>
+             <label for="carousel-5"></label>
+         </div>
+         <div class="carousel__next">
+           <label for="carousel-1"></label>
+           <label for="carousel-2"></label>
+           <label for="carousel-3"></label>
+           <label for="carousel-4"></label>
+           <label for="carousel-5"></label>
+         </div>
+         <div class="carousel__nav">
+           <label for="carousel-1"></label>
+           <label for="carousel-2"></label>
+           <label for="carousel-3"></label>
+           <label for="carousel-4"></label>
+           <label for="carousel-5"></label>
+         </div>
+       </div>
+     </div>
+    
+<script>
+    /* a Pen by Diaco m.lotfollahi  : https://diacodesign.com */
+
+TweenLite.set('body',{perspective:700});
+var slides=document.querySelectorAll('.slide'),tl=new TimelineLite({paused:true});
+for(var i=0;i<slides.length;i++){
+    var D=document.createElement('div'); D.className='Dot'; D.id='Dot'+i;
+    D.addEventListener('click',function(){ tl.seek(this.id).pause() });
+    document.getElementById('Dots').appendChild(D);
+    if(i!=0){tl.addPause('Dot'+i)};
+    if(i!=slides.length-1){
+      tl.to(slides[i],0.5,{scale:.8,ease:Back.easeOut})
+        .to(slides[i],0.7,{xPercent:-100,rotationY:80},'L'+i) 
+        .from(slides[i+1],0.7,{xPercent:100,rotationY:-80},'L'+i)
+        .to('#Dot'+i,0.7,{backgroundColor:'rgba(255,255,255,0.2)'},'L'+i)
+        .from(slides[i+1],0.5,{scale:.8,ease:Back.easeIn})
+    };
+};
+function GO(e){
+  var SD=isNaN(e)?e.wheelDelta||-e.detail:e;
+  if(SD<0){tl.play()}else{tl.reverse()};
+};
+
+document.addEventListener("mousewheel",GO);
+document.addEventListener("DOMMouseScroll",GO);
+document.getElementById('nextBtn').addEventListener("click",function(){GO(-1)});
+document.getElementById('prevtBtn').addEventListener("click",function(){GO(1)});
+
+/* a Pen by Diaco m.lotfollahi  : https://diacodesign.com */
+</script> 
+</body>
+</html>

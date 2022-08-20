@@ -199,6 +199,35 @@
   width: 100% !important;
   font-size: .7rem !important;
 }
-  @media only screen and (min-width: 285px) and (max-width: 500px) {
 
+.mobile-search-bar{
+  display: none;
+}
+
+
+  @media only screen and  (max-width: 700px) {
+
+    .mobile-search-bar{
+      width: 100%;
+      height: auto;
+      padding: 1rem;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    
+    .mobile-search-bar input{
+      width: 100%;
+      border: 2px solid var(--dormblue);
+      padding: .5rem .5rem;
+      outline: none;
+    }
+    
+    
+    .mobile-search-bar button{
+      background: var(--dormblue);
+      border: 2px solid var(--dormblue);
+      color: var(--white);
+      padding: .5rem .5rem;
+    }
   }

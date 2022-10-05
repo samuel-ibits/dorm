@@ -13,16 +13,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="css/studytools.css">
     <link rel="stylesheet" href="css/menucss.css">
     <link rel="stylesheet" href="css/marketgridview.css">
-    <link rel="stylesheet" href="css/marketfullscreen.css">
 
 
     <style>
+        .shoping-card-image {
+            height: 10rem;
+            width: 100%;
+        }
+
         .spec-div input {
             width: 4rem;
             margin: 0px 1rem;
@@ -31,24 +37,19 @@
         }
 
         .request {
-               display: none;
-            }
-      
+            display: none;
+        }
+
         @media only screen and (min-width: 601px) {
 
             .open-request {
                 float: right;
             }
-
-
             .page-content {
                 height: 100vh;
-                overflow: scroll;;
+                overflow: scroll;
                 top: 0
             }
-
-
-          
         }
 
         .add-product-div {
@@ -77,10 +78,9 @@
             }
 
             .request {
-               display: none;
+                display: none;
             }
         }
-
     </style>
 </head>
 
@@ -225,7 +225,8 @@
 
                 <div class="inspect-market-item">
                     <div class="inspect-market-image">
-                        <div class="item-price">3,000</div>
+                        <button type="button" class="btn btn-primary back" style="position:absolute;z-index:99">
+                            Back</button>
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -251,16 +252,25 @@
 
                         <div class="tools-shopping-grid">
                             <ul>
-                                <li><i class="bi bi-heart-fill"></i></li>
-                                <li><i class="bi bi-chat-dots-fill"></i></li>
-                                <li><i class="bi bi-share-fill"></i></li>
-                                <li class="request-2"><i class="bi bi-question-lg open-request"></i></li>
-                            </ul>
+                                <button type="button" class="btn btn-primary flex-btn">
+                                        <span class="sr-only"><i class="bi bi-heart-fill"></i></span>
+                                        <span class="badge badge-light">9</span>
+                                    </button>
+
+                                    <button type="button" class="btn btn-primary flex-btn">
+                                        <span class="sr-only"><i class="bi bi-share-fill"></i></span>
+                                    </button>
+                               
+                                    <button type="button" class="btn btn-primary flex-btn">
+                                        <span class="sr-only"><ion-icon name="call"></ion-icon></span>
+                                    </button>
+                              </ul>
                         </div>
 
                         <p class="product-name">
                             Lorem ipsum dolor
                         </p>
+                        <div class="item-price">N <span>3,000</span></div>
                         <p class="about-product-text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                             Ex eum, aliquid sit quod ullam quasi culpa quos officiis.
@@ -268,10 +278,14 @@
                             deleniti in?
                         </p>
 
+                        <dl class="row">
+                            <dt class="col-sm-3">Location</dt>
+                            <dd class="col-sm-9">Lokoja</dd>
+                          </dl>
+
                         <div class="flexed-btn">
-                            <button class="buy-btn"><i class="bi bi-bag-fill"></i> Buy</button>
+                            <button type="button" class="btn btn-primary orange-bg"><i class="bi bi-bag-fill"></i> PAY NOW</button>
                             <div class="return">
-                                <button class="buy-btn back"><i class="bi bi-x"></i> Return</button>
                             </div>
                         </div>
 
@@ -283,7 +297,7 @@
                     <div class="center-card">
                         <div class="shoping-card">
                             <div class="shoping-card-image">
-                                <img src="images/shirt2.jpg" alt="">
+                                <img src="images/gov.jpg" alt="">
                             </div>
                             <div class="shoping-card-text">
                                 <p class="name-of-item-shoping-card">
@@ -337,7 +351,7 @@
                     <div class="center-card">
                         <div class="shoping-card">
                             <div class="shoping-card-image">
-                                <img src="images/shirt2.jpg" alt="">
+                                <img src="images/dorm_no_bg.png" alt="">
                             </div>
                             <div class="shoping-card-text">
                                 <p class="name-of-item-shoping-card">
@@ -439,7 +453,7 @@
             $(".request-div-holder").fadeToggle('fast');
         });
 
-        
+
         $(".request-2").click(function () {
             $(".request-div-holder").fadeToggle('fast');
         });

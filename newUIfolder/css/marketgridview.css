@@ -9,6 +9,7 @@
     --boxop: .8;
 }
 
+
 *{
     margin: 0;
     padding: 0;
@@ -20,8 +21,24 @@
     width: 100%;
 }
 
+.flex-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: fit-content;
+    background: var(--dormblue);
+    height: fit-content;
+}
+
 .tools-shopping-grid ul{
     color: var(--white);
+}
+
+.orange-bg{
+    background: var(--dormorange);
+    color: #eee;
+    border: 2px solid var(--dormorange);
 }
 
 
@@ -190,18 +207,18 @@
 }
 
 .contentgrid{
-    margin-top: 4rem;
+    margin-top: 1rem;
     padding: 1rem;
     display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fill,minmax(9rem,1fr));
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill,minmax(10rem,1fr));
 }
 
 
 .shoping-card{
-    width: 9rem;
+    width: 10rem;
     height: fit-content;
-    box-shadow: 0px 1px 2px #333;
+    box-shadow: 0px 1px 2px #33333333;
     cursor: pointer;
     background: var(--white);
 
@@ -219,10 +236,10 @@
 
 .inspect-market-item{
     width: 100%;
-    height: 80vh;
-    overflow: visible;
+    height: auto;
+    overflow: scroll;
     position: absolute;
-    top: 2rem;
+    top: 0rem;
     transform: scale(1);
     z-index: 999;
     display: none;
@@ -271,11 +288,9 @@
 }
 
 .item-price{
-    position: absolute;
     font-weight: 900;
-    background: var(--dormorange);
-    color: var(--white);
-    padding: .8rem;
+    color: var(--darkcolor);
+    padding: .3rem;
     z-index: 99;
 }
 
@@ -424,8 +439,12 @@ transition: .5s;
         display: flex;
         justify-content: center;
         align-items: center;
-        transform: scale(.8);
-    }
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
   }
 
 
@@ -436,7 +455,11 @@ transition: .5s;
         justify-content: center;
         align-items: center;
         transform: scale(.8);
-    }
+        -webkit-transform: scale(.8);
+        -moz-transform: scale(.8);
+        -ms-transform: scale(.8);
+        -o-transform: scale(.8);
+}
     
 
 
@@ -464,11 +487,12 @@ transition: .5s;
 
     .inspect-market-item{
         width: 100%;
-        height: 80vh;
+        height: auto;
         overflow: visible;
         position: absolute;
         display: none;
-        z-index: 999;
+        z-index: 9999;
+        background: red;
     }
 
     .search-wrapper{
@@ -489,11 +513,11 @@ transition: .5s;
   
     .inspect-market-item{
         width: 100%;
-        height: auto;
-        overflow: scroll;
+        height: 100vh;
+        overflow: visible;
         position: absolute;
         display: none;
-        z-index: 999;
+        z-index: 9999;  
     }
 
     .search-wrapper{
@@ -503,7 +527,7 @@ transition: .5s;
     }
     
     .contentgrid{
-        margin-top: 6rem;
+        margin-top: 1rem;
         z-index: 9999999;
     }
     

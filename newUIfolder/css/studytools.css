@@ -180,12 +180,14 @@ a{
         border: 2px solid var(--dormblue);
         border-radius: 10px;
         overflow: hidden;
+        margin-top: 1rem;
     }
 
     .study-tools-page {
        display: flex;
        place-items: center;
        height: max-content;
+       justify-content: space-around;
 
     }
     
@@ -214,6 +216,7 @@ a{
 
 .study-tool-sub-text{
     font-size: .6rem;
+    font-weight: 600;
 }
 
 .study-tool-title{

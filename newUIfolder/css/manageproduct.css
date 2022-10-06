@@ -22,6 +22,10 @@
 
 .tag-type{
     transform: scale(.7);
+    -webkit-transform: scale(.7);
+    -moz-transform: scale(.7);
+    -ms-transform: scale(.7);
+    -o-transform: scale(.7);
 }
 
 .edit-holder{
@@ -48,7 +52,12 @@
 }
 
 .agent-card-text{
+    height: auto;
     padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 1rem;
 }
 
 .agent-card-text p:nth-child(1){
@@ -58,28 +67,32 @@
     font-size: 1rem;
 }
 
-.agent-card-text p:nth-child(2){
-    font-weight: 200;
-    color: #888;
-    font-size: .7rem;
-}
 
-.agent-card-text p:nth-child(3){
-    font-weight: 600;
-    color: #222;
-}
-
-.agent-card-text p:nth-child(5){
+.managePrice{
     font-weight: 200;
-    color: #fff;
+    color: #fff !important;
     background: var(--dormorange);
     width: fit-content;
-    padding: .5rem;
+    padding: .1rem;
     text-shadow: 0px 2px 3px #555;
     box-shadow: 0px 2px 3px #555;
 }
 
-.agent-card-text p:nth-child(5) a{
+.eta{
+        font-weight: 200;
+        color: #fff !important;
+        background: var(--dormblue);
+        margin-bottom: .5rem;
+        width: fit-content;
+        padding: .1rem;
+        text-shadow: 0px 2px 3px #555;
+        box-shadow: 0px 2px 3px #555;
+        border: none;
+        outline: none;
+    }
+    
+
+.managePrice a{
     color: inherit;
 }
 
@@ -97,7 +110,7 @@
 
 .boost-product{
     font-weight: 200;
-    color: #fff;
+    color: #fff !important;
     background: var(--dormblue);
     margin-bottom: .5rem;
     width: fit-content;
@@ -182,57 +195,12 @@
     .tag-type{
         transform: scale(.6);
         margin-left: 0rem;
-    }
+        -webkit-transform: scale(.6);
+        -moz-transform: scale(.6);
+        -ms-transform: scale(.6);
+        -o-transform: scale(.6);
+}
     
-
-    .agent-card-text p:nth-child(1){
-        font-weight: 600;
-        color: var(--dormblue);
-        text-shadow: 0px 1px 2px #999;
-        font-size: .8rem;
-        width: max-content;
-    }
-    
-
-    
-.agent-card-text p:nth-child(2){
-    font-weight: 100;
-    color: #333 !important;
-    font-size: .7rem;
-}
-
-.agent-card-text p:nth-child(3){
-    font-weight: 600;
-    color: #222;
-    font-size: .6rem;
-}
-.agent-card-text p:nth-child(4){
-    font-weight: 200;
-    color: #fff;
-    background: var(--dormblue);
-    width: fit-content;
-    padding: .3rem;
-    font-size: .6rem;
-    text-shadow: 0px 2px 3px #555;
-    box-shadow: 0px 2px 3px #555;
-}
-
-
-.agent-card-text p:nth-child(5){
-    font-weight: 200;
-    color: #fff;
-    background: var(--dormorange);
-    width: fit-content;
-    padding: .5rem;
-    font-size: .7rem;
-    margin-left: -.5rem;
-    text-shadow: 0px 2px 3px #555;
-    box-shadow: 0px 2px 3px #555;
-}
-
-.agent-card-text p:nth-child(5) a{
-    color: inherit;
-}
 
 
 .items{
@@ -280,6 +248,20 @@
     font-size: .7rem;
     font-weight: 600;
     width: max-content;
+}
+
+.eta{
+    font-weight: 200;
+    font-size: 14px !important;
+    color: #fff !important;
+    background: var(--dormblue);
+    margin-bottom: .5rem;
+    width: max-content;
+    padding: .5rem;
+    text-shadow: 0px 2px 3px #555;
+    box-shadow: 0px 2px 3px #555;
+    border: none;
+    outline: none;
 }
 
 }

@@ -7,6 +7,12 @@
     --dormorange: #f96b03;
 }
 
+.flex-btn-btns{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
 
 .fload-area-check{
     width: 100%;
@@ -384,6 +390,10 @@ flex-direction: row;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     height: 100%;
 }
 
+.transaction-card-data{
+    width: max-content;
+}
+
 .transaction-card-data p:nth-child(1){
     font-size: .6rem;
     color: #555;
@@ -608,6 +618,10 @@ h3{
     height: 3rem;
     overflow: hidden;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 
@@ -745,6 +759,7 @@ overflow-x: hidden;
 h3{
     margin-left: .6rem;
 }
+
 
 .transaction-card{
     padding: .5rem;

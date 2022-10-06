@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
@@ -20,7 +21,10 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="css/studytools.css">
     <link rel="stylesheet" href="css/menucss.css">
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <link rel="stylesheet" href="css/marketgridview.css">
+    <script src="sweetalert2.all.min.js"></script>
 
 
     <style>
@@ -45,6 +49,7 @@
             .open-request {
                 float: right;
             }
+
             .page-content {
                 height: 100vh;
                 overflow: scroll;
@@ -82,9 +87,13 @@
             }
         }
     </style>
+
+
+    
 </head>
 
 <body>
+
 
     <div class="request">
         <i class="bi bi-question-lg open-request"></i>
@@ -193,6 +202,7 @@
             </div>
         </div>
         <div class="page-content">
+
             <div class="grid-view">
 
                 <div class="upload-to-market">
@@ -253,18 +263,20 @@
                         <div class="tools-shopping-grid">
                             <ul>
                                 <button type="button" class="btn btn-primary flex-btn">
-                                        <span class="sr-only"><i class="bi bi-heart-fill"></i></span>
-                                        <span class="badge badge-light">9</span>
-                                    </button>
+                                    <span class="sr-only"><i class="bi bi-heart-fill"></i></span>
+                                    <span class="badge badge-light">9</span>
+                                </button>
 
-                                    <button type="button" class="btn btn-primary flex-btn">
-                                        <span class="sr-only"><i class="bi bi-share-fill"></i></span>
-                                    </button>
-                               
-                                    <button type="button" class="btn btn-primary flex-btn">
-                                        <span class="sr-only"><ion-icon name="call"></ion-icon></span>
-                                    </button>
-                              </ul>
+                                <button type="button" class="btn btn-primary flex-btn">
+                                    <span class="sr-only"><i class="bi bi-share-fill"></i></span>
+                                </button>
+
+                                <button type="button" class="btn btn-primary flex-btn">
+                                    <span class="sr-only">
+                                        <ion-icon name="call"></ion-icon>
+                                    </span>
+                                </button>
+                            </ul>
                         </div>
 
                         <p class="product-name">
@@ -281,10 +293,11 @@
                         <dl class="row">
                             <dt class="col-sm-3">Location</dt>
                             <dd class="col-sm-9">Lokoja</dd>
-                          </dl>
+                        </dl>
 
                         <div class="flexed-btn">
-                            <button type="button" class="btn btn-primary orange-bg"><i class="bi bi-bag-fill"></i> PAY NOW</button>
+                            <button type="button" class="btn btn-primary orange-bg paynow"><i
+                                    class="bi bi-bag-fill"></i> PAY NOW</button>
                             <div class="return">
                             </div>
                         </div>
@@ -458,6 +471,15 @@
             $(".request-div-holder").fadeToggle('fast');
         });
 
+        $('.paynow').click(function (){
+ 
+  'success'
+  Swal.fire({
+    icon: 'success',
+    title: 'Order Placed',
+    text: 'Check manage product to see your Estimated time of arrival',
+  })
+})
 
         $(".request-div-holder").fadeOut('fast');
         $(".request-div").fadeOut('fast');

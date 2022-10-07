@@ -51,6 +51,14 @@
                 padding: 0rem 1rem;
             }
         }
+            @media only screen and (max-width: 600px) {
+            
+                .menu-list{
+                    margin-left: -1.8rem;
+                }
+            
+            }
+        
     </style>
 </head>
 
@@ -136,7 +144,7 @@
                 <div class="product-upload-card">
                     <div class="add-image">
                         <p>
-                            <ion-icon name="add"></ion-icon>
+                        
                         </p>
                         <input type="file" name="" id="" multiple>
                     </div>
@@ -174,14 +182,11 @@
                     <div class="prodcut-info-box-1">
                         <input type="text" placeholder="Name of product">
                         <input type="text" placeholder="Price of product">
-                        <textarea name="" placeholder="About product (optional)" id="" cols="30" rows="10"></textarea>
+                        <textarea name="" placeholder="About product (optional)" id="" cols="30" rows="2"></textarea>
                     </div>
                     <div class="product-upload-btn-holder">
                         <button>
                             <ion-icon name="cloud-upload"></ion-icon> Upload product
-                        </button>
-                        <button>
-                            <ion-icon name="cloud-upload"></ion-icon> Upload more products
                         </button>
                     </div>
                 </div>
@@ -683,13 +688,13 @@
         $(".product-uploader-holder").fadeOut('fast');
         $(".dark-bg").fadeOut('fast');
         $(".remove-product").click(function () {
-            $(".product-uploader-holder").fadeOut('fast');
+            $(".product-uploader-holder").hide('fast');
             $(".dark-bg").fadeOut('fast');
         });
 
 
         $(".add-product-btn").click(function () {
-            $(".product-uploader-holder").fadeIn('fast');
+            $(".product-uploader-holder").toggle('fast');
             $(".dark-bg").fadeIn('fast');
         });
     </script>

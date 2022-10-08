@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="css/wallet.css">
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/marketdashboard.css">
+    <link rel="stylesheet" href="css/specialmenucorrection.css">
 
     <style>
         .bi-cash-stack {
@@ -51,13 +52,7 @@
                 padding: 0rem 1rem;
             }
         }
-            @media only screen and (max-width: 600px) {
-            
-                .menu-list{
-                    margin-left: -1.8rem;
-                }
-            
-            }
+        
         
     </style>
 </head>
@@ -192,10 +187,9 @@
                 </div>
             </div>
         </div>
+        
+        <div class="dark-bg"></div>
         <div class="page-content">
-
-
-            <div class="dark-bg"></div>
             <div class="mangeproductdiv">
                 <div class="fullagentscreen">
                     <div class="mainscreendata">
@@ -266,7 +260,7 @@
                                     </div>
                                     <div class="transaction-card-data">
                                         <p>John doe</p>
-                                        <p>Classic-cut T-shirt </p>
+                                        <p class="transaction-card-data-product-name">shirtClassic-cut T-shirtClassic-cut T-shirt </p>
                                     </div>
                                     <div class="transaction-card-data">
                                         <p>Price</p>
@@ -278,6 +272,10 @@
                                     <div class="transaction-card-data">
                                         <p>Date</p>
                                         <p>22 November 2021</p>
+                                    </div>
+                                    <div class="transaction-card-data">
+                                        <p>Location</p>
+                                        <p>Flat 292 Roboto estate lokoja, kogi state.</p>
                                     </div>
                                     <div class="transcation-card-status green">
                                         <ion-icon name="checkmark-outline"></ion-icon>
@@ -689,13 +687,13 @@
         $(".dark-bg").fadeOut('fast');
         $(".remove-product").click(function () {
             $(".product-uploader-holder").hide('fast');
-            $(".dark-bg").fadeOut('fast');
+            $(".dark-bg").hide('fast');
         });
 
 
         $(".add-product-btn").click(function () {
             $(".product-uploader-holder").toggle('fast');
-            $(".dark-bg").fadeIn('fast');
+            $(".dark-bg").show('fast');
         });
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

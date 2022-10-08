@@ -1,0 +1,963 @@
+:root{
+    --ash: #e9e9e9;
+    --white: #ffffff;
+    --dormblue: #1597E2;
+    --darkcolor: #020202;
+    --dormash: lightgrey;
+    --dormorange: #f96b03;
+}
+
+
+
+
+.number{
+    background: var(--dormorange);
+    border-radius: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: .4rem;
+    box-shadow: 0px 2px 3px #333;
+    text-shadow: 0px 2px 3px #333;
+}
+
+.notification{
+    background: var(--dormblue);
+    box-shadow: 0px 2px 3px #333;
+    color: #eee;
+    position:relative;
+    margin-left: auto;
+    width: fit-content;
+    padding: .2rem;
+    height: auto;
+    font-size: .8rem;
+    display: none;
+}
+
+.notification ul li{
+    display: flex;
+    width: max-content;
+}
+
+.full-width{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    margin-top: 4rem;
+    z-index: 99999;
+}
+
+.pronounds{
+    color: var(--dormorange);
+    font-weight: 600;
+    text-shadow: 0px 2px 3px #333;
+    margin: 0px .4rem;
+}
+
+
+.about-studytool-text h2{
+    color: #333;
+    font-weight: lighter;
+    font-size: .8rem;
+}
+
+.notification-message a{
+font-size: .7rem;
+font-weight: 300;
+}
+
+
+.overlaywhite{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    opacity: .9;
+    position: fixed;
+    z-index: 99999;
+    display: none;
+
+}
+
+.topspace{
+    height: 10vh;
+}
+
+
+
+
+.activestate{
+    background: var(--dormorange);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(252, 250, 250);
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Hubballi', cursive;
+    font-family: 'Hurricane', cursive;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.studytool-cards{
+    width: 100%;
+    height: 20vh;
+    box-shadow: 0px 3px 5px #aaa;
+    border-radius:.5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    transform: scale(.9);
+    color: #111;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.studytool-cards:nth-last-child(1){
+    margin-bottom: 2rem;
+}
+
+
+.about-studytool-text h3{
+ font-size: 1rem;
+ text-shadow: 0px .5px .5px #333;
+}
+
+.about-studytool-text p{
+    font-size: .7rem;
+}
+
+
+
+
+.about-studytool-text{
+    padding: 1rem;
+    width: 60%;
+}
+.bi-box-arrow-left{
+    background: var(--dormorange);
+    color: #fff;
+    width: fit-content;
+    display: flex;
+    padding: 1rem;
+    border-radius: .3rem;
+}
+
+
+.about-studytool-text h3{
+    font-weight: bolder;
+    font-size:1rem;
+}
+
+.card-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: var(--dormblue);
+    color: #fff;
+    width: 20%;
+    height: 100%;
+}
+
+
+.dorm-logo-image{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dorm-logo-image img{
+    width: 60%;
+}
+
+
+.body-wrapper{
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    height: fit-content;  
+    overflow-x: hidden;
+} 
+
+.upload-review-image{
+    width: 3rem;
+    height:3rem;
+    overflow: hidden;
+    background: var(--dormorange);
+    border-radius:50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-left: 1rem;
+    
+}
+
+
+.upload-review-image button{
+    background: var(--dormorange);
+}
+
+.upload-review-image i{
+    position: absolute;
+    color: #fff;
+    font-size: 1rem;
+    z-index: 1;
+}
+
+.upload-review-image input{
+    transform: scale(10);
+     z-index: 3;
+     opacity: 0;
+
+}
+
+
+.overlay{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: var(--white);
+    position: fixed;
+    z-index: 99999;
+    opacity: .95;
+    filter:blur(2px);
+}
+
+
+ i{
+    color: #ffffff;
+}
+
+.search-wrapper{
+    width: 70%;
+    display: flex;
+    padding: .5rem;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    margin-left:3rem;
+}
+
+.search-wrapper .bi-search{
+    margin-right: .3rem;
+    color: #666;
+}
+
+.search-wrapper input{
+    width: 94%;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+
+.house-wrapper h2{
+background: var(--dormorange);
+color: #ffffff;
+width: fit-content;
+margin-top: 2rem;
+padding: .5rem;
+font-size: 15px;  
+}
+
+.house-card{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    background: #fff;
+    display: flex;
+    box-shadow: 0px 3px 5px #aaa;
+}
+
+.price{
+    display: block;  
+    margin-top: 1rem;
+    color: #fff;
+	background-color: var(--dormblue);
+    width: fit-content;
+    padding: .5rem;
+   border-radius: 5px;
+   transform: scale(.6);
+   opacity: .7;
+   transition: .5s linear; 
+}
+
+.house-card-image {
+    width: 50%;
+}
+
+.house-card-image img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.house-card-image video{
+    height: 100%;
+    width: 100%;
+}
+
+.house-card-text{
+    padding: 1rem;
+}
+
+.house-card button{
+    padding: 1rem;
+    background: var(--dormorange);
+}
+
+
+strong{
+    color: #222;
+}
+.house-status{
+    position: absolute;
+    background: var(--dormorange);
+    padding: 1rem;
+    float: right;
+    color: #ffffff;
+}
+
+.inspect-text button{
+    background: var(--dormorange);
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 3rem; 
+    border-radius: 5px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.inspect-text button:hover{
+    background: var(--dormorange);
+}
+
+.light-color-text{
+    color: #555;
+}
+
+.house-specs{
+    color: #555;
+    font-size: 13px;
+    margin-top: 1rem;
+    display: flex;
+}
+
+.house-specs li{
+    margin-left: 1.5rem;
+}
+
+.time-added{
+    font-size: 11px;
+    float: right;
+    color: #888;
+}
+
+.text-about-house-text{
+    width: 20vw;
+}
+
+
+
+.inspect-image{
+    width: 100%;
+    height: 100%;
+}
+
+.inspect-image img{
+    width: 100%;
+}
+
+.inspect-text{
+    padding: 1rem;
+}
+
+.inspect-text h2{
+    padding-bottom: 1rem;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+@media only screen and (min-width: 200px) and (max-width: 286px) {
+    .card-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        background: var(--dormblue);
+        color: #fff;
+        width: 40%;
+    }
+
+   
+
+    .price{
+        display: block;  
+        margin-top: 3rem;
+        color: #fff;
+        background: var(--dormblue);
+        width: fit-content;
+        padding: .5rem;
+       border-radius: 5px;
+       transform: scale(.7);
+       opacity: .7;
+       transition: .5s linear; 
+    }
+    
+
+    .house-specs{
+        color: #555;
+        font-size: 13px;
+        margin-top: 1rem;
+        display: flex;
+    }
+    
+    .house-specs li{
+        margin-left: 1rem;
+        font-size: 10px;
+    }
+
+
+    .house-wrapper h2{
+        display: block;  
+        margin-top: 0rem;
+        margin-left: -1rem;
+        color: #fff;
+        background: var(--dormblue);
+        width: fit-content;
+        padding: .5rem;
+       border-radius: 5px;
+       transform: scale(.5);
+       opacity: 1;
+       transition: .5s linear;
+       }
+
+       
+.house-wrapper h2:hover{
+    cursor: pointer;
+   transform: scale(.5);
+   opacity: 1;   
+   }
+
+strong{
+    font: 13px;
+    position: absolute;
+}
+
+.inspect-wrapper{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+   display: none;
+    margin-left: -20%;
+}
+
+.house-wrapper{
+    width: 100%;
+    position: absolute;
+    padding: 1rem;
+    margin-left: -20%;
+}
+
+.house-card{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    background: #fff;
+    display: block;
+    box-shadow:none;
+
+}
+ 
+
+
+.bi-box-arrow-left{
+    display: block;
+    visibility: visible;
+    font-size: 20px;
+}
+  
+.fa-info-circle{
+    display: block;
+    visibility: visible;
+    background: var(--dormorange);
+    color: #fff;
+    padding: .4rem;
+
+}
+
+
+.house-card-image {
+    width: 100%;
+}
+
+.house-card-image img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.house-card-image video{
+    width: 100%;
+}
+
+.house-wrapper::-webkit-scrollbar
+{
+	display: none;
+}
+
+ 
+.post-image{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    }
+
+    .coursereview-card{
+        width: 100%;
+        height: fit-content;
+        padding: 1rem;
+        border:  1px solid #0688d3;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+}
+
+
+
+  
+
+
+@media only screen and (min-width: 285px) and (max-width: 600px) {
+ 
+.post-image{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    }
+
+    .coursereview-card{
+        width: 100%;
+        height: fit-content;
+        padding: 1rem;
+        border:  1px solid #0688d3;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+    
+    
+.card-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: var(--dormblue);
+    color: #fff;
+    width: 40%;
+}
+
+
+.inspect-wrapper{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+   display: none;
+    margin-left: -16%;
+}
+
+.house-wrapper{
+    width: 100%;
+    position: absolute;
+    padding: 1rem;
+    margin-left: -16%;
+}
+
+.house-card{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    background: #fff;
+    display: block;
+    box-shadow:none;
+
+}
+ 
+
+.bi-box-arrow-left{
+    display: block;
+    visibility: visible;
+    font-size: 20px;
+}
+ 
+.fa-info-circle{
+    display: block;
+    visibility: visible;
+    background: var(--dormorange);
+    color: #fff;
+    padding: .4rem;
+
+}
+
+.house-card-image {
+    width: 100%;
+}
+
+.house-card-image img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.house-card-image video{
+    height: 100%;
+    width: 100%;
+}
+
+.house-wrapper::-webkit-scrollbar
+{
+	display: none;
+}
+ 
+} 
+
+
+
+
+@media only screen and (min-width: 601px) and (max-width: 850px) {
+
+   
+
+    .house-specs{
+        color: #555;
+        font-size: 13px;
+        margin-top: 1rem;
+        display: flex;
+    }
+    
+    .house-specs li{
+        margin-left: 1rem;
+        font-size: 10px;
+    }
+
+    .bi-box-arrow-left{
+        display: none;
+        visibility: hidden;
+    }
+     
+    .fa-info-circle{
+        display: none;
+        visibility: hidden;
+    }
+    
+        .inspect-wrapper{
+            width: 40%;
+            background: #fff;
+            overflow-y: visible;
+            height: 40%;
+            position: absolute;
+            margin-left: 40%;
+        }
+        
+         
+    .house-wrapper{
+        width: 50%;
+        padding: 1rem;
+        height: fit-content; 
+        overflow-y: scroll;
+        display: block;
+        
+    }
+
+    
+        
+        .house-card{
+            width: 100%;
+            height: auto;
+            margin-top: 1rem;
+            background: #fff;
+            display: block;
+            box-shadow:none;
+        
+        }
+         
+        
+        .bi-box-arrow-left{
+            font-size: 2rem;
+            color: #000;
+        }
+        
+        
+        .house-card-image {
+            width: 100%;
+        }
+        
+        .house-card-image img{
+            height: 100%;
+            width: 100%;
+        }
+        
+        
+        .house-card-image video{
+            height: 100%;
+            width: 100%;
+        }
+        
+        .house-wrapper::-webkit-scrollbar
+        {
+            display: none;
+        }
+
+        .coursereview-card{
+            width: 100%;
+            height: fit-content;
+            padding: 1rem;
+            border:  1px solid #0688d3;
+            border-radius: 1rem;
+            overflow: hidden;
+        }
+}
+
+
+
+@media only screen and (min-width: 851px) and (max-width: 950px) {
+    .coursereview-card{
+        width: 100%;
+        height: fit-content;
+        padding: 1rem;
+        border:  1px solid #0688d3;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    .bi-box-arrow-left{
+        display: none;
+        visibility: hidden;
+    }
+     
+    .fa-info-circle{
+        display: none;
+        visibility: hidden;
+    }
+    
+        .inspect-wrapper{
+            width: 30%;
+            background: #fff;
+            overflow-y: visible;
+            height: 40%;
+            position: fixed;
+            margin-left: 50%;
+        }
+        
+         
+    .house-wrapper{
+        width: 60%;
+        padding: 1rem;
+        height: fit-content; 
+        overflow-y: scroll;
+        display: block;
+        
+    }
+        
+        .house-card{
+            width: 100%;
+            height: auto;
+            margin-top: 1rem;
+            background: #fff;
+            display: block;
+            box-shadow:none;
+        
+        }
+         
+        
+        .bi-box-arrow-left{
+            font-size: 2rem;
+            color: #000;
+        }
+        
+
+        
+        
+        .house-card-image {
+            width: 100%;
+        }
+        
+        .house-card-image img{
+            height: 100%;
+            width: 100%;
+        }
+        
+        
+        .house-card-image video{
+            height: 100%;
+            width: 100%;
+        }
+        
+        .house-wrapper::-webkit-scrollbar
+        {
+            display: none;
+        }
+}
+
+
+
+@media only screen and (min-width: 951px) and (max-width: 1500px) {
+  
+ 
+    .post-image{
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        }
+    
+        .coursereview-card{
+            width: 100%;
+            height: fit-content;
+            padding: 1rem;
+            border:  1px solid #0688d3;
+            border-radius: 1rem;
+            overflow: hidden;
+        }
+
+    .about-studytool-text{
+        padding: 1rem;
+        width: 60%;
+    }
+    
+    
+    .about-studytool-text h3{
+        font-weight: bolder;
+        font-size:1rem;
+    }
+    
+    .card-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        background: var(--dormblue);
+        color: #fff;
+        width: 10%;
+    }
+    
+
+
+.bi-box-arrow-left{
+    display: none;
+    visibility: hidden;
+}
+ 
+.fa-info-circle{
+    display: none;
+    visibility: hidden;
+}
+
+    .inspect-wrapper{
+        width: 30%;
+        background: #fff;
+        overflow-y: visible;
+        height: 30%;
+        position: fixed;
+        margin-left: 50%;
+        margin-top: 0%;
+    }
+
+    .inspect-text h2{
+        font-size: 17px;
+        font-weight: bolder;
+    }
+    
+     
+.house-wrapper{
+    width: 60%;
+    padding: 1rem;
+    height: fit-content; 
+    overflow-y: scroll;
+    display: block;
+    
+}
+    
+    .house-card{
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+        background: #fff;
+        display: block;
+        box-shadow:none;
+    
+    }
+     
+    
+    .bi-box-arrow-left{
+        font-size: 2rem;
+        color: #000;
+    }
+    
+    
+    .house-card-image {
+        width: 100%;
+    }
+    
+    .house-card-image img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    
+    .house-card-image video{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .house-wrapper::-webkit-scrollbar
+    {
+        display: none;
+    }
+     
+}    

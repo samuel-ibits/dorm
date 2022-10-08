@@ -1,0 +1,408 @@
+:root{
+    --ash: #e9e9e9;
+    --ash2: #f7f7f7;
+    --white: #ffffff;
+    --dormblue: #1597E2;
+    --darkcolor: #020202;
+    --dormash: lightgrey;
+    --dormorange: #f96b03;
+}
+ 
+
+.texter-ii-page-holders{
+width: 100%;
+height: auto;
+display: flex;
+overflow-y: scroll;
+flex-direction: row;
+}
+
+.texter-ii-page-sub-page-holders{
+    height: auto;
+}
+
+.texter-ii-page-sub-page-holders:nth-child(1){
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--ash2);
+    padding: .1rem;
+}
+
+
+
+.file-btn-holder{
+    width: 80%;
+    overflow: hidden;
+    height: auto;
+    padding: .2rem;
+    display: grid;
+    place-items: center;
+    box-shadow: 0px 0px .1rem var(--darkcolor);
+    border-radius: 1px;
+    margin-bottom: 2rem;
+}
+
+.file-btn-holder input[type='file']{
+    z-index: 4;
+    transform: scale(9);
+    opacity: 0;
+}
+
+.file-btn-holder p{
+    font-size: .7rem;
+    font-weight: 1000;
+}
+
+.file-btn-holder div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.file-btn-holder div p:nth-child(1){
+    font-size: 1rem;
+    color: var(--dormblue);
+}
+
+
+.file-btn-holder div p:nth-child(2){
+    margin-left: 1rem;
+    color: #444;
+}
+
+.title{
+    font-size: .8rem;
+    margin: 0.5rem 0rem;   
+}
+
+.search-bar{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: .1rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px .1rem var(--darkcolor);
+    background: var(--ash);
+}
+
+.search-bar input{
+    border: none;
+    outline: none;
+    padding: .3rem;
+    font-size: .6rem;
+    background: transparent;
+    font-weight: 1000;
+    width: 100%;
+}
+
+.search-bar ion-icon{
+    color: #444;
+}
+
+.search-bar input::placeholder{
+    font-size: .5rem;
+    font-weight: 1000;
+}
+
+.recievers-card-holder{
+    width: 100%;
+    height: 20rem;
+    overflow-y: scroll;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.reciever-card-image{
+    overflow: hidden;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.reciever-card-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.recievers-card{
+    display: flex;
+    flex-direction: row;
+    background: var(--white);
+    padding: .3rem;
+    align-items: center;
+    border-radius: 2px;
+}
+
+
+.recievers-card-ii{
+    display: flex;
+    flex-direction: row;
+    padding: .3rem;
+    width: fit-content;
+    align-items: center;
+}
+
+.reciever-card-details{
+    display: flex;
+    flex-direction: column;
+    margin-left: .5rem;
+}
+
+.reciever-card-details p:nth-child(1){
+    font-weight: 1000;
+    font-size: .6rem;
+}
+
+
+.reciever-card-details p:nth-child(2){
+    font-size: .5rem;
+    margin-top: .2rem;
+    color: #777;
+    font-weight:900;
+}
+
+.statue-of-text{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.statue-of-text ion-icon{
+    font-size: .8rem;
+}
+
+.statue-of-text p{
+    font-size: .4rem;
+}
+
+.green{
+    color: green;
+}
+
+.orange{
+    color: var(--dormorange);
+}
+
+.red{
+    color: red;
+}
+
+.texter-ii-page-sub-page-holders-top{
+    width: 100%;
+    height: auto;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.texting-area{
+    width: 100%;
+    height: 24rem;
+}
+
+.texting-area{
+    padding: .2rem;
+    width: 38rem;
+    height: auto;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 1rem;
+    box-shadow: 0px 0px .1rem var(--darkcolor);
+    background: var(--white);
+}
+
+.texting-area input{
+width: 90%;
+border: none;
+outline: none;
+background: transparent;
+}
+
+.texting-area button{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 2px;
+    margin-left: .5rem;
+    cursor: pointer;
+    background: var(--dormblue);
+    color: var(--white);
+    border: none;
+    outline: none;
+    text-shadow: 0px 0px .1rem var(--dormblue);
+    box-shadow: 0px 0px .1rem var(--dormblue);
+    transition: .5s;
+}
+
+.texting-area button:hover{
+    background: var(--dormorange);
+}
+
+
+.texter-ii-page-sub-page-holders:nth-child(2){
+    width: 38rem;
+    height: 24rem;
+    margin-left: 1rem;
+}
+
+.texter-available{
+    margin-left: auto;
+    font-size: .6rem;
+    font-weight: 1000;
+}
+
+.message-holder{
+    width: 100%;
+    height: 21rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: scroll;
+}
+
+.message p{
+    font-size: .6rem;
+}
+
+.message{
+    background: var(--dormblue);
+    color: var(--white);
+    padding: .4rem;
+    border-radius: .3rem;
+}
+
+.date-of-sent-message{
+    margin-top: .1rem;
+    font-weight: 1000;
+    font-size: .6rem;
+    color: #444;
+}
+
+.btn-hide-bg-screen{
+    visibility: hidden;
+    display: none;
+}
+
+.chat-icon{
+    color: var(--dormblue);
+    cursor: pointer;
+}
+
+.contacts{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .contacts{
+        display: block;
+    }
+
+    .messager{
+        display: none;
+    }
+
+    .btn-hide-bg-screen{
+        visibility: visible;
+        display: inline;
+    }
+
+    .texter-ii-page-sub-page-holders-top{
+        width: 90%;
+        height: auto;
+        padding: .5rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .texter-ii-page-sub-page-holders:nth-child(2){
+        width: 100%;
+        background: var(--ash2);
+        height: auto;
+        position: absolute;
+        overflow-y: scroll;
+        bottom: 5rem;
+        margin-left: 0;
+        top: .1rem;
+    }
+
+    .texter-ii-page-sub-page-holders:nth-child(1){
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--ash2);
+        padding: .1rem;
+        position: absolute;
+        margin-top: 2rem;
+    }
+    
+
+
+    .recievers-card-holder{
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    
+.message-holder{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    overflow-y: scroll;
+}
+
+.texting-area{
+    padding: .2rem;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 4rem;
+    gap: 1rem;
+    box-shadow: none;
+    background: var(--white);
+}
+
+
+.texting-area input{
+    width: 70%;
+    padding: .3rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    }
+    
+    .texting-area button{
+        height: 2rem;
+        width: 2rem;
+        border-radius: 2px;
+        margin-left: .5rem;
+        cursor: pointer;
+        background: var(--dormblue);
+        color: var(--white);
+        border: none;
+        outline: none;
+        text-shadow: 0px 0px .1rem var(--dormblue);
+        box-shadow: 0px 0px .1rem var(--dormblue);
+        transition: .5s;
+    }
+}

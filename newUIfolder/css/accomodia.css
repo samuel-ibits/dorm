@@ -1,176 +1,225 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
 :root{
     --ash: #e9e9e9;
     --white: #ffffff;
     --dormblue: #1597E2;
-    --darkblue: #062b41;
-    --lighterblue-2:#f0f4f5;
-    --lighterblue-input:#26a3c2;
     --darkcolor: #020202;
     --dormash: lightgrey;
     --dormorange: #f96b03;
-    --darker-text:#444;
-    --ligher-text:#999;
-    --boxop: .8;
-    --imagewidth:10rem;
+}
+ 
+
+
+
+ 
+body{
+    overflow-x: hidden;
+    background: rgb(252, 250, 250);
+}
+
+.home-info{
+    position: fixed;
+    z-index: 999999;
+    background: #ffffff;
+    padding: .5rem;
+    bottom: 3rem;
+}
+
+strong{
+    font-weight: bolder;
 }
 
 
-.search-2 button{
-    height: auto;
-    width: auto;
+.contact-agent{
+    color: var(--dormblue);
+}
+
+.chat{
+    background: var(--dormorange);
+    padding: 1rem;
+    color: #fff;
     border: none;
-    background: var(--dormblue);
-    color: var(--white);
-    padding: .5rem 1rem;
-    margin-left: auto;
-}
-
-
-.remove-card{
-    margin-right: auto;
-    margin-bottom: auto;
-    cursor: pointer;
-    color: var(--dormorange);
+    outline: none;
 }
 
 .accomodia{
     width: 100%;
     height: auto;
-}
-
-.slider{
-    width: 100%;
-    height: 60vh;
-    margin-top: 1rem;
-    visibility: visible;
-}
-
-.date-and-time{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    font-size: .7rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.date-and-time{
-    font-weight: 600;
-}
-
-.date-and-time span{
-    font-weight: 400;
-}
-
-.send-btn{
-    width: 90%;
-    padding: .5rem;
-    background: var(--darkblue);
-    border: none;
-    color: var(--ash);
-    font-weight: 400;
-    font-size: .9rem;
-border-radius: 5px;
-cursor: pointer;}
-
-.meeting-card-holder-dark-bg{
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    background: var(--darkcolor);
-    z-index: 9;
-    top: 0;
-    left: 0;
-    opacity: .5;
-}
-
-.meeting-card-holder{
-    width: 100vw;
-    height: 100vh;
-    display: flex; z-index: 10;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-.meeting-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 80px;
+    display: grid;
     gap: 1rem;
-    width: 18rem;
-    height: 80vh;
-    background: var(--white);
-    position: absolute;
-    padding-bottom: .6rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    z-index: 9;
+    top: 0rem;
+    position: absolute;   
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr)); 
+    bottom: 3rem;
+    overflow: scroll;
 }
 
-.meeting-card-profile-pic{
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 1px solid var(--dormblue);
-}
-
-.meeting-card-info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-
-}
-
-.meeting-qr{
-    width: 6rem;
-    height: 6rem;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: var(--dormblue);
-    cursor: pointer;
-}
-
-.meeeting-id div{
+.center-accomodia-card{
     width: 100%;
-    padding: .2rem .4rem;
-    border: none;
-    background: var(--dormorange);
-    color: var(--white);
+    display: flex;
+    justify-content: center;
+}
+
+
+/*change hieght of accomodia-card to auto during backend word so i dynamically fit user's data*/
+
+.accomodia-card{
+    width: 98vw;
+    height: 220px;
+    box-shadow: 0px 3px 2px #aaa;
+    background: #fff;
+    overflow: hidden;
+    margin-left: 1vw;
+    padding-bottom: 1rem;
     border-radius: 2px;
 }
 
-.meeting-card-warning{
-    width: 80%;
-    color: var(--ligher-text);
+
+
+
+.top-image{
+    width: 100%;
+    height: 70%;
 }
 
-.meeting-card-warning p{
-    font-size: .5rem;
+.top-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-div{
+    width: 100%;
+    padding: .5rem;
+
+}
+
+.centered-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-div-search{
+    margin-top: 5rem;
+    width: 100%;
+    position: absolute;
+
+}
+
+.statues{
+    position: absolute;
+    padding: .5rem;
+    background: var(--dormorange);
+    color: #fff;
 }
 
 
 
-.meeting-card-user-name{
-    font-size: 1.3rem;
-    font-weight: 500;
+.bi-geo-alt-fill{
+    color: var(--dormblue);
 }
 
-.meeting-sub{
-    font-size: .5rem;
-    color: var(--ligher-text);
+.name-of-house{
+    font-weight: bold;
 }
 
-/*swiper.js slider starts here*/
+.location{
+    font-size: 13px;
+}
+
+.bottom-space{
+    height: 30px;
+}
+
+.accomodia-holder{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background: transparent;
+}
+
+.price-of-house{
+    position: relative;
+    padding: .5rem;
+    background: var(--dormorange);
+    color: #fff; 
+    width: max-content;
+    margin-left: auto;
+}
+
+.inspect-image{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999999;
+    margin-top: 0rem;
+    display: none;
+    
+}
+
+.exit{
+    padding: .5rem;
+    background: var(--dormblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.remove{
+    position: absolute;
+    color: var(--dormorange);
+    border: 3px solid var(--dormblue);
+    border-radius: 50%;
+    z-index: 999999;
+    padding: 0rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    text-shadow: 0px 3px 4px #333;
+ 
+}
+
+.remove i{
+    font-size: 2rem;
+    color: var(--dormorange);
+   
+}
+
+.darkbackground{
+    width: 100%;
+    height: 100%;
+    background: var(--darkcolor);
+    opacity: .5;
+    position: fixed;
+    z-index: 999999;
+    display: none;
+}
+
+.add-house{
+    position: fixed;
+    padding: .5rem;
+    color: #fff;
+    z-index: 99999;
+    background: var(--dormblue);
+    bottom:5rem ;
+    border-radius: 20px;
+    left: -.5rem;
+    transform: scale(.7);
+    text-shadow: 0px 3px 3px #333;
+    box-shadow: 0px 2px 3px #333;
+}
+
+
+
+
 .swiper {
     width: 100%;
     height: 100%;
@@ -179,8 +228,7 @@ cursor: pointer;}
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
-
+    background: var(--dormblue);
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -203,943 +251,483 @@ cursor: pointer;}
     object-fit: cover;
   }
 
-
   .swiper {
-    width: 100%;
-    height: 300px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .swiper-slide {
-    background-size: cover;
-    background-position: center;
-  }
 
-  .mySwiper2 {
-    height: 80%;
+.house-images{
     width: 100%;
-  }
+    object-fit: contain;
+}
 
-  .mySwiper {
-    height: 20%;
-    box-sizing: border-box;
-    padding: 10px 0;
-  }
+.open-request{
+    float: right;
+}
 
-  .mySwiper .swiper-slide {
-    width: 25%;
-    height: 100%;
-    opacity: 0.4;
-  }
 
-  .mySwiper .swiper-slide-thumb-active {
-    opacity: 1;
-  }
 
-  .swiper-slide img {
-    display: block;
+.request-div-holder{
+    position: fixed;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-  }
-
-  .thumbnail{
-    margin-top: 1rem;
-  }
-
-
-/*swiper.js slider stops here*/
-
-
-.house-info{
-    width: 90%;
-    height: auto;
-    margin-top: 3rem;
-    background: var(--lighterblue-2);
-    padding: 1rem;
-}
-
-.accomodia-inspect{
-    display: flex;
-    gap: .5rem;
-    flex-direction: column;
-    align-items: center;
-}
-
-.house-info-sub{
-    padding: 1rem 0px;
-}
-
-.house-info-sub:nth-child(1){
-    border-bottom: 1px solid #ccc;
-}
-
-.house-info-sub h2{
-    font-size: 2rem;
-    font-weight: 400;
-}
-
-.orange{
-    color: var(--dormorange);
-}
-
-.grey{
-    color: #777;
-}
-
-
-.grey-2{
-    color: #777;
-    font-weight: 1000;
-    font-size: 1.4rem !important;
-}
-
-.grey-3{
-    color: #777;
-    font-weight: 300;
-}
-
-.house-info-sub ul{
-    list-style: none;
+    background: #020202;
+    opacity: .96;
+    z-index: 99;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8vw;
-}
-
-.stars{
-    list-style: none;
-    display: flex;
-}
-
-.rating{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: .1rem;
-}
-
-.rating ion-icon{
-    cursor: pointer;
-}
-
-.good{
-    color: rgb(243, 163, 57);
-}
-
-.not-good{
-    color: var(--ligher-text);
-}
-
-
-.blue-small{
-    color: var(--dormblue);
-    font-size: .6rem;
-}
-
-
-
-.agent-info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-    color: #777;
-}
-
-.lighter{
-    width: 90%;
-    padding: 1rem;
-    background: var(--lighterblue-2);
-    margin-top: 2rem;
-}
-
-.location-icon{
-    font-size: 2rem;
-}
-
-.agent-info-button-holder{
-    display: flex;
-    gap: 2vw;
-    margin-top: 1rem;
-}
-
-.agent-info-button-holder button{
-    width: 50%;
-    padding: .7rem 0px;
-    border: none;
-    color: var(--white);
-    border-radius: 5px;
-}
-
-.orange-bg{
-    background: var(--dormorange);
-}
-
-.blue-bg{
-    background: var(--dormblue);
-}
-
-.bottom-div{
-    margin-top: 4rem;
-    width: 80%;
-    margin-bottom: 2rem;
-}
-
-
-.big-blue-bottom{
-    margin-top: 1rem;
-    width: 100%;
-    padding: 1rem 0px;
-    border-radius: 5px;
-    background: var(--dormblue);
-    border: none;
-    color: var(--white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-}
-
-
-.accomodia-side{
-    width: 100%;
-    height: 80vh;
-    background: var(--dormblue);
-    margin-top: auto;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: .5rem;
-    gap: 1rem;
-}
-
-.side-accomodia-sub{
-    height: auto;
-    width: 90%;
-    background: var(--darkblue);
-    padding: .5rem;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: .4rem;
-}
-
-.region{
-    color: var(--ash);
-}
-
-.regioninput{
-    width: 100%;
-    height: 4rem;
-    border: none;
-    outline: none;
-    padding: .2rem;
-    border-radius: 5px;
-    background: var(--lighterblue-input);
-}
-
-.regioninput::placeholder{
-    color: var(--white);
-}
-
-.two-inputs{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    color: var(--ash);
-}
-
-.input-holder-size{
-    width: 40%;
-    height: auto;
-    background: var(--white);
-    border: .1px solid var(--dormorange);
-    padding: .4rem;
-    border-radius: 5px;
-    color: var(--darkcolor);
-}
-
-.input-holder-size p{
-    font-size: .8rem;
-}
-
-.input-holder-size input{
-    width: 100%;
-    border: none;
-    outline: none;
-    margin-top: 1rem;
-}
-
-.room-number-radio{
-    list-style: none;
-    display: flex;
-    gap: 10%;
-}
-
-.room-number-radio li{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: var(--ash);
-    gap: .4rem;
-}
-
-.room-number-radio li input[type='radio'] {
-    width: 25px;
-    height: 25px;
-    background-color: var(--dormorange);
-    border: 2px solid white;
-}
-
-.accomodia-notification-holder{
-    width: 100%;
-    color: var(--white);
-    font-size: 1.5rem;
-    border-top: 1px solid #eee;
-    padding-top: 1rem;
-    margin-top: 2rem;
-    text-align: right;
-}
-
-.accomodia-card-holder{
-    width: 100%;
-    margin-top: 1rem;
-}
-
-.accomodia-card{
-    width: 100%;
-    border: 2px solid var(--ligher-text);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    gap: .5rem;
-    padding: .5rem;
-}
-
-.accomodia-card-image{
-    width: var(--imagewidth);
-    height: 7rem;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.accomodia-card-image img{
-    width: 100%;
-    height: 100%;
-}
-
-.image-number{
-    font-size: .7rem;
-    text-align: right;
-    position: absolute;
-    margin-top: -1.5rem;
-    width: calc(var(--imagewidth) - .2rem);
-    color: var(--ash);
-    text-shadow: 1rem 1rem .9rem #111 ;
-}
-
-.card-section-2{
-    width: 50%;
-    height: 7rem;
-}
-
-.location-section-2{
-    color: var(--dormblue);
-    font-size: .7rem;
-    margin-top: .3rem;
-}
-
-
-.card-section-2 button{
-    margin-top: 2rem;
-    border: none;
-    outline: none;
-    background: transparent;
-    border: 2px solid #777;
-    color: #777;
-    padding: .3rem 1rem;
-    border-radius: 5px;
-}
-
-.card-section-3{
-    margin-left: auto;
-}
-
-.card-section-3 button{
-border: none;
-margin-left: auto;
-color: var(--white);
-background: var(--dormorange);
-padding: .1rem .9rem;
-margin-top: .3rem;
-}
-
-.accomodia-card-holder{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
-
-.back-to-accomodia{
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-}
-
-.mobile{
-    display: none;
-}
-
-
-.accomodia-card-mobile-lower-div{
-    display: none;
-}
-
-.inspect-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .4rem;
-    cursor: pointer;
-}
-
-.hide-mobile{
-    display: inherit;
-}
-
-.mobile-house-info-holder{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-@media only screen and (max-width: 600px) {
-    body{
-        background: #eee;
-    }
-
-    .hide-mobile{
-        display: none;
-    }
-    .accomodia-card-mobile-lower-div{
-        display: inherit;
-    }
-    .accomodia-card-holder{
-        display: flex;
-        flex-direction: column;
-        gap: .5rem;
-        width: 100%;
-    }
-
-    .card-section-2{
-        width: 100%;
-        height: auto;
-        padding: 1rem;
-    }
-
-    .page-content{
-        width: 100%;
-    }
-
-    .accomodia-card{
-        width: 100%;
-        border: 1px solid var(--ligher-text);
-        border-radius: 0px;
-        display: block;
-        gap: .5rem;
-        padding: 0rem;
-        background: var(--white);
-    }
-
-
-    
-.accomodia-card-image{
-    width: 100%;
-    height: 13rem;
-    border-radius: 0px;
-    overflow: hidden;
-}
-
-.accomodia-card-image img{
-    width: 100%;
-    height: 100%;
-}
-
-.image-number{
-    font-size: .7rem;
-    text-align: right;
-    position: absolute;
-    margin-top: -1.5rem;
-    width: calc(var(--imagewidth) - .2rem);
-    color: var(--lighterblue-input) !important;
-    text-shadow: 1rem 1rem .9rem #111 ;
-
-}
-
-.card-section-2{
-    width: 50%;
-    height: auto;
-}
-
-.location-section-2{
-    color: var(--dormblue);
-    font-size: .7rem;
-    margin-top: .3rem;
-}
-
-
-.card-section-2 button{
-display: none; 
-}
-
-.card-section-3{
-    margin-left: auto;
-    padding: 0px 1rem;
-}
-
-.card-section-3 button{
-border: none;
-margin-left: auto;
-color: var(--white);
-background: var(--dormorange);
-padding: .5rem 1.5rem;
-position: absolute;
-margin-top: -19.1rem;
-right: 0rem;
-}
-
-.accomodia-card-holder{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.back-to-accomodia{
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-}
-
- 
-.image-number{
-    font-size: .9rem;
-    text-align: right;
-    position: absolute;
-    margin-top: 5rem;
-    right: 1rem;
-    width: calc(var(--imagewidth) - .2rem);
-    color: var(--darker-text);
-    text-shadow: 1rem 1rem .9rem #111 ;
-}
-
-.orange{
-    font-weight: 400;
-    font-size: 1.1rem;
-}
-
-.grey-3{
-    font-size: 1.3rem;
-}
-
-.accomodia-card-mobile-lower-div{
-    width: 100%;
-    display: flex;
-    border: 1px solid var(--ligher-text);
-    border-bottom: none;
-    margin-top: .5rem;
-}
-
-.accomodia-card-mobile-lower-div-sub{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.accomodia-card-mobile-lower-div-sub:nth-child(1){
-    border-right: 1px solid var(--ligher-text);
-}
-
-.blue-border-bottom{
-    width: 80%;
-    height: 120%;
-    border-bottom: 4px solid var(--dormblue); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .5rem 0px;
-}
-
-
-
-.mobile-search{
-    width: 100%;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    gap: .3rem;
-    height: auto;
-    margin-bottom: 1rem;
-    background: var(--white);box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.mobile-search input{
-    height: 100%;
-    border: none;
-    outline: none;
-    padding: 1rem 0px;
-}
-
-.mobile-filter-holder{
-    width: 100%;
-    padding: .3rem;
-    height: auto;
-    background: var(--white);
-    overflow-y: scroll;
-}
-
-.mobile{
-    display: inherit;
-}
-
-.mobile-filter-element-holder{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    width: 150%;
-}
-
-.mobile-filter-element-holder 
-.filter-name{
-    border-radius: 10px;
-    padding: .5rem 1rem;
-    width: 7rem;
-    outline: none;
-    color: var(--ligher-text);
-    border: 1px solid var(--ligher-text);
-    display: flex;
-}
-
-.small-arrow{
-    margin-left: auto;
-}
-
-.up{
-    transform: rotate(0deg);
-}
-
-.down{
-    transform: rotate(180deg);
-}
-
-.filter-holder{
-    position: absolute;
-    z-index: 10;
-    left: 0;
-    margin-top: .5rem;
-    width: 100vw;
+    z-index: 9999999;
    
 }
 
-.mobile-filter{
-    width: 100vw;
-    height: auto; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 3rem 1rem;
-    width: 100%;
-    background: var(--dormblue);
-    border-bottom-left-radius: 25px;
-}
-
-.price-div-mobile .two-inputs .input-holder-size p{
-    color: var(--white) !important;
-    margin-bottom: 0px;
-}
-
-.price-div-mobile .two-inputs .input-holder-size{
-width: 40% !important;
-height: auto;
-border: 1px solid var(--white);
-padding: .4rem;
-border-radius: 5px;
-background: var(--lighterblue-input);
-}
-
-.price-div-mobile .two-inputs .input-holder-size input{
-    margin-top: 0px;
-    background: var(--lighterblue-input);
-    height: 1rem;
-    padding: 0px;
-    color: var(--white);
-}
-
-.mobile-filter div input[type = 'search']{
-    width: 87vw;
-    border: 1px solid var(--white);
-    padding: .4rem;
-    border-radius: 5px;
-    background: var(--lighterblue-input);
-}
-
-.mobile-filter div input::placeholder{
-    color: var(--white);
-}
-
-
-.mobile-room-number-radio{
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-    width: 80vw;
-    color: var(--white);
-}
-
-.mobile-room-number-radio li{
-    display: flex;
-    gap: .1rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.mobile-room-number-radio li input{
-    width: 20px;
-    height: 20px;
-    background: var(--dormorange);
-    border: 2px solid var(--white);
+.bi-question-lg{
+    animation: rot .5s linear infinite alternate;
 
 }
 
-.mobile-filter div p{
-    color: var(--white);
-    margin-bottom: .4rem;
+
+@keyframes rot{
+    0%{
+      transform: rotate(-10deg); 
+    }
+
+    100%{
+       transform: rotate(10deg);
+    }
 }
 
-
-.mobile-filter-element-holder 
-.filter-name:focus{
-    background: var(--ligher-text);
-    color: var(--white); 
-    outline: none;
-}
-
-
-.mobile-house-info-holder{
-    height: 75vh;
-   top: 35vh;
-    width: 100vw;
-    position: absolute;
-    overflow-y: scroll;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    bottom: 4rem;
-    z-index: 0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.slider{
-    position: fixed;
-    height: 39vh;
-    top: 2rem;
-    z-index: 99;
-    background: var(--white);
-}
-
-
-.accomodia-card-holder{
-    bottom: 4rem;
-    overflow-y: scroll;
+.request-div-inner-div{
+    margin-top: -1rem;
+    padding: 1rem;
+    width: fit-content;
     height: auto;
-    position: absolute;
-    top: 6.5rem;
+    background: #eee;
 }
 
-.back-to-accomodia{
+.spec-div{
+    display: flex;
+    margin: .5rem 0px;
+}
+
+.spec-div input{
+    width: 4rem;
+    margin: 0px 1rem;
+    outline: none;
+    border: none;
+}
+
+.title-text{
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--dormblue);
+    text-align: center;
+    text-shadow: 0px 1px 1px #aaa;
+}
+
+
+
+.spec-label{
+    font-weight: 600;
+    font-size: .7rem;
+    color: var(--dormblue);
+    text-shadow: 0px 1px 1px #aaa;
+}
+
+.spec-wrapper textarea{
+    padding: .5rem;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.spec-wrapper button{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: var(--dormblue);
+    color: #eee;
+    padding: .3rem;
+    box-shadow: 0px 2px 3px #333;
+    text-shadow: 0px 2px 3px #333;
+}
+
+
+.exit-big-screen{
+    background: var(--dormblue);
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 2rem;
     height: 2rem;
-    cursor: pointer;
-    position: absolute;
-    font-size: 1rem;
-    z-index: 10;
-    color: var(--darker-text);
-    display: grid;
-    place-items: center;
     border-radius: 50%;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    background: var(--white);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
 }
+@media screen and (min-width: 200px) and (max-width: 300px) {
+  
+   
 
-.house-info{
-    margin-top: 5rem;
-    border-radius: 10px;
-    background: var(--white);
-    margin-top: 12rem;
-}
-
-
-.house-info-sub h2{
-    font-size: .9rem !important;
-    font-weight: 400;
-}
-
-.blue-small{
-    font-size: .6rem;
-}
-
-.thumbnail{
-    margin-top: -9vh;
-}
-
-
-.lighter{
-    background: var(--white);
-    border-radius: 10px;
-}
-
-.bottom-div{
-    background: var(--white);
-    border-radius: 10px;
-    padding: 2rem 10px;
-    width: 80vw;
-    margin-bottom: 6rem;
-    margin-top: 1rem;
-}
-
-
-.about-house-info p{
-    font-size: .7rem;
-}
-
-.thick{
-    font-weight: 500;
-}
-
-.bg-grey{
-    background: var(--darker-text) !important;
-}
-
-
-
-.meeting-card-holder-dark-bg{
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    background: var(--darkcolor);
-    z-index: 191;
-    top: 0;
-    left: 0;
-    opacity: .7;
-}
-
-.meeting-card-holder{
-    width: 100vw;
-    height: 100vh;
-    display: flex; 
-    z-index: 210;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-.meeting-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    width: 90vw;
-    height: 90vh;
-    background: var(--white);
-    position: absolute;
-    margin-top: 3rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.meeting-card-profile-pic{
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 1px solid var(--dormblue);
-}
-
-.meeting-card-info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-
-}
-
-.meeting-qr{
-    width: 6rem;
-    height: 6rem;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: var(--dormblue);
-}
-
-.meeeting-id div{
+   
+        
+.house-images{
     width: 100%;
-    padding: .2rem .4rem;
-    border: none;
-    background: var(--dormorange);
-    color: var(--white);
-    border-radius: 2px;
-}
-
-.meeting-card-warning{
-    width: 80%;
-    color: var(--ligher-text);
-}
-
-.meeting-card-warning p{
-    font-size: .6rem;
-    text-align: center;
+    height: 100vh;
+    object-fit: contain;
 }
 
 
 
-.meeting-card-user-name{
-    font-size: 1.3rem;
-    font-weight: 500;
-}
+  }
 
-.meeting-sub{
-    font-size: .5rem;
-    color: var(--ligher-text);
-}
 
-.mobile-search button{
+  @media screen and (min-width: 301px) and (max-width: 420px) {
+
+    
+.house-images{
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+}
+ 
+.house-images img{
     height: 100%;
-    width: auto;
-    border: none;
+    width: 100%;
+}
+
+   
+.upload-package-container{
+    width: 100%;
+}
+
+
+
+
+
+
+  }
+
+  
+  @media screen and (min-width: 421px) and (max-width: 550px) {
+ 
+
+    
+
+   
+  }
+
+
+  
+  @media screen and (min-width: 600px) and (max-width: 800px) {
+
+        
+        
+
+    }
+
+
+    @media screen and (min-width: 801px){
+        .add-house{
+            position: fixed;
+            padding: .5rem;
+            color: #fff;
+            z-index: 99999;
+            background: var(--dormblue);
+            bottom: 1rem ;
+            border-radius: 20px;
+            left: 7rem;
+            text-shadow: 0px 3px 3px #333;
+            box-shadow: 0px 2px 3px #333;
+        }
+        
+     
+      
+    .remove{
+        position: absolute;
+        color: var(--dormblue);
+        z-index: 9999999;
+        margin: 2rem;
+    }
+    
+    .remove i{
+        font-size: 4rem;
+    }
+    
+
+
+
+.upload-wrapper{
+    width: 90%;
+    justify-content: center;
+    min-height: 100vh;
+  
+}
+
+.upper-div{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+    
+}
+
+
+.addhouse-div{
+    width: max-content;
+    height: 70vh;
+    overflow: scroll;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    z-index: 999999;
+    display: none;
+    padding: 3rem;
+    
+}
+
+
+.add-btn-div{
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.add-btn-div button{
     background: var(--dormblue);
-    color: var(--white);
-    padding: .5rem 1rem;
-} 
+    color: #ffffff;
+    border: none;
+    outline: none;
+    padding: .5rem;
+}
+
+.upload-wrapper{
+    width: 100%;
+    justify-content: center;
+    height: auto ;
+}
+
+.upper-div{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.upload-wrapper span{
+    font-weight: bolder;
+    float: right;
+    margin-left: auto;
+}
+
+.upper-div-img{
+    width: 100px;
+    overflow: hidden;
+    height: 100%; align-items: center;
+    display: flex;
+}
+
+.upper-div-img img{
+    width: 100%;
+}
+
+.uploader{
+    border: 2px solid;
+    margin-top: 1rem;
+}
+
+
+.upload-input{
+    display: flex;
+}
+
+.upload-input input{
+    border: none;
+    outline: none;
+    background: transparent;
+    border: none;
+    padding: .5rem;
+}
+
+
+.file-selected{
+    display: flex;
+    background: var(--dormblue) ;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    overflow: hidden;
+    padding: .5rem;
+}
+.file-selected input[type=file]{
+  transform: scale(4);
+  opacity: 0;
+  z-index: 5;
+  }
+
+  .bi-filetype-pdf{
+      position: absolute;
+      z-index: 2;
+      text-align: center;
+  }
+
+  .bi-camera{
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .cartegory-div{
+      width: 100%;
+      border: 2px solid #aaa;
+      margin: .5rem;
+      margin-left: 0rem;
+
+  }
+
+  .cartegory-div input{
+      border: none;
+      outline: none;
+      outline: none;
+      width: 95%;
+      padding: .3rem;
+  }
+
+  .centered{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--dormorange);
+  }
+
+  .submit{
+      width: 100%;
+      background: var(--dormblue);
+      margin-top: 1rem;
+      padding: .5rem;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      border: none;
+      outline: none;
+      color: #ffffff;
+      margin-bottom: 3rem;
+  }
+
+  .additional-info{
+      display: none;
+  }
+  
+
+  .addbtn{
+      background: var(--dormblue);
+      padding: .3rem;
+      border: none;
+      color: #ffffff;
+      transform: scale(.9);
+      width: max-content;
+      font-size: 10px;
+  }
+
+  .additional-info .uploader  {
+      border: 2px solid #eee;
+  }
+
+  .upload-package-container{
+    width: 100%;
+}
+
+.middler{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+  @media only screen and (min-width: 700px) {
+  
+.upload-package-container{
+    width: 300px;
+}
+
+.middler{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.submit
+{width: 100px;
+background: var(--dormblue);
+margin-top: 1rem;
+padding: .7rem;
+justify-content: center;
+align-items: center;
+display: flex;
+border: none;
+outline: none;
+color: #ffffff;
+margin-bottom: 3rem;
+}
+
+.submit:hover{
+    background: #f96b03;
+    cursor: pointer;
+}
+
+  }
+
+  .upload-body{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  }
+
+   
+.upload-package-container{
+    width: 280px;
+}
+
+
+@media only screen and (min-width: 700px) {
+
+    .accomodia-card{
+        width: 450px;
+        height: 250px;
+        box-shadow: 0px 3px 2px #aaa;
+        background: #fff;
+        overflow: hidden;
+        margin-left: 1vw;
+        padding-bottom: 1rem 
+    }
+    
+    .price-of-house{
+        position: relative;
+    padding: .5rem;
+    background: var(--dormorange);
+    color: #fff; 
+    width: max-content;
+    margin-left: auto;
+  
+    }
+
+        .add-house{
+            position: fixed;
+            padding: .5rem;
+            color: #fff;
+            z-index: 99999;
+            background: var(--dormblue);
+            bottom: 1rem ;
+            border-radius: 20px;
+            left: 7rem;
+            text-shadow: 0px 3px 3px #333;
+            box-shadow: 0px 2px 3px #333;
+            z-index: 9999;
+        }
+        
+
 }

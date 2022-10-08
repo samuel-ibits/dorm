@@ -1,0 +1,553 @@
+:root{
+    --ash: #e9e9e9;
+    --white: #ffffff;
+    --dormblue: #1597E2;
+    --darkcolor: #020202;
+    --dormash: lightgrey;
+    --dormorange: #f96b03;
+}
+
+.fullagentscreen{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+}
+
+.mainscreendata{
+    width: 60%;
+    height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.alterscreen{
+    width: fit-content;
+    margin-left: 2rem;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+.mainscreen-section-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.agent-screen-right{
+    width: 100%;
+    height: auto;
+}
+
+.chart-holder{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.mainscreen-topcard-holder{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2rem;
+    margin-top: 1rem;
+    height: auto;
+}
+
+.mainscreen-topcard{
+    width: 8rem;
+    height: auto;
+    padding: .5rem;
+    display: flex;justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px .2rem #e9e9e9;
+    background: var(--ash);
+}
+
+.mainscreen-topcard-box{
+    width: 2rem;
+    height: 100%;
+    display:grid;
+    padding: .2rem .8rem;
+    border-radius: 5px;
+    place-items: center;
+}
+.orange{
+    background: var(--dormorange);
+    color: var(--white);
+}
+
+.blue{
+    background: var(--dormblue);
+    color: var(--white);
+}
+
+.ash{
+    background: var(--darkcolor);
+    color: var(--ash);
+}
+
+
+.mainscreen-topcard-box ion-icon{
+    color: var(--white);
+}
+
+.mainscreen-topcard-text{
+    padding: .2rem;
+}
+
+.mainscreen-topcard-text P:nth-child(1){
+    font-size: .6rem;
+}
+
+
+
+.mainscreen-topcard-text P:nth-child(2){
+    font-size: 1rem;
+    color: #020202;
+    font-weight: 1000;
+}
+
+.mainscreen-section-1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.agent-screen-right{
+    width: 100%;
+}
+
+.mainscreen-section-2{
+    width: 100%;
+    padding: .5rem;
+}
+
+.transaction-card-holder{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.transaction-card{
+padding: .5rem;
+width: 90%;
+height: 4rem;
+display: flex;
+align-items: center;
+gap: 3rem;
+flex-direction: row;
+box-shadow: 0px 0px .2rem #e9e9e9;
+}
+
+.transaction-card-image{
+    width: 6rem;
+    height: 3rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.transaction-card-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.transaction-card-product-image{
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+    border-radius: 1%;   
+    margin-left: auto;
+}
+
+
+.transaction-card-product-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.transaction-card-data p:nth-child(1){
+    font-size: .6rem;
+    color: #555;
+}
+
+
+.transaction-card-data p:nth-child(2){
+    font-size: .8rem;
+    color: var(--darkcolor);
+    font-weight: 1000;
+}
+
+.green{
+    background: green;
+    color: var(--white);
+}
+
+
+.red{
+    background: red;
+    color: var(--white);
+}
+
+.transcation-card-status{
+width: 1.3rem;
+height: 1.1rem;
+padding: .2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1rem;
+border-radius: 50%;
+margin-left: 4rem;
+}
+
+.inventory-card-holder{
+width: 80%;
+height: auto;
+display: flex;
+flex-direction: column;
+gap: .5rem;
+}
+
+.boost-card-holder{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.boost-card{
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px .2rem #e9e9e9;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+}
+
+.inventory-card{
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px .2rem #e9e9e9;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    transform: scale(.8);
+    gap: 1rem;
+    margin-left: -1rem;
+}
+
+.inventory-card p{
+    font-size: .7rem;
+    font-weight: 1000;
+}
+
+
+.inventory-card p:nth-child(1){
+    font-size: .6rem;
+    font-weight: 1000;
+    color: #555;
+}
+
+.inventory-card-image{
+    width: 6rem;
+    height: 4rem;
+    overflow: hidden;
+}
+
+.inventory-card-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.booster-card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.booster-card p{
+    font-size: .7rem;
+    font-weight: 1000;
+}
+
+
+.booster-card p:nth-child(1){
+    font-size: .6rem;
+    font-weight: 1000;
+    color: #555;
+}
+
+.booster-card-image{
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+}
+
+.booster-card-image img{
+    width: 100%;
+    height: 100%; 
+}
+
+@media only screen and (max-width: 600px) {  
+h3{
+    font-size: .9rem;
+    text-align: center;
+}
+
+.transaction-card-image{
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.inventory-card{
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px .2rem #e9e9e9;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    transform: scale(1);
+    gap: 1rem;
+    margin-left: 0rem;
+}
+
+.grider{
+    display: grid;
+    margin-top: 1rem;
+    gap: 1.8rem;
+    grid-template-columns: repeat(auto-fill,minmax(9rem,1fr));
+}
+
+.mainscreen-section-2{
+    width: 100%;
+    padding: 0rem;
+    margin-left: -.4rem;
+}
+
+
+    .boost-card-holder{
+        width: 90%;
+        height: auto;
+        display: flex;
+        gap: .5rem;
+        flex-direction: column;
+    }
+
+    
+.boost-card{
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px .2rem #e9e9e9;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+}
+    
+.fullagentscreen{
+overflow-x: hidden;
+}
+    .transcation-card-status{
+        width: 1.3rem;
+        height: 1.1rem;
+        padding: .2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        border-radius: 50%;
+        margin-left: 0;
+        }
+        
+
+    .transaction-card-product-image{
+        width: 3rem;
+        height: 3rem;
+        overflow: hidden;
+        border-radius: 1%;   
+        margin-left: 0;
+    }
+    
+
+    .fullagentscreen{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: scroll;
+    }
+    
+    .mainscreendata{
+        width: 100%;
+        height: auto;
+        overflow: visible !important;
+    }
+    .alterscreen{
+        width:100%;
+        margin-left: 0rem;
+        height: fit-content;
+        overflow: scroll !important;
+    }
+
+    
+.mainscreen-topcard-holder{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2rem;
+    overflow-x: scroll;
+    margin-top: 1rem;
+    height: auto;
+}
+
+.chart-holder{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+h3{
+    margin-left: .6rem;
+}
+
+.transaction-card{
+    padding: .5rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    box-shadow: 0px 0px .2rem #e9e9e9;
+    }
+    
+.mainscreen-section-2{
+    width: 93%;
+    padding: .5rem;
+}
+
+
+.inventory-card{
+    width: 93%;
+    height: auto;
+    box-shadow: 0px 0px .2rem #e9e9e9;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+}
+
+
+
+@media only screen and (max-width: 300px) {  
+    h3{
+        font-size: .9rem;
+    }
+    
+        .boost-card-holder{
+            width: 93%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+    .fullagentscreen{
+    overflow-x: hidden;
+    }
+        .transcation-card-status{
+            width: 1.3rem;
+            height: 1.1rem;
+            padding: .2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            border-radius: 50%;
+            margin-left: 0;
+            }
+            
+    
+        .transaction-card-product-image{
+            width: 3rem;
+            height: 3rem;
+            overflow: hidden;
+            border-radius: 1%;   
+            margin-left: 0;
+        }
+        
+    
+        .fullagentscreen{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: scroll;
+        }
+        
+        .mainscreendata{
+            width: 100%;
+            height: auto;
+            overflow: visible !important;
+        }
+        .alterscreen{
+            width:100%;
+            margin-left: 0rem;
+            height: fit-content;
+            overflow: scroll !important;
+        }
+    
+        
+    .mainscreen-topcard-holder{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 2rem;
+        overflow-x: scroll;
+        margin-top: 1rem;
+        height: auto;
+    }
+    
+    .chart-holder{
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+    
+    h3{
+        margin-left: .6rem;
+        text-align: center;
+    }
+    
+    .transaction-card{
+        padding: .5rem;
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        box-shadow: 0px 0px .2rem #e9e9e9;
+        }
+        
+    .mainscreen-section-2{
+        width: 93%;
+        padding: .5rem;
+    }
+    
+    
+    .inventory-card{
+        padding: .5rem;
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        box-shadow: 0px 0px .2rem #e9e9e9;
+    }
+    }

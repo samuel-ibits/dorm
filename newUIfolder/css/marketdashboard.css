@@ -31,6 +31,7 @@
     font-size: .7rem;
 }
 
+
 .security-level-holder {
     width: 100%;
     padding: .3rem;
@@ -409,6 +410,15 @@
     width: max-content;
 }
 
+.transaction-card-data-product-name{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: scroll;
+    text-align: center;
+}
+
 .transaction-card-data p:nth-child(1) {
     font-size: .6rem;
     color: #555;
@@ -557,9 +567,10 @@
 
 
 .add-image {
-    background-image: url("http://craftsnippets.com/articles_images/placeholder/placeholder.jpg");
-    background-position: center;
-    background-size: contain;
+    background-image: url('../images/placeholder.jpg.opdownload');
+      background-position: center;
+      background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media only screen and (max-width: 600px) {
@@ -579,7 +590,6 @@
 
     .product-uploader-holder {
         width: 100vw;
-        left: 0;
         height: auto;
         position: absolute;
         overflow-y: scroll;

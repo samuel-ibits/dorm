@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+:root{
+    --ash: #e9e9e9;
+    --white: #ffffff;
+    --dormblue: #1597E2;
+    --lighterblue-2:#f0f4f5;
+    --darkcolor: #020202;
+    --dormash: lightgrey;
+    --dormorange: #f96b03;
+    --darker-text:#444;
+    --ligher-text:#999;
+    --boxop: .8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.save{
+    width: 100%;
+    position: absolute;
+    bottom: 0rem;
+}
+
+
+
+.save button{
+    width: 100%;
+    padding: 1rem 0px;
+    border: none;
+    outline: none;
+    background: var(--dormorange);
+    color: var(--white);
+}
+
+.notebook{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: .5rem;
+    background: var(--ash);bottom: 0;
+}
+
+.notebook input{
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    outline: none;
+}
+
+.notebook textarea{
+    margin-top: 3vh;
+    width: 100%;
+    height: 70vh;
+    border: none;
+    padding: 1rem;
+    outline: none;
+    color: var(--darker-text);
+}
+
+
+
+@media only screen and (max-width: 600px) 
+{
+
+    .save{
+        width: 100%;
+        position: fixed;
+        bottom: 4rem;
+    }
+    
+    .save button{
+        width: 100%;
+        padding: 1rem 0px;
+        border: none;
+        outline: none;
+        background: var(--dormorange);
+        color: var(--white);
+    }
+}

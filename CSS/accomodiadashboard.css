@@ -1,0 +1,450 @@
+:root{
+    --ash: #e9e9e9;
+    --white: #ffffff;
+    --dormblue: #1597E2;
+    --darkcolor: #020202;
+    --dormash: lightgrey;
+    --dormorange: #f96b03;
+}
+
+.accomodia-maindashboard{
+    width: 100%;
+    height: auto;
+    background: var(--white);
+    margin-top: 1rem; 
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill,minmax(13rem,1fr)); 
+}
+
+.accomodia-maindashboard-card{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background: var(--dormblue);
+    color: var(--white);
+    height: 5rem;
+    border-radius: 10px;
+    padding: .5rem;
+}
+
+.sub-text{
+    font-size: .6rem;
+    color: var(--ash);
+}
+
+.main-text{
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.orange-bg{
+    background: var(--dormorange) !important;
+    color: var(--white);
+}
+
+.accomodia-dashboard{
+    width: 100%;
+}
+
+.accomodiadashboard-card-holder{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.accomodiadashboard-card{
+    width: 100%;
+    height: auto;
+}
+
+.accomodiadashboard-card-image{
+    width: 100%;
+    height: 20rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+
+.accomodiadashboard-card-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.accomodiadashboard-card-data{
+ padding: 1rem 1rem;   
+}
+
+.location-of-house{
+    font-size: .7rem;
+}
+
+.sub-info-of-house{
+    width: 100%;
+    display: flex ;
+    flex-direction: row;
+    gap: .5rem;
+    color: #222;
+    margin-top: 1rem;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.orange{
+    color: var(--dormorange);
+}
+
+.label{
+    font-weight: 600;
+}
+
+.sub-info-of-house div:nth-child(1){
+   display: flex;
+   flex-direction: column;
+   gap: .5rem;
+    }
+
+.sub-info-of-house div:nth-child(2){
+margin-left: auto;
+}
+
+
+.sub-info-of-house div:nth-child(2) p{
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--dormblue);
+    }
+
+.taken{
+    background: red;
+    color: var(--white);
+    padding: .2rem 1rem;
+    margin-left: 1rem;
+}
+
+.free{
+    background: green;
+    color: var(--white);
+    padding: .2rem 1rem;
+    margin-left: 1rem;
+}
+
+.complain-div{
+    width: 100%;
+    margin-top: 2rem;
+    background: var(--ash);
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+.complain-div h4{
+    color: #444;
+}
+
+.complain{
+    font-size: .7rem;
+}
+
+
+.reply{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.reply input{
+    width: 80%;
+    padding: .5rem;
+    border: 2px solid var(--dormblue);
+    outline: none;
+}
+
+.reply button{
+    width: 20%;
+    background: var(--dormblue);
+    color: var(--white);
+    border: 1px solid var(--dormblue);
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .request-card{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: .5rem;
+    gap: .5rem;
+  }
+
+  .request-card-holder{
+   min-width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: .5rem;
+    gap: 1rem;
+  }
+  .request-inspect-div{
+    margin-top: 1rem;
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .request-inspect-div h3{
+    color: #555;
+  }
+  .reqest-info{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .request-user-user-name{
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--darkcolor);
+  }
+
+  .request-function{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .request-function button{
+    border: none;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    opacity: .5;
+    transition: .5s linear;
+  }
+
+  .request-function button:hover{
+    opacity: 1;
+  }
+
+.circle-image{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--dormblue);
+  
+}
+
+.blue-bg{
+    color: var(--white);
+    background: var(--dormblue);
+}
+
+.black-bg{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: var(--darkcolor);
+    z-index: 10;
+    opacity: .8;
+}
+
+.request-comfirmation-div-holder{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: grid;
+    place-items: center;
+    z-index: 12;
+}
+
+.request-confirmation-div{
+    width: 16rem;
+    height: auto;
+    background: var(--white);
+    padding: 1rem;
+}
+
+
+.request-confirmation-div form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.request-confirmation-div form input{
+    border: 2px solid var(--dormblue);
+    padding: .3rem;
+}
+
+.request-confirmation-div form .confirmation-functions{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.request-confirmation-div form .confirmation-functions button{
+    width: 50%;
+    padding: .5rem;
+    border: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .sub-info-of-house{
+        width: 100%;
+        display: flex ;
+        flex-direction: column;
+        gap: .5rem;
+        color: #222;
+        margin-top: 1rem;
+        font-size: .9rem;
+        font-weight: 400;
+    }
+
+
+    .accomodia-maindashboard{
+        width: 100%;
+        height: auto;
+        background: var(--white);
+        margin-top: 1rem; 
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill,minmax(8rem,1fr)); 
+    }
+    
+
+    .accomodia-maindashboard-card{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        background: var(--dormblue);
+        color: var(--white);
+        height: auto;
+        border-radius: 10px;
+        padding: .5rem;
+    }
+
+    .accomodiadashboard-card-image{
+        width: 100%;
+        height: 15rem;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .status{
+        font-size: .7rem;
+    }
+    
+}
+
+
+@media only screen and (max-width: 800px) {  
+
+    .product-uploader{
+        width: 100vw !important;
+        min-height: 100vh;
+        overflow-y: scroll;
+        padding: 1rem 10px;
+        background: var(--white);
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        border-radius: 0px;
+    
+    }
+    
+    .product-uploader-holder{
+        width: 100vw;
+        left: 0;
+        height: auto;
+        position: absolute;
+        overflow-y: scroll;
+        z-index: 9999;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        top: 0;
+
+    }
+
+    .product-upload-card{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        border-radius: 10px;
+        align-items: center;
+        padding: .5rem;
+        box-shadow: none}
+
+
+        .preview-holder{
+            width: 100%;
+            height: 5rem;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        
+        .preview-holder ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            gap: 1rem;
+        }
+        
+        .preview-holder ul li div img{
+            width: 3rem;
+            height: 3rem;
+        }
+
+       
+}

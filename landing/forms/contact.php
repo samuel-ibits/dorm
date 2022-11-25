@@ -5,11 +5,11 @@ $name = $_POST['name']; // form field
  $message = $_POST['message']; // form field
  $subject = $_POST['subject'];
 
-$username = 'info@dorm.com.ng'; // your email address
+$username = 'contactus@dorm.com.ng'; // your email address
 $password = 'J[G-W7hxUGpr'; // your email address password
 
 $from = "dormcomn@dorm.com.ng";
-$to = "dormcomn@dorm.com.ng";
+$to = "contactus@dorm.com.ng";
 $subject = " Dorm Contact form - $subject";
 $body= "Name: ".$name." <br> Email: ".$email." <br>Message:".$message." ";
 

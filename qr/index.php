@@ -5,7 +5,7 @@
 <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=https://dorm.com.ng/qr/landing.php&choe=UTF-8
 "/>
 <br>
-clicks: <?php 
+clicks: <?php include("../connect.php");
 
 $suql = "SELECT * FROM qr"; 
  $connStatus = $conn17->query($suql); 
